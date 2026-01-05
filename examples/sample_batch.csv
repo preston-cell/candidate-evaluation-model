@@ -1,0 +1,2 @@
+candidate_id,name,material_paths
+CAND001,Jane Doe,examples/sample_materials/sample_resume.txt;examples/sample_materials/sample_cover_letter.txt

@@ -1,0 +1,76 @@
+# Candidate Evaluator Configuration Template
+# Copy this file to config.yaml and fill in your values
+
+# Claude API Configuration
+api:
+  # Your Anthropic API key
+  anthropic_api_key: "your-api-key-here"
+
+  # Model to use for evaluation (recommended: claude-sonnet-4-5-20250929)
+  model: "claude-sonnet-4-5-20250929"
+
+  # Maximum tokens for API responses
+  max_tokens: 4096
+
+  # Temperature for response generation (0.0-1.0)
+  # Lower = more consistent, Higher = more creative
+  temperature: 0.3
+
+# Evaluation Criteria Configuration
+criteria:
+  # You can customize weights for each criterion (1-10)
+  # Weights affect the overall score calculation
+  weights:
+    critical_thinking: 10
+    coachability: 10
+    curiosity: 10
+    creativity: 10
+    collaboration: 10
+    follow_through: 10
+    problem_solving_motivation: 10
+    evidence_based: 10
+    detail_orientation: 10
+    communication: 10
+    expertise_enabler: 10
+
+# Output Configuration
+output:
+  # Default output directory for results
+  output_dir: "./results"
+
+  # Default output formats (json, markdown, html, csv)
+  default_formats:
+    - json
+    - markdown
+
+  # Include detailed evidence in reports
+  include_evidence: true
+
+  # Include specific quotes from materials
+  include_quotes: true
+
+# Processing Configuration
+processing:
+  # Maximum file size in MB
+  max_file_size_mb: 10
+
+  # Supported file types
+  supported_formats:
+    - pdf
+    - docx
+    - txt
+    - md
+
+  # Batch processing chunk size
+  batch_size: 5
+
+# Logging Configuration
+logging:
+  # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: INFO
+
+  # Log file path
+  log_file: "./candidate_evaluator.log"
+
+  # Log to console
+  console_logging: true
