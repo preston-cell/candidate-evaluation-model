@@ -68,6 +68,13 @@ For EACH criterion above, provide your evaluation in the following JSON structur
 }}
 ```
 
+**CRITICAL**: The `confidence` field MUST be EXACTLY one of these three lowercase values:
+- `"low"` - Limited evidence available
+- `"medium"` - Adequate evidence available
+- `"high"` - Strong, abundant evidence available
+
+Do NOT use other values like "medium-high", "moderate", "moderate-high", etc. Only use "low", "medium", or "high".
+
 Then provide an overall assessment:
 
 ```json

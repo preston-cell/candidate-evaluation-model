@@ -110,12 +110,21 @@ class CandidateEvaluator:
                 Evidence(**ev) for ev in score_data.get('evidence', [])
             ]
 
+            # Normalize confidence to valid values (low, medium, high)
+            confidence_raw = score_data.get('confidence', 'medium').lower()
+            if 'high' in confidence_raw:
+                confidence = 'high'
+            elif 'low' in confidence_raw:
+                confidence = 'low'
+            else:
+                confidence = 'medium'
+
             scores.append(CriterionScore(
                 criterion=criterion,
                 score=score_data['score'],
                 reasoning=score_data['reasoning'],
                 evidence=evidence_list,
-                confidence=score_data.get('confidence', 'medium'),
+                confidence=confidence,
                 notes=score_data.get('notes')
             ))
 
