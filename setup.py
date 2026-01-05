@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="candidate-evaluator",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Preston Dinh",
+    author_email="prestonadinh@gmail.com",
     description="AI-powered candidate evaluation tool using Claude API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/candidate-evaluation-model",
+    url="https://github.com/preston-cell/candidate-evaluation-model",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
