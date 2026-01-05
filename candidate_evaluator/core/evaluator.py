@@ -299,8 +299,7 @@ class CandidateEvaluator:
             ValueError: If response cannot be parsed
         """
         try:
-            # Extract JSON from response
-            # Look for JSON code blocks
+            # Method 1: Try to extract JSON code blocks
             json_blocks = []
             lines = response.split('\n')
             in_json_block = False
@@ -317,7 +316,34 @@ class CandidateEvaluator:
                 elif in_json_block:
                     current_block.append(line)
 
+            # Method 2: If no code blocks found, try to find raw JSON objects
             if not json_blocks:
+                logger.warning("No JSON code blocks found, attempting to extract raw JSON")
+
+                # Try to find JSON objects using bracket matching
+                brace_count = 0
+                current_obj = []
+                in_object = False
+
+                for char in response:
+                    if char == '{':
+                        if brace_count == 0:
+                            in_object = True
+                            current_obj = []
+                        brace_count += 1
+                        current_obj.append(char)
+                    elif char == '}':
+                        current_obj.append(char)
+                        brace_count -= 1
+                        if brace_count == 0 and in_object:
+                            json_blocks.append(''.join(current_obj))
+                            in_object = False
+                            current_obj = []
+                    elif in_object:
+                        current_obj.append(char)
+
+            if not json_blocks:
+                logger.error(f"Response preview: {response[:500]}...")
                 raise ValueError("No JSON blocks found in response")
 
             # Parse criterion scores from individual blocks
@@ -336,9 +362,11 @@ class CandidateEvaluator:
 
                 except json.JSONDecodeError as e:
                     logger.warning(f"Failed to parse JSON block: {e}")
+                    logger.debug(f"Problematic block: {block[:200]}...")
                     continue
 
             if not criterion_scores:
+                logger.error(f"Parsed {len(json_blocks)} JSON blocks but found no criterion scores")
                 raise ValueError("No criterion scores found in response")
 
             # Combine parsed data
@@ -354,7 +382,8 @@ class CandidateEvaluator:
 
         except Exception as e:
             logger.error(f"Failed to parse evaluation response: {e}")
-            logger.debug(f"Response was: {response}")
+            logger.error(f"Response length: {len(response)} characters")
+            logger.error(f"Response preview: {response[:1000]}...")
             raise ValueError(f"Failed to parse evaluation response: {e}")
 
     def _parse_comparison_response(self, response: str) -> Dict[str, Any]:
