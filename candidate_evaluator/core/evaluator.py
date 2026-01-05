@@ -17,6 +17,8 @@ from candidate_evaluator.core.models import (
     EvaluationCriterion,
     ComparisonResult
 )
+from candidate_evaluator.core.research_generator import ResearchReportGenerator
+from candidate_evaluator.core.research_models import ResearchEvaluationReport
 from candidate_evaluator.utils.config import Config
 from candidate_evaluator.utils.file_processor import FileProcessor
 from candidate_evaluator.prompts.evaluation_prompts import (
@@ -43,6 +45,8 @@ class CandidateEvaluator:
         self.file_processor = FileProcessor(
             max_file_size_mb=config.processing.max_file_size_mb
         )
+        self.research_generator = ResearchReportGenerator()
+        self._last_processed_files = None  # Store for research report generation
 
     def evaluate_candidate(
         self,
@@ -72,6 +76,7 @@ class CandidateEvaluator:
         # Process files
         logger.info(f"Processing {len(material_paths)} files...")
         processed_files = self.file_processor.process_multiple_files(material_paths)
+        self._last_processed_files = processed_files  # Store for research report generation
         combined_materials = self.file_processor.combine_materials(processed_files)
 
         logger.info(f"Total materials length: {len(combined_materials)} characters")
@@ -373,3 +378,35 @@ class CandidateEvaluator:
             logger.error(f"Failed to parse comparison response: {e}")
             logger.debug(f"Response was: {response}")
             raise ValueError(f"Failed to parse comparison response: {e}")
+
+    def generate_research_report(
+        self,
+        evaluation_result: EvaluationResult
+    ) -> ResearchEvaluationReport:
+        """
+        Generate a research-style report with linguistic analysis.
+
+        Args:
+            evaluation_result: Standard evaluation result
+
+        Returns:
+            ResearchEvaluationReport with detailed analysis
+
+        Raises:
+            ValueError: If no processed files available
+        """
+        if self._last_processed_files is None:
+            raise ValueError(
+                "No processed files available. "
+                "Must run evaluate_candidate() before generating research report."
+            )
+
+        logger.info("Generating research report with linguistic analysis...")
+
+        research_report = self.research_generator.generate_research_report(
+            evaluation_result,
+            self._last_processed_files
+        )
+
+        logger.info("Research report generation complete")
+        return research_report

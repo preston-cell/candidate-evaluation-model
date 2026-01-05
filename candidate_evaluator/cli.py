@@ -18,6 +18,7 @@ from candidate_evaluator.exporters import (
     HTMLExporter,
     CSVExporter
 )
+from candidate_evaluator.exporters.research_exporter import ResearchPaperExporter
 
 console = Console()
 
@@ -70,8 +71,9 @@ def cli(ctx, config, verbose):
 @click.option('--format', '-f', 'formats', multiple=True,
               type=click.Choice(['json', 'markdown', 'html', 'csv'], case_sensitive=False),
               help='Output format(s)')
+@click.option('--research', is_flag=True, help='Generate detailed research report with linguistic analysis')
 @click.pass_context
-def evaluate(ctx, materials, candidate_id, name, output_dir, formats):
+def evaluate(ctx, materials, candidate_id, name, output_dir, formats, research):
     """
     Evaluate a single candidate based on their application materials.
 
@@ -170,6 +172,37 @@ def evaluate(ctx, materials, candidate_id, name, output_dir, formats):
         console.print(f"\n[green]Results exported to:[/green]")
         for file in exported_files:
             console.print(f"  • {file}")
+
+        # Generate research report if requested
+        if research:
+            console.print(f"\n[bold cyan]Generating research report with linguistic analysis...[/bold cyan]")
+
+            with Progress(
+                SpinnerColumn(),
+                TextColumn("[progress.description]{task.description}"),
+                console=console
+            ) as progress:
+                progress.add_task(description="Analyzing linguistic patterns...", total=None)
+
+                research_report = evaluator.generate_research_report(result)
+
+            # Export research report
+            research_path = output_path / f"{candidate_id}_research_report.md"
+            ResearchPaperExporter.export_research_paper(
+                research_report,
+                research_path,
+                format='markdown'
+            )
+
+            console.print(f"\n[bold green]✓ Research report generated![/bold green]")
+            console.print(f"\n[yellow]Innovation Potential Assessment:[/yellow]")
+            console.print(f"  • Innovation Score: {research_report.innovation_assessment.overall_innovation_score:.2f}/10")
+            console.print(f"  • Potential Level: {research_report.innovation_assessment.innovation_potential_level.upper()}")
+            console.print(f"  • Innovation Markers: {research_report.innovation_assessment.innovation_indicators_count}")
+            console.print(f"\n[yellow]Linguistic Analysis Summary:[/yellow]")
+            console.print(f"  • Total Markers Identified: {research_report.linguistic_patterns['total_markers']}")
+            console.print(f"  • Words Analyzed: {research_report.statistical_summary['total_words_analyzed']:,}")
+            console.print(f"\n[green]Research report: {research_path}[/green]")
 
     except Exception as e:
         console.print(f"\n[red]Error during evaluation: {e}[/red]")

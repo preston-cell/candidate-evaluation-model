@@ -12,11 +12,14 @@ Candidate Evaluator is a production-ready tool that leverages Anthropic's Claude
 ### Key Features
 
 ✅ **Evidence-Based Evaluation** - Every score includes specific quotes and examples from materials
+✅ **Research-Style Analysis** - Generate detailed research reports with linguistic marker identification
+✅ **Innovation Potential Assessment** - Identify markers indicating innovation program potential
+✅ **Linguistic Pattern Analysis** - Extract and analyze key phrases that correlate with competencies
 ✅ **11 Evaluation Criteria** - Comprehensive assessment framework
 ✅ **Multiple File Formats** - Supports PDF, DOCX, TXT, and Markdown
 ✅ **Batch Processing** - Evaluate multiple candidates efficiently
 ✅ **Comparison Mode** - Compare candidates side-by-side
-✅ **Multiple Export Formats** - JSON, Markdown, HTML, and CSV outputs
+✅ **Multiple Export Formats** - JSON, Markdown, HTML, CSV, and Research Papers
 ✅ **CLI & Web Interface** - Command-line tool and optional Streamlit web UI
 ✅ **Customizable Criteria** - Configure weights and add custom criteria
 ✅ **Production Ready** - Comprehensive error handling, logging, and testing
@@ -83,6 +86,22 @@ candidate-eval evaluate resume.pdf cover_letter.txt \
   --name "Jane Doe" \
   --format markdown html
 ```
+
+**Generate research report with linguistic analysis:**
+
+```bash
+candidate-eval evaluate resume.pdf cover_letter.txt \
+  --candidate-id CAND001 \
+  --research
+```
+
+This generates a comprehensive research paper that includes:
+- Linguistic marker analysis
+- Innovation potential assessment
+- Pattern identification
+- Statistical summaries
+- Evidence correlations
+- Detailed findings and methodology
 
 **Batch evaluation:**
 
@@ -369,6 +388,91 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] API server mode
 - [ ] Enhanced comparison analytics
 - [ ] Export to additional formats (PowerPoint, Google Docs)
+
+## 🔬 Research Reports & Linguistic Analysis
+
+The tool's research report feature provides an academic-style analysis that goes beyond simple scoring. When you use the `--research` flag, the system performs deep linguistic analysis to identify patterns and markers that correlate with each evaluation criterion.
+
+### What's Included in Research Reports
+
+**1. Research Intention & Methodology**
+- Clear statement of research objectives
+- Detailed methodology description
+- Evaluation framework explanation
+- Limitations and considerations
+
+**2. Linguistic Marker Analysis**
+- Automatic extraction of criterion-specific keywords and phrases
+- Pattern matching across all materials
+- Frequency analysis of key indicators
+- Marker density metrics (per 1,000 words)
+
+**3. Innovation Potential Assessment**
+- Specific assessment of innovation program suitability
+- Identification of creativity markers (e.g., "innovative approach", "novel solution")
+- Curiosity indicators (e.g., "explored alternatives", "researched options")
+- Problem-solving markers (e.g., "tackled challenge", "solved problem")
+- Analytical thinking patterns (e.g., "analyzed data", "systematic approach")
+
+**4. Key Findings**
+- Primary findings across all criteria
+- Marker-score correlations showing which phrases correlate with high scores
+- Identified patterns in language use
+- Notable observations and insights
+
+**5. Statistical Summary**
+- Total linguistic markers identified
+- Distribution across criteria
+- Evidence strength assessment
+- Confidence levels for each score
+
+**6. Detailed Evidence Appendices**
+- Complete list of markers found for each criterion
+- Context for each marker with source attribution
+- Phrase frequency tables
+- Sample evidence with direct quotes
+
+### Example Research Report Sections
+
+```markdown
+## Innovation Potential Assessment
+
+**Innovation Score**: 8.5/10 - HIGH Potential
+
+**Innovation Markers Identified**: 47 total
+- Creativity indicators: 12 unique phrases
+  - "innovative solution", "creative approach", "novel method"
+- Curiosity indicators: 15 unique phrases
+  - "explored alternatives", "researched options", "investigated further"
+- Problem-solving indicators: 11 unique phrases
+  - "solved complex problem", "overcame obstacle", "tackled challenge"
+
+**Recommendation**: Strong candidate for innovation programs.
+Demonstrates exceptional creative thinking and problem-solving orientation.
+
+## Linguistic Pattern Analysis
+
+### Critical Thinking Markers
+- **Total markers found**: 23
+- **Unique phrases**: 15
+- **Marker density**: 3.2 per 1,000 words
+- **Evidence strength**: Strong
+
+**Most Frequent Phrases**:
+1. "analyzed data" (5 occurrences)
+2. "systematic approach" (3 occurrences)
+3. "evaluated options" (3 occurrences)
+4. "root cause analysis" (2 occurrences)
+5. "logical conclusion" (2 occurrences)
+```
+
+### Use Cases for Research Reports
+
+- **Academic Research**: Study language patterns in successful candidates
+- **Program Selection**: Identify candidates for specialized innovation programs
+- **Hiring Optimization**: Understand what markers correlate with high performance
+- **Process Improvement**: Identify gaps in how candidates present their experiences
+- **Training Development**: See what competencies candidates struggle to demonstrate
 
 ## 📊 Example Output
 
