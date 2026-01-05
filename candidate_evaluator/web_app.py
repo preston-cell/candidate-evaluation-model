@@ -232,7 +232,7 @@ def single_evaluation_page():
                             st.markdown("**Evidence:**")
                             for i, ev in enumerate(score.evidence, 1):
                                 st.markdown(f"{i}. *From {ev.source}:*")
-                                st.quote(ev.quote)
+                                st.markdown(f"> {ev.quote}")
                                 st.markdown(f"   {ev.context}")
 
                         if score.notes:
@@ -466,7 +466,7 @@ def view_results_page():
 
                 if score.evidence:
                     for ev in score.evidence:
-                        st.quote(f"*{ev.source}:* {ev.quote}")
+                        st.markdown(f"> *{ev.source}:* {ev.quote}")
 
 
 def settings_page():
