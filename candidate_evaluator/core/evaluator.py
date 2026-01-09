@@ -359,6 +359,16 @@ class CandidateEvaluator:
                         criterion_scores.append(data)
                     elif 'overall_score' in data:
                         overall_data = data
+                    # Handle case where all scores are in a 'scores' array
+                    elif 'scores' in data and isinstance(data['scores'], list):
+                        criterion_scores.extend(data['scores'])
+                        # Also extract overall data if present
+                        if 'overall_score' in data:
+                            overall_data = data
+                    # Handle case where data has both criterion_scores and overall_assessment
+                    elif 'criterion_scores' in data:
+                        criterion_scores.extend(data['criterion_scores'])
+                        overall_data = data
 
                 except json.JSONDecodeError as e:
                     logger.warning(f"Failed to parse JSON block: {e}")
@@ -367,6 +377,9 @@ class CandidateEvaluator:
 
             if not criterion_scores:
                 logger.error(f"Parsed {len(json_blocks)} JSON blocks but found no criterion scores")
+                logger.error("JSON blocks found:")
+                for i, block in enumerate(json_blocks):
+                    logger.error(f"Block {i}: {block[:300]}...")
                 raise ValueError("No criterion scores found in response")
 
             # Combine parsed data
