@@ -382,6 +382,12 @@ class CandidateEvaluator:
                         # Also extract overall data if present
                         if 'overall_score' in data:
                             overall_data = data
+                    # Handle case where scores are in an 'evaluations' array
+                    elif 'evaluations' in data and isinstance(data['evaluations'], list):
+                        criterion_scores.extend(data['evaluations'])
+                        # Also extract overall data if present
+                        if 'overall_score' in data:
+                            overall_data = data
                     # Handle case where data has both criterion_scores and overall_assessment
                     elif 'criterion_scores' in data:
                         criterion_scores.extend(data['criterion_scores'])
