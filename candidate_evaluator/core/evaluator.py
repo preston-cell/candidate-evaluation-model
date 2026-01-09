@@ -370,27 +370,27 @@ class CandidateEvaluator:
                     if isinstance(data, list):
                         # Assume it's an array of criterion score objects
                         criterion_scores.extend(data)
-                    # Check if this is a criterion score object
-                    elif 'criterion' in data:
-                        criterion_scores.append(data)
-                    # Check if this is overall assessment
-                    elif 'overall_score' in data:
-                        overall_data = data
+                    # Handle case where scores are in an 'evaluations' array (check BEFORE overall_score!)
+                    elif 'evaluations' in data and isinstance(data['evaluations'], list):
+                        criterion_scores.extend(data['evaluations'])
+                        # Also extract overall data if present
+                        if 'overall_score' in data:
+                            overall_data = data
                     # Handle case where all scores are in a 'scores' array
                     elif 'scores' in data and isinstance(data['scores'], list):
                         criterion_scores.extend(data['scores'])
                         # Also extract overall data if present
                         if 'overall_score' in data:
                             overall_data = data
-                    # Handle case where scores are in an 'evaluations' array
-                    elif 'evaluations' in data and isinstance(data['evaluations'], list):
-                        criterion_scores.extend(data['evaluations'])
-                        # Also extract overall data if present
-                        if 'overall_score' in data:
-                            overall_data = data
                     # Handle case where data has both criterion_scores and overall_assessment
                     elif 'criterion_scores' in data:
                         criterion_scores.extend(data['criterion_scores'])
+                        overall_data = data
+                    # Check if this is a criterion score object
+                    elif 'criterion' in data:
+                        criterion_scores.append(data)
+                    # Check if this is ONLY overall assessment (no arrays)
+                    elif 'overall_score' in data:
                         overall_data = data
 
                 except json.JSONDecodeError as e:
