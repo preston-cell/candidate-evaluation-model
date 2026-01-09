@@ -298,6 +298,18 @@ class CandidateEvaluator:
         Raises:
             ValueError: If response cannot be parsed
         """
+        # Save raw response for debugging
+        import os
+        debug_dir = os.path.expanduser("~/candidate_eval_debug")
+        os.makedirs(debug_dir, exist_ok=True)
+        debug_file = os.path.join(debug_dir, f"response_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+        try:
+            with open(debug_file, 'w') as f:
+                f.write(response)
+            logger.info(f"Saved raw response to: {debug_file}")
+        except Exception as e:
+            logger.warning(f"Could not save debug file: {e}")
+
         try:
             # Method 1: Try to extract JSON code blocks
             json_blocks = []
