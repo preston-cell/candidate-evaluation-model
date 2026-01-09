@@ -366,9 +366,14 @@ class CandidateEvaluator:
                 try:
                     data = json.loads(block)
 
-                    # Check if this is a criterion score or overall assessment
-                    if 'criterion' in data:
+                    # Check if data itself is a list (array of criterion scores)
+                    if isinstance(data, list):
+                        # Assume it's an array of criterion score objects
+                        criterion_scores.extend(data)
+                    # Check if this is a criterion score object
+                    elif 'criterion' in data:
                         criterion_scores.append(data)
+                    # Check if this is overall assessment
                     elif 'overall_score' in data:
                         overall_data = data
                     # Handle case where all scores are in a 'scores' array
