@@ -135,6 +135,9 @@ class EvaluationResult(BaseModel):
             "overall_score": self.overall_score,
             "evaluation_date": self.candidate.evaluation_date.isoformat(),
             "recommendation": self.recommendation,
+            "overall_assessment": self.overall_assessment,
+            "strengths": self.strengths,
+            "areas_for_development": self.areas_for_development,
             "scores": {
                 score.criterion.value: score.score
                 for score in self.scores
