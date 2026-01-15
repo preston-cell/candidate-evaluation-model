@@ -287,130 +287,314 @@ def batch_evaluation_page():
     """Batch evaluation page"""
     st.title("Batch Candidate Evaluation")
 
-    st.markdown(
-        "Upload a CSV file with candidate information and materials. "
-        "The CSV should have columns: `candidate_id`, `name` (optional), `material_paths` (semicolon-separated)"
+    # Mode selection
+    batch_mode = st.radio(
+        "Batch Mode",
+        ["Quality Mode (Upload PDFs)", "CSV Mode"],
+        help="Quality Mode: Upload multiple PDFs, one per candidate. CSV Mode: Use a CSV file with file paths."
     )
 
-    st.markdown("### Example CSV Format")
-    st.code(
-        "candidate_id,name,material_paths\n"
-        "CAND001,John Doe,materials/john_resume.pdf;materials/john_cover.txt\n"
-        "CAND002,Jane Smith,materials/jane_resume.pdf;materials/jane_cover.txt",
-        language="csv"
-    )
+    if batch_mode == "Quality Mode (Upload PDFs)":
+        st.markdown(
+            "**Quality Mode**: Upload multiple PDFs, one per candidate. "
+            "Each PDF should contain all materials (resume, cover letter, interview responses, etc.). "
+            "Filename becomes the candidate ID (e.g., 'candidate_001.pdf' → 'candidate_001')."
+        )
 
-    csv_file = st.file_uploader(
-        "Upload Candidates CSV",
-        type=['csv'],
-        help="CSV file with candidate information"
-    )
+        st.info("💡 One deep API call per candidate for maximum quality. Cost is not optimized.")
 
-    generate_comparison = st.checkbox("Generate comparison report", value=True)
+        uploaded_files = st.file_uploader(
+            "Upload Candidate PDFs",
+            type=['pdf'],
+            accept_multiple_files=True,
+            help="Upload multiple PDFs, one per candidate"
+        )
 
-    if csv_file and st.button("Evaluate All Candidates", type="primary"):
-        st.info("Batch evaluation can take several minutes depending on the number of candidates.")
+        if uploaded_files:
+            st.write(f"**{len(uploaded_files)} candidates ready for evaluation**")
 
-        try:
-            # Load CSV
-            import csv
-            import io
+            # Show list of candidates
+            with st.expander("View candidate list"):
+                for f in uploaded_files:
+                    candidate_id = Path(f.name).stem
+                    st.text(f"• {candidate_id} ({f.name})")
 
-            content = csv_file.read().decode('utf-8')
-            reader = csv.DictReader(io.StringIO(content))
+        max_tokens = st.slider(
+            "Max Tokens per Candidate",
+            min_value=4096,
+            max_value=16384,
+            value=8192,
+            step=1024,
+            help="Higher = more detailed analysis. 8192 is recommended for quality."
+        )
 
-            candidates = []
-            for row in reader:
-                material_paths = row['material_paths'].split(';')
-                material_paths = [p.strip() for p in material_paths]
+        generate_comparison = st.checkbox("Generate comparison report", value=True)
+        generate_research = st.checkbox("Generate research reports (adds significant time)", value=False)
 
-                candidates.append({
-                    'candidate_id': row['candidate_id'],
-                    'candidate_name': row.get('name'),
-                    'material_paths': material_paths
+        if uploaded_files and st.button("🚀 Evaluate All Candidates (Quality Mode)", type="primary"):
+            batch_evaluate_pdfs(uploaded_files, generate_comparison, generate_research, max_tokens)
+
+    else:  # CSV Mode
+        st.markdown(
+            "**CSV Mode**: Upload a CSV file with candidate information and file paths. "
+            "The CSV should have columns: `candidate_id`, `name` (optional), `material_paths` (semicolon-separated)"
+        )
+
+        st.markdown("### Example CSV Format")
+        st.code(
+            "candidate_id,name,material_paths\n"
+            "CAND001,John Doe,materials/john_resume.pdf;materials/john_cover.txt\n"
+            "CAND002,Jane Smith,materials/jane_resume.pdf;materials/jane_cover.txt",
+            language="csv"
+        )
+
+        csv_file = st.file_uploader(
+            "Upload Candidates CSV",
+            type=['csv'],
+            help="CSV file with candidate information"
+        )
+
+        generate_comparison = st.checkbox("Generate comparison report", value=True)
+
+        if csv_file and st.button("Evaluate All Candidates (CSV Mode)", type="primary"):
+            batch_evaluate_csv(csv_file, generate_comparison)
+
+
+def batch_evaluate_pdfs(uploaded_files, generate_comparison, generate_research, max_tokens):
+    """Evaluate batch of uploaded PDFs (Quality Mode)"""
+    st.info(f"Batch evaluation can take several minutes. Processing {len(uploaded_files)} candidates with {max_tokens} max tokens each.")
+
+    try:
+        # Update config for quality mode
+        config = st.session_state.config
+        config.api.max_tokens = max_tokens
+
+        # Save uploaded files temporarily
+        temp_dir = tempfile.mkdtemp()
+        pdf_paths = []
+
+        for uploaded_file in uploaded_files:
+            temp_path = Path(temp_dir) / uploaded_file.name
+            with open(temp_path, 'wb') as f:
+                f.write(uploaded_file.getbuffer())
+            pdf_paths.append(temp_path)
+
+        # Progress tracking
+        progress_bar = st.progress(0)
+        status_text = st.empty()
+
+        evaluator = st.session_state.evaluator
+        results = []
+        failed = []
+
+        for i, pdf_path in enumerate(pdf_paths):
+            candidate_id = pdf_path.stem
+            status_text.text(f"Evaluating {i+1}/{len(pdf_paths)}: {candidate_id}")
+            progress_bar.progress((i + 1) / len(pdf_paths))
+
+            try:
+                result = evaluator.evaluate_candidate(
+                    candidate_id=candidate_id,
+                    material_paths=[str(pdf_path)],
+                    candidate_name=None
+                )
+                results.append(result)
+            except Exception as e:
+                st.warning(f"Failed to evaluate {candidate_id}: {e}")
+                failed.append({'candidate_id': candidate_id, 'error': str(e)})
+
+        status_text.text("✅ Evaluation complete!")
+
+        if results:
+            st.success(f"Successfully evaluated {len(results)}/{len(pdf_paths)} candidates")
+
+            if failed:
+                with st.expander(f"⚠️ {len(failed)} candidates failed"):
+                    for fail in failed:
+                        st.error(f"{fail['candidate_id']}: {fail['error']}")
+
+            # Display rankings
+            st.markdown("### 🏆 Candidate Rankings")
+
+            ranked = sorted(results, key=lambda r: r.overall_score, reverse=True)
+            summary_data = []
+            for rank, result in enumerate(ranked, 1):
+                summary_data.append({
+                    'Rank': rank,
+                    'Candidate ID': result.candidate.candidate_id,
+                    'Overall Score': f"{result.overall_score:.2f}/10",
+                    'Recommendation': result.recommendation[:80] + "..." if len(result.recommendation) > 80 else result.recommendation
                 })
 
-            st.write(f"Found {len(candidates)} candidates")
+            st.dataframe(pd.DataFrame(summary_data), width=None, hide_index=True)
 
-            # Progress tracking
-            progress_bar = st.progress(0)
-            status_text = st.empty()
+            # Store results
+            st.session_state.evaluation_results.extend(results)
 
-            evaluator = st.session_state.evaluator
-            results = []
+            # Export options
+            st.markdown("### 📥 Download Results")
 
-            for i, candidate in enumerate(candidates):
-                status_text.text(f"Evaluating {i+1}/{len(candidates)}: {candidate['candidate_id']}")
-                progress_bar.progress((i + 1) / len(candidates))
+            output_dir = Path("./results")
+            output_dir.mkdir(exist_ok=True)
 
-                try:
-                    result = evaluator.evaluate_candidate(
-                        candidate_id=candidate['candidate_id'],
-                        material_paths=candidate['material_paths'],
-                        candidate_name=candidate.get('candidate_name')
-                    )
-                    results.append(result)
-                except Exception as e:
-                    st.warning(f"Failed to evaluate {candidate['candidate_id']}: {e}")
+            # Export all evaluations
+            for result in results:
+                json_path = output_dir / f"{result.candidate.candidate_id}_evaluation.json"
+                JSONExporter.export_evaluation(result, json_path)
 
-            status_text.text("Evaluation complete!")
+            # Create batch CSV
+            csv_path = output_dir / "batch_results.csv"
+            CSVExporter.export_batch(results, csv_path)
 
-            if results:
-                st.success(f"✅ Successfully evaluated {len(results)}/{len(candidates)} candidates")
+            with open(csv_path, 'rb') as f:
+                st.download_button(
+                    "📊 Download Batch Results (CSV)",
+                    data=f,
+                    file_name="batch_results.csv",
+                    mime="text/csv"
+                )
 
-                # Display summary
-                st.markdown("### Results Summary")
+            # Comparison report
+            if generate_comparison and len(results) > 1:
+                with st.spinner("Generating comparison report..."):
+                    comparison = evaluator.compare_candidates(results)
 
-                summary_data = []
-                for result in sorted(results, key=lambda r: r.overall_score, reverse=True):
-                    summary_data.append({
-                        'Candidate ID': result.candidate.candidate_id,
-                        'Name': result.candidate.name or '-',
-                        'Overall Score': f"{result.overall_score:.2f}",
-                        'Recommendation': result.recommendation
-                    })
+                    md_path = output_dir / "comparison.md"
+                    from candidate_evaluator.exporters.comparison_exporter import ComparisonExporter
+                    ComparisonExporter.export_comparison(comparison, md_path)
 
-                st.dataframe(pd.DataFrame(summary_data), use_container_width=True, hide_index=True)
+                    with open(md_path, 'rb') as f:
+                        st.download_button(
+                            "📄 Download Comparison Report (Markdown)",
+                            data=f,
+                            file_name="comparison.md",
+                            mime="text/markdown"
+                        )
 
-                # Store results
-                st.session_state.evaluation_results.extend(results)
+            # Research reports
+            if generate_research:
+                with st.spinner("Generating research reports..."):
+                    for result in results:
+                        research_report = evaluator.generate_research_report(result)
+                        research_path = output_dir / f"{result.candidate.candidate_id}_research.md"
+                        from candidate_evaluator.exporters.research_exporter import ResearchPaperExporter
+                        ResearchPaperExporter.export_research_paper(research_report, research_path, format='markdown')
 
-                # Export
-                output_dir = Path("./results")
-                output_dir.mkdir(exist_ok=True)
+                    st.success("Research reports generated!")
 
-                csv_path = output_dir / "batch_results.csv"
-                CSVExporter.export_batch(results, csv_path)
+        else:
+            st.error("No candidates were successfully evaluated")
 
-                with open(csv_path, 'rb') as f:
-                    st.download_button(
-                        "Download Batch Results (CSV)",
-                        data=f,
-                        file_name="batch_results.csv",
-                        mime="text/csv"
-                    )
+    except Exception as e:
+        st.error(f"Error during batch evaluation: {e}")
+        st.exception(e)
 
-                if generate_comparison and len(results) > 1:
-                    with st.spinner("Generating comparison report..."):
-                        comparison = evaluator.compare_candidates(results)
 
-                        md_path = output_dir / "comparison.md"
-                        MarkdownExporter.export_comparison(comparison, md_path)
+def batch_evaluate_csv(csv_file, generate_comparison):
+    """Evaluate batch from CSV file"""
+    st.info("Batch evaluation can take several minutes depending on the number of candidates.")
 
-                        with open(md_path, 'rb') as f:
-                            st.download_button(
-                                "Download Comparison Report (Markdown)",
-                                data=f,
-                                file_name="comparison.md",
-                                mime="text/markdown"
-                            )
+    try:
+        # Load CSV
+        import csv
+        import io
 
-            else:
-                st.error("No candidates were successfully evaluated")
+        content = csv_file.read().decode('utf-8')
+        reader = csv.DictReader(io.StringIO(content))
 
-        except Exception as e:
-            st.error(f"Error during batch evaluation: {e}")
-            st.exception(e)
+        candidates = []
+        for row in reader:
+            material_paths = row['material_paths'].split(';')
+            material_paths = [p.strip() for p in material_paths]
+
+            candidates.append({
+                'candidate_id': row['candidate_id'],
+                'candidate_name': row.get('name'),
+                'material_paths': material_paths
+            })
+
+        st.write(f"Found {len(candidates)} candidates")
+
+        # Progress tracking
+        progress_bar = st.progress(0)
+        status_text = st.empty()
+
+        evaluator = st.session_state.evaluator
+        results = []
+
+        for i, candidate in enumerate(candidates):
+            status_text.text(f"Evaluating {i+1}/{len(candidates)}: {candidate['candidate_id']}")
+            progress_bar.progress((i + 1) / len(candidates))
+
+            try:
+                result = evaluator.evaluate_candidate(
+                    candidate_id=candidate['candidate_id'],
+                    material_paths=candidate['material_paths'],
+                    candidate_name=candidate.get('candidate_name')
+                )
+                results.append(result)
+            except Exception as e:
+                st.warning(f"Failed to evaluate {candidate['candidate_id']}: {e}")
+
+        status_text.text("Evaluation complete!")
+
+        if results:
+            st.success(f"✅ Successfully evaluated {len(results)}/{len(candidates)} candidates")
+
+            # Display summary
+            st.markdown("### Results Summary")
+
+            summary_data = []
+            for result in sorted(results, key=lambda r: r.overall_score, reverse=True):
+                summary_data.append({
+                    'Candidate ID': result.candidate.candidate_id,
+                    'Name': result.candidate.name or '-',
+                    'Overall Score': f"{result.overall_score:.2f}",
+                    'Recommendation': result.recommendation
+                })
+
+            st.dataframe(pd.DataFrame(summary_data), width=None, hide_index=True)
+
+            # Store results
+            st.session_state.evaluation_results.extend(results)
+
+            # Export
+            output_dir = Path("./results")
+            output_dir.mkdir(exist_ok=True)
+
+            csv_path = output_dir / "batch_results.csv"
+            CSVExporter.export_batch(results, csv_path)
+
+            with open(csv_path, 'rb') as f:
+                st.download_button(
+                    "Download Batch Results (CSV)",
+                    data=f,
+                    file_name="batch_results.csv",
+                    mime="text/csv"
+                )
+
+            if generate_comparison and len(results) > 1:
+                with st.spinner("Generating comparison report..."):
+                    comparison = evaluator.compare_candidates(results)
+
+                    md_path = output_dir / "comparison.md"
+                    from candidate_evaluator.exporters.comparison_exporter import ComparisonExporter
+                    ComparisonExporter.export_comparison(comparison, md_path)
+
+                    with open(md_path, 'rb') as f:
+                        st.download_button(
+                            "Download Comparison Report (Markdown)",
+                            data=f,
+                            file_name="comparison.md",
+                            mime="text/markdown"
+                        )
+
+        else:
+            st.error("No candidates were successfully evaluated")
+
+    except Exception as e:
+        st.error(f"Error during batch evaluation: {e}")
+        st.exception(e)
 
 
 def view_results_page():
