@@ -37,6 +37,7 @@ CRITICAL EVALUATION PRINCIPLES:
 6. **AVOID CENTRAL TENDENCY BIAS**: Do not default to middle scores. If evidence is weak, score low (1-4). If evidence is strong, score high (7-10). Differentiate meaningfully.
 
 Remember: Your evaluation will be audited. All quotes will be verified against source materials. Hallucinations or unsupported claims will be flagged.
+"""
 
 
 def _get_criterion_details() -> Dict[str, Dict[str, str]]:
