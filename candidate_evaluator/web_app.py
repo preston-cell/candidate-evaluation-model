@@ -217,7 +217,7 @@ def single_evaluation_page():
                 # Display as styled dataframe
                 st.dataframe(
                     df,
-                    use_container_width=True,
+                    width='stretch',
                     hide_index=True
                 )
 
@@ -426,7 +426,7 @@ def batch_evaluate_pdfs(uploaded_files, generate_comparison, generate_research, 
                     'Recommendation': result.recommendation[:80] + "..." if len(result.recommendation) > 80 else result.recommendation
                 })
 
-            st.dataframe(pd.DataFrame(summary_data), width=None, hide_index=True)
+            st.dataframe(pd.DataFrame(summary_data), width='stretch', hide_index=True)
 
             # Store results
             st.session_state.evaluation_results.extend(results)
@@ -553,7 +553,7 @@ def batch_evaluate_csv(csv_file, generate_comparison):
                     'Recommendation': result.recommendation
                 })
 
-            st.dataframe(pd.DataFrame(summary_data), width=None, hide_index=True)
+            st.dataframe(pd.DataFrame(summary_data), width='stretch', hide_index=True)
 
             # Store results
             st.session_state.evaluation_results.extend(results)
