@@ -10,33 +10,76 @@ CRITICAL EVALUATION PRINCIPLES:
 
 1. **EVIDENCE-ONLY SCORING**: Every score MUST be justified with direct quotes and specific examples from the materials. NO ASSUMPTIONS.
 
-2. **USE THE FULL SCALE APPROPRIATELY**:
-   - Scores 1-3: Significant deficiencies or no evidence
-   - Scores 4-6: Basic to adequate competency
-   - Scores 7-8: Strong, above-average performance
-   - Scores 9-10: Exceptional, top-tier candidates
+2. **EXTREME SKEPTICISM OF STATED QUALITIES**:
+   - "I am creative/analytical/detail-oriented" = WORTHLESS, score 1-2
+   - "I have strong work ethic" = MEANINGLESS FLUFF, score 1-2
+   - "I am passionate about X" = EMPTY WORDS, score 1-2
+   - Generic supervisor praise without specifics = DISCOUNT HEAVILY
+
+   **ONLY count as evidence:**
+   - Specific actions taken: "I designed X system that reduced costs by 40%"
+   - Concrete outcomes: "Published 3 papers, cited 50+ times"
+   - Specific incidents: "When the server crashed at 2am, I debugged for 6 hours and found the race condition"
+   - Measurable results: "Improved test coverage from 20% to 85%"
+
+3. **DETECT AND REJECT APPLICATION FLUFF**:
+   - Watch for generic phrases that could apply to anyone
+   - "Demonstrated leadership" without specifics = fluff
+   - "Excellent problem-solver" without examples = fluff
+   - "Innovative thinker" without concrete innovations = fluff
+   - Vague supervisor letters ("great student", "hard worker") = low value unless backed by specific incidents
+
+4. **USE THE FULL SCALE APPROPRIATELY**:
+   - Scores 1-3: Significant deficiencies or no evidence OR only has fluff/stated qualities
+   - Scores 4-6: Basic to adequate competency with some concrete evidence
+   - Scores 7-8: Strong, above-average performance with multiple concrete examples
+   - Scores 9-10: Exceptional, top-tier candidates with transformative achievements
 
    Do NOT artificially cluster scores in the 5-7 range. Use the full scale when evidence warrants it.
 
-3. **ANTI-HALLUCINATION PROTOCOL**:
+5. **ANTI-HALLUCINATION PROTOCOL**:
    - Only cite information that appears in the provided materials
    - Use direct quotes verbatim - do not paraphrase or embellish
    - If something is unclear, state "Evidence unclear" rather than making assumptions
    - When evidence is absent for a criterion, score 1-3 accordingly
 
-4. **DISTINGUISH STATED VS. DEMONSTRATED**:
-   - "I am creative" = NOT evidence (score 1-3)
-   - "I designed X system which reduced costs by Y%" = Evidence (score based on impact)
+6. **DISTINGUISH STATED VS. DEMONSTRATED**:
+   - Stated: "I am creative" = NOT evidence (score 1-3)
+   - Demonstrated: "I designed X system which reduced costs by Y%" = Evidence (score based on impact)
+   - Stated: "My supervisor says I work hard" = WEAK (need specific examples)
+   - Demonstrated: "My supervisor noted I debugged a production issue for 12 hours straight to meet deadline" = STRONG
 
-5. **TRANSPARENCY REQUIREMENT**:
+7. **TRANSPARENCY REQUIREMENT**:
    - Every claim must trace directly to source material
    - Provide exact quotes with source filenames
    - Explain your reasoning step-by-step
    - State explicitly what evidence supports what score level
+   - Call out when material contains only fluff
 
-6. **AVOID CENTRAL TENDENCY BIAS**: Do not default to middle scores. If evidence is weak, score low (1-4). If evidence is strong, score high (7-10). Differentiate meaningfully.
+8. **AVOID CENTRAL TENDENCY BIAS**: Do not default to middle scores. If evidence is weak or only contains fluff, score low (1-4). If evidence is strong with concrete examples, score high (7-10). Differentiate meaningfully.
 
-Remember: Your evaluation will be audited. All quotes will be verified against source materials. Hallucinations or unsupported claims will be flagged.
+9. **BE CONCISE - AVOID OUTPUT FLUFF**:
+   - Don't repeat generic praise from applications
+   - Don't use flowery language in your assessment
+   - Be direct and factual
+   - Skip redundant summaries
+   - Focus on specific evidence, not overall impressions
+
+**EXAMPLES OF WHAT TO REJECT:**
+
+❌ "The candidate demonstrates interdisciplinary thinking" - TOO VAGUE
+✅ "The candidate combined machine learning with clinical data to develop a diagnostic tool (accuracy 92%)"
+
+❌ "Strong endorsement from supervisor emphasizing unwavering work ethic" - GENERIC FLUFF
+✅ "Supervisor noted candidate stayed until 3am three nights in a row to fix critical production bug"
+
+❌ "Genuine motivation for socially impactful work" - STATED QUALITY
+✅ "Shifted entire research focus from aeronautics to prosthetics after attending limb loss clinic"
+
+❌ "Proven ability to bridge disciplines" - EMPTY CLAIM
+✅ "Published interdisciplinary paper combining neuroscience and robotics in Nature Neuroscience"
+
+Remember: Your evaluation will be audited. All quotes will be verified against source materials. Rejecting fluff and stated qualities is REQUIRED, not optional. Most applications are 80% fluff - your job is to find the 20% that's real evidence.
 """
 
 
@@ -205,46 +248,78 @@ Then provide an overall assessment:
 
 ## Critical Evaluation Requirements
 
-### 1. USE THE FULL SCALE
-- Do NOT cluster scores in the 5-7 range by default
-- If evidence is weak or absent, score 1-4 accordingly
-- If evidence is strong and meets high-tier criteria, score 7-10
-- Differentiate meaningfully between candidates
+### 1. REJECT APPLICATION FLUFF (MOST IMPORTANT)
+- **80% of applications are filler words with no real meaning**
+- Generic statements ("I am passionate", "strong work ethic", "interdisciplinary thinking") = FLUFF = score 1-2
+- Vague supervisor praise ("excellent student", "hard worker") without specific examples = FLUFF
+- Self-serving claims that anyone could write = NOT EVIDENCE
 
-### 2. EVIDENCE TRANSPARENCY (Anti-Hallucination Protocol)
+**Only accept:**
+- Specific actions with outcomes: "Built X system that achieved Y result"
+- Concrete incidents: "When Z happened, I did A and achieved B"
+- Measurable achievements: "Published N papers, cited M times"
+- Specific examples from supervisors: "Candidate stayed 12 hours to fix production bug"
+
+**Examples to REJECT:**
+❌ "Demonstrates interdisciplinary thinking" → TOO VAGUE
+❌ "Genuine motivation for impact" → STATED QUALITY
+❌ "Unwavering work ethic" → GENERIC PRAISE
+❌ "Proven ability to bridge disciplines" → EMPTY CLAIM
+
+**Examples to ACCEPT:**
+✅ "Combined ML + clinical data → diagnostic tool (92% accuracy)"
+✅ "Shifted from aeronautics to prosthetics after attending clinic"
+✅ "Supervisor: 'stayed 3 nights until 3am to fix critical bug'"
+✅ "Published interdisciplinary paper in Nature Neuroscience"
+
+### 2. BE CONCISE IN YOUR OUTPUT
+- Don't repeat flowery language from applications
+- Don't write "The candidate demonstrates X thinking..." - just cite the evidence
+- Skip redundant summaries
+- Be direct and factual
+
+### 3. USE THE FULL SCALE
+- Do NOT cluster scores in the 5-7 range by default
+- If evidence is only fluff/stated qualities, score 1-4
+- If evidence has some concrete examples, score 5-6
+- If evidence is strong with multiple specific examples, score 7-8
+- If evidence shows transformative achievements, score 9-10
+
+### 4. EVIDENCE TRANSPARENCY (Anti-Hallucination Protocol)
 - **MANDATORY**: Provide AT LEAST 2-3 direct quotes from materials for each criterion
 - Quotes must be VERBATIM - do not paraphrase, summarize, or embellish
 - Include source filename for every quote
-- If you cannot find evidence, state "No evidence found in materials" and score 1-2
+- If you cannot find concrete evidence (only fluff), state "Only generic statements found, no concrete evidence" and score 1-2
 
-### 3. EXPLICIT RUBRIC MAPPING
+### 5. EXPLICIT RUBRIC MAPPING
 - In your reasoning, explicitly state which tier (1-2, 3-4, 5-6, 7-8, or 9-10) the evidence supports
 - Explain WHY the evidence maps to that tier using the behavioral anchors provided
-- Example: "The candidate scores a 7 because they provide multiple concrete examples of innovative solutions with measurable improvements, which aligns with Tier 4 (7-8) in the rubric."
+- Call out when quotes are fluff vs. concrete evidence
 
-### 4. DISTINGUISH STATED VS. DEMONSTRATED
+### 6. DISTINGUISH STATED VS. DEMONSTRATED
 - Stated qualities ("I am detail-oriented") = score 1-2
 - Vague claims ("I developed solutions") = score 3-4
 - Specific examples with outcomes = score 5-8
 - Exceptional achievements with documented impact = score 9-10
 
-### 5. CONFIDENCE LEVELS MUST REFLECT EVIDENCE QUANTITY
-- **Low confidence**: 0-1 pieces of evidence; unclear or ambiguous examples
-- **Medium confidence**: 2-3 pieces of clear evidence
-- **High confidence**: 4+ pieces of strong, unambiguous evidence
+### 7. CONFIDENCE LEVELS MUST REFLECT EVIDENCE QUANTITY
+- **Low confidence**: 0-1 pieces of concrete evidence; mostly fluff
+- **Medium confidence**: 2-3 pieces of concrete (not fluff) evidence
+- **High confidence**: 4+ pieces of strong, specific evidence
 
-### 6. NO ASSUMPTIONS OR INFERENCES
+### 8. NO ASSUMPTIONS OR INFERENCES
 - Only evaluate what is explicitly stated in the materials
 - If something is implied but not stated, do not score it
-- If evidence is ambiguous, state this in notes and score conservatively
+- If evidence is ambiguous or vague, score as fluff (1-4)
 
-### 7. AUDIT TRAIL
+### 9. AUDIT TRAIL
 Your evaluation will be audited by:
 - Verifying all quotes against source materials
-- Checking that scores align with rubric tiers
-- Ensuring no unsupported claims or hallucinations
+- Checking that fluff was rejected and not scored highly
+- Ensuring scores align with rubric tiers
+- Confirming no unsupported claims
 
-**REMEMBER**: This is NOT about being harsh or generous. It's about accurately mapping evidence to behavioral anchors. Some candidates will score low (1-4), some average (5-6), and some high (7-10). Use the scale that matches the evidence.
+**REMEMBER**: Your job is to filter out the 80% fluff and find the 20% real evidence. Be skeptical. Most applications deserve low scores because they're mostly empty words.
 
 Please provide your complete evaluation now, following the JSON format specified above.
 """
