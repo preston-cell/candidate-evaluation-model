@@ -380,6 +380,186 @@ def batch(ctx, candidates_file, output_dir, formats, compare):
 
 
 @cli.command()
+@click.argument('folder', type=click.Path(exists=True, file_okay=False, dir_okay=True))
+@click.option('--output-dir', '-o', type=click.Path(), help='Output directory for results')
+@click.option('--format', '-f', 'formats', multiple=True,
+              type=click.Choice(['json', 'markdown', 'html', 'csv'], case_sensitive=False),
+              default=['json', 'markdown'],
+              help='Output format(s)')
+@click.option('--pattern', '-p', default='*.pdf', help='File pattern to match (default: *.pdf)')
+@click.option('--compare', is_flag=True, help='Generate comparison report after batch evaluation')
+@click.option('--research', is_flag=True, help='Generate research reports for each candidate')
+@click.option('--max-tokens', type=int, default=8192, help='Max tokens for API calls (higher = more detailed, default: 8192)')
+@click.pass_context
+def batch_folder(ctx, folder, output_dir, formats, pattern, compare, research, max_tokens):
+    """
+    Evaluate all candidates from PDFs in a folder (QUALITY MODE).
+
+    This command processes each PDF as a separate candidate with a dedicated API call
+    for maximum evaluation depth and quality. Cost is not optimized - quality is.
+
+    FOLDER: Directory containing candidate PDFs
+
+    Each PDF should contain all candidate materials (resume, cover letter,
+    interview responses, recommendation letters, etc.)
+
+    Filename becomes the candidate ID (e.g., "candidate_001.pdf" -> "candidate_001")
+
+    Example:
+        candidate-evaluator batch-folder ./dropbox --output-dir ./results --compare
+    """
+    config = ctx.obj['config']
+    logger = ctx.obj['logger']
+
+    # Override max_tokens for quality
+    config.api.max_tokens = max_tokens
+
+    # Set output directory
+    if not output_dir:
+        output_dir = config.output.output_dir
+
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    # Find all matching files
+    folder_path = Path(folder)
+    pdf_files = sorted(folder_path.glob(pattern))
+
+    if not pdf_files:
+        console.print(f"[red]No files matching '{pattern}' found in {folder}[/red]")
+        sys.exit(1)
+
+    console.print(f"\n[bold blue]Batch Folder Evaluation (Quality Mode)[/bold blue]")
+    console.print(f"Folder: {folder}")
+    console.print(f"Pattern: {pattern}")
+    console.print(f"Found: {len(pdf_files)} candidate(s)")
+    console.print(f"Max tokens per candidate: {max_tokens}")
+    console.print(f"Output directory: {output_path}\n")
+
+    # Create evaluator
+    evaluator = CandidateEvaluator(config)
+
+    # Evaluate all candidates
+    results = []
+    failed = []
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console
+    ) as progress:
+
+        for i, pdf_path in enumerate(pdf_files, 1):
+            # Extract candidate ID from filename (remove extension)
+            candidate_id = pdf_path.stem
+
+            task = progress.add_task(
+                description=f"[cyan]Evaluating {i}/{len(pdf_files)}: {candidate_id}[/cyan]",
+                total=None
+            )
+
+            try:
+                # Evaluate with full context
+                result = evaluator.evaluate_candidate(
+                    candidate_id=candidate_id,
+                    material_paths=[str(pdf_path)],
+                    candidate_name=None
+                )
+
+                results.append(result)
+                progress.update(task, description=f"[green]✓ {candidate_id}: {result.overall_score:.2f}/10[/green]")
+
+                # Export individual results
+                candidate_dir = output_path / candidate_id
+                candidate_dir.mkdir(exist_ok=True)
+
+                if 'json' in formats:
+                    json_path = candidate_dir / f"{candidate_id}_evaluation.json"
+                    JSONExporter.export_evaluation(result, json_path)
+
+                if 'markdown' in formats:
+                    md_path = candidate_dir / f"{candidate_id}_evaluation.md"
+                    MarkdownExporter.export_evaluation(result, md_path, include_evidence=True)
+
+                if 'html' in formats:
+                    html_path = candidate_dir / f"{candidate_id}_evaluation.html"
+                    HTMLExporter.export_evaluation(result, html_path, include_evidence=True)
+
+                if 'csv' in formats:
+                    csv_path = candidate_dir / f"{candidate_id}_evaluation.csv"
+                    CSVExporter.export_evaluation(result, csv_path)
+
+                # Generate research report if requested
+                if research:
+                    research_report = evaluator.generate_research_report(result)
+                    research_path = candidate_dir / f"{candidate_id}_research_report.md"
+                    ResearchPaperExporter.export_research_paper(
+                        research_report,
+                        research_path,
+                        format='markdown'
+                    )
+
+            except Exception as e:
+                progress.update(task, description=f"[red]✗ {candidate_id}: {str(e)[:50]}[/red]")
+                logger.error(f"Failed to evaluate {candidate_id}: {e}", exc_info=True)
+                failed.append({'candidate_id': candidate_id, 'error': str(e)})
+                continue
+
+    # Print summary
+    console.print(f"\n[bold green]Batch Evaluation Complete[/bold green]")
+    console.print(f"Successfully evaluated: {len(results)}/{len(pdf_files)}")
+
+    if failed:
+        console.print(f"[red]Failed: {len(failed)}[/red]")
+        for fail in failed:
+            console.print(f"  • {fail['candidate_id']}: {fail['error'][:80]}")
+
+    if not results:
+        console.print("[red]No candidates were successfully evaluated[/red]")
+        sys.exit(1)
+
+    # Display rankings
+    console.print("\n[bold]Rankings:[/bold]")
+    ranked = sorted(results, key=lambda r: r.overall_score, reverse=True)
+
+    ranking_table = Table(title="Candidate Rankings")
+    ranking_table.add_column("Rank", justify="right", style="cyan")
+    ranking_table.add_column("Candidate ID", style="magenta")
+    ranking_table.add_column("Overall Score", justify="right", style="green")
+    ranking_table.add_column("Recommendation", style="yellow")
+
+    for rank, result in enumerate(ranked, 1):
+        ranking_table.add_row(
+            str(rank),
+            result.candidate.candidate_id,
+            f"{result.overall_score:.2f}/10",
+            result.recommendation[:50] + "..." if len(result.recommendation) > 50 else result.recommendation
+        )
+
+    console.print(ranking_table)
+
+    # Generate comparison report if requested
+    if compare and len(results) > 1:
+        console.print(f"\n[bold cyan]Generating comparison report...[/bold cyan]")
+
+        try:
+            comparison = evaluator.compare_candidates(results)
+
+            # Export comparison
+            comparison_path = output_path / "comparison_report.md"
+            from candidate_evaluator.exporters.comparison_exporter import ComparisonExporter
+            ComparisonExporter.export_comparison(comparison, comparison_path)
+
+            console.print(f"[green]✓ Comparison report saved to: {comparison_path}[/green]")
+
+        except Exception as e:
+            console.print(f"[red]Failed to generate comparison: {e}[/red]")
+            logger.error(f"Comparison generation failed: {e}", exc_info=True)
+
+    console.print(f"\n[bold green]All results saved to: {output_path}[/bold green]\n")
+
+
+@cli.command()
 @click.pass_context
 def init(ctx):
     """
