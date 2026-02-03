@@ -145,6 +145,97 @@ class EvaluationResult(BaseModel):
         }
 
 
+class HolisticEvidence(BaseModel):
+    """Structured evidence for holistic evaluation"""
+    quote: str = Field(description="Exact quote from materials")
+    source: str = Field(description="Source document name")
+    context: str = Field(default="", description="What this evidence demonstrates")
+
+
+class InnovationPotential(BaseModel):
+    """Innovation potential assessment for holistic evaluation"""
+    level: str = Field(description="high, medium, or low")
+    confidence: str = Field(default="medium", description="high, medium, or low confidence")
+    reasoning: str = Field(description="Detailed explanation of the assessment")
+    # Support both old format (key_evidence as strings) and new format (structured evidence)
+    key_evidence: List[str] = Field(default_factory=list, description="Legacy: Direct quotes")
+    evidence: List[HolisticEvidence] = Field(default_factory=list, description="Structured evidence items")
+
+
+class ProgramFit(BaseModel):
+    """Program fit assessment for holistic evaluation"""
+    level: str = Field(description="strong, moderate, or weak")
+    confidence: str = Field(default="medium", description="high, medium, or low confidence")
+    detailed_analysis: str = Field(default="", description="Detailed analysis of program fit")
+    strengths_for_program: List[str] = Field(default_factory=list)
+    concerns: List[str] = Field(default_factory=list)
+    evidence: List[HolisticEvidence] = Field(default_factory=list, description="Structured evidence items")
+
+
+class NotableQuality(BaseModel):
+    """A notable quality identified in holistic evaluation"""
+    quality: str = Field(description="Name of the quality")
+    confidence: str = Field(default="medium", description="high, medium, or low confidence")
+    # Support both old format (single string) and new format (list of structured evidence)
+    evidence: Any = Field(description="Evidence from materials (string or list of HolisticEvidence)")
+    significance: str = Field(description="Why this matters for the program")
+
+
+class RedFlag(BaseModel):
+    """A red flag or concern identified in holistic evaluation"""
+    flag: str = Field(description="Description of the concern")
+    severity: str = Field(default="medium", description="high, medium, or low severity")
+    evidence: str = Field(default="", description="Supporting evidence or note about missing evidence")
+
+
+class InterviewQuestion(BaseModel):
+    """A suggested interview question with context"""
+    category: str = Field(default="General", description="Question category/purpose")
+    question: str = Field(description="The question to ask")
+    purpose: str = Field(default="", description="What you're trying to learn")
+
+
+class HolisticEvaluationResult(BaseModel):
+    """Complete holistic (criteria-free) evaluation result for a candidate"""
+    candidate: CandidateProfile
+    overall_assessment: str = Field(description="3-4 paragraph holistic assessment")
+    innovation_potential: InnovationPotential
+    program_fit: ProgramFit
+    notable_qualities: List[NotableQuality] = Field(default_factory=list)
+    # Support both old format (list of strings) and new format (list of RedFlag)
+    red_flags: Any = Field(default_factory=list, description="Red flags (strings or RedFlag objects)")
+    # Support both old format (list of strings) and new format (list of InterviewQuestion)
+    questions_for_interview: Any = Field(default_factory=list, description="Interview questions")
+    overall_score: float = Field(ge=1, le=10, description="Overall score from 1-10")
+    score_justification: str = Field(default="", description="Detailed justification for the score")
+    recommendation: str = Field(description="Strong fit / Potential fit / Not recommended")
+    interview_decision: bool = Field(description="Binary recommendation for interview")
+    interview_decision_reasoning: str = Field(default="", description="Reasoning for interview decision")
+    metadata: Dict[str, Any] = Field(
+        default_factory=dict,
+        description="Additional metadata (model used, processing time, etc.)"
+    )
+
+    def to_summary_dict(self) -> Dict[str, Any]:
+        """Convert to summary dictionary for quick reference"""
+        # Handle both old and new red_flags format
+        red_flags_count = len(self.red_flags) if isinstance(self.red_flags, list) else 0
+
+        return {
+            "candidate_id": self.candidate.candidate_id,
+            "candidate_name": self.candidate.name,
+            "overall_score": self.overall_score,
+            "evaluation_date": self.candidate.evaluation_date.isoformat(),
+            "recommendation": self.recommendation,
+            "interview_decision": self.interview_decision,
+            "innovation_potential": self.innovation_potential.level,
+            "innovation_confidence": self.innovation_potential.confidence,
+            "program_fit": self.program_fit.level,
+            "program_fit_confidence": self.program_fit.confidence,
+            "red_flags_count": red_flags_count,
+        }
+
+
 class ComparisonResult(BaseModel):
     """Comparison of multiple candidates"""
     candidates: List[EvaluationResult]
@@ -159,3 +250,91 @@ class ComparisonResult(BaseModel):
         default_factory=list,
         description="Key insights from the comparison"
     )
+
+
+class ExpertRating(BaseModel):
+    """Expert/human rating for a candidate"""
+    candidate_id: str = Field(description="Unique identifier matching AI evaluation")
+    rater_id: Optional[str] = Field(default=None, description="Identifier for the expert rater")
+    scores: Dict[str, float] = Field(
+        default_factory=dict,
+        description="Criterion name -> score mapping"
+    )
+    overall_score: Optional[float] = Field(default=None, description="Overall expert score if provided")
+    interview_decision: Optional[bool] = Field(
+        default=None,
+        description="Whether expert recommended for interview"
+    )
+    comments: Dict[str, str] = Field(
+        default_factory=dict,
+        description="Criterion name -> comment mapping"
+    )
+    rating_date: Optional[datetime] = Field(default=None)
+
+
+class ExpertComparisonMetrics(BaseModel):
+    """Metrics comparing AI evaluations to expert ratings"""
+    total_candidates: int
+    matched_candidates: int = Field(description="Candidates with both AI and expert ratings")
+
+    # Per-criterion metrics
+    criterion_mae: Dict[str, float] = Field(
+        default_factory=dict,
+        description="Mean Absolute Error per criterion"
+    )
+    criterion_correlation: Dict[str, float] = Field(
+        default_factory=dict,
+        description="Pearson correlation coefficient per criterion"
+    )
+
+    # Overall metrics
+    overall_mae: float = Field(description="Mean Absolute Error for overall scores")
+    overall_correlation: float = Field(description="Correlation for overall scores")
+
+    # Classification metrics (for interview recommendations)
+    sensitivity: Optional[float] = Field(
+        default=None,
+        description="True positive rate - % of expert-recommended candidates AI also recommended"
+    )
+    specificity: Optional[float] = Field(
+        default=None,
+        description="True negative rate - % of expert-rejected candidates AI also rejected"
+    )
+    cohens_kappa: Optional[float] = Field(
+        default=None,
+        description="Inter-rater agreement statistic"
+    )
+
+    # Disagreement analysis
+    high_disagreement_candidates: List[str] = Field(
+        default_factory=list,
+        description="Candidate IDs where AI and expert strongly disagree"
+    )
+    ai_bias: Optional[str] = Field(
+        default=None,
+        description="Detected systematic bias (e.g., 'AI scores higher on average')"
+    )
+
+
+class DistributionAnalysis(BaseModel):
+    """Analysis of score distributions across candidate groups"""
+    group_name: str = Field(description="Name of the group (e.g., 'Top 50%', 'Bottom 50%')")
+    candidate_count: int
+    candidate_ids: List[str]
+
+    # Overall statistics
+    mean_overall_score: float
+    median_overall_score: float
+    std_overall_score: float
+    min_overall_score: float
+    max_overall_score: float
+
+    # Per-criterion statistics
+    criterion_stats: Dict[str, Dict[str, float]] = Field(
+        default_factory=dict,
+        description="Criterion -> {mean, median, std, min, max}"
+    )
+
+    # Common patterns
+    common_strengths: List[str] = Field(default_factory=list)
+    common_weaknesses: List[str] = Field(default_factory=list)

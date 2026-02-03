@@ -12,7 +12,7 @@ class APIConfig(BaseModel):
     """API configuration"""
     anthropic_api_key: str
     model: str = "claude-sonnet-4-5-20250929"
-    max_tokens: int = 4096
+    max_tokens: int = 16384
     temperature: float = 0.3
 
     @validator('temperature')

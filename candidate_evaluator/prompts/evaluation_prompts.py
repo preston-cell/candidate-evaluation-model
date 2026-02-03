@@ -65,6 +65,30 @@ CRITICAL EVALUATION PRINCIPLES:
    - Skip redundant summaries
    - Focus on specific evidence, not overall impressions
 
+10. **EXPERT-LEVEL SKEPTICISM (CRITICAL FOR SPECIFICITY)**:
+   - When evidence is unclear or ambiguous, score LOWER, not higher
+   - If you think "hard to know" or "difficult to assess" → score 4 or below
+   - Do NOT extrapolate or infer qualities from limited evidence
+   - If you cannot point to SPECIFIC quotes demonstrating a quality, score 1-4
+   - Generic descriptions like "contributed to projects" without specifics = score 3-4 maximum
+   - One vague example is NOT enough for score 5+ (requires clear, specific evidence)
+
+11. **PASSIVE VOICE DETECTION**:
+   - Passive voice often indicates lack of agency or unclear contribution
+   - "Was involved in the project" → Who did what? Downgrade if unclear
+   - "The project was completed" → By whom? Downgrade if candidate's role unclear
+   - "Improvements were made" → Who made them? Score lower if ambiguous
+   - PREFER active voice with specific outcomes: "I designed X which achieved Y"
+   - Passive voice without clarification = score 4 or below for that evidence
+
+12. **UNCERTAINTY = CONSERVATIVE SCORING**:
+   - If you find yourself thinking "this might indicate..." → score lower
+   - Only score 5+ when you have CLEAR, UNAMBIGUOUS evidence
+   - When in doubt between two adjacent scores, choose the LOWER one
+   - "Probably has this quality" is NOT evidence → score 4 or below
+   - "Seems like they might be..." → score 4 or below
+   - Absence of evidence is evidence of absence → score accordingly
+
 **EXAMPLES OF WHAT TO REJECT:**
 
 ❌ "The candidate demonstrates interdisciplinary thinking" - TOO VAGUE
@@ -78,6 +102,33 @@ CRITICAL EVALUATION PRINCIPLES:
 
 ❌ "Proven ability to bridge disciplines" - EMPTY CLAIM
 ✅ "Published interdisciplinary paper combining neuroscience and robotics in Nature Neuroscience"
+
+**EXPERT CALIBRATION EXAMPLES (How real expert raters score):**
+
+Example 1 - Vague creativity claim:
+- Candidate says: "I developed innovative solutions to complex problems"
+- Expert score: 3-4 (expert says "hard to know what this means")
+- NOT 5-6 - no specific solution described, no methodology, no outcome
+
+Example 2 - Passive voice achievement:
+- Candidate says: "Improvements were made to the system efficiency"
+- Expert score: 3-4 (expert says "unclear if candidate drove this")
+- NOT 6-7 - no evidence of personal contribution or leadership
+
+Example 3 - Stated motivation without proof:
+- Candidate says: "I am deeply motivated by healthcare challenges"
+- Expert score: 2-3 (expert says "passion is stated, not demonstrated")
+- NOT 5-6 - no action taken to prove motivation, just words
+
+Example 4 - Clear but limited evidence:
+- Candidate says: "I redesigned the intake form, reducing processing time by 15%"
+- Expert score: 5-6 (expert says "one solid example with outcome")
+- NOT 7-8 - need multiple concrete examples for higher score
+
+Example 5 - Generic supervisor praise:
+- Supervisor says: "Outstanding work ethic and great team player"
+- Expert score: 2-3 (expert says "generic praise, no specifics")
+- NOT 5-6 - could describe anyone, not evidence
 
 Remember: Your evaluation will be audited. All quotes will be verified against source materials. Rejecting fluff and stated qualities is REQUIRED, not optional. Most applications are 80% fluff - your job is to find the 20% that's real evidence.
 """
@@ -104,7 +155,7 @@ You are evaluating a candidate's application materials using Behaviorally Anchor
 
 ## Evaluation Criteria
 
-Evaluate the candidate on each of the following THREE criteria using the detailed rubrics below:
+Evaluate the candidate on each of the following criteria using the detailed rubrics below:
 
 {criteria_details}
 
@@ -116,17 +167,17 @@ Evaluate the candidate on each of the following THREE criteria using the detaile
 - **1**: No evidence of creative thinking or innovation in materials
 - **2**: Generic statements like "I am creative" with no supporting examples; mentions creativity but provides no demonstration
 
-**Tier 2 (3-4): Below Average / Minimal Evidence**
-- **3**: One vague example of creative thinking but lacks specifics about approach or impact
-- **4**: Mentions "developed creative solutions" but doesn't explain what made them innovative; basic problem-solving without novel approaches
+**Tier 2 (3-4): Below Average / Minimal or UNCLEAR Evidence**
+- **3**: One vague example of creative thinking but lacks specifics about approach or impact; OR evidence exists but candidate's role is unclear (passive voice)
+- **4**: Mentions "developed creative solutions" but doesn't explain what made them innovative; basic problem-solving without novel approaches; OR unclear if candidate was the driver
 
-**Tier 3 (5-6): Average / Adequate Competency**
-- **5**: One clear example of creative adaptation or innovative thinking with basic description of the approach
-- **6**: Multiple instances of creative problem-solving with some specifics; shows ability to think beyond standard approaches but impact not clearly demonstrated
+**Tier 3 (5-6): Average / Adequate Competency (REQUIRES CLEAR, SPECIFIC EVIDENCE)**
+- **5**: One clear example of creative adaptation WITH specific methodology AND measurable outcome; candidate's role must be explicit (active voice)
+- **6**: Multiple instances of creative problem-solving with specifics; shows ability to think beyond standard approaches; requires at least ONE quantified outcome or verifiable result
 
-**Tier 4 (7-8): Above Average / Strong Performance**
-- **7**: Multiple concrete examples of innovative solutions with specific outcomes; demonstrates creative approaches that led to measurable improvements (e.g., "redesigned X system by Y approach, resulting in Z% improvement")
-- **8**: Consistent pattern of innovative thinking across multiple contexts; developed novel methodologies or approaches with documented impact; shows evidence of creative leadership (teaching/sharing innovative approaches with others)
+**Tier 4 (7-8): Above Average / Strong Performance (REQUIRES MULTIPLE VERIFIED EXAMPLES)**
+- **7**: Multiple (2+) concrete examples of innovative solutions with specific outcomes; demonstrates creative approaches that led to measurable improvements; MUST show candidate was primary driver (not just "involved in")
+- **8**: Consistent pattern of innovative thinking across multiple contexts; developed novel methodologies or approaches with documented impact; shows evidence of creative leadership; requires external validation (adopted by others, recognized, published)
 
 **Tier 5 (9-10): Exceptional / Outstanding**
 - **9**: Groundbreaking innovation with transformative impact; developed approaches adopted by others; published novel methodologies; demonstrates creativity at expert/thought-leader level
@@ -146,17 +197,17 @@ Evaluate the candidate on each of the following THREE criteria using the detaile
 - **1**: No evidence of problem-solving motivation; materials are entirely descriptive without showing engagement with challenges
 - **2**: Mentions "interested in problems" but no evidence of action taken
 
-**Tier 2 (3-4): Below Average / Limited Motivation**
-- **3**: Describes encountering problems but limited evidence of proactive engagement; primarily reactive problem-solving
-- **4**: Some evidence of seeking challenges but examples are shallow or lack follow-through
+**Tier 2 (3-4): Below Average / Limited or UNCLEAR Motivation**
+- **3**: Describes encountering problems but limited evidence of proactive engagement; primarily reactive problem-solving; OR stated motivation without demonstrated action
+- **4**: Some evidence of seeking challenges but examples are shallow or lack follow-through; OR motivation claimed but only supported by vague actions
 
-**Tier 3 (5-6): Average / Adequate Motivation**
-- **5**: Clear evidence of engaging with problems when encountered; shows competent problem-solving but limited evidence of seeking out challenges
-- **6**: Demonstrates proactive problem identification in familiar contexts; one or two strong examples of pursuing challenging problems with clear action steps
+**Tier 3 (5-6): Average / Adequate Motivation (REQUIRES DEMONSTRATED ACTION)**
+- **5**: Clear evidence of engaging with problems when encountered WITH specific actions taken; shows competent problem-solving with documented steps
+- **6**: Demonstrates proactive problem identification with specific examples; one or two strong examples of pursuing challenging problems with clear action steps AND outcomes
 
-**Tier 4 (7-8): Above Average / Strong Drive**
-- **7**: Multiple examples of proactively seeking out challenging problems; demonstrates sustained engagement with complex issues; evidence of pursuing additional training/skills to solve problems
-- **8**: Consistent pattern of identifying and addressing challenging problems across contexts; shows persistence through obstacles; evidence of taking significant actions to solve problems (e.g., changing fields, learning new skills, investing substantial time)
+**Tier 4 (7-8): Above Average / Strong Drive (REQUIRES SUSTAINED PATTERN)**
+- **7**: Multiple (2+) examples of proactively seeking out challenging problems; demonstrates sustained engagement with complex issues; evidence of pursuing additional training/skills with specific details
+- **8**: Consistent pattern across contexts; shows persistence through documented obstacles; evidence of significant actions (career changes, substantial time investment) with specific timeframes and outcomes
 
 **Tier 5 (9-10): Exceptional / Outstanding Drive**
 - **9**: Extraordinary commitment to problem-solving demonstrated through major life/career decisions driven by desire to address challenges; overcomes significant barriers; demonstrates exceptional persistence
@@ -176,17 +227,17 @@ Evaluate the candidate on each of the following THREE criteria using the detaile
 - **1**: Materials are entirely vague with no specific examples, metrics, or details
 - **2**: Minimal specificity; lists generic responsibilities without details (e.g., "worked on projects")
 
-**Tier 2 (3-4): Below Average / Limited Detail**
-- **3**: Some specific details but inconsistent; provides general descriptions more often than specific examples
-- **4**: Includes some specific information (e.g., technologies used, basic timeframes) but lacks depth; many important details omitted
+**Tier 2 (3-4): Below Average / Limited or INCONSISTENT Detail**
+- **3**: Some specific details but inconsistent; provides general descriptions more often than specific examples; OR uses passive voice that obscures specifics
+- **4**: Includes some specific information (e.g., technologies used, basic timeframes) but lacks depth; many important details omitted; no quantitative metrics
 
-**Tier 3 (5-6): Average / Adequate Detail**
-- **5**: Adequate level of specificity in most areas; provides concrete examples with relevant details; some sections lack depth
-- **6**: Good specificity throughout most materials; includes technologies, contexts, and outcomes; may lack quantitative metrics or precise details in some areas
+**Tier 3 (5-6): Average / Adequate Detail (REQUIRES CONSISTENT SPECIFICITY)**
+- **5**: Adequate level of specificity in most areas; provides concrete examples with relevant details; MUST include at least one quantitative metric or measurable outcome
+- **6**: Good specificity throughout most materials; includes technologies, contexts, and outcomes; requires at least 2-3 quantitative details or precise metrics
 
-**Tier 4 (7-8): Above Average / Strong Detail Orientation**
-- **7**: Consistently high level of detail with specific examples, contexts, and outcomes; includes quantitative metrics where relevant (e.g., "improved performance by 40%", "managed team of 12"); precise descriptions of technical approaches
-- **8**: Exceptional thoroughness and precision throughout; provides comprehensive context including specific methodologies, metrics, timeframes, and outcomes; demonstrates systematic attention to detail across all materials
+**Tier 4 (7-8): Above Average / Strong Detail Orientation (REQUIRES COMPREHENSIVE METRICS)**
+- **7**: Consistently high level of detail with specific examples, contexts, and outcomes; includes multiple quantitative metrics (e.g., "improved performance by 40%", "managed team of 12"); precise descriptions of technical approaches with clear methodology
+- **8**: Exceptional thoroughness throughout; provides comprehensive context including specific methodologies, metrics, timeframes, and outcomes; demonstrates systematic attention to detail across ALL materials (not just some sections)
 
 **Tier 5 (9-10): Exceptional / Outstanding Precision**
 - **9**: Extraordinarily detailed materials with comprehensive quantitative and qualitative information; every claim substantiated with specific evidence; demonstrates expert-level precision in communication
@@ -197,6 +248,246 @@ Evaluate the candidate on each of the following THREE criteria using the detaile
 - Quantitative metrics and outcomes where applicable
 - Precise timeframes and contexts
 - Concrete examples rather than abstract descriptions
+
+---
+
+### 4. Critical Thinking / Logical Analysis
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of analytical thinking; materials are purely descriptive without analysis
+- **2**: Mentions "analytical skills" but provides no examples of actual analysis
+
+**Tier 2 (3-4): Below Average / Minimal Evidence**
+- **3**: One vague example of analysis without clear methodology or conclusions
+- **4**: Some evidence of logical reasoning but lacks systematic approach; conclusions not well supported
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of analyzing a problem with basic logical steps
+- **6**: Multiple instances of data-driven decision making; shows ability to break down complex issues
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Consistent pattern of rigorous analysis with clear methodology; identifies patterns and draws sound conclusions from evidence
+- **8**: Advanced analytical frameworks applied; challenges assumptions systematically; evidence of teaching analytical methods to others
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Expert-level analytical thinking; develops new frameworks or approaches; analysis leads to significant insights
+- **10**: Groundbreaking analytical contributions; recognized for analytical excellence; transforms how problems are understood
+
+**Key Evidence Markers:**
+- Systematic problem decomposition
+- Data-driven conclusions with clear reasoning
+- Identification of assumptions and limitations
+- Evidence of changing approach based on analysis
+
+---
+
+### 5. Coachability - Receptive to Feedback
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of receiving or acting on feedback
+- **2**: Mentions openness to feedback but no examples of actually incorporating it
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: One example of receiving feedback but unclear if it was implemented
+- **4**: Shows awareness of feedback importance but examples are vague or generic
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of receiving feedback and making a change based on it
+- **6**: Multiple examples of incorporating feedback; shows willingness to learn from mentors/supervisors
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Proactively seeks feedback; clear examples of significant changes made based on input; demonstrates growth over time
+- **8**: Creates feedback loops; documents lessons learned; helps others develop through feedback sharing
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Transforms performance based on feedback; seeks out challenging critiques; shows remarkable growth trajectory
+- **10**: Exemplar of continuous improvement; feedback-seeking behavior inspires others; documents and shares learning journey
+
+**Key Evidence Markers:**
+- Specific examples of feedback received and actions taken
+- Evidence of seeking feedback proactively (not just accepting it)
+- Demonstrated growth or change over time
+- Acknowledgment of mistakes and corrections made
+
+---
+
+### 6. Curiosity
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of intellectual curiosity or exploration beyond requirements
+- **2**: States "curious" or "interested in learning" with no supporting examples
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: One example of exploring beyond required scope but lacks depth
+- **4**: Shows some interest in learning but examples are surface-level
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of self-directed learning or exploration of new area
+- **6**: Multiple examples of pursuing knowledge beyond requirements; asks good questions
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Pattern of deep exploration; learns new fields/skills independently; asks probing questions that advance understanding
+- **8**: Exceptional breadth and depth of curiosity; creates learning opportunities; curiosity leads to tangible outcomes
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Extraordinary intellectual curiosity drives major decisions (career changes, new research directions)
+- **10**: Curiosity leads to breakthrough discoveries or innovations; inspires curiosity in others
+
+**Key Evidence Markers:**
+- Self-directed learning beyond requirements
+- Questions asked that show depth of interest
+- Exploration of adjacent fields or topics
+- Evidence of sustained interest over time (not just one-off curiosity)
+
+---
+
+### 7. Collaboration - Incorporates Inputs from Others
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of working with others or only individual accomplishments listed
+- **2**: Mentions "team player" but provides no specific collaboration examples
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: One example of working on a team but unclear about individual contribution vs. group dynamics
+- **4**: Shows participation in teams but little evidence of actively incorporating others' ideas
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of working effectively with others and contributing to team success
+- **6**: Multiple examples of collaboration; shows ability to work with diverse perspectives
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Proactively seeks diverse input; examples of improving work based on others' contributions; facilitates productive collaboration
+- **8**: Creates collaborative environments; mentors others in teamwork; integrates perspectives across disciplines
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Exceptional ability to synthesize diverse viewpoints; builds high-performing teams; collaboration leads to outcomes beyond what individuals could achieve
+- **10**: Transforms how groups work together; creates lasting collaborative structures; widely recognized for collaborative excellence
+
+**Key Evidence Markers:**
+- Specific examples of incorporating others' ideas (not just working alongside)
+- Evidence of seeking diverse perspectives
+- Credit given to collaborators
+- Examples of facilitating or improving team dynamics
+
+---
+
+### 8. Demonstrated Follow Through
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of completing projects or seeing things through
+- **2**: Lists started projects or ongoing work with no completion evidence
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: One completed project but details on execution are vague
+- **4**: Some evidence of completion but pattern of follow-through unclear
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of completing a significant project from start to finish
+- **6**: Multiple completed projects with evidence of sustained effort over time
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Consistent pattern of completing challenging projects despite obstacles; demonstrates persistence
+- **8**: Exceptional track record of delivery; overcomes significant barriers; helps others complete their work
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Remarkable persistence through major challenges; completes projects others abandoned; multi-year commitments fulfilled
+- **10**: Extraordinary follow-through on transformative initiatives; builds systems ensuring completion; inspires persistence in others
+
+**Key Evidence Markers:**
+- Projects completed from inception to conclusion
+- Evidence of overcoming obstacles or setbacks
+- Long-term commitments fulfilled
+- Outcomes and results achieved (not just activities completed)
+
+---
+
+### 9. Understands Value of Evidence to Challenge Assumptions
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of evidence-based thinking; relies on assertions
+- **2**: Mentions data or evidence but no examples of using it to challenge assumptions
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: One example of using data but didn't challenge existing assumptions
+- **4**: Shows awareness of evidence importance but examples are confirmatory rather than challenging
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of using evidence to change an approach or decision
+- **6**: Multiple examples of evidence-based decision making; shows ability to update beliefs based on data
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Proactively seeks evidence to test assumptions; examples of changing course based on contrary evidence
+- **8**: Creates experiments to test hypotheses; teaches evidence-based thinking; challenges established practices with data
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Expert at using evidence to challenge fundamental assumptions; discoveries made through rigorous evidence gathering
+- **10**: Transforms understanding through evidence-based challenges; creates new standards for evidence in field
+
+**Key Evidence Markers:**
+- Examples of gathering evidence specifically to test assumptions
+- Instances of changing approach based on contrary evidence
+- Experimental or hypothesis-testing mindset
+- Willingness to be wrong when evidence demands it
+
+---
+
+### 10. Effective Communicator
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: Materials are poorly written or unclear; no evidence of communication skills
+- **2**: Claims strong communication but materials themselves demonstrate the opposite
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: Materials are adequate but no examples of effective communication in action
+- **4**: One example of communication but impact or effectiveness unclear
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Materials are clear and well-organized; one solid example of effective communication
+- **6**: Multiple examples of successful communication; adapts style to audience
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Excellent written materials; examples of communicating complex ideas clearly; evidence of persuasion or influence
+- **8**: Outstanding communication across multiple formats; teaching/presenting experience; communication leads to measurable outcomes
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Exceptional communication that inspires action; published works; keynote presentations; widely recognized for communication
+- **10**: Communication excellence at expert level; creates frameworks others use; transforms how ideas are shared in field
+
+**Key Evidence Markers:**
+- Quality of the application materials themselves
+- Specific examples of successful communication
+- Evidence of adapting communication to different audiences
+- Outcomes achieved through communication (not just activity)
+
+---
+
+### 11. Uses Expertise as Enabler Rather Than Limitation
+
+**Tier 1 (1-2): No Evidence / Unsatisfactory**
+- **1**: No evidence of leveraging expertise; or expertise appears to limit thinking
+- **2**: Demonstrates expertise but no evidence of using it to enable broader solutions
+
+**Tier 2 (3-4): Below Average / Limited Evidence**
+- **3**: Shows expertise in one area but unclear if it's used to enable others or solutions
+- **4**: Some evidence of applying expertise but seems constrained by it
+
+**Tier 3 (5-6): Average / Adequate Competency**
+- **5**: Clear example of using specialized knowledge to enable a solution or help others
+- **6**: Multiple examples of expertise enabling rather than limiting; shows breadth beyond specialty
+
+**Tier 4 (7-8): Above Average / Strong Performance**
+- **7**: Expertise consistently used as springboard for innovation; helps non-experts apply specialized knowledge
+- **8**: Bridges multiple domains using expertise; creates tools or frameworks that extend expertise to others
+
+**Tier 5 (9-10): Exceptional / Outstanding**
+- **9**: Expertise enables transformative solutions; recognized for making specialized knowledge accessible
+- **10**: Redefines how expertise in field is applied; creates new possibilities by leveraging deep knowledge
+
+**Key Evidence Markers:**
+- Examples of using expertise to solve problems outside core domain
+- Evidence of making specialized knowledge accessible to others
+- Innovation that builds on but transcends specialty
+- Openness to approaches outside area of expertise
 
 ---
 
@@ -222,11 +513,18 @@ For EACH criterion above, provide your evaluation in the following JSON structur
 ```
 
 **CRITICAL**: The `confidence` field MUST be EXACTLY one of these three lowercase values:
-- `"low"` - Limited evidence available
-- `"medium"` - Adequate evidence available
-- `"high"` - Strong, abundant evidence available
+- `"low"` - Limited or vague evidence available; evidence is ambiguous or uses passive voice
+- `"medium"` - Some clear evidence exists but gaps remain; not all claims are substantiated
+- `"high"` - Strong, abundant evidence with multiple specific quotes and measurable outcomes
 
 Do NOT use other values like "medium-high", "moderate", "moderate-high", etc. Only use "low", "medium", or "high".
+
+**CONFIDENCE-SCORE CAPS (CRITICAL FOR EXPERT-LEVEL ACCURACY)**:
+- If confidence is `"low"`: **Maximum score is 4** - You cannot score 5+ with limited/vague evidence
+- If confidence is `"medium"`: **Maximum score is 6** - You need strong evidence for 7+
+- If confidence is `"high"`: No cap - Score based on evidence quality
+
+This ensures the AI matches expert rater behavior: when evidence is unclear, score conservatively.
 
 Then provide an overall assessment:
 
@@ -379,13 +677,20 @@ Please provide your complete comparison analysis now.
 """
 
 
-def get_evaluation_prompt(materials_text: str, custom_criteria: List[str] = None) -> str:
+def get_evaluation_prompt(
+    materials_text: str,
+    custom_criteria: List[str] = None,
+    use_all_criteria: bool = True,
+    criteria_subset: List[EvaluationCriterion] = None
+) -> str:
     """
     Generate evaluation prompt with materials and criteria.
 
     Args:
         materials_text: Combined text of all candidate materials
-        custom_criteria: Optional list of custom criteria to evaluate
+        custom_criteria: Optional list of custom criteria text to evaluate
+        use_all_criteria: If True, evaluate on all 11 criteria (default)
+        criteria_subset: Optional specific list of EvaluationCriterion to use
 
     Returns:
         Formatted prompt string
@@ -394,11 +699,41 @@ def get_evaluation_prompt(materials_text: str, custom_criteria: List[str] = None
     criteria_details_text = []
 
     if custom_criteria:
-        # Use custom criteria if provided
+        # Use custom criteria text if provided
         for i, criterion_text in enumerate(custom_criteria, 1):
             criteria_details_text.append(f"{i}. {criterion_text}")
+    elif criteria_subset:
+        # Use specified subset of criteria
+        for criterion in criteria_subset:
+            criteria_details_text.append(
+                f"### {criterion.value}\n"
+                f"**{criterion.display_name}**\n"
+                f"{criterion.description}\n"
+            )
+    elif use_all_criteria:
+        # Use ALL 11 criteria (new default)
+        all_criteria = [
+            EvaluationCriterion.CRITICAL_THINKING,
+            EvaluationCriterion.COACHABILITY,
+            EvaluationCriterion.CURIOSITY,
+            EvaluationCriterion.CREATIVITY,
+            EvaluationCriterion.COLLABORATION,
+            EvaluationCriterion.FOLLOW_THROUGH,
+            EvaluationCriterion.PROBLEM_SOLVING_MOTIVATION,
+            EvaluationCriterion.EVIDENCE_BASED,
+            EvaluationCriterion.DETAIL_ORIENTATION,
+            EvaluationCriterion.COMMUNICATION,
+            EvaluationCriterion.EXPERTISE_ENABLER
+        ]
+
+        for criterion in all_criteria:
+            criteria_details_text.append(
+                f"### {criterion.value}\n"
+                f"**{criterion.display_name}**\n"
+                f"{criterion.description}\n"
+            )
     else:
-        # Use the 3 priority criteria only
+        # Fallback to original 3 priority criteria (for backward compatibility)
         priority_criteria = [
             EvaluationCriterion.CREATIVITY,
             EvaluationCriterion.PROBLEM_SOLVING_MOTIVATION,
@@ -471,3 +806,234 @@ def _format_list(items: List[str]) -> str:
     if not items:
         return "- None specified"
     return "\n".join(f"- {item}" for item in items)
+
+
+# Dr. Gray's Holistic Evaluation Mode - Enhanced Version
+HOLISTIC_EVALUATION_PROMPT = """# Comprehensive Holistic Candidate Evaluation
+
+You are evaluating a candidate for an innovation and research program. Rather than scoring on specific pre-defined criteria, you will provide an in-depth holistic assessment based on the program's goals and the candidate's demonstrated qualities.
+
+This evaluation should be THOROUGH and EVIDENCE-RICH - comparable in depth to a structured criteria-based evaluation.
+
+## Program Description
+
+This is a competitive fellowship program seeking candidates who can:
+- Drive innovation and creative problem-solving in their field
+- Translate research into practical impact
+- Work effectively across disciplines and with diverse teams
+- Demonstrate sustained commitment to challenging problems
+- Learn, grow, and adapt based on feedback and new evidence
+- Communicate complex ideas effectively to varied audiences
+
+The program values candidates who show genuine evidence of these qualities through their actions and achievements, not just stated intentions.
+
+## Candidate Materials
+
+{materials}
+
+---
+
+## EVALUATION REQUIREMENTS
+
+### Your Task
+
+Provide a comprehensive holistic evaluation that deeply analyzes:
+
+1. **Overall Assessment** (3-4 paragraphs)
+   - Synthesize the candidate's profile holistically
+   - Identify their core strengths and how they connect
+   - Assess their trajectory and growth pattern
+   - Compare implicitly to what a strong candidate looks like
+   - Every claim must cite specific evidence
+
+2. **Innovation Potential Assessment** (detailed)
+   - Level: high, medium, or low
+   - Confidence: high, medium, or low (based on evidence quality)
+   - Detailed reasoning (2+ paragraphs explaining your assessment)
+   - Minimum 3 pieces of evidence with quotes, sources, and context
+
+3. **Program Fit Assessment** (detailed)
+   - Level: strong, moderate, or weak
+   - Confidence: high, medium, or low
+   - Detailed analysis (2+ paragraphs)
+   - Specific strengths aligned with program goals
+   - Specific concerns or gaps
+   - Minimum 3 pieces of evidence
+
+4. **Notable Qualities** (minimum 3-5 qualities)
+   - Each quality must have multiple pieces of supporting evidence
+   - Explain significance for the program
+   - Rate confidence in each assessment
+
+5. **Red Flags** (be thorough)
+   - Identify ALL concerning patterns, gaps, or warning signs
+   - Rate severity: high, medium, or low
+   - Cite specific evidence or note where evidence is missing
+   - Include "fluff" statements found in application (generic claims without evidence)
+
+6. **Interview Questions** (minimum 5 questions)
+   - Categorize by purpose (e.g., "Probe claimed skill", "Verify experience", "Assess fit")
+   - Explain what you're trying to learn with each question
+
+7. **Final Recommendation**
+   - Overall score with detailed justification
+   - Clear interview decision (yes/no) with reasoning
+
+---
+
+## EVIDENCE REQUIREMENTS
+
+**MINIMUM EVIDENCE STANDARDS:**
+- Overall Assessment: Cite at least 5 direct quotes
+- Innovation Potential: At least 3 structured evidence items (quote + source + context)
+- Program Fit: At least 3 structured evidence items
+- Each Notable Quality: At least 2 pieces of evidence
+- Each Red Flag: Must cite specific evidence or explicitly note what's missing
+
+**EVIDENCE FORMAT:**
+For each piece of evidence, provide:
+- **quote**: The exact text from the materials (use quotation marks)
+- **source**: Which document it came from (e.g., "resume.pdf", "cover_letter.txt", "recommendation_letter.pdf")
+- **context**: Why this evidence matters and what it demonstrates
+
+---
+
+## SCORING GUIDANCE
+
+**CONFIDENCE LEVELS:**
+- **High**: Multiple clear, specific examples; corroborated across sources
+- **Medium**: Some evidence exists but limited; single source only
+- **Low**: Minimal evidence; mostly inferred; stated but not demonstrated
+
+**SCORING TIERS (for overall_score):**
+- **9-10 (Exceptional)**: Clear evidence of outstanding qualities across multiple dimensions. Multiple strong, specific examples. Would be a standout in any cohort.
+- **7-8 (Strong)**: Solid evidence across most areas. Clear strengths with minor gaps. Would contribute meaningfully to the program.
+- **5-6 (Moderate)**: Mixed evidence. Notable strengths but also significant concerns or gaps. Requires careful consideration.
+- **3-4 (Weak)**: Limited positive evidence. Significant concerns outweigh strengths. Unlikely to succeed without major development.
+- **1-2 (Poor)**: Minimal relevant evidence. Major red flags. Not suitable for the program.
+
+**INTERVIEW DECISION CRITERIA:**
+- **Yes**: Score >= 6.0 AND no high-severity red flags AND evidence suggests potential for growth
+- **No**: Score < 6.0 OR high-severity red flags OR fundamental misalignment with program goals
+
+---
+
+## CRITICAL REQUIREMENTS
+
+- **REJECT FLUFF**: Generic statements like "passionate about innovation" or "strong work ethic" are worthless without specific examples. Call these out explicitly as red flags.
+- **EVIDENCE ONLY**: Every positive assessment must be backed by specific, concrete evidence from the materials. No benefit of the doubt.
+- **BE SKEPTICAL**: Most applications are 80% filler. Your job is to find the 20% that's real.
+- **NO ASSUMPTIONS**: Only evaluate what is explicitly stated. If evidence is missing, say so explicitly.
+- **QUOTE ACCURATELY**: When citing evidence, use exact quotes from the materials. Do not paraphrase.
+- **SOURCE EVERYTHING**: Every claim needs a source document reference.
+
+---
+
+## OUTPUT FORMAT
+
+```json
+{{
+  "overall_assessment": "3-4 paragraph comprehensive assessment with embedded evidence citations",
+
+  "innovation_potential": {{
+    "level": "high|medium|low",
+    "confidence": "high|medium|low",
+    "reasoning": "2+ paragraphs explaining the assessment with specific examples",
+    "evidence": [
+      {{
+        "quote": "Exact quote from materials",
+        "source": "document_name.pdf",
+        "context": "What this demonstrates and why it matters"
+      }}
+    ]
+  }},
+
+  "program_fit": {{
+    "level": "strong|moderate|weak",
+    "confidence": "high|medium|low",
+    "detailed_analysis": "2+ paragraphs analyzing fit with program goals",
+    "strengths_for_program": ["Specific strength 1", "Specific strength 2"],
+    "concerns": ["Specific concern 1", "Specific concern 2"],
+    "evidence": [
+      {{
+        "quote": "Exact quote from materials",
+        "source": "document_name.pdf",
+        "context": "What this demonstrates"
+      }}
+    ]
+  }},
+
+  "notable_qualities": [
+    {{
+      "quality": "Quality name",
+      "confidence": "high|medium|low",
+      "evidence": [
+        {{
+          "quote": "Exact quote",
+          "source": "document_name.pdf",
+          "context": "What this shows"
+        }}
+      ],
+      "significance": "Why this matters for the program"
+    }}
+  ],
+
+  "red_flags": [
+    {{
+      "flag": "Description of the concern",
+      "severity": "high|medium|low",
+      "evidence": "Specific quote or 'No evidence found for claimed X'"
+    }}
+  ],
+
+  "questions_for_interview": [
+    {{
+      "category": "Probe claimed skill|Verify experience|Assess motivation|Explore concern|Test fit",
+      "question": "The specific question to ask",
+      "purpose": "What you're trying to learn"
+    }}
+  ],
+
+  "overall_score": 7.5,
+  "score_justification": "Detailed paragraph explaining how the score was determined, citing key evidence and weighing strengths against concerns",
+  "recommendation": "Strong fit|Potential fit with reservations|Not recommended",
+  "interview_decision": true,
+  "interview_decision_reasoning": "Clear explanation of why this candidate should/should not be interviewed"
+}}
+```
+
+---
+
+Provide your comprehensive holistic evaluation now. Be thorough - this evaluation should take significant effort and provide deep insight into the candidate.
+"""
+
+
+def get_holistic_evaluation_prompt(materials_text: str, program_description: str = None) -> str:
+    """
+    Generate holistic evaluation prompt (Dr. Gray's suggested mode).
+
+    Args:
+        materials_text: Combined text of all candidate materials
+        program_description: Optional custom program description to override default
+
+    Returns:
+        Formatted prompt string
+    """
+    prompt = HOLISTIC_EVALUATION_PROMPT
+
+    if program_description:
+        # Replace the default program description section
+        prompt = prompt.replace(
+            """This is a competitive fellowship program seeking candidates who can:
+- Drive innovation and creative problem-solving in their field
+- Translate research into practical impact
+- Work effectively across disciplines and with diverse teams
+- Demonstrate sustained commitment to challenging problems
+- Learn, grow, and adapt based on feedback and new evidence
+- Communicate complex ideas effectively to varied audiences
+
+The program values candidates who show genuine evidence of these qualities through their actions and achievements, not just stated intentions.""",
+            program_description
+        )
+
+    return prompt.format(materials=materials_text)

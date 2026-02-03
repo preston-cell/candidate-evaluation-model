@@ -15,7 +15,14 @@ from candidate_evaluator.core.models import (
     CandidateProfile,
     Evidence,
     EvaluationCriterion,
-    ComparisonResult
+    ComparisonResult,
+    HolisticEvaluationResult,
+    InnovationPotential,
+    ProgramFit,
+    NotableQuality,
+    HolisticEvidence,
+    RedFlag,
+    InterviewQuestion
 )
 from candidate_evaluator.core.research_generator import ResearchReportGenerator
 from candidate_evaluator.core.research_models import ResearchEvaluationReport
@@ -24,7 +31,8 @@ from candidate_evaluator.utils.file_processor import FileProcessor
 from candidate_evaluator.prompts.evaluation_prompts import (
     SYSTEM_PROMPT,
     get_evaluation_prompt,
-    get_comparison_prompt
+    get_comparison_prompt,
+    get_holistic_evaluation_prompt
 )
 
 logger = logging.getLogger(__name__)
@@ -99,7 +107,15 @@ class CandidateEvaluator:
 
         scores = []
         for score_data in evaluation_data['criterion_scores']:
-            criterion = EvaluationCriterion(score_data['criterion'])
+            # Skip items without a valid criterion (e.g. overall_assessment mixed in)
+            criterion_value = score_data.get('criterion')
+            if not criterion_value:
+                continue
+            try:
+                criterion = EvaluationCriterion(criterion_value)
+            except ValueError:
+                logger.warning(f"Skipping invalid criterion: {criterion_value}")
+                continue
             weight = getattr(weights, criterion.value, 10)
 
             weighted_sum += score_data['score'] * weight
@@ -250,6 +266,299 @@ class CandidateEvaluator:
         logger.info("Comparison completed")
         return result
 
+    def evaluate_candidate_holistic(
+        self,
+        candidate_id: str,
+        material_paths: List[str],
+        candidate_name: Optional[str] = None,
+        program_description: Optional[str] = None
+    ) -> HolisticEvaluationResult:
+        """
+        Evaluate a candidate using holistic (criteria-free) approach.
+
+        This mode evaluates candidates based on overall program fit without
+        using the predefined 11 evaluation criteria, allowing for more
+        open-ended assessment.
+
+        Args:
+            candidate_id: Unique identifier for the candidate
+            material_paths: List of paths to candidate materials
+            candidate_name: Optional name of the candidate
+            program_description: Optional custom program description
+
+        Returns:
+            HolisticEvaluationResult object
+
+        Raises:
+            ValueError: If materials cannot be processed or evaluation fails
+        """
+        logger.info(f"Starting holistic evaluation for candidate: {candidate_id}")
+        start_time = time.time()
+
+        # Process files
+        logger.info(f"Processing {len(material_paths)} files...")
+        processed_files = self.file_processor.process_multiple_files(material_paths)
+        self._last_processed_files = processed_files
+        combined_materials = self.file_processor.combine_materials(processed_files)
+
+        logger.info(f"Total materials length: {len(combined_materials)} characters")
+
+        # Generate holistic evaluation prompt
+        prompt = get_holistic_evaluation_prompt(combined_materials, program_description)
+
+        # Call Claude API
+        logger.info("Calling Claude API for holistic evaluation...")
+        response = self._call_claude_api(prompt)
+
+        # Parse response
+        logger.info("Parsing holistic evaluation response...")
+        evaluation_data = self._parse_holistic_response(response)
+
+        # Create candidate profile
+        candidate = CandidateProfile(
+            candidate_id=candidate_id,
+            name=candidate_name,
+            materials=[str(Path(p).name) for p in material_paths],
+            evaluation_date=datetime.now()
+        )
+
+        # Calculate processing time
+        processing_time = time.time() - start_time
+
+        # Helper to parse structured evidence
+        def parse_evidence_list(evidence_data):
+            """Parse evidence list - handles both old string format and new structured format."""
+            if not evidence_data:
+                return []
+            evidence_list = []
+            for ev in evidence_data:
+                if isinstance(ev, dict):
+                    evidence_list.append(HolisticEvidence(
+                        quote=ev.get('quote', ''),
+                        source=ev.get('source', ''),
+                        context=ev.get('context', '')
+                    ))
+                elif isinstance(ev, str):
+                    # Legacy string format
+                    evidence_list.append(HolisticEvidence(quote=ev, source='', context=''))
+            return evidence_list
+
+        # Build innovation potential (enhanced format)
+        innovation_data = evaluation_data.get('innovation_potential', {})
+        innovation_potential = InnovationPotential(
+            level=innovation_data.get('level', 'medium'),
+            confidence=innovation_data.get('confidence', 'medium'),
+            reasoning=innovation_data.get('reasoning', ''),
+            key_evidence=innovation_data.get('key_evidence', []),  # Legacy format
+            evidence=parse_evidence_list(innovation_data.get('evidence', []))
+        )
+
+        # Build program fit (enhanced format)
+        fit_data = evaluation_data.get('program_fit', {})
+        program_fit = ProgramFit(
+            level=fit_data.get('level', 'moderate'),
+            confidence=fit_data.get('confidence', 'medium'),
+            detailed_analysis=fit_data.get('detailed_analysis', ''),
+            strengths_for_program=fit_data.get('strengths_for_program', []),
+            concerns=fit_data.get('concerns', []),
+            evidence=parse_evidence_list(fit_data.get('evidence', []))
+        )
+
+        # Build notable qualities (enhanced format)
+        notable_qualities = []
+        for q in evaluation_data.get('notable_qualities', []):
+            if isinstance(q, dict):
+                # Handle evidence which can be string or list
+                ev = q.get('evidence', '')
+                if isinstance(ev, list):
+                    ev = parse_evidence_list(ev)
+                notable_qualities.append(NotableQuality(
+                    quality=q.get('quality', ''),
+                    confidence=q.get('confidence', 'medium'),
+                    evidence=ev,
+                    significance=q.get('significance', '')
+                ))
+
+        # Build red flags (can be strings or structured objects)
+        raw_red_flags = evaluation_data.get('red_flags', [])
+        red_flags = []
+        for rf in raw_red_flags:
+            if isinstance(rf, dict):
+                red_flags.append(RedFlag(
+                    flag=rf.get('flag', ''),
+                    severity=rf.get('severity', 'medium'),
+                    evidence=rf.get('evidence', '')
+                ))
+            elif isinstance(rf, str):
+                red_flags.append(rf)  # Keep legacy string format
+
+        # Build interview questions (can be strings or structured objects)
+        raw_questions = evaluation_data.get('questions_for_interview', [])
+        questions = []
+        for q in raw_questions:
+            if isinstance(q, dict):
+                questions.append(InterviewQuestion(
+                    category=q.get('category', 'General'),
+                    question=q.get('question', ''),
+                    purpose=q.get('purpose', '')
+                ))
+            elif isinstance(q, str):
+                questions.append(q)  # Keep legacy string format
+
+        # Create holistic evaluation result
+        result = HolisticEvaluationResult(
+            candidate=candidate,
+            overall_assessment=evaluation_data.get('overall_assessment', ''),
+            innovation_potential=innovation_potential,
+            program_fit=program_fit,
+            notable_qualities=notable_qualities,
+            red_flags=red_flags,
+            questions_for_interview=questions,
+            overall_score=float(evaluation_data.get('overall_score', 5.0)),
+            score_justification=evaluation_data.get('score_justification', ''),
+            recommendation=evaluation_data.get('recommendation', ''),
+            interview_decision=evaluation_data.get('interview_decision', False),
+            interview_decision_reasoning=evaluation_data.get('interview_decision_reasoning', ''),
+            metadata={
+                'model': self.config.api.model,
+                'processing_time_seconds': processing_time,
+                'materials_character_count': len(combined_materials),
+                'timestamp': datetime.now().isoformat(),
+                'evaluation_mode': 'holistic_enhanced'
+            }
+        )
+
+        logger.info(f"Holistic evaluation completed in {processing_time:.2f} seconds")
+        logger.info(f"Overall score: {result.overall_score:.2f}, Interview: {result.interview_decision}")
+
+        return result
+
+    def _parse_holistic_response(self, response: str) -> Dict[str, Any]:
+        """
+        Parse Claude's holistic evaluation response.
+
+        Args:
+            response: Raw response text from Claude
+
+        Returns:
+            Parsed holistic evaluation data
+
+        Raises:
+            ValueError: If response cannot be parsed
+        """
+        # Save raw response for debugging
+        import os
+        debug_dir = os.path.expanduser("~/candidate_eval_debug")
+        os.makedirs(debug_dir, exist_ok=True)
+        debug_file = os.path.join(debug_dir, f"holistic_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+        try:
+            with open(debug_file, 'w') as f:
+                f.write(response)
+            logger.info(f"Saved holistic response to: {debug_file}")
+        except Exception as e:
+            logger.warning(f"Could not save debug file: {e}")
+
+        try:
+            # Extract JSON from response - look for code block first
+            json_str = None
+
+            # Method 1: Look for ```json code block
+            if '```json' in response:
+                start = response.find('```json') + 7
+                end = response.find('```', start)
+                if end > start:
+                    json_str = response[start:end].strip()
+
+            # Method 2: Look for any ``` code block
+            if not json_str and '```' in response:
+                start = response.find('```') + 3
+                # Skip language identifier if present
+                newline = response.find('\n', start)
+                if newline > start:
+                    start = newline + 1
+                end = response.find('```', start)
+                if end > start:
+                    json_str = response[start:end].strip()
+
+            # Method 3: Find JSON object directly
+            if not json_str:
+                brace_start = response.find('{')
+                if brace_start >= 0:
+                    # Find matching closing brace
+                    brace_count = 0
+                    for i, char in enumerate(response[brace_start:], brace_start):
+                        if char == '{':
+                            brace_count += 1
+                        elif char == '}':
+                            brace_count -= 1
+                            if brace_count == 0:
+                                json_str = response[brace_start:i+1]
+                                break
+
+            if not json_str:
+                raise ValueError("No JSON found in holistic response")
+
+            # Parse JSON with repair fallback
+            try:
+                data = json.loads(json_str)
+            except json.JSONDecodeError:
+                # Try to repair unescaped quotes
+                repaired = self._repair_json_string(json_str)
+                data = json.loads(repaired)
+
+            return data
+
+        except Exception as e:
+            logger.error(f"Failed to parse holistic response: {e}")
+            logger.error(f"Response preview: {response[:1000]}...")
+            raise ValueError(f"Failed to parse holistic response: {e}")
+
+    def _repair_json_string(self, text: str) -> str:
+        """Repair JSON with unescaped quotes and control characters inside strings."""
+        result = []
+        in_string = False
+        i = 0
+        while i < len(text):
+            char = text[i]
+
+            if not in_string:
+                result.append(char)
+                if char == '"':
+                    in_string = True
+            else:
+                if char == '\\':
+                    result.append(char)
+                    i += 1
+                    if i < len(text):
+                        result.append(text[i])
+                elif char == '"':
+                    # Check if this is the real end of the string
+                    j = i + 1
+                    while j < len(text) and text[j] in ' \t\n\r':
+                        j += 1
+                    if j >= len(text) or text[j] in ':,}]':
+                        result.append(char)
+                        in_string = False
+                    else:
+                        result.append('\\')
+                        result.append(char)
+                # Handle control characters inside strings (ASCII 0-31)
+                elif ord(char) < 32:
+                    if char == '\n':
+                        result.append('\\n')
+                    elif char == '\r':
+                        result.append('\\r')
+                    elif char == '\t':
+                        result.append('\\t')
+                    else:
+                        # Use unicode escape for other control chars
+                        result.append(f'\\u{ord(char):04x}')
+                else:
+                    result.append(char)
+
+            i += 1
+        return ''.join(result)
+
     def _call_claude_api(self, prompt: str) -> str:
         """
         Call Claude API with the given prompt.
@@ -311,20 +620,30 @@ class CandidateEvaluator:
             logger.warning(f"Could not save debug file: {e}")
 
         try:
-            # Method 1: Try to extract JSON code blocks
+            # Method 1: Try to extract JSON code blocks (```json or just ```)
             json_blocks = []
             lines = response.split('\n')
             in_json_block = False
             current_block = []
 
             for line in lines:
-                if line.strip().startswith('```json'):
-                    in_json_block = True
-                    current_block = []
-                elif line.strip() == '```' and in_json_block:
+                stripped = line.strip()
+                # Start of code block - either ```json or just ``` followed by JSON
+                if stripped.startswith('```json') or (stripped == '```' and not in_json_block):
+                    if stripped.startswith('```json'):
+                        in_json_block = True
+                        current_block = []
+                    elif stripped == '```':
+                        # Check if this might be start of a code block
+                        in_json_block = True
+                        current_block = []
+                elif stripped == '```' and in_json_block:
                     in_json_block = False
-                    if current_block:
-                        json_blocks.append('\n'.join(current_block))
+                    block_content = '\n'.join(current_block).strip()
+                    # Only add if it looks like JSON (starts with { or [)
+                    if block_content and (block_content.startswith('{') or block_content.startswith('[')):
+                        json_blocks.append(block_content)
+                    current_block = []
                 elif in_json_block:
                     current_block.append(line)
 
@@ -354,43 +673,143 @@ class CandidateEvaluator:
                     elif in_object:
                         current_obj.append(char)
 
+            # Method 3: Try to find JSON arrays (starting with [)
             if not json_blocks:
-                logger.error(f"Response preview: {response[:500]}...")
+                bracket_count = 0
+                current_arr = []
+                in_array = False
+
+                for char in response:
+                    if char == '[':
+                        if bracket_count == 0:
+                            in_array = True
+                            current_arr = []
+                        bracket_count += 1
+                        current_arr.append(char)
+                    elif char == ']':
+                        current_arr.append(char)
+                        bracket_count -= 1
+                        if bracket_count == 0 and in_array:
+                            json_blocks.append(''.join(current_arr))
+                            in_array = False
+                            current_arr = []
+                    elif in_array:
+                        current_arr.append(char)
+
+            if not json_blocks:
+                logger.error(f"Response preview: {response[:1000]}...")
                 raise ValueError("No JSON blocks found in response")
 
             # Parse criterion scores from individual blocks
             criterion_scores = []
             overall_data = None
 
+            valid_criteria = {e.value for e in EvaluationCriterion}
+
+            def _separate_items(items):
+                """Separate criterion scores from overall assessment in a list."""
+                scores = []
+                ov_data = None
+                for item in items:
+                    if isinstance(item, dict):
+                        crit = item.get('criterion')
+                        if crit and crit in valid_criteria:
+                            scores.append(item)
+                        elif 'overall_score' in item or 'overall_assessment' in item or crit == 'overall_assessment':
+                            ov_data = item
+                return scores, ov_data
+
+            def _repair_json(text):
+                """Repair JSON with unescaped quotes and control characters inside strings."""
+                result = []
+                in_string = False
+                i = 0
+                while i < len(text):
+                    char = text[i]
+
+                    if not in_string:
+                        result.append(char)
+                        if char == '"':
+                            in_string = True
+                    else:
+                        if char == '\\':
+                            result.append(char)
+                            i += 1
+                            if i < len(text):
+                                result.append(text[i])
+                        elif char == '"':
+                            # Check if this is the real end of the string
+                            # by looking at the next non-whitespace character
+                            j = i + 1
+                            while j < len(text) and text[j] in ' \t\n\r':
+                                j += 1
+                            if j >= len(text) or text[j] in ':,}]':
+                                result.append(char)
+                                in_string = False
+                            else:
+                                result.append('\\')
+                                result.append(char)
+                        # Handle control characters inside strings (ASCII 0-31)
+                        elif ord(char) < 32:
+                            if char == '\n':
+                                result.append('\\n')
+                            elif char == '\r':
+                                result.append('\\r')
+                            elif char == '\t':
+                                result.append('\\t')
+                            else:
+                                # Use unicode escape for other control chars
+                                result.append(f'\\u{ord(char):04x}')
+                        else:
+                            result.append(char)
+
+                    i += 1
+                return ''.join(result)
+
+            def _parse_json_block(block):
+                """Parse JSON block, attempting repair if initial parse fails."""
+                try:
+                    return json.loads(block)
+                except json.JSONDecodeError:
+                    repaired = _repair_json(block)
+                    return json.loads(repaired)
+
             for block in json_blocks:
                 try:
-                    data = json.loads(block)
+                    data = _parse_json_block(block)
 
-                    # Check if data itself is a list (array of criterion scores)
+                    # Check if data itself is a list (array that may mix criteria + overall)
                     if isinstance(data, list):
-                        # Assume it's an array of criterion score objects
-                        criterion_scores.extend(data)
+                        scores, ov = _separate_items(data)
+                        criterion_scores.extend(scores)
+                        if ov and not overall_data:
+                            overall_data = ov
                     # Handle case where scores are in an 'evaluations' array (check BEFORE overall_score!)
                     elif 'evaluations' in data and isinstance(data['evaluations'], list):
-                        criterion_scores.extend(data['evaluations'])
-                        # Also extract overall data if present
+                        scores, ov = _separate_items(data['evaluations'])
+                        criterion_scores.extend(scores)
                         if 'overall_score' in data:
                             overall_data = data
+                        elif ov and not overall_data:
+                            overall_data = ov
                     # Handle case where all scores are in a 'scores' array
                     elif 'scores' in data and isinstance(data['scores'], list):
-                        criterion_scores.extend(data['scores'])
-                        # Also extract overall data if present
+                        scores, ov = _separate_items(data['scores'])
+                        criterion_scores.extend(scores)
                         if 'overall_score' in data:
                             overall_data = data
+                        elif ov and not overall_data:
+                            overall_data = ov
                     # Handle case where data has both criterion_scores and overall_assessment
                     elif 'criterion_scores' in data:
-                        criterion_scores.extend(data['criterion_scores'])
+                        scores, ov = _separate_items(data['criterion_scores'])
+                        criterion_scores.extend(scores)
                         overall_data = data
-                    # Check if this is a criterion score object
-                    elif 'criterion' in data:
+                    # Check if this is a criterion score object with valid criterion
+                    elif 'criterion' in data and data['criterion'] in valid_criteria:
                         criterion_scores.append(data)
-                    # Check if this is ONLY overall assessment (no arrays)
-                    elif 'overall_score' in data:
+                    # Check if this is overall assessment (no arrays)
+                    elif 'overall_score' in data or 'overall_assessment' in data:
                         overall_data = data
 
                 except json.JSONDecodeError as e:
@@ -404,6 +823,21 @@ class CandidateEvaluator:
                 for i, block in enumerate(json_blocks):
                     logger.error(f"Block {i}: {block[:300]}...")
                 raise ValueError("No criterion scores found in response")
+
+            # Validate completeness - detect truncated responses
+            expected_criteria = {
+                'critical_thinking', 'coachability', 'curiosity', 'creativity',
+                'collaboration', 'follow_through', 'problem_solving_motivation',
+                'evidence_based', 'detail_orientation', 'communication', 'expertise_enabler'
+            }
+            found_criteria = {s.get('criterion') for s in criterion_scores if s.get('criterion')}
+            missing = expected_criteria - found_criteria
+
+            if missing:
+                logger.warning(
+                    f"Missing {len(missing)} criteria (likely output truncated): {missing}. "
+                    f"Found {len(found_criteria)}/11. Consider increasing max_tokens."
+                )
 
             # Combine parsed data
             result = {
