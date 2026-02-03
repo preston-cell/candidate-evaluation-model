@@ -1,0 +1,148 @@
+{
+  "candidate": {
+    "candidate_id": "Yeung_Matthew_app_redacted",
+    "name": null,
+    "materials": [
+      "Yeung_Matthew_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:43:06.189235"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with demonstrated creative innovation in technical research, high problem-solving motivation evidenced by significant career decisions and proactive engagement, and good detail orientation particularly in technical contexts. The candidate shows concrete achievements rather than relying on generic claims - multiple publications in high-impact venues, novel methodologies with measurable improvements, and sustained engagement across challenging projects. Reference letters provide specific examples of innovations and initiative rather than generic praise. Key strengths include creative technical problem-solving with documented impact, willingness to make major changes to pursue meaningful problems, and ability to work across disciplinary boundaries.",
+  "recommendation": "Strong fit - Candidate demonstrates concrete creative achievements and problem-solving motivation with evidence-based support rather than generic claims. Multiple specific examples of innovation, initiative, and impact. Reference letters provide detailed incidents rather than vague praise. Recommended for programs seeking candidates with demonstrated technical creativity and genuine motivation to address real-world problems.",
+  "strengths": [
+    "Creative technical innovation with concrete outcomes - developed novel methodologies (bias-controlled activation, petahertz-scale harmonic mixing) with measurable improvements (orders of magnitude better CEP sensitivity)",
+    "Strong problem-solving motivation demonstrated through major actions - changed research fields, traveled internationally for collaborations, actively engaged with physicians to understand healthcare problems",
+    "Productive research output with high-impact publications (Nature Communications, Science Advances) and multiple ongoing collaborations",
+    "Exceptional persistence and time management despite significant health challenges requiring weekly multi-hour medical appointments",
+    "Proactive leadership beyond assigned work - organized infrastructure improvements, proposed new research directions, mentored multiple students"
+  ],
+  "areas_for_development": [
+    "Application form responses could provide more quantitative specificity and concrete examples rather than general descriptions of competencies",
+    "While technical detail is strong, some self-descriptions use generic language that could be replaced with specific achievements",
+    "Could strengthen evidence of broader impact beyond immediate research group - limited evidence of innovations being adopted by wider community"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistent creative innovation across multiple technical domains with concrete, measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Development of novel methodologies with documented impact - specifically the bias-controlled activation method for polarization-sensitive field sampling that simplified the approach compared to initial designs; (2) Creative bridging of disparate technical approaches - demonstrated by electronic harmonic mixing at optical frequencies (350+ THz), which represents a novel application of electronic frequency mixing principles to petahertz-scale optics; (3) Multiple instances of innovative device design - including nanostructured devices for sub-femtosecond light field measurement and silicon nanoantennas for mid-infrared detection. The advisors explicitly note 'his ability to innovate and think beyond what is asked of him' with specific examples of how his innovations extended the research beyond original scope. This goes beyond competent execution to demonstrate original creative contributions with measurable impact (e.g., 'orders of magnitude greater CEP sensitivity than prior methods'). Score of 8 rather than 9 because while innovations are significant within the field, evidence doesn't show they've been widely adopted by others or recognized as transformative at the field-redefining level.",
+      "evidence": [
+        {
+          "quote": "For his polarization-sensitive field-sampling work, he developed a method for bias-controlled activation that enables one to sample fields along each major axis of polarizations separately in a far simpler way than our initial approach.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Concrete example of creative innovation - developed a simpler methodology than the original approach, demonstrating ability to improve upon existing designs"
+        },
+        {
+          "quote": "his work has demonstrated that the plasmonic antennas act as nonlinear petahertz-scale electronic frequency mixers. Specifically, he and a colleague have experimentally demonstrated electronic harmonic mixing at optical frequencies beyond 350 THz and its use for creating optical field sampling devices with bandwidth extending across multiple octaves.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Novel application of frequency mixing principles to unprecedented frequency ranges - demonstrates creative bridging of electronic and optical domains"
+        },
+        {
+          "quote": "This work was highly successful, demonstrating orders of magnitude greater CEP sensitivity than prior methods at a fraction of the scale.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Quantifiable impact of creative solution - not just different, but dramatically better (orders of magnitude improvement)"
+        },
+        {
+          "quote": "recently proposed a research project for a visiting masters student, who he is now supervising, to investigate how silicon nanoantennas might be used for optical field detection in the mid-infrared. [His] work in this direction has also led to a proposal effort now underway with colleagues at Lincoln Laboratory",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Evidence of creative leadership - generating new research directions and proposals based on innovative ideas"
+        },
+        {
+          "quote": "His ability to seamlessly navigate between theoretical and experimental domains is exemplified in his work on field-sensitive nanoantenna detectors. [He] has demonstrated a harmonic frequency mixer utilizing high nonlinearity to produce an electric frequency comb, an important advancement towards better understanding of ultrafast and nonlinear optics.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Committee member's assessment of creative integration across domains with specific technical achievement"
+        }
+      ],
+      "notes": "Strong evidence of creative innovation with multiple concrete examples and measurable outcomes. Advisors explicitly highlight innovation beyond assigned tasks. Publications in high-impact venues (Nature Communications, Science Advances) support significance of creative contributions."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on: (1) Major career/field changes driven by problem-solving motivation - switched research topics after Master's degree to pursue translational healthcare applications, demonstrating willingness to make significant changes to address meaningful problems; (2) Proactive seeking of challenges across contexts - traveled to Germany to work on experimental apparatus, took initiative in organizing infrastructure improvements, proposed new research directions; (3) Sustained engagement despite significant obstacles - maintained research productivity while managing health issues requiring 'several-hour-long medical appointments each week'; (4) Evidence of going beyond assigned work - advisors note 'ability to innovate and think beyond what is asked of him' and 'has taken initiative in organizing sub-project meetings and infrastructure improvements.' The application states desire to 'translate technical expertise into impactful healthcare solutions' and 'apply skills to unmet real-world needs,' but this is supported by concrete actions (field change, shadowing physicians, talking to physician-scientists). Score of 8 rather than 9 because while motivation is strong and demonstrated through significant actions, evidence doesn't show founding of organizations or truly transformative commitments at the highest level.",
+      "evidence": [
+        {
+          "quote": "I am eager to translate my technical expertise in optics and electronics into impactful healthcare solutions. While I find my current research intellectually engaging, I want to apply my skills to unmet real-world needs.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "States motivation, but importantly this is backed by concrete actions below"
+        },
+        {
+          "quote": "In January of 2022, [he] decided to change research topics after completing his Master's degree. He chose to join the Quantum Nanostructures and Nanofabrication Group",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Concrete action - made major field change to pursue different problems, demonstrating willingness to take significant steps"
+        },
+        {
+          "quote": "For example, on Tuesday and Wednesdays, I typically shadow practicing physicians in the morning. I have also been actively talking to physicians/physician-scientists in the Boston area.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Proactive actions to understand real-world healthcare problems - not just stated interest but concrete engagement"
+        },
+        {
+          "quote": "[He] quickly learned the fabrication process of the devices, and traveled to Germany to work with a graduate student there to develop the experimental apparatus and perform the first measurements. [His] work was critical in getting this project underway, and even after returning to MIT, [he] remained an active collaborator",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Proactively traveled internationally to tackle challenging experimental problem; sustained engagement after return"
+        },
+        {
+          "quote": "He has taken initiative in organizing sub-project meetings and infrastructure improvements within the laboratory... [He] is willing to receive help and training from his peers, and also provides assistance in their research projects",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Proactive problem-solving beyond assigned research - addressing organizational and infrastructure challenges"
+        },
+        {
+          "quote": "he has done all of this while battling health issues that require several-hour-long medical appointments each week. Through this situation, he clearly appreciates the value of his time as a finite resource and he is adept at managing it.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Demonstrates exceptional persistence and commitment to problem-solving despite significant personal obstacles"
+        }
+      ],
+      "notes": "Strong pattern of proactive problem-seeking with concrete actions taken. Field change, international collaboration, physician shadowing, and persistence through health challenges all demonstrate high motivation. Advisors explicitly note initiative and going beyond assigned work."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on: (1) Consistently high level of technical detail in CV with specific methodologies, technologies, and outcomes - publications list precise technical achievements (e.g., 'electronic harmonic mixing at optical frequencies beyond 350 THz', 'sub-femtosecond resolution'); (2) Quantitative metrics provided where relevant - advisors note 'orders of magnitude greater CEP sensitivity', application mentions '>65 hours' of coaching with '>70 people', '>80 hours' of training; (3) Precise descriptions of technical approaches in reference letters with specific contexts and outcomes; (4) Comprehensive documentation across materials including exact timeframes, specific collaborators, and detailed project descriptions. However, the application form responses themselves are somewhat general in places - the 75-word responses about competencies and experiences use some generic language ('skilled in designing novel instrumentation systems', 'versatile researcher') without always providing the specific quantitative detail seen elsewhere. The CV and reference letters show strong detail orientation, but the candidate's own short-form writing could be more specific. Score of 7 rather than 8 because while technical materials show exceptional detail, some application responses lack the same level of precision.",
+      "evidence": [
+        {
+          "quote": "Expertise in optics, photonics, solid-state materials, ultrafast lasers, nanofabrication. Skilled in designing novel instrumentation systems. Experienced in proposal writing, scientific communication, and collaborative research.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Lists specific technical domains but lacks quantitative detail or specific examples in this response"
+        },
+        {
+          "quote": "I also serve as a MIT EECS Comm Lab fellow, helping peers refine presentations and writing... I lead workshops, offer 1:1 coaching (>65 hours to date with more than 70 people), and apply training in active listening and improv (>80 hours).",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Provides specific quantitative metrics - exact hours and number of people coached"
+        },
+        {
+          "quote": "his work has demonstrated that the plasmonic antennas act as nonlinear petahertz-scale electronic frequency mixers. Specifically, he and a colleague have experimentally demonstrated electronic harmonic mixing at optical frequencies beyond 350 THz and its use for creating optical field sampling devices with bandwidth extending across multiple octaves.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Highly specific technical detail with precise frequency ranges and technical specifications"
+        },
+        {
+          "quote": "This work was highly successful, demonstrating orders of magnitude greater CEP sensitivity than prior methods at a fraction of the scale.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Quantitative comparison of outcomes, though 'orders of magnitude' could be more precise"
+        },
+        {
+          "quote": "At a national lab in Berkeley, I conducted materials chemistry experiments while supporting non-Berkeley users. I later joined a nanotech startup as the third full-time employee, where I wore multiple hats: developing solar and [REDACTED] antifogging processes on arbitrary substrates, characterization for the other employees, synthesis of quantum dots.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Provides specific role details (third employee) and lists specific technical tasks, though could include more metrics"
+        },
+        {
+          "quote": "His comprehensive approach to experimental design and lab management. For example, he was instrumental in working together with everyone in our lab to pick a work-horse style laser to match the technical requirements, the potential roadmap, and personnel needed for our lab.",
+          "source": "Yeung_Matthew_app_redacted.pdf",
+          "context": "Specific example of systematic, detail-oriented approach to equipment selection considering multiple factors"
+        }
+      ],
+      "notes": "CV and technical descriptions show strong detail orientation with specific methodologies and quantitative metrics. Reference letters provide concrete examples of systematic approaches. Application form responses are somewhat less detailed, using more general language in places. Overall demonstrates good attention to specificity, particularly in technical contexts."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 87.10652995109558,
+    "materials_character_count": 48771,
+    "timestamp": "2026-01-16T14:43:06.189284"
+  }
+}

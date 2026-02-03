@@ -1,0 +1,117 @@
+{
+  "candidate": {
+    "candidate_id": "Zhorov_Iris_app_redacted",
+    "name": null,
+    "materials": [
+      "Zhorov_Iris_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:46:16.566342"
+  },
+  "overall_score": 4.0,
+  "overall_assessment": "This application is heavily weighted toward generic statements and lacks concrete evidence across all criteria. The candidate has relevant experiences (startup co-founder, curriculum developer, research roles) but fails to provide specific details about approaches, innovations, or outcomes. Most content consists of stated qualities ('passionate about creativity', 'interdisciplinary thinking') rather than demonstrated achievements with measurable results. The lack of specificity makes it impossible to assess the true depth of experience or capability.",
+  "recommendation": "Not recommended in current form. The application is approximately 80% generic statements and 20% vague descriptions of activities. While the candidate may have strong experiences, they are not effectively communicated with the specificity and evidence needed for evaluation. The candidate would need to completely rewrite the application with concrete examples, specific outcomes, and measurable achievements to be competitive.",
+  "strengths": [
+    "Diverse experience across startup, academic, and clinical settings",
+    "Has publications in peer-reviewed journals showing some research output",
+    "Personal connection to health equity provides potential motivation context"
+  ],
+  "areas_for_development": [
+    "Needs to replace generic statements with specific examples of creative solutions and their outcomes",
+    "Should provide quantitative metrics and concrete details about projects (team sizes, timelines, measurable results)",
+    "Must demonstrate problem-solving motivation through specific actions taken, not just stated passion",
+    "Application requires substantial specificity about methodologies, approaches, and documented impacts"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 4,
+      "confidence": "medium",
+      "reasoning": "The application contains mostly generic claims about creativity without concrete demonstrations. The candidate states 'I love innovation' and 'I am really passionate about creatively approaching problems' - these are textbook examples of fluff (Tier 1-2). The only semi-concrete example is co-founding Valkyra Technologies, described as 'a health tech startup focused on improving trauma care using AR and AI.' However, the description lacks specifics about what was innovative: no details on what novel approach was taken, what made the AR/AI solution different from existing approaches, or what creative problem-solving was involved. The branding work for a wellness platform is mentioned but described only as 'think creatively and strategically' without specific innovative approaches. The curriculum design work mentions 'integrating real-world case studies and open-access tools' but this is standard practice, not innovative. No evidence of novel methodologies, creative breakthroughs, or documented innovative impact. Maps to Tier 2 (3-4): mentions creative work but lacks specifics about what made approaches innovative.",
+      "evidence": [
+        {
+          "quote": "I love innovation in the medical field. I am really passionate about creatively approaching problems and expanding my knowledge in different fields.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "FLUFF - Generic statement about passion for innovation with no concrete examples. This is stated quality, not demonstrated creativity."
+        },
+        {
+          "quote": "One of my most formative experiences has been co-founding Valkyra Technologies, a health tech startup focused on improving trauma care using AR and AI. I lead cross-functional teams in product development, market research, and strategic partnerships",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Mentions startup and technologies (AR/AI) but provides no specifics about what was innovative about the approach, what creative solutions were developed, or what made it different from existing solutions."
+        },
+        {
+          "quote": "This role required me to dive into digital marketing, hospitality trends, and consumer psychology. I conducted competitive landscape research, crafted brand messaging, and built partnerships with boutique resorts. It pushed me to think creatively and strategically",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Claims to 'think creatively' but provides no specific examples of creative solutions or innovative approaches. Standard business activities described without innovation details."
+        }
+      ],
+      "notes": "The application is heavy on stated creativity ('passionate about creatively approaching problems') but light on demonstrated innovation. The Valkyra Technologies mention could be strong evidence if specifics were provided about novel approaches, but as written it's just a description of working on a startup. No evidence of creative methodologies, innovative outcomes, or novel solutions with documented impact."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The application shows adequate evidence of engaging with problems but limited evidence of proactively seeking challenging problems. The candidate describes working on trauma care through Valkyra Technologies and mentions 'collaborated with military medics and NGOs to understand real-world constraints' - this shows engagement with a real problem context. The personal statement mentions 'I'm an immigrant with a personal connection to health equity, having navigated the healthcare system firsthand as both a caregiver and a patient with a severe allergy. These experiences drive my passion' - this provides some motivation context but is more about stated passion than demonstrated problem-solving action. The curriculum development work shows engagement with an educational challenge. However, most examples describe problems encountered in assigned roles rather than evidence of seeking out challenging problems. No evidence of major actions taken specifically to solve problems (like changing fields, founding initiatives unprompted, or making significant investments). Maps to Tier 3 (5-6): clear evidence of engaging with problems when encountered, but limited evidence of proactively seeking challenges.",
+      "evidence": [
+        {
+          "quote": "I also collaborated with military medics and NGOs to understand real-world constraints—an experience that deepened my commitment to evidence-based, equitable innovation.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Shows engagement with real-world problem context (trauma care in low-resource environments) and seeking to understand constraints. Demonstrates problem engagement but within existing role."
+        },
+        {
+          "quote": "I'm an immigrant with a personal connection to health equity, having navigated the healthcare system firsthand as both a caregiver and a patient with a severe allergy. These experiences drive my passion for inclusive, human-centered innovation.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Provides personal motivation for problem-solving in health equity, but this is more about stated passion than concrete actions taken to solve problems."
+        },
+        {
+          "quote": "I have loved working in startups where I can see my work making a difference and I am looking to further develop that skill set.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Indicates preference for impact-oriented work but is vague about specific problem-solving motivation or actions taken."
+        },
+        {
+          "quote": "Another key experience was my role as a course co-developer for a graduate program at Albert Einstein College of Medicine, where I helped design curricula on digital health implementation. I worked alongside faculty to align learning goals with practical outcomes",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Shows engagement with educational problem (curriculum design) but appears to be an assigned role rather than proactively sought challenge."
+        }
+      ],
+      "notes": "The evidence shows competent engagement with problems in assigned contexts (startup work, curriculum development) but lacks strong evidence of proactively seeking out challenging problems or making significant sacrifices/investments to solve problems. The personal health equity motivation is stated but not backed by specific actions taken as a result of that motivation."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 3,
+      "confidence": "medium",
+      "reasoning": "The application materials are notably vague and lack specific details throughout. Most descriptions are generic without concrete metrics, outcomes, or technical specifics. For Valkyra Technologies, there are no details about what the AR/AI solution does, what specific problem it solves, what outcomes were achieved, team size, funding raised, or development timeline. The curriculum development work mentions 'helped design curricula' but provides no specifics about what was designed, how many courses, what specific learning objectives, or what the outcomes were. The branding work mentions 'conducted competitive landscape research, crafted brand messaging' but no details on methodology, number of competitors analyzed, or results. The CV lists skills like 'Medical Research, Patient Care, Immunohistochemistry' but the application text doesn't provide specific examples using these skills with details. The publications listed provide some specificity but the application text doesn't reference them or provide context. Most statements could apply to anyone in similar roles. Maps to Tier 2 (3-4): some specific information mentioned (technologies like AR/AI, specific institutions) but lacks depth and many important details omitted.",
+      "evidence": [
+        {
+          "quote": "One of my most formative experiences has been co-founding Valkyra Technologies, a health tech startup focused on improving trauma care using AR and AI. I lead cross-functional teams in product development, market research, and strategic partnerships, while working closely with clinical advisors and engineers to refine our solution for low-resource environments.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Mentions technologies (AR, AI) and context (trauma care, low-resource) but lacks specifics: What does the solution do? How many team members? What specific refinements were made? What outcomes achieved? No metrics or concrete details."
+        },
+        {
+          "quote": "Another key experience was my role as a course co-developer for a graduate program at Albert Einstein College of Medicine, where I helped design curricula on digital health implementation. I worked alongside faculty to align learning goals with practical outcomes, integrating real-world case studies and open-access tools.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Very vague description. No details on: How many courses? What specific topics? How many students? What specific learning goals? What case studies? What tools? No measurable outcomes provided."
+        },
+        {
+          "quote": "I conducted competitive landscape research, crafted brand messaging, and built partnerships with boutique resorts.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "Generic description of activities without specifics: How many competitors analyzed? What methodology? How many partnerships? What were the results? No quantitative details."
+        },
+        {
+          "quote": "My core competencies lie at the intersection of science, digital health, and innovation. I specialize in public health strategy, health technology implementation, and user-centered design.",
+          "source": "Zhorov_Iris_app_redacted.pdf",
+          "context": "FLUFF - Generic buzzwords without specific examples or details of how these competencies were demonstrated."
+        }
+      ],
+      "notes": "The application consistently lacks the level of detail expected for strong candidates. No quantitative metrics provided (team sizes, timelines, outcomes, percentages, numbers). Technical approaches are mentioned at high level (AR, AI) but not explained. Most descriptions are at the 'what I did' level without the 'how' or 'what resulted' details. The CV shows some specific skills and publications, but these aren't elaborated in the application text with concrete examples."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 59.76009130477905,
+    "materials_character_count": 8798,
+    "timestamp": "2026-01-16T14:46:16.566373"
+  }
+}

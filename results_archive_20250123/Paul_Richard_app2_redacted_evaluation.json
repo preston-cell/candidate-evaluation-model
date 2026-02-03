@@ -1,0 +1,138 @@
+{
+  "candidate": {
+    "candidate_id": "Paul_Richard_app2_redacted",
+    "name": null,
+    "materials": [
+      "Paul_Richard_app2_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:14:33.774959"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with demonstrated creative problem-solving abilities, proactive problem-seeking motivation, and exceptional attention to detail. Stands out for translating clinical insights into concrete technical solutions (AI triage system, information architecture improvements) with measurable outcomes. Shows pattern of innovation across multiple contexts and willingness to work outside expertise areas. Evidence is concrete and specific throughout - minimal fluff detected.",
+  "recommendation": "Strong fit - Recommend for interview. Candidate demonstrates concrete evidence of creativity, problem-solving drive, and detail orientation with minimal application fluff. Supervisor (current Catalyst Fellow) provides specific validation. Candidate's ability to bridge clinical and technical domains, combined with track record of implementing solutions with measurable outcomes, aligns well with Catalyst's focus on translational research and needs validation. Risk: innovations are context-specific to VA rather than broadly generalizable, but this may be offset by strong execution skills and willingness to learn new methodologies.",
+  "strengths": [
+    "Creative application of technology to clinical workflow problems with documented impact (AI triage system converting 60-min to 30-min appointments, MH service guide reducing misroutes)",
+    "Proactive problem identification and sustained engagement - volunteers for leadership roles, champions new therapies, mentors 14+ staff",
+    "Exceptional detail orientation with consistent quantitative metrics (117% productivity, 476 sessions = 16% of total, 40 workshops across 10 locations)",
+    "Pattern recognition across disciplines - recognizes information architecture as clinical intervention, bridges clinical and technical domains",
+    "Strong supervisor validation with specific examples (not generic praise) - supervisor is current Catalyst Fellow who explicitly states 'This would be right up Rich's alley'"
+  ],
+  "areas_for_development": [
+    "Innovation scope is primarily within VA/healthcare context - no evidence of field-redefining contributions or external recognition as thought leader",
+    "Problem-solving motivation strong but no evidence of major career pivots or founding organizations specifically to address challenges",
+    "While detail orientation is strong, some areas could include more precise timeframes or additional quantitative breakdowns to reach exemplar level"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistent creative problem-solving across multiple contexts with specific, measurable outcomes. This maps to Tier 4 (7-8) based on: (1) Multiple concrete examples of innovative solutions with documented impact, (2) Novel approaches that weren't just applying existing methods, (3) Evidence of creative leadership through teaching others. Key innovations include: designing an AI triage-summary system that reduced prep time enough to convert 60-minute appointments to 30-minute slots; creating a single-source mental health guide that solved information architecture problems causing care delays; developing Power Apps/Excel coverage tools and documentation templates. The candidate shows pattern recognition across domains (clinical care, information architecture, AI workflow automation) and translates insights into executable solutions. Not scored 9-10 because innovations are within VA/healthcare context rather than field-redefining contributions.",
+      "evidence": [
+        {
+          "quote": "I designed a prompt chain that extracts med timeline, diagnoses, allergies, risk flags, monitoring needs, and open tasks into a one-page brief. I ran side-by-side tests with frontline psychiatrists, then iterated with the Chief/Deputy Chief and program managers to set guardrails (human-in-the-loop, audit list, escalation rules). Results: prep time dropped enough to convert overflow new-patient visits to 30 minutes without sacrificing safety checks.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Concrete example of innovative AI solution with specific methodology (prompt chain design, iterative testing, guardrails) and measurable outcome (60-min to 30-min conversion). Shows creative application of AI to clinical workflow problem."
+        },
+        {
+          "quote": "I mapped available services and identified root causes: naming inconsistencies and missing 'who/when' referral rules. I drafted a single-source MH guide (eligibility, contraindications, how to book), 2 lines per service, and hyperlinked all services to a shared drive with additionally detailed information for mental health providers. We saw fewer misroutes, increase in access to care, and faster routes for urgent cases.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Creative reframing of clinical problem as information architecture challenge. Novel solution (single-source guide with hyperlinks) with documented outcomes (fewer misroutes, increased access)."
+        },
+        {
+          "quote": "The lesson: Information Architecture is clinical care by other means, and good IA reduces waste and risk.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Demonstrates creative conceptual bridging - recognizing information design as clinical intervention. Shows pattern recognition across disciplines."
+        },
+        {
+          "quote": "helped design lightweight coverage tools (Power Apps + Excel), and created documentation templates that reduced note lag while improving consistency.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "From supervisor letter - confirms pattern of creating novel tools/templates to solve workflow problems. Multiple innovations documented."
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with specific methodologies and outcomes. Supervisor confirms pattern of innovation. Not generic 'I am creative' statements - actual novel solutions with measurable impact."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Maps to Tier 4 (7-8) based on: (1) Multiple examples of proactively identifying and addressing problems beyond job requirements, (2) Evidence of sustained engagement with complex issues, (3) Pursuit of additional training/skills to solve problems, (4) Pattern of taking on leadership roles to address challenges. Candidate proactively led AI triage effort when not an informaticist, created MH service guide to solve access problems, championed introduction of new therapy (PGDT) to fill care gap, and regularly volunteers for leadership/training roles. Evidence of persistence: 'I ran side-by-side tests...then iterated with Chief/Deputy Chief' shows sustained engagement. However, not scored 8+ because no evidence of major life/career changes driven specifically by problem-solving motivation or founding organizations to address challenges.",
+      "evidence": [
+        {
+          "quote": "I'm not an informaticist, but when multiple med providers departed and hundreds of Veterans needed reassignment, I led an AI triage-summary effort.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Proactively took on challenge outside expertise area. Shows motivation to solve problems even when not assigned/required."
+        },
+        {
+          "quote": "Championed the introduction of Prolonged Grief Disorder Treatment as the first provider at the Orlando VA, addressing a critical gap in Veteran care.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Proactively identified care gap and took action to fill it. First provider = took initiative rather than waiting for assignment."
+        },
+        {
+          "quote": "Veterans and referring providers reported 'getting lost' in our mental health offerings, delay in care when veterans referred to groups without knowing the day/time, and underutilized services based on services providers and veterans were unaware of previously. I mapped available services and identified root causes",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Identified problem through stakeholder feedback and proactively engaged in root cause analysis. Shows problem-seeking behavior."
+        },
+        {
+          "quote": "In my absence, he regularly volunteers to leads an optional weekly Mental Health Social Work meeting, running targeted trainings on tools and resources and turning staff feedback into implementable SOPs.",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Supervisor confirms pattern of volunteering for leadership roles to solve problems. 'Volunteers' indicates intrinsic motivation."
+        },
+        {
+          "quote": "Trained and mentored 14 new and existing staff members on EBP implementation, documentation, and productivity tools",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Took on mentoring role to solve knowledge/implementation problems. Shows sustained engagement with helping others solve problems."
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking and sustained engagement. Multiple examples across contexts. Not just reactive problem-solving - actively identifies and addresses challenges."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Maps to Tier 4 (7-8) based on: (1) Consistently high level of detail with specific examples, contexts, and outcomes throughout materials, (2) Includes quantitative metrics extensively (117% productivity, 476 sessions = 16% of all CBT-D sessions, 14 staff trained, 40 workshops facilitated), (3) Precise descriptions of technical approaches (prompt chain components, guardrails, audit trails), (4) Comprehensive documentation of methodologies. Examples: AI system description includes specific components (med timeline, diagnoses, allergies, risk flags, monitoring needs, open tasks), implementation details (side-by-side tests, iteration with Chief/Deputy Chief, human-in-the-loop, audit list, escalation rules), and outcomes (30-min vs 60-min conversion). MH guide includes precise format (2 lines per service, hyperlinked). CV includes specific EBP counts (6 different therapies listed with acronyms), exact productivity metrics, and detailed training history. Not scored 9-10 because while detail is strong, it doesn't reach 'extraordinarily detailed' or 'exemplar' level - some sections could include more precise timeframes or additional quantitative breakdowns.",
+      "evidence": [
+        {
+          "quote": "I designed a prompt chain that extracts med timeline, diagnoses, allergies, risk flags, monitoring needs, and open tasks into a one-page brief. I ran side-by-side tests with frontline psychiatrists, then iterated with the Chief/Deputy Chief and program managers to set guardrails (human-in-the-loop, audit list, escalation rules).",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Exceptional level of technical detail: specific components extracted, testing methodology, stakeholders involved, and specific safeguards implemented."
+        },
+        {
+          "quote": "Delivered 476 CBT-D sessions in FY24, completing 16% of all CBT-D sessions across OVAHCS. Achieved 117% productivity for FY24",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Precise quantitative metrics with context (percentage of total, productivity rate, fiscal year specified)."
+        },
+        {
+          "quote": "I drafted a single-source MH guide (eligibility, contraindications, how to book), 2 lines per service, and hyperlinked all services to a shared drive with additionally detailed information",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Specific format details (2 lines per service), structure (eligibility, contraindications, booking), and technical implementation (hyperlinked to shared drive)."
+        },
+        {
+          "quote": "Trained and mentored 14 new and existing staff members on EBP implementation, documentation, and productivity tools",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Exact number of staff trained with specific training areas listed."
+        },
+        {
+          "quote": "Provides 6 Evidence Based Practices of Cognitive Behavioral Therapy for Depression (CBT-D), Cognitive Behavioral Therapy for Chronic Pain (CBT-CP), Prolonged Grief Disorder Treatment (PGDT), Panic Control Treatment (PCT), Prolonged Exposure (PE), and Interpersonal Therapy for Depression (IPT-D)",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Complete enumeration with full names and acronyms for all six therapies. Shows systematic attention to detail."
+        },
+        {
+          "quote": "Facilitated 40 experiential weekend workshops for men to learn emotional intelligence and coping skills in Florida, Georgia, Tennessee, West Virginia, Pennsylvania, New York, Texas, California, Massachusetts, and Mexico (in Spanish)",
+          "source": "Paul_Richard_app2_redacted.pdf",
+          "context": "Exact count (40 workshops), all locations listed, language specification. Comprehensive detail."
+        }
+      ],
+      "notes": "Consistently strong detail orientation throughout all materials. Quantitative metrics provided where relevant. Technical descriptions include specific components and methodologies. CV demonstrates systematic documentation of training, certifications, and achievements."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 74.8811891078949,
+    "materials_character_count": 24358,
+    "timestamp": "2026-01-16T14:14:33.775004"
+  }
+}

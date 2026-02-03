@@ -1,0 +1,123 @@
+{
+  "candidate": {
+    "candidate_id": "Dave_Kishan_app_redacted",
+    "name": null,
+    "materials": [
+      "Dave_Kishan_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:23:05.827284"
+  },
+  "overall_score": 5.0,
+  "overall_assessment": "Final-year medical student with diverse clinical exposure (200+ hours across multiple specialties) and research experience in neurodegeneration and oncology. Has taken concrete steps to build relevant skills (MIT AI certification, lifestyle medicine certificate) and shows awareness of systemic healthcare problems. However, application contains significant fluff and lacks concrete evidence of creative innovation or sustained problem-solving achievements. Key initiatives mentioned (SAMHAC, internship program development) are described without sufficient detail about approach, scale, or impact. Demonstrates adequate competency across evaluated criteria but does not provide strong evidence of exceptional performance.",
+  "recommendation": "Potential fit with reservations. Candidate shows adequate foundation and relevant experience but lacks strong evidence of the creative problem-solving and exceptional achievement that would indicate a strong fit. Would benefit from providing concrete details about initiatives founded, specific innovations developed, and measurable outcomes achieved. Current evidence suggests competent professional development but not exceptional performance.",
+  "strengths": [
+    "Diverse clinical and research experience across wet lab, clinical trials, and patient care settings",
+    "Concrete skill-building through relevant certifications (MIT AI for Biotech, Lifestyle Medicine)",
+    "Co-authored publication in peer-reviewed journal (Journal of Alzheimer's Disease)",
+    "Awareness of systemic healthcare challenges and interest in structural solutions"
+  ],
+  "areas_for_development": [
+    "Lacks concrete evidence of creative innovation - mentions developing programs/initiatives but provides no details about what made them innovative or their impact",
+    "Limited demonstration of sustained engagement with challenging problems - more stated interests than documented actions",
+    "Inconsistent detail orientation - strong in some areas (clinical hours, techniques) but vague in others (SAMHAC, outcomes)",
+    "Application contains significant fluff and abstract language without supporting concrete examples"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 4,
+      "confidence": "medium",
+      "reasoning": "The candidate provides mostly vague statements about creative thinking without concrete demonstrations of innovative solutions. The application statement contains flowery language ('spaces where observation becomes transformation,' 'stay weird enough to find real answers') which is fluff. The only semi-concrete example is founding SAMHAC, but no details are provided about what made this innovative or what specific creative approaches were used. The CV mentions 'Developed the Clinical Medicine Student Internship Program' at Eli Lilly, but provides no information about what was innovative about this program, what problem it solved, or what impact it had. The research work described (cell culture, ELISA, bioassays, protocol audits) represents competent execution of standard methodologies, not creative innovation. The psychiatry treasurer role describes advocacy for funding but doesn't demonstrate creative problem-solving. This maps to Tier 2 (3-4): mentions developing solutions but doesn't explain what made them innovative or creative.",
+      "evidence": [
+        {
+          "quote": "Developed the 'Clinical Medicine Student Internship Program' under the mentorship of Clinical Operations Lead: Matthew",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Only potential example of creative development, but lacks any details about innovation, approach, or impact"
+        },
+        {
+          "quote": "Founder of SAMHAC, a global health equity initiative supported by Snowflake Connect.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Mentions founding an initiative but provides zero details about what was creative or innovative about the approach"
+        },
+        {
+          "quote": "I want to be around minds that slow things down, ask better questions, and stay weird enough to find real answers.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Generic fluff about creativity - stated quality without demonstration"
+        }
+      ],
+      "notes": "The candidate uses creative language in their writing but provides minimal concrete evidence of creative problem-solving or innovation. Most examples describe standard professional activities without demonstrating novel approaches or innovative thinking."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation with some concrete actions but falls short of strong evidence. Concrete actions include: (1) Shifting research focus from wet lab to clinical operations to understand trial logic, (2) Founding SAMHAC initiative (though details are vague), (3) Obtaining MIT certification in AI for Biotech to build relevant skills, (4) Pursuing additional certificates in leadership and lifestyle medicine. The application statement shows awareness of systemic problems ('patients falling through systemic cracks,' 'problems aren't just clinical, but structural') and asks relevant questions ('How do we scale human-centered care?'). However, these are mostly stated interests rather than demonstrated sustained engagement with solving specific problems. The psychiatry treasurer role shows some proactive thinking about resource allocation for mental health support. The reference to bridging communication between research ops and clinical teams at Eli Lilly ('not because I asked to, but because I listened long enough for people to start looping me in') shows some initiative but is somewhat passive. This maps to Tier 3 (5-6): demonstrates proactive problem identification in familiar contexts with some clear action steps, but limited evidence of seeking out particularly challenging problems or sustained persistence through major obstacles.",
+      "evidence": [
+        {
+          "quote": "At USC Keck's Alzheimer's Therapeutic Research Institute and Eli Lilly, I shifted into clinical operations: protocol audits, subject visits, stakeholder interviews. I began to understand the logic behind trials.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Shows proactive shift to understand trial systems, demonstrating problem-solving motivation"
+        },
+        {
+          "quote": "MIT-certified in AI for Biotech & Pharma; trained in model evaluation, and real-world data strategy.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Concrete action taken to build skills for addressing problems in biotech/pharma"
+        },
+        {
+          "quote": "I found myself bridging communication between research ops and clinical teams, not because I asked to, but because I listened long enough for people to start looping me in.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Shows some initiative in problem-solving, though somewhat passive framing"
+        },
+        {
+          "quote": "I'm drawn to the questions we don't bill for: How do we scale human-centered care? How do we design research that moves at the pace of real need?",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Identifies systemic problems but these are stated interests, not demonstrated actions taken to solve them"
+        }
+      ],
+      "notes": "The candidate shows awareness of systemic problems and has taken some concrete actions (certifications, role shifts), but evidence of sustained engagement with particularly challenging problems or major investments to solve problems is limited."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 5,
+      "confidence": "high",
+      "reasoning": "The candidate provides adequate specificity in some areas but lacks detail in others. Specific details provided include: (1) '200+ clinical hours across pediatrics, psychiatry, OB/GYN, and general practice in U.S. and Ireland' - quantitative metric, (2) Specific lab techniques: 'cell culture, ELISA, and bioassays', (3) Specific institutions and timeframes on CV (dates for all positions), (4) Co-authored publication with citation, (5) Specific certifications listed. However, significant details are missing: (1) No specifics about SAMHAC initiative - what it does, scale, impact, (2) No metrics for the internship program developed at Eli Lilly, (3) No quantitative outcomes from clinical trial work, (4) Vague description of psychiatry treasurer role without budget numbers or specific events funded, (5) No details about what 'bridging communication' actually entailed or what outcomes resulted. The application responses are often abstract and lack concrete examples (e.g., 'observation becomes transformation,' 'map the circuitry of the problem'). The CV provides basic structure with dates and institutions but many bullet points lack depth (e.g., 'Maintained accurate records' without specifying what systems, volume, or complexity). This maps to Tier 3 (5-6): adequate level of specificity in some areas with concrete examples, but many sections lack depth and quantitative metrics.",
+      "evidence": [
+        {
+          "quote": "Final year medical student with 200+ clinical hours across pediatrics, psychiatry, OB/GYN, and general practice in U.S. and Ireland.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Provides specific quantitative metric and enumerated contexts"
+        },
+        {
+          "quote": "Wet lab research in oncology (Eli Lilly) and neurodegeneration (USC ATRI), with experience in cell culture, ELISA, and bioassays.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Lists specific technical methodologies"
+        },
+        {
+          "quote": "Neuronal Exosome-Derived Human Tau is Toxic to Recipient Mouse Neurons in vivo. Journal of Alzheimer's Disease. 67. 1-13. 10.3233/JAD-180776.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Provides complete citation with journal, volume, pages, and DOI"
+        },
+        {
+          "quote": "Founder of SAMHAC, a global health equity initiative supported by Snowflake Connect.",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Mentions initiative but provides zero details about scope, activities, or impact - lack of specificity"
+        },
+        {
+          "quote": "Developed the 'Clinical Medicine Student Internship Program' under the mentorship of Clinical Operations Lead: Matthew",
+          "source": "Dave_Kishan_app_redacted.pdf",
+          "context": "Names the program but provides no details about structure, participants, or outcomes - lack of specificity"
+        }
+      ],
+      "notes": "The candidate demonstrates inconsistent detail orientation - strong in some areas (clinical hours, lab techniques, publication citation) but vague in others (SAMHAC, internship program, specific outcomes). Many descriptions are abstract rather than concrete."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 59.677666902542114,
+    "materials_character_count": 12932,
+    "timestamp": "2026-01-16T13:23:05.827336"
+  }
+}

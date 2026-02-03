@@ -1,0 +1,128 @@
+{
+  "candidate": {
+    "candidate_id": "Katari_Ravi_app_redacted",
+    "name": null,
+    "materials": [
+      "Katari_Ravi_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:41:07.091721"
+  },
+  "overall_score": 6.666666666666667,
+  "overall_assessment": "The candidate demonstrates strong detail orientation and problem-solving motivation, with adequate creative capacity. The career trajectory shows deliberate engagement with complex problems across clinical, policy, and business domains. Strongest evidence is in detail orientation (comprehensive CV, specific metrics) and problem-solving drive (multiple career pivots, proactive problem identification). Creativity is less well-documented—while interdisciplinary breadth suggests capacity, the materials lack specific examples of innovative solutions with documented impact. The candidate appears to be a competent executor who seeks challenging problems and approaches them systematically, but evidence of groundbreaking innovation is limited.",
+  "recommendation": "Potential fit with development. The candidate shows strong fundamentals in problem-solving motivation and detail orientation, with demonstrated ability to engage with complex challenges across multiple domains. However, the program emphasizes innovation and creative solution development, where evidence is weaker. The candidate would benefit from opportunities to develop and document innovative approaches with measurable impact. Consider for interview to probe depth of creative problem-solving capabilities not fully captured in written materials.",
+  "strengths": [
+    "Strong detail orientation with consistent use of specific metrics and comprehensive documentation (score: 7)",
+    "Demonstrated problem-solving motivation through significant career actions and sustained engagement with complex challenges (score: 7)",
+    "Interdisciplinary breadth spanning clinical medicine, policy research, and business consulting",
+    "Proactive problem identification evidenced by BCG work on hospital revenue optimization and pharmaceutical policy research"
+  ],
+  "areas_for_development": [
+    "Limited concrete evidence of innovative solution development—most examples show competent execution rather than novel approaches (creativity score: 6)",
+    "Lack of documented transformative innovations or methodologies that others have adopted",
+    "Some work descriptions lack outcome metrics (e.g., actual improvements achieved from hospital optimization)",
+    "Application statement contains conceptual thinking but no specific examples of creative solutions previously developed"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate shows some creative thinking in bridging clinical medicine with business/policy contexts, but evidence is mixed. The BCG work demonstrates creative application of clinical expertise to business problems (e.g., 'applied my clinical experience to assess diagnostic utility and advised on commercialization strategies'), but lacks specifics about what made the approach innovative. The career pivot from medicine to consulting without an MBA shows willingness to venture outside comfort zones, but this is more about adaptability than creative solution development. The research publications span multiple domains (tissue engineering, public health, policy), suggesting interdisciplinary thinking, but the materials don't explain what was novel about the approaches. The application statement about 'balance between reckless innovation and social responsibility' is conceptual but lacks concrete examples of creative solutions developed. Most evidence falls in the 'adequate competency' range (Tier 3) with some elements reaching 'above average' (Tier 4) due to the interdisciplinary breadth, but no transformative innovations are documented.",
+      "evidence": [
+        {
+          "quote": "At Boston Consulting Group, I helped launch a digital health unit for a major pharmaceutical client. I led market research to identify high-impact therapeutic areas and guided the client through the acquisition of a digital sleep health company. I applied my clinical experience to assess diagnostic utility and advised on commercialization strategies, blending medical judgment with business analysis.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Shows creative application of clinical expertise to business context, but lacks specifics about what made the approach innovative"
+        },
+        {
+          "quote": "I pivoted from medicine to management consulting which, unapologetically, was a dramatic shift in environment. I do not have an MBA. And until that point, I had not opened up Excel or Powerpoint in over a decade.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Demonstrates willingness to venture outside comfort zone, but this is adaptability rather than creative solution development"
+        },
+        {
+          "quote": "Published over 20 articles as primary or co-author on a variety of subjects including tissue engineering, public health, global health, and foreign affairs.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Shows interdisciplinary breadth, but materials don't explain what was novel about the research approaches"
+        },
+        {
+          "quote": "The emphasis on a 'clinical needs-driven approach' as opposed to funding or incentives stands out to me immediately... The fellowship, to me, represents an opportunity to articulate and actualize a balance between reckless innovation and social responsibility.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Conceptual thinking about innovation, but no concrete examples of creative solutions actually developed"
+        }
+      ],
+      "notes": "The candidate has breadth across clinical, research, and business domains, which suggests capacity for creative thinking, but the materials lack specific examples of innovative solutions with documented impact. Most descriptions are of competent execution rather than novel approaches."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation through multiple career pivots and sustained engagement with complex challenges. The pivot from clinical medicine to consulting represents a significant action taken to address problems from different angles ('interrogate challenges from multiple perspectives—scientific, policy, and business'). The work at CEPR on pharmaceutical policy ('co-authored multiple white papers on pharmaceutical policy... informing public debates on drug pricing and transparency') shows engagement with systemic problems. The BCG work on identifying '$300 million dollar revenue shortfall' and optimizing hospital processes demonstrates proactive problem identification. The career trajectory shows sustained engagement: emergency medicine → consulting → venture capital, each representing deliberate choices to engage with different types of problems. However, the materials lack evidence of extraordinary persistence through major obstacles or transformative problem-solving initiatives that would warrant a score of 8+. The evidence maps to Tier 4 (7-8) 'Above Average / Strong Drive' based on multiple examples of proactively seeking challenging problems and taking significant actions (career changes) to solve them.",
+      "evidence": [
+        {
+          "quote": "At Boston Consulting Group... Assisted a major hospital network address $300 million dollar revenue shortfall. Identified delays in discharge and increased length-of-stay as principal driver of expenditures. Optimized hospital processes and pathways to reduce length-of-stay",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Demonstrates proactive problem identification and engagement with complex operational challenges"
+        },
+        {
+          "quote": "At the [Center] for Economic and Policy Research, I co-authored multiple white papers on pharmaceutical policy. This work sharpened my skills in distilling complex data into actionable insights, informing public debates on drug pricing and transparency.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Shows sustained engagement with systemic policy problems"
+        },
+        {
+          "quote": "I pivoted from medicine to management consulting which, unapologetically, was a dramatic shift in environment... Needless to say, I am driven and motivated by curiosity and venturing outside of my comfort zone.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Demonstrates significant action taken (career change) to engage with problems from different perspectives"
+        },
+        {
+          "quote": "Both experiences strengthened my ability to interrogate challenges from multiple perspectives—scientific, policy, and business—and to influence outcomes in mission-driven organizations.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Shows deliberate pursuit of diverse problem-solving contexts"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking and significant actions taken (multiple career pivots), but lacks documentation of extraordinary persistence through major obstacles or founding initiatives that would warrant exceptional scores."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation throughout the materials. The CV provides specific quantitative metrics: 'MCAT Score: 37 (98th percentile)', 'Published over 20 articles', '$300 million dollar revenue shortfall', 'Present obligation is 60 hours per month divided among 5 shifts'. The BCG work descriptions include specific outcomes: 'Identified the major therapeutic areas with relevance to digital health', 'Conducted expert interviews and launched surveys', 'Constructed a financial model forecasting commercialization and revenue potential'. The research publications list is comprehensive with full citations, co-authors, and journal names. Work experience includes precise timeframes (month/year format) and specific institutions. The materials consistently provide concrete details about technologies, contexts, and outcomes. However, some sections could be more specific (e.g., the digital health unit launch lacks metrics on impact, the hospital optimization work doesn't specify the actual reduction in length-of-stay achieved). The evidence maps to Tier 4 (7-8) 'Above Average / Strong Detail Orientation' based on consistently high level of detail with specific examples, contexts, and outcomes, including quantitative metrics where relevant.",
+      "evidence": [
+        {
+          "quote": "MCAT Score: 37 (98th percentile)",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Provides specific quantitative metric rather than vague 'high score'"
+        },
+        {
+          "quote": "Assisted a major hospital network address $300 million dollar revenue shortfall. Identified delays in discharge and increased length-of-stay as principal driver of expenditures. Optimized hospital processes and pathways to reduce length-of-stay and consequently reduce dependence on agency nurse",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Includes specific financial metric and concrete problem identification"
+        },
+        {
+          "quote": "Conducted expert interviews and launched surveys to determine unmet diagnostic needs among clinicians and to test whether there was a compelling use case for the novel platform. Constructed a financial model forecasting commercialization and revenue potential of the novel platform with acknowledgment of existing players and cannibalization of earlier diagnostic platforms",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Provides specific methodologies and comprehensive approach details"
+        },
+        {
+          "quote": "My present obligation is 60 hours per month divided among 5 shifts of my choosing.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Precise quantification of time commitment rather than vague 'part-time'"
+        },
+        {
+          "quote": "Published over 20 articles as primary or co-author on a variety of subjects including tissue engineering, public health, global health, and foreign affairs.",
+          "source": "Katari_Ravi_app_redacted.pdf",
+          "context": "Specific number and domains, backed by comprehensive publication list with full citations"
+        }
+      ],
+      "notes": "Strong detail orientation evidenced by quantitative metrics, specific timeframes, and comprehensive documentation. Some areas could include more outcome metrics (e.g., actual improvements achieved), but overall demonstrates consistent attention to specificity."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 59.04579830169678,
+    "materials_character_count": 32686,
+    "timestamp": "2026-01-16T13:41:07.091741"
+  }
+}

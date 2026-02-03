@@ -34,6 +34,7 @@ from candidate_evaluator.prompts.evaluation_prompts import (
     get_comparison_prompt,
     get_holistic_evaluation_prompt
 )
+from candidate_evaluator.prompt_manager import PromptManager
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +55,7 @@ class CandidateEvaluator:
             max_file_size_mb=config.processing.max_file_size_mb
         )
         self.research_generator = ResearchReportGenerator()
+        self.prompt_manager = PromptManager()
         self._last_processed_files = None  # Store for research report generation
 
     def evaluate_candidate(
@@ -696,11 +698,14 @@ Original request:
             Exception: If API call fails
         """
         try:
+            # Use custom system prompt if available
+            system_prompt = self.prompt_manager.get_system_prompt()
+
             message = self.client.messages.create(
                 model=self.config.api.model,
                 max_tokens=self.config.api.max_tokens,
                 temperature=self.config.api.temperature,
-                system=SYSTEM_PROMPT,
+                system=system_prompt,
                 messages=[
                     {
                         "role": "user",

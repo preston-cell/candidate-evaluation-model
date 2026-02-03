@@ -27,6 +27,7 @@ from candidate_evaluator.exporters import (
 )
 from candidate_evaluator.job_manager import JobManager
 from candidate_evaluator.background_worker import JobStatus
+from candidate_evaluator.prompt_manager import PromptManager
 
 # No custom CSS - using Streamlit defaults for reliability
 CUSTOM_CSS = ""
@@ -861,6 +862,12 @@ def results_page():
         else:
             st.subheader(f"Candidates with Both Evaluations: {len(both_ids)}")
 
+            # Disparity analysis (overall statistics)
+            display_disparity_analysis(criteria_by_id, holistic_by_id, both_ids)
+
+            # Individual candidate comparison
+            st.subheader("Individual Candidate Comparison")
+
             # Candidate selector
             selected_id = st.selectbox(
                 "Select Candidate",
@@ -883,6 +890,97 @@ def results_page():
                 with col2:
                     st.markdown("### Holistic Evaluation")
                     display_holistic_evaluation_result(holistic_result)
+
+
+def display_disparity_analysis(criteria_by_id: dict, holistic_by_id: dict, both_ids: list):
+    """Display statistical analysis of method disparity vs candidate spread."""
+    import numpy as np
+
+    if len(both_ids) < 3:
+        st.info("Need at least 3 candidates with both evaluations for disparity analysis.")
+        return
+
+    # Calculate scores and differences
+    criteria_scores = [criteria_by_id[cid].overall_score for cid in both_ids]
+    holistic_scores = [holistic_by_id[cid].overall_score for cid in both_ids]
+    score_diffs = [criteria_by_id[cid].overall_score - holistic_by_id[cid].overall_score
+                   for cid in both_ids]
+
+    # Candidate spread (average std of both methods)
+    criteria_std = np.std(criteria_scores)
+    holistic_std = np.std(holistic_scores)
+    candidate_std = (criteria_std + holistic_std) / 2
+
+    # Method disparity
+    method_disparity_std = np.std(score_diffs)
+    method_disparity_mean = np.mean(np.abs(score_diffs))
+
+    # Correlation
+    correlation = np.corrcoef(criteria_scores, holistic_scores)[0, 1]
+
+    # Disparity ratio
+    disparity_ratio = method_disparity_std / candidate_std if candidate_std > 0 else 0
+
+    st.markdown("### Method Disparity Analysis")
+    st.caption("Comparing the spread of scores across candidates vs. the disagreement between evaluation methods.")
+
+    # Key metrics
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.metric("Candidate Spread (σ)", f"{candidate_std:.2f} pts")
+
+    with col2:
+        st.metric("Method Disparity (σ)", f"{method_disparity_std:.2f} pts")
+
+    with col3:
+        st.metric("Disparity Ratio", f"{disparity_ratio:.2f}")
+
+    with col4:
+        st.metric("Correlation", f"{correlation:.2f}")
+
+    # Interpretation
+    if disparity_ratio < 0.3:
+        st.success(f"**Methods strongly agree.** Method differences ({method_disparity_std:.2f}) are much smaller than candidate differences ({candidate_std:.2f}).")
+    elif disparity_ratio < 0.5:
+        st.info(f"**Methods mostly agree.** Method differences are moderate compared to candidate spread.")
+    elif disparity_ratio < 0.7:
+        st.warning(f"**Moderate disagreement.** Method choice affects scores nearly as much as candidate quality.")
+    else:
+        st.error(f"**Significant disagreement.** Method differences ({method_disparity_std:.2f}) are large relative to candidate spread ({candidate_std:.2f}). Consider investigating why methods diverge.")
+
+    # Scatter plot with confidence band
+    with st.expander("View Scatter Plot", expanded=True):
+        import matplotlib.pyplot as plt
+
+        fig, ax = plt.subplots(figsize=(8, 6))
+
+        # Plot points
+        ax.scatter(criteria_scores, holistic_scores, alpha=0.6, s=50, c='steelblue')
+
+        # Perfect agreement line
+        min_score = min(min(criteria_scores), min(holistic_scores)) - 0.5
+        max_score = max(max(criteria_scores), max(holistic_scores)) + 0.5
+        ax.plot([min_score, max_score], [min_score, max_score], 'k--', alpha=0.5, label='Perfect Agreement')
+
+        # Confidence band (±1σ method disparity)
+        x_line = np.linspace(min_score, max_score, 100)
+        ax.fill_between(x_line, x_line - method_disparity_std, x_line + method_disparity_std,
+                        alpha=0.2, color='orange', label=f'±1σ Band ({method_disparity_std:.2f} pts)')
+
+        ax.set_xlabel('Criteria-Based Score')
+        ax.set_ylabel('Holistic Score')
+        ax.set_title('Criteria vs. Holistic Scores')
+        ax.legend(loc='lower right')
+        ax.set_xlim(min_score, max_score)
+        ax.set_ylim(min_score, max_score)
+        ax.set_aspect('equal')
+        ax.grid(True, alpha=0.3)
+
+        st.pyplot(fig)
+        plt.close()
+
+    st.markdown("---")
 
 
 def display_comparison_summary(criteria_result, holistic_result):
@@ -1896,6 +1994,108 @@ def settings_page():
         if st.button("Cleanup Old Jobs"):
             job_manager.cleanup_old_jobs(days=7)
             st.success("Cleaned up jobs older than 7 days")
+
+    st.markdown("---")
+
+    # Prompt Editor Section
+    st.subheader("Prompt Editor")
+    st.caption("View and customize the prompts used for candidate evaluation.")
+
+    # Initialize prompt manager
+    if 'prompt_manager' not in st.session_state:
+        st.session_state.prompt_manager = PromptManager()
+
+    prompt_manager = st.session_state.prompt_manager
+
+    # Prompt type selector
+    prompt_options = {
+        "System Prompt": "system",
+        "Criteria-Based Template": "criteria",
+        "Holistic Template": "holistic"
+    }
+
+    selected_prompt_name = st.selectbox(
+        "Select Prompt to View/Edit",
+        list(prompt_options.keys()),
+        key="prompt_selector"
+    )
+    selected_prompt_type = prompt_options[selected_prompt_name]
+
+    # Get current prompt and metadata
+    metadata = prompt_manager.get_prompt_metadata(selected_prompt_type)
+
+    # Status indicator
+    if metadata["is_custom"]:
+        st.info(f"Status: **Custom** (modified {metadata['updated_at'][:10] if metadata['updated_at'] else 'unknown'})")
+    else:
+        st.success("Status: **Default** (using built-in prompt)")
+
+    # Get current content
+    if selected_prompt_type == "system":
+        current_content = prompt_manager.get_system_prompt()
+    elif selected_prompt_type == "criteria":
+        current_content = prompt_manager.get_criteria_template()
+    else:
+        current_content = prompt_manager.get_holistic_template()
+
+    # Text area for editing
+    edited_content = st.text_area(
+        f"Edit {selected_prompt_name}",
+        value=current_content,
+        height=400,
+        key=f"prompt_editor_{selected_prompt_type}"
+    )
+
+    # Character count
+    st.caption(f"Character count: {len(edited_content):,}")
+
+    # Action buttons
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        if st.button("Save Changes", type="primary", use_container_width=True):
+            if edited_content != current_content:
+                if selected_prompt_type == "system":
+                    prompt_manager.save_system_prompt(edited_content)
+                elif selected_prompt_type == "criteria":
+                    prompt_manager.save_criteria_template(edited_content)
+                else:
+                    prompt_manager.save_holistic_template(edited_content)
+                st.success("Prompt saved successfully!")
+                st.rerun()
+            else:
+                st.warning("No changes to save.")
+
+    with col2:
+        if st.button("Reset to Default", use_container_width=True):
+            if metadata["is_custom"]:
+                prompt_manager.reset_to_default(selected_prompt_type)
+                st.success("Reset to default prompt!")
+                st.rerun()
+            else:
+                st.info("Already using default prompt.")
+
+    with col3:
+        if st.button("View Default", use_container_width=True):
+            default_content = prompt_manager.get_default_prompt(selected_prompt_type)
+            st.text_area(
+                "Default Prompt (read-only)",
+                value=default_content,
+                height=300,
+                disabled=True,
+                key="default_prompt_view"
+            )
+
+    # Show placeholder info for templates
+    if selected_prompt_type in ["criteria", "holistic"]:
+        with st.expander("Template Variables"):
+            st.markdown("""
+            **Available placeholders:**
+            - `{materials}` - Candidate application materials (required)
+            - `{criteria_details}` - Formatted criteria rubrics (criteria template only)
+
+            **Note:** Do not remove these placeholders or the evaluation will fail.
+            """)
 
 
 if __name__ == "__main__":

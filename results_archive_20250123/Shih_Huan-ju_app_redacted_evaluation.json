@@ -1,0 +1,123 @@
+{
+  "candidate": {
+    "candidate_id": "Shih_Huan-ju_app_redacted",
+    "name": null,
+    "materials": [
+      "Shih_Huan-ju_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:25:44.315929"
+  },
+  "overall_score": 6.666666666666667,
+  "overall_assessment": "Candidate demonstrates solid competency across all three criteria with particular strength in detail orientation and problem-solving motivation. The application provides concrete evidence of technical skills, measurable project outcomes, and proactive engagement with complex problems. However, the materials contain significant generic statements and lack evidence of truly transformative or groundbreaking innovations. The strongest evidence is the INOVA Kaizen project with documented 40% improvement and the proactive pursuit of interdisciplinary challenges through the NSF-NRT fellowship. Reference letters provide some specific examples but also contain generic praise without detailed substantiation.",
+  "recommendation": "Potential fit with development. Candidate shows solid foundation in technical skills, attention to detail, and proactive problem-solving. However, evidence of exceptional creativity or transformative innovation is limited. Would benefit from opportunities to develop and document novel methodologies and demonstrate creative leadership beyond individual project contributions.",
+  "strengths": [
+    "Strong detail orientation with specific quantitative metrics (40% OR improvement, 3.5 FTE savings, 97/100 ranking)",
+    "Proactive problem-solving motivation demonstrated through fellowship pursuit and independent dataset analysis",
+    "Concrete technical skills with specific tools and methodologies (SQL, Python, STATA, Epic EHR)",
+    "Measurable outcomes across multiple projects with clear documentation"
+  ],
+  "areas_for_development": [
+    "Limited evidence of truly innovative or novel methodologies beyond competent application of existing approaches",
+    "Generic statements about 'bridging disciplines' and 'interdisciplinary thinking' without specific examples of unique approaches",
+    "Reference letters contain supportive but somewhat generic praise ('visionary thinker,' 'creative solutions') without detailed examples",
+    "Only one clearly documented creative innovation (OR workflow redesign); other examples lack specificity about what made approaches innovative"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates creative problem-solving in specific contexts, placing them in Tier 3 (5-6). The strongest evidence is the Kaizen event where they redesigned OR workflow using SQL to streamline patient intake data, achieving a 40% improvement in turnaround time. This shows creative application of technical tools to a clinical workflow problem. The qualitative interviewing experience shows adaptability ('researching how machine learning could support domestic violence prevention efforts' and crafting 'thoughtful, non-intrusive interview questions'), but this is more adaptive than innovative. The AMIA work mentions 'bridging communication gaps' and 'synthesizing informatics literature,' but these are vague descriptions without specific innovative approaches detailed. Reference letters contain fluff like 'creative solutions' and 'visionary thinker' without concrete examples of what made solutions creative. The candidate scores a 6 rather than 7-8 because while there are multiple instances of problem-solving, only one has clear innovative methodology with measurable impact. Missing are novel methodologies adopted by others or evidence of creative leadership beyond single projects.",
+      "evidence": [
+        {
+          "quote": "Certified in Lean Six Sigma, I facilitated a Kaizen event supporting INOVA's Strategic Process Improvement Team, which resulted in a 40% improvement in OR turnaround time by redesigning workflows. For example, SQL was used to streamline patient intake data, reengineering the workflow.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Concrete example of creative solution with specific technical approach (SQL) and measurable outcome (40% improvement)"
+        },
+        {
+          "quote": "My key contribution was researching how machine learning could support domestic violence prevention efforts. I sourced relevant articles and used them to help shape thoughtful, non-intrusive interview questions.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Shows creative adaptation to unfamiliar domain, but lacks specifics about what made the approach innovative"
+        },
+        {
+          "quote": "A key challenge has been bridging communication gaps in interdisciplinary teams, especially when proposing tech-driven solutions that must meet clinical, ethical, and cost considerations. My role has involved synthesizing informatics literature, facilitating dialogue between clinicians and data scientists, and advocating for practical, evidence-based approaches.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Describes bridging role but lacks specific examples of creative solutions developed"
+        }
+      ],
+      "notes": "Reference letters contain generic praise ('creative solutions,' 'visionary thinker') without specific examples. The OR workflow redesign is the only clearly documented creative innovation with measurable impact. Other examples show competent problem-solving but lack evidence of novel approaches or methodologies."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, placing them in Tier 4 (7-8). Evidence includes: (1) Seeking NSF-NRT fellowship specifically to address 'societal challenges through community engagement' and working on domestic violence prevention despite it being outside technical expertise; (2) Actively pursuing multiple quality improvement projects at INOVA beyond assigned duties; (3) Joining AMIA working groups and Year-in-Review initiative to stay 'at the forefront of healthcare informatics'; (4) Taking on teaching role while maintaining full-time PhD candidacy and multiple research projects. The reference letter notes 'She is a self-directed, visionary thinker' and 'independently identified, accessed, and initiated analysis on two national datasets' without being asked. However, evidence falls short of Tier 5 (9-10) because there's no evidence of major life/career decisions driven specifically by problem-solving (e.g., founding organizations, dramatic field changes). The motivation appears strong and consistent but not transformative. Score is 7 rather than 8 because while there's proactive engagement, the depth of sacrifice/investment for problem-solving isn't fully documented.",
+      "evidence": [
+        {
+          "quote": "National Science Foundation Research Traineeship (NRT) Fellowship May 2023 -Sep. 2025 CASBBI NRT Fellowship to work with The for Adaptive Systems of Brain-Body Interactions (CASBBI) • Address societal challenges through community engagement design projects, such as collaborating with stakeholders, individuals, communities, and policymakers working on restorative justice for domestic violence survivors.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Proactively sought fellowship to address complex societal problems outside core technical domain"
+        },
+        {
+          "quote": "During my NSF-NRT fellowship, I was tasked with conducting qualitative interviews—an area outside my technical expertise. I was trained to identify problems and apply solutions, so adapting to open-ended interviewing was a challenge... My key contribution was researching how machine learning could support domestic violence prevention efforts.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Demonstrates willingness to engage with challenging problems outside comfort zone"
+        },
+        {
+          "quote": "In one instance, during our conceptualization of a new public health informatics and technology study, she independently identified, accessed, and initiated analysis on two national datasets.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Reference letter documenting proactive problem identification without being asked"
+        },
+        {
+          "quote": "Since 2022, I've been actively involved with the American Medical Informatics Association (AMIA), contributing to working groups and the Year-in-Review initiative. This experience keeps me at the forefront of healthcare informatics and has led to a paper—focused on clinical AI applications—now under peer review at Mayo Clinic Journal.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Proactive engagement with professional community to address field challenges"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking across multiple contexts. Reference letters support this with specific examples of independent initiative. However, lacks evidence of extraordinary commitment (major career pivots, founding initiatives) that would warrant 9-10 scores."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation, placing them solidly in Tier 4 (7-8). Evidence includes: (1) Specific quantitative metrics throughout materials (40% improvement in OR turnaround time, 3.5 FTE savings annually, 97 out of 100 points in MHA ranking); (2) Precise technical specifications (SQL, STATA, SPSS, Python, MySQL, PostgreSQL, Epic EHR); (3) Detailed project descriptions with methodologies and outcomes; (4) Comprehensive publication list with DOIs and specific venues; (5) Specific timeframes and contexts for all experiences. The CV provides exact dates, specific technologies used, and measurable outcomes for most projects. Reference letter notes 'impeccable attention to detail' and 'exceptional thoroughness and precision.' However, score is 7 rather than 8 because some descriptions lack complete methodological detail (e.g., the AMIA work describes 'synthesizing informatics literature' without specifying the synthesis methodology). The materials are consistently detailed but not at the 'extraordinarily detailed' level that would warrant 8-9 scores. All major claims are substantiated with specific evidence, meeting the high end of Tier 4.",
+      "evidence": [
+        {
+          "quote": "Facilitated Kaizen event supporting INOVA's Strategic Process Improvement Team to reduce OR turnaround time by redesigning workflow... Changes in process operations led to a 40% decrease in delays in addition to a savings of 3.5 full-time equivalent's (FTE) annually.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Specific quantitative metrics for project outcomes"
+        },
+        {
+          "quote": "Coursework: Data Structures, Database Management Systems (MySQL, SQL Server, PostgreSQL, Python), Artificial Intelligence (AI), Advanced Statistics in Service Research, Health Data Mining (Association Mining, Machine learning algorithms), Experience with working on Claims data, EHRs.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Precise specification of technical skills and tools"
+        },
+        {
+          "quote": "Ranked first place of 15 graduating students with the only designated level of expert by GMU faculty ranking first with 97 out of 100 possible points.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Exact quantitative achievement metrics"
+        },
+        {
+          "quote": "She has an impeccable attention to detail, intellectual curiosity, and excellent approach to solving complex problems.",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Reference letter confirmation of detail orientation (though somewhat generic)"
+        },
+        {
+          "quote": "Rural, Regional, Racial Disparities in Telemedicine Use During the COVID-19 Pandemic Among US Adults: 2021 National Health Interview Survey (NHIS), doi: 10.2147/PPA.S439437",
+          "source": "Shih_Huan-ju_app_redacted.pdf",
+          "context": "Publications listed with complete citations including DOIs"
+        }
+      ],
+      "notes": "Consistently high level of detail throughout materials with specific metrics, technologies, and outcomes. Reference letters support this assessment. Some areas could be more detailed (e.g., specific methodologies for literature synthesis), preventing a score of 8+."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 65.19296503067017,
+    "materials_character_count": 24658,
+    "timestamp": "2026-01-16T14:25:44.315958"
+  }
+}

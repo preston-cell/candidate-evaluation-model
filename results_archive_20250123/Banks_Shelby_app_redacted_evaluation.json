@@ -1,0 +1,117 @@
+{
+  "candidate": {
+    "candidate_id": "Banks_Shelby_app_redacted",
+    "name": null,
+    "materials": [
+      "Banks_Shelby_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:11:05.827544"
+  },
+  "overall_score": 4.666666666666667,
+  "overall_assessment": "The candidate demonstrates basic professional competency as a registered dietitian with adequate educational credentials (pursuing doctorate) but provides limited concrete evidence of exceptional creativity, problem-solving drive, or detail orientation. The application contains significant generic fluff and lacks specific outcomes, metrics, or transformative achievements. The strongest evidence is pursuing doctoral education while working full-time and developing a substance abuse curriculum outside core expertise, but these examples lack depth in describing innovative approaches or measurable impact.",
+  "recommendation": "Not recommended for highly competitive innovation fellowship. The candidate shows adequate professional competency but lacks the exceptional creativity, transformative problem-solving, and documented impact expected for a competitive innovation program. The application is approximately 70% generic professional descriptions and 30% concrete evidence, with no examples of groundbreaking work or innovative solutions that distinguish the candidate from typical professionals in the field.",
+  "strengths": [
+    "Pursuing doctoral degree while maintaining full-time employment shows commitment to professional development",
+    "Willingness to work outside core expertise (substance abuse curriculum development)",
+    "Consistent career progression in nutrition/public health field with diverse settings (VA, WIC, community organizations)"
+  ],
+  "areas_for_development": [
+    "Provides mostly generic descriptions of work without specific outcomes or metrics - needs concrete evidence of impact",
+    "Limited evidence of innovative or creative approaches to problems - describes standard professional duties rather than novel solutions",
+    "Application contains significant fluff (stated qualities without supporting evidence) - needs to replace generic claims with specific examples and quantifiable results",
+    "Lacks evidence of sustained engagement with particularly challenging problems or overcoming significant obstacles"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 4,
+      "confidence": "medium",
+      "reasoning": "The candidate provides mostly generic descriptions of work activities with limited evidence of innovative thinking. Most statements describe standard professional duties rather than creative solutions. The strongest example is developing a 9-week substance abuse curriculum outside their expertise area, but the description lacks specifics about what made it innovative. The application contains significant fluff ('I have naturally developed various solutions to foundational issues' - vague and unsupported). The blog content creation is mentioned but without evidence of innovative approaches. The curriculum development shows some creative adaptation (incorporating veteran voices, focusing on realistic issues) but falls short of demonstrating truly innovative methodology. This maps to Tier 2 (3-4): mentions developing solutions but doesn't explain what made them innovative or novel.",
+      "evidence": [
+        {
+          "quote": "I took the initiative to develop the curriculum for a new substance abuse program at the VA. I have never prepared a curriculum for a rehab facility. I found that beginning the program with direct interests of the current veterans in the facility helped ground the program in fact. It was also helpful to focus on realistic issues of the target audience, while including their voice and keeping the curriculum information current. I developed a 9 week program, that ranged from food insecurity to impact of mental health and substance abuse.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Most concrete example of developing something new, but lacks specifics about innovative methodology or measurable outcomes"
+        },
+        {
+          "quote": "I have also worked as a content creator for my blog that surrounded nutrition and the role proper food choice and knowledge would lead to better health outcomes. It was a challenge to weekly develop and write content that I believe the public would find interesting to read but also learn. I found using a voice of nutrition professional but also relatable and personable led to the better reception of the blogs and absorption of the information.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Mentions content creation but provides no specific examples of creative approaches or innovative solutions"
+        },
+        {
+          "quote": "I have naturally developed various solutions to foundational issues.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "FLUFF - generic claim with no supporting evidence or examples"
+        }
+      ],
+      "notes": "The curriculum development is the only semi-concrete example, but it describes competent adaptation rather than innovation. No evidence of novel methodologies, creative bridging of disciplines, or measurable impact from creative solutions. Most descriptions are of standard professional duties."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate shows adequate motivation through pursuing doctoral education and taking on projects outside core expertise (substance abuse curriculum), but evidence is mixed with significant fluff. The statement 'I passionately believe part of my role, is to identify and help close unmet needs' is generic stated quality without supporting action. The strongest evidence is pursuing a doctorate while working full-time and volunteering for AmeriCorps/VISTA focused on food insecurity research. However, the application lacks evidence of sustained engagement with specific challenging problems or overcoming significant obstacles. The curriculum development shows willingness to engage with unfamiliar challenges. This maps to Tier 3 (5-6): demonstrates proactive problem identification in familiar contexts with some clear action steps, but limited evidence of seeking out particularly challenging problems.",
+      "evidence": [
+        {
+          "quote": "I am a doctoral candidate, at Wayne State University in Detroit, MI. I will graduate in May 2026, with my doctorate degree in Kinesiology focused on Community Health.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Concrete action showing investment in developing problem-solving capabilities"
+        },
+        {
+          "quote": "I took the initiative to develop the curriculum for a new substance abuse program at the VA. I have never prepared a curriculum for a rehab facility.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Shows willingness to engage with problems outside comfort zone"
+        },
+        {
+          "quote": "I passionately believe part of my role, is to identify and help close unmet needs of the public through nutrition.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "FLUFF - stated belief without concrete examples of actions taken"
+        },
+        {
+          "quote": "AmeriCorps/VISTA/Community Action Network July 2021 -July 2022 Food Insecurity Research and Data Associate",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Took position focused on addressing food insecurity, showing some problem-seeking behavior"
+        }
+      ],
+      "notes": "Pursuing doctorate while working shows commitment, but lacks evidence of persistence through major obstacles or transformative problem-solving actions. Most problem-solving appears reactive (assigned work duties) rather than proactively seeking challenges."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 5,
+      "confidence": "high",
+      "reasoning": "The CV provides adequate specificity in some areas (job titles, dates, institutions, GPA scores) but lacks depth in describing actual work and outcomes. Most work descriptions are generic duty lists without quantitative metrics or specific outcomes. For example, 'Conducted and directed projects' without naming specific projects or results. The strongest detail is the 9-week curriculum structure and GPA scores (3.27, 3.67, 3.85). However, critical details are missing: no metrics on blog readership, no outcomes from curriculum implementation, no specific results from research projects. The application includes many vague phrases: 'various challenges,' 'positive and successful outcomes,' 'better reception' - all without quantification. This maps to Tier 3 (5-6): adequate level of specificity in basic information (dates, titles) but lacks depth in outcomes and impact metrics.",
+      "evidence": [
+        {
+          "quote": "I developed a 9 week program, that ranged from food insecurity to impact of mental health and substance abuse.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Provides specific timeframe (9 weeks) and topic range, showing some detail orientation"
+        },
+        {
+          "quote": "Wayne State University, Detroit, MI April 2010 -May 2014 Bachelor of Arts in Nutrition and Food Sciences (GPA 3.27) ... Simmons College, Boston, MA September 2017 -May 2019 Master of Science/Nutrition and Health Promotion (GPA 3.67) ... Wayne State University, Detroit, MI September 2022 -Current Doctorate of Kinesiology in College of Education (GPA 3.85)",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "Provides specific dates, institutions, and quantitative metrics (GPAs)"
+        },
+        {
+          "quote": "I was in charge of executing a lunch service, while juggling various challenges from the public and those kitchen staff that were preparing/delivering the meals. I played an essential role in leadership, communication and influencing the audience, leading to positive and successful outcomes.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "VAGUE - 'various challenges' and 'positive and successful outcomes' lack specificity"
+        },
+        {
+          "quote": "I found using a voice of nutrition professional but also relatable and personable led to the better reception of the blogs and absorption of the information.",
+          "source": "Banks_Shelby_app_redacted.pdf",
+          "context": "VAGUE - 'better reception' without metrics (readership numbers, engagement data)"
+        }
+      ],
+      "notes": "CV format provides structural detail (dates, titles, institutions) but work descriptions lack outcome metrics and specific examples. No quantitative results provided for projects or initiatives. Many descriptions could apply to any dietitian without distinguishing specific contributions."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 55.35769534111023,
+    "materials_character_count": 25218,
+    "timestamp": "2026-01-16T13:11:05.827689"
+  }
+}

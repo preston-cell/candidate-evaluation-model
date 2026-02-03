@@ -1,0 +1,133 @@
+{
+  "candidate": {
+    "candidate_id": "Abbad_Andaloussi_app_redacted",
+    "name": null,
+    "materials": [
+      "Abbad_Andaloussi_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:07:53.000024"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "The candidate demonstrates adequate competency across evaluated criteria with strongest showing in problem-solving motivation. The career pivot from aeronautics to biomechanics represents genuine problem-seeking behavior backed by concrete actions (additional masters degree, volunteer work, research collaborations). However, materials contain substantial application fluff with generic claims about 'interdisciplinary thinking' and 'multi-disciplinarily' that lack supporting specifics. Technical work is competent but lacks evidence of innovative methodologies or transformative impact. Detail orientation is adequate with good documentation of positions and technologies but lacks quantitative metrics and precise technical depth. The candidate shows promise as a solid contributor in interdisciplinary biomedical research but materials do not demonstrate exceptional innovation or outstanding achievements.",
+  "recommendation": "Potential fit with development. Candidate shows genuine problem-solving motivation and adequate technical competency for interdisciplinary biomedical work. However, application relies heavily on generic claims rather than concrete evidence of innovation or exceptional achievement. Would benefit from demonstrating specific innovative contributions and quantifiable impact in future materials. Suitable for programs seeking solid contributors with interdisciplinary potential, but may not stand out among candidates with more documented transformative achievements.",
+  "strengths": [
+    "Strong problem-solving motivation demonstrated through major career pivot from aeronautics to biomechanics with concrete follow-through (additional masters, research positions)",
+    "Genuine interdisciplinary experience spanning engineering, biomechanics, clinical collaboration, and medical imaging with multiple institutional partnerships",
+    "Consistent engagement with challenging problems across multiple contexts (research, volunteer teaching, institutional negotiations)",
+    "Good documentation of technical skills and educational background with clear progression"
+  ],
+  "areas_for_development": [
+    "Materials contain excessive generic claims ('interdisciplinary thinking', 'multi-disciplinarily') without specific examples of innovative approaches - need more concrete evidence of what made work novel",
+    "Lack of quantitative metrics and measurable outcomes throughout materials - need specific performance improvements, efficiency gains, or impact measurements",
+    "Limited evidence of creative innovation or novel methodologies - work appears competent but not transformative",
+    "Supervisor letters provide generic praise ('unwavering work ethic', 'outstanding evolution') without sufficient specific incidents or measurable achievements"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate creative problem-solving with some concrete examples, placing them in Tier 3 (5-6). The strongest evidence is the interdisciplinary shift from aeronautics to biomechanics, showing creative career pivoting. The candidate developed finite-element models for craniosynostosis and MRI-informed biomechanical models for brain tumors, but the materials lack specifics about what made these approaches innovative versus standard applications of existing methodologies. The supervisor mentions 'robust data-driven modeling approaches' but doesn't specify novel methodologies developed. The volunteer teaching work shows creative adaptation ('making abstract concepts engaging and accessible') but this is somewhat generic. The materials contain significant fluff ('I am driven by multi-disciplinarily', 'interdisciplinary thinking') without concrete examples of what innovative approaches were taken. No evidence of published novel methodologies or approaches adopted by others. Score of 6 reflects multiple instances of creative problem-solving with some specifics, but impact not clearly demonstrated and no evidence of creative leadership or innovation.",
+      "evidence": [
+        {
+          "quote": "After completing my mechanical engineering degree, I applied my skills in both industrial (Safran, France) and research (TU Delft) aeronautics environments, but soon realized I was motivated by socially impactful work. I was curious about biomechanics, which I viewed as an opportunity to possibly contribute in human health.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Demonstrates creative career pivoting from aeronautics to biomechanics - a concrete action showing creative thinking about applying engineering skills in new domain"
+        },
+        {
+          "quote": "My role was to study the effect of different forms of craniosynostosis on the brain pressure and growth shape. For that, I created a finite-element model, tested parameters and discussed the outcomes.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Shows technical problem-solving but lacks specifics about what was innovative in the approach versus standard FEM application"
+        },
+        {
+          "quote": "My contributions included making abstract concepts engaging and accessible, supporting their academic continuity, and providing a sense of normalcy and motivation during a challenging time.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Demonstrates creative adaptation in teaching but remains somewhat generic without specific examples of innovative teaching methods"
+        },
+        {
+          "quote": "Working at the intersection of experimental, theoretical, and computational mechanics, she developed tools and methods capable of addressing clinically important challenges, using medical imaging and numerical modeling",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Supervisor mentions developing tools/methods but doesn't specify what was novel about them versus standard application of existing approaches"
+        }
+      ],
+      "notes": "Materials contain substantial fluff about 'interdisciplinary thinking' and 'multi-disciplinarily' without concrete examples of innovative approaches. The career pivot from aeronautics to biomechanics is the strongest creative evidence. Technical work is competent but lacks evidence of novel methodologies or transformative innovation. No publications showing novel approaches or methods adopted by others."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong problem-solving motivation placing them in Tier 4 (7-8). Multiple concrete examples show proactive seeking of challenges and significant career decisions driven by problem-solving motivation. The career shift from aeronautics to biomechanics represents a major decision driven by desire for 'socially impactful work' - this is a concrete action, not just stated intention. The candidate pursued additional training (biomechanics masters) specifically to solve clinical problems. The volunteer teaching at hospital shows proactive engagement with challenges outside core expertise. The supervisor notes 'unwavering work ethic' but this is generic; however, the candidate's navigation of 'institutional and ethical constraints, including negotiating MRI data access with hospital partners' shows persistence through obstacles. The 3-month internship at UT Austin shows investment in skill development. The pattern across multiple contexts (career change, additional education, volunteer work, research collaborations) demonstrates consistent problem-seeking behavior. Score of 7 reflects multiple examples of proactively seeking challenging problems with sustained engagement, though falls short of Tier 5's extraordinary commitment or founding initiatives.",
+      "evidence": [
+        {
+          "quote": "After completing my mechanical engineering degree, I applied my skills in both industrial (Safran, France) and research (TU Delft) aeronautics environments, but soon realized I was motivated by socially impactful work. I was curious about biomechanics, which I viewed as an opportunity to possibly contribute in human health. The year of biomechanics masters was the perfect opportunity",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Major career decision driven by problem-solving motivation; pursued additional masters degree specifically to address clinical challenges - concrete action showing strong drive"
+        },
+        {
+          "quote": "My internship was within a PhD project that aimed at constructing personalised 3D printed surgical tools. My results helped the team gain visibility with respect to the consequences of the disease progression on the brain pressure and growth. The experience solidified my passion for translational research.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Demonstrates engagement with complex clinical problems and follow-through to contribute meaningful results"
+        },
+        {
+          "quote": "For several months, within the association l'école à l'hôpital, I volunteered to teach math and physics to children hospitalized in Hôpital Bicêtre - Paris who could not attend regular classes.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Proactively sought out challenging problem outside core expertise - concrete action showing problem-seeking behavior"
+        },
+        {
+          "quote": "Her professionalism was evident in her ability to navigate institutional and ethical constraints, including negotiating MRI data access with hospital partners.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Shows persistence through obstacles and proactive problem-solving in complex institutional environment"
+        },
+        {
+          "quote": "I also worked on an accepted protocol with the neurosurgical team requesting MRI data from the hospital.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Concrete action showing proactive engagement with challenging institutional/regulatory problems"
+        }
+      ],
+      "notes": "Strong evidence of problem-solving motivation through major career decisions and sustained engagement across multiple contexts. The career pivot from aeronautics to biomechanics is particularly strong evidence. Some supervisor praise is generic ('unwavering work ethic') but is supported by concrete examples of navigating complex challenges."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate detail orientation placing them in Tier 3 (5-6). The CV provides good specificity in listing technologies (Matlab, Python, C++, Abaqus, FenicsX, GMSH), timeframes for all positions, and institutional affiliations. Publications are listed with full citations. However, many descriptions lack quantitative metrics or precise outcomes. For example, 'tested parameters and discussed the outcomes' is vague; 'helped the team gain visibility' lacks metrics; 'adapted lessons to individual needs' lacks specifics about methods. The application provides adequate context (institutions, dates, collaborators) but often omits depth about methodologies or measurable results. No quantitative outcomes like 'improved performance by X%' or 'reduced time by Y hours.' The supervisor letter is relatively detailed about collaborative network and institutional context but lacks specific metrics about research impact. The materials meet Tier 3 (score 5) criteria of 'adequate level of specificity in most areas; provides concrete examples with relevant details; some sections lack depth.' Does not reach Tier 4 due to absence of consistent quantitative metrics and precise technical details about approaches.",
+      "evidence": [
+        {
+          "quote": "PhD student in engineering sciences, University of Luxembourg. 'Imaging-informed BIOmechanical brain tumour forecast MOdelling'",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Provides specific project title and institution"
+        },
+        {
+          "quote": "Additionally to my engineering degree, I have a masters in biomechanics, and an internship where I attended surgeries to better grasp the surgeon needs and adapted my mechanical model consequently. Subsequently I started my PhD in a similar multidisciplinary team where I deepened my skills in Medical Image Analysis, biomechanical modelling, science communication and coding (cpp, python, matlab).",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Lists specific technologies and skills but lacks metrics or depth about proficiency levels or specific applications"
+        },
+        {
+          "quote": "My role was to study the effect of different forms of craniosynostosis on the brain pressure and growth shape. For that, I created a finite-element model, tested parameters and discussed the outcomes.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Provides context but 'tested parameters' is vague - no specifics about which parameters, what ranges, what outcomes were measured"
+        },
+        {
+          "quote": "For one hour each week, I adapted lessons to individual needs.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Provides timeframe (one hour weekly) but lacks specifics about adaptation methods or outcomes"
+        },
+        {
+          "quote": "Andaloussi, M., Maser, R., Hertel, F., Lamoline, F., & Husch, A. D. (2025). Exploring adult glioma through MRI: A review of publicly available datasets to guide efficient image analysis. Neuro-Oncology Advances, 7(1), vdae197.",
+          "source": "Abbad_Andaloussi_app_redacted.pdf",
+          "context": "Publications listed with full citations showing attention to detail in documentation"
+        }
+      ],
+      "notes": "Materials show adequate detail orientation with consistent institutional affiliations, timeframes, and technology lists. However, lacks the quantitative metrics and precise technical details that would elevate to Tier 4. Many descriptions remain at general level without specific methodologies or measurable outcomes. CV is well-organized and comprehensive but could benefit from more quantitative achievements."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 69.40317678451538,
+    "materials_character_count": 21419,
+    "timestamp": "2026-01-16T13:07:53.000075"
+  }
+}

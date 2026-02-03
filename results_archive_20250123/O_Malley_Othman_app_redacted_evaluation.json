@@ -1,0 +1,139 @@
+{
+  "candidate": {
+    "candidate_id": "O_Malley_Othman_app_redacted",
+    "name": null,
+    "materials": [
+      "O_Malley_Othman_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:05:24.818064"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong candidate with demonstrated innovation capabilities and exceptional problem-solving drive. Shows concrete pattern of developing novel solutions (Guardian Assist AI tool, VSCS, COVID protocols) with measurable outcomes (1st place hackathon, $5K-29K+ funding, pilot deployments). Proactively seeks challenging problems outside primary expertise and sustains engagement through obstacles. Detail orientation adequate but could be strengthened with more technical specifications and quantitative impact metrics.",
+  "recommendation": "Strong fit - Candidate demonstrates the core competencies needed for innovation fellowship with concrete evidence of creative problem-solving and exceptional motivation. Guardian Assist project shows sophisticated thinking and sustained execution. Would benefit from developing more rigorous documentation of technical specifications and quantitative outcomes to strengthen future innovation work.",
+  "strengths": [
+    "Exceptional problem-solving motivation - volunteered for COVID unit, pursued suicide risk detection outside expertise, took on additional innovation roles",
+    "Strong creativity with multiple concrete innovations - Guardian Assist (AI + motivational interviewing), VSCS, telehealth program built from scratch",
+    "Pattern of sustained engagement and follow-through - Guardian Assist from hackathon pitch through 2-year development to pilot deployment",
+    "Concrete validation of innovation quality - 1st place VA MIT Grandhack, VA Venture Studio Fellowship acceptance, secured funding",
+    "Proactive problem identification across domains - clinical, administrative, technological"
+  ],
+  "areas_for_development": [
+    "Technical depth and specifications - Guardian Assist lacks ML model details, accuracy metrics, specific integration architecture",
+    "Quantitative impact metrics - Falls Committee work missing fall rate changes, scheduling system missing efficiency gains, COVID protocols missing patient outcome data",
+    "Comprehensive outcome documentation - several projects mentioned (MedMatch, Joint Health Program, Computer Vision) with minimal detail on contributions or results",
+    "Precision in describing methodologies - SOPs developed but specifics not provided, discovery processes mentioned but methods unclear"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete innovations and measurable outcomes, placing them in Tier 4 (7-8). Key evidence includes: (1) Guardian Assist - developed novel AI-powered clinical decision tool combining ambient AI with motivational interviewing for suicide risk detection, winning 1st place at VA MIT Grandhack and advancing to pilot phase; (2) Veterans Smart Call System - redesigned inpatient call light workflow, securing $5,000 funding; (3) COVID-19 PT protocols - created SOPs from scratch in unprecedented situation with no established protocols; (4) Dynamic scheduling system replacing inefficient paper/Excel systems. These are not just applications of existing methods but novel approaches with documented impact (awards, funding, pilot deployment). However, evidence falls short of Tier 5 (9-10) as innovations are within VA healthcare context rather than field-redefining contributions with wide external adoption.",
+      "evidence": [
+        {
+          "quote": "I pitched the idea for an ambient AI powered clinical decision tool that uses motivational interviewing prompts to guide clinicians during high-stakes conversations. I pitched the idea at the VA Hackathon in Tampa. Then built a wonderful team of SMEs around the idea and led the team through 3 phases of development in collaboration with Microsoft and VA stakeholders. We built Guardian Assist into a functional prototype at the conclusion of the VA Venture Studio Fellowship.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Demonstrates creative bridging of AI technology with clinical practice in novel way - combining ambient AI with motivational interviewing for suicide risk detection"
+        },
+        {
+          "quote": "1st Place – VA MIT Grandhack. Accepted to VA Venture Studio Fellowship (2024–2025). Delivered technical briefings to VA leadership and participated in usability testing with clinicians. Delivered pilot at Tampa VA at conclusion of VA Venture Studio Fellowship.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Concrete validation of innovation quality through competitive recognition and advancement to pilot phase"
+        },
+        {
+          "quote": "Veteran Smart Call System – Redesigned inpatient call light workflow; secured $5,000 for development. Presented at VA Innovation Spark Seed Spread Graduation August 2023",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Second example of creative system redesign with funding secured, demonstrating pattern of innovation"
+        },
+        {
+          "quote": "Not only was there a risk to personal health but there were no SOPs, no established treatment protocols, and requirements to wear PPE for hours at a time in an isolated environment. So I went about developing PT specific SOPs, informed by evolving evidence and daily coordination meetings with VA clinicians nationwide to ensure best practices.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Creative protocol development in unprecedented situation - creating solutions where none existed"
+        },
+        {
+          "quote": "Created a dynamic scheduling system to streamline inpatient therapy workflow to replace inefficient paper based and excel based consultation management system for the inpatient physical therapy department.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Proactive system redesign showing creative approach to workflow optimization"
+        }
+      ],
+      "notes": "Strong evidence of creativity with multiple concrete innovations. Guardian Assist represents particularly sophisticated creative thinking - combining disparate technologies (ambient AI, motivational interviewing) to address clinical problem. Pattern of innovation across multiple domains (AI tools, workflow systems, protocols). Score of 7 reflects consistent creative problem-solving with documented impact, but not yet at transformative/field-redefining level of 9-10."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional problem-solving motivation placing them solidly in Tier 4 (7-8). Evidence includes: (1) Volunteering as FIRST PT for COVID-19 unit despite personal health risks and lack of protocols - proactive seeking of challenging problem; (2) Identifying suicide risk detection gap outside primary expertise and pursuing it through hackathon, fellowship, and pilot deployment - sustained 2+ year engagement; (3) Taking on Acting Innovation Specialist role (additional 16 hrs/week) while maintaining clinical duties; (4) Building telehealth program from zero during COVID; (5) Multiple innovation projects pursued simultaneously (Guardian Assist, VSCS, Joint Health Program, Computer Vision). The pattern shows consistent proactive problem identification, sustained engagement through obstacles, and significant time/effort investment. Falls just short of Tier 5 (9-10) as there's no evidence of major career pivot or founding organizations specifically to solve problems, though the innovation trajectory is strong.",
+      "evidence": [
+        {
+          "quote": "A formative experience and one that led me down the innovation journey was the COVID-19 pandemic. I was the first PT to volunteer to work on that unit. I stepped in because patients with respiratory disease need PT intervention. Others understandably hesitated because the challenges were immediate.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Proactively volunteered for high-risk, high-challenge situation when others hesitated - demonstrates strong intrinsic motivation to solve problems despite personal risk"
+        },
+        {
+          "quote": "One challenge is missing suicide risk, especially dynamic suicide risk. That led me to pitch the idea for an ambient AI powered clinical decision tool... I pitched the idea at the VA Hackathon in Tampa. Then built a wonderful team of SMEs around the idea and led the team through 3 phases of development",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Identified problem outside primary expertise, took initiative to pitch solution, sustained engagement through multiple development phases - shows proactive problem-seeking and persistence"
+        },
+        {
+          "quote": "Acting Innovation Specialist Lt. Col. VAMC – Memphis, TN 01/2023 – 04/2023 | 16 hrs/week. Led 3 national VA innovation projects; coordinated funding ($29,000+), team assembly, and project evaluation.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Took on additional 16 hrs/week role to solve problems at organizational level - demonstrates commitment beyond assigned duties"
+        },
+        {
+          "quote": "Built telehealth PT program from the ground up during COVID-19. Developed SOPs, selected HIPAA-compliant tech stack, and secured insurance reimbursement pathways. Scaled visits from 0 to 20/week",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Proactively built entire program from scratch in response to pandemic challenge - shows initiative and follow-through with measurable outcome"
+        },
+        {
+          "quote": "While suicide risk detection may seem like primarily a subject for mental health, my perspective allowed me to identify the opportunity to address a problem that affects all clinicians.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Demonstrates active problem-seeking beyond assigned domain - looking for challenges to solve rather than waiting for them to appear"
+        }
+      ],
+      "notes": "Exceptionally strong evidence of problem-solving motivation. Multiple instances of proactive problem identification and sustained engagement. COVID volunteering and Guardian Assist development show willingness to take on significant challenges and persist through obstacles. Pattern of seeking additional responsibilities (Acting Innovation Specialist, multiple concurrent projects) demonstrates intrinsic drive. Score of 8 reflects consistent pattern across contexts with significant actions taken, approaching but not quite reaching the transformative career decisions of Tier 5."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates good detail orientation placing them in Tier 3 (5-6). Evidence includes specific technologies (Microsoft Teams integration, HIPAA-compliant tech stack, PAPRs), quantitative outcomes (0 to 20 visits/week, $5,000 funding, $29,000+ coordinated), timeframes (2024-Present, 01/2023-04/2023), and concrete project phases. However, many sections lack depth: (1) Guardian Assist description missing technical specifications (what ML models? accuracy metrics? specific integration details); (2) Scheduling system mentioned but no details on functionality or impact metrics; (3) COVID SOPs developed but no specifics on what protocols entailed; (4) Falls Committee work lacks quantitative outcomes (fall rate changes?); (5) Some achievements listed without context (2nd place, 3rd place hackathons - what were the projects?). The materials provide adequate specificity for understanding general accomplishments but lack the comprehensive quantitative metrics and technical precision expected for Tier 4 (7-8).",
+      "evidence": [
+        {
+          "quote": "Tool integrates into VA workflows via Microsoft Teams, enabling real-time suicide risk detection and clinical prompts during primary care visits.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Provides specific technology platform (Microsoft Teams) and context (primary care visits) - demonstrates some detail orientation"
+        },
+        {
+          "quote": "Scaled visits from 0 to 20/week; trained staff to transition clinical operations.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Includes quantitative metric showing specific growth trajectory - good detail orientation"
+        },
+        {
+          "quote": "Led 3 national VA innovation projects; coordinated funding ($29,000+), team assembly, and project evaluation.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Provides specific numbers (3 projects, $29,000+) - demonstrates attention to quantitative details"
+        },
+        {
+          "quote": "Veteran Smart Call System – Redesigned inpatient call light workflow; secured $5,000 for development.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Includes specific funding amount but lacks details on what the redesign entailed or impact metrics"
+        },
+        {
+          "quote": "Developed SOPs, selected HIPAA-compliant tech stack, and secured insurance reimbursement pathways.",
+          "source": "O_Malley_Othman_app_redacted.pdf",
+          "context": "Mentions specific compliance requirement (HIPAA) but doesn't specify which technologies were selected"
+        }
+      ],
+      "notes": "Materials show adequate detail orientation with specific timeframes, some quantitative metrics, and technology mentions. However, missing depth in technical specifications, outcome metrics for several projects, and comprehensive impact data. For example, Guardian Assist lacks ML model details, accuracy metrics, or user adoption data. Falls Committee work mentions leadership but no fall rate reduction percentages. Scheduling system mentioned but no workflow details or efficiency gains quantified. Score of 6 reflects good but not exceptional detail orientation - provides enough specificity to understand accomplishments but lacks the comprehensive precision of higher tiers."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 78.85990500450134,
+    "materials_character_count": 14223,
+    "timestamp": "2026-01-16T14:05:24.818090"
+  }
+}

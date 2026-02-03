@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "candidate_id": "Mathias_Sheila_app_redacted",
+    "name": null,
+    "materials": [
+      "Mathias_Sheila_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:55:58.794339"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Experienced regulatory strategist with 23+ years in pharmaceutical development, demonstrating strong detail orientation and problem-solving motivation. Concrete achievements include two patents for novel drug delivery formulations, leadership of multiple successful NDA submissions, and securing three competitive CRADA grants as Principal Investigator. The candidate shows adequate creative output through patents and novel formulations, though application lacks detail on innovative methodologies. Strongest areas are systematic detail orientation (comprehensive regulatory expertise with precise terminology) and proactive problem-solving (grant leadership, PI roles). Application contains some generic statements but is anchored by concrete regulatory accomplishments and specific technical contributions.",
+  "recommendation": "Strong fit for regulatory/scientific track. Candidate brings deep domain expertise with concrete accomplishments in drug development and regulatory strategy. The combination of technical depth (patents, publications), regulatory leadership (NDAs, FDA meetings), and grant success (CRADAs as PI) demonstrates capability for rigorous, detail-oriented work with proactive problem identification. Best suited for projects requiring regulatory strategy, drug development expertise, or bridging scientific and regulatory domains. Less evidence of breakthrough creative innovation, so may be better positioned for execution-focused rather than highly exploratory innovation roles.",
+  "strengths": [
+    "Exceptional detail orientation with precise regulatory terminology, specific submission types/quantities, and comprehensive documentation throughout CV",
+    "Strong proactive problem-solving demonstrated through competitive grant leadership (3 CRADAs secured), Principal Investigator roles, and sustained engagement across 23+ year career",
+    "Concrete creative output through two patents for novel drug delivery formulations and multiple scientific publications/presentations",
+    "Extensive regulatory expertise with specific, quantified accomplishments (2 NDAs, 2 sNDAs, multiple FDA meeting types led)"
+  ],
+  "areas_for_development": [
+    "Application lacks detail on what made creative approaches innovative or their comparative impact versus existing solutions",
+    "Contains some generic motivational statements ('strong interest in collaborating') without supporting evidence",
+    "Limited evidence of transformative innovations or major career pivots driven by problem-solving motivation",
+    "Could provide more quantitative metrics for outcomes (team sizes, budget amounts, specific improvement percentages beyond publications)"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate creative problem-solving with some concrete examples, placing them in Tier 3 (5-6). The strongest evidence is the development of novel drug delivery approaches (intranasal formulations) and securing two patents for innovative formulations. However, much of the application contains generic regulatory work descriptions without demonstrating what made approaches innovative. The patents represent concrete creative output: 'Leucine-Enkephalin and GCPQ formulation delivered intranasally in a device, US Patent No. 63/524764' and 'NSAID Spray Formulation and Method, US Patent Application No. 63/531595.' The reference letter mentions 'cutting-edge technological solutions' but this is vague praise without specifics. The CV shows multiple publications and presentations on novel drug delivery mechanisms, suggesting creative scientific work, but the application itself doesn't explain what made these approaches innovative or their comparative impact. The candidate led grant applications for CRADAs, which required creative problem framing, but again lacks detail on the innovative aspects. Score of 6 reflects multiple instances of creative output (patents, novel formulations) with some specifics, but impact and innovative methodology not clearly demonstrated.",
+      "evidence": [
+        {
+          "quote": "Leucine-Enkephalin and GCPQ formulation delivered intranasally in a device, US Patent No. 63/524764 and NSAID Spray Formulation and Method, US Patent Application No. 63/531595",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Concrete evidence of creative output through two patents for novel drug delivery formulations"
+        },
+        {
+          "quote": "Part of my product development has also included regulatory strategy for mobile health technology and a 510k submission",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Shows application of regulatory expertise to emerging technology area, though lacks detail on innovative approach"
+        },
+        {
+          "quote": "J Gudin, S [REDACTED], I Uchegbu. Leucine-Enkephalin as a Novel Analgesic: Efficacy and Safety in Pre-Clinical Models",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Multiple presentations on novel analgesic approach, indicating creative scientific work, though presentation abstracts don't detail the innovation"
+        }
+      ],
+      "notes": "Patents provide concrete evidence of creative output, but application lacks detail on what made approaches innovative or their impact compared to existing solutions. Much of the CV focuses on regulatory execution rather than creative problem-solving. The 'mobile health technology' mention is intriguing but underdeveloped."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, placing them in Tier 4 (7-8). Key evidence includes: (1) Proactively seeking non-dilutive funding - 'She led grant applications to the NIH, the U.S. Army (DOD), and NCATS. Under her leadership, we were awarded three Cooperative Research and Development Agreements (CRADAs)' - this shows initiative in identifying funding challenges and taking concrete action. (2) Serving as Principal Investigator on multiple projects demonstrates ownership of complex problems. (3) The reference letter states she 'independently conceive, develop, and lead complex research proposals' indicating self-directed problem identification. (4) Career trajectory shows sustained engagement with drug development challenges across 23+ years and multiple companies. However, the application contains significant fluff: 'strong interest in collaborating with other professionals to gain new perspectives and drive innovation' is generic stated motivation without evidence. The small business example ('helping a relative with a small start-up business') shows some proactive problem-solving outside her domain but is relatively minor. Score of 7 reflects multiple examples of proactively seeking challenging problems (grant leadership, PI roles) with concrete actions taken, but lacks evidence of extraordinary persistence or major career pivots driven by problem-solving motivation.",
+      "evidence": [
+        {
+          "quote": "She led grant applications to the NIH, the U.S. Army (DOD), and NCATS. Under her leadership, we were awarded three Cooperative Research and Development Agreements (CRADAs), including a high-value collaboration with the U.S. Army Surgical Division focused on epilepsy. She served as the Principal Investigator (PI) on several of these projects",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Concrete evidence of proactively seeking challenging problems and securing competitive funding; demonstrates sustained engagement and leadership"
+        },
+        {
+          "quote": "I discovered a mentorship program for small business owners that my relative has mentorship now and I have helped to set up the sales tax and obtain the necessary licenses to run the business",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Shows proactive problem-solving outside expertise area, though relatively minor example"
+        },
+        {
+          "quote": "Her uncommon ability to bridge disciplines. She possesses deep scientific training but pairs it with a strategic, entrepreneurial mindset",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Reference letter noting strategic approach, though somewhat generic without specific examples"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem identification and sustained engagement through grant leadership and PI roles. However, application lacks evidence of major career pivots or extraordinary persistence through significant obstacles that would warrant scores of 8+."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional detail orientation, placing them solidly in Tier 4 (7-8). The CV provides comprehensive specificity throughout: (1) Precise regulatory meeting types: 'Pre IND, EOPI, EOPII, pre-NDA and CMC as well as Written Response Only (WRO) and FDA Advisory Committee Meetings' - not just 'FDA meetings' but exact meeting types. (2) Specific submission types and quantities: 'I have led the submission of two New Drug Applications (NDA), two supplemental NDA's (sNDA's) and Health Canada NDS' - exact numbers and types. (3) Complete patent numbers: 'US Patent No. 63/524764' and 'US Patent Application No. 63/531595' - full precision. (4) Detailed publication citations with full author lists, journal names, volume/issue numbers, and page ranges. (5) Specific dates for presentations and conferences. (6) Precise organizational details in small business example: 'set up the sales tax and obtain the necessary licenses' - specific actions, not vague 'helped organize.' (7) Exact timeframes: '23 years,' '2015-2018,' specific conference dates. The CV is systematically organized with clear sections and consistent formatting. However, some areas lack quantitative metrics (e.g., team sizes managed, budget amounts, specific outcome percentages beyond the publications). Score of 8 reflects consistently high level of detail with specific examples, contexts, and outcomes throughout, with comprehensive precision in technical and regulatory terminology.",
+      "evidence": [
+        {
+          "quote": "I have led the submission of two New Drug Applications (NDA), two supplemental NDA's (sNDA's) and Health Canada NDS and other worldwide regulatory filings. I have led numerous meetings with the FDA that include Pre IND, EOPI, EOPII, pre-NDA and CMC as well as Written Response Only (WRO) and FDA Advisory Committee Meetings",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Precise quantification of submissions and exact regulatory meeting types, demonstrating systematic detail orientation"
+        },
+        {
+          "quote": "Leucine-Enkephalin and GCPQ formulation delivered intranasally in a device, US Patent No. 63/524764 and NSAID Spray Formulation and Method, US Patent Application No. 63/531595",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Complete patent numbers provided with full technical descriptions"
+        },
+        {
+          "quote": "Barnes, M, S.A. [REDACTED] (2025) Picking the Right Sized Partner. Outsourcing in Clinical Trials Handbook, 2025. [REDACTED], S.A., Barnes, M (2023). Effective Partnering between Small Biopharmaceutical Companies and Their Service Providers: A Model That Works, DIA Global Forum, July 2023",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Publications listed with complete citations including co-authors, publication venues, and dates"
+        },
+        {
+          "quote": "I discovered a mentorship program for small business owners that my relative has mentorship now and I have helped to set up the sales tax and obtain the necessary licenses to run the business. I also contributed by organizing the invoices and really helped to serve in getting an organized system up and running",
+          "source": "Mathias_Sheila_app_redacted.pdf",
+          "context": "Specific concrete actions listed rather than vague 'helped with business' - shows attention to operational details"
+        }
+      ],
+      "notes": "Exceptionally thorough CV with consistent precision in technical terminology, regulatory specifics, and publication details. Some areas could include more quantitative metrics (budget sizes, team sizes, percentage improvements), but overall demonstrates strong systematic attention to detail across all materials."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 65.96571493148804,
+    "materials_character_count": 32236,
+    "timestamp": "2026-01-16T13:55:58.794420"
+  }
+}

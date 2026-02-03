@@ -1,0 +1,118 @@
+{
+  "candidate": {
+    "candidate_id": "Gunn_Mary_app_redacted",
+    "name": null,
+    "materials": [
+      "Gunn_Mary_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:34:50.000590"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong candidate with demonstrated creative problem-solving abilities, solid professional motivation, and exceptional attention to detail. The application provides concrete evidence of innovative strategic thinking (COVID-19 pivot, national security framework) and consistently strong quantitative documentation of achievements. However, some areas rely on stated qualities rather than demonstrated actions, particularly regarding intrinsic problem-solving drive beyond professional contexts.",
+  "recommendation": "Strong fit. Candidate demonstrates solid performance across all criteria with particularly strong detail orientation and good creative problem-solving abilities. The extensive professional experience with documented outcomes and cross-sector perspective would likely contribute meaningfully to the program. The primary limitation is that problem-solving motivation appears more professionally-driven than intrinsically-driven, but this is adequate for program success.",
+  "strengths": [
+    "Exceptional detail orientation with comprehensive quantitative metrics throughout materials (8/10)",
+    "Strong creative problem-solving with multiple concrete examples of innovative approaches and measurable outcomes (7/10)",
+    "Extensive cross-sector experience with specific achievements in governance, drug development, and strategy",
+    "Consistent pattern of providing specific evidence rather than generic claims in most areas"
+  ],
+  "areas_for_development": [
+    "Problem-solving motivation evidence is primarily reactive/professional rather than showing extraordinary proactive pursuit of challenges (6/10)",
+    "Some application responses contain generic fluff ('reimagine biomedical problem solving') that weakens otherwise strong materials",
+    "Limited evidence of transformative/groundbreaking innovations that would warrant highest creativity scores",
+    "Could strengthen evidence of intrinsic drive through examples of major sacrifices or initiatives specifically undertaken to solve problems"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples showing innovative approaches with measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) COVID-19 pivot from policy-only engagement to direct public communication - a creative strategic shift with documented impact on vaccine confidence; (2) National security war game contribution proposing public-private partnerships framework for wartime planning - novel cross-sector application; (3) Founding APACMed trade association - creative institutional solution. However, lacks evidence of groundbreaking innovations or published novel methodologies that would warrant Tier 5 (9-10). Some stated qualities ('reimagine biomedical problem solving') are fluff and not counted.",
+      "evidence": [
+        {
+          "quote": "At the onset of the COVID-19 pandemic, I recognized that engaging solely with decision-makers through Operation Warp Speed was not enough to drive public health outcomes. As the situation quickly became politicized, I understood the need to shift strategies. Drawing on my experience in vaccine development and international relations, I pivoted to direct public engagement. I appeared on international television to address vaccine safety and efficacy, aiming to build public trust. By translating complex scientific data into accessible messages, I helped bridge the gap between policy and perception.",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Demonstrates creative strategic pivot - recognized limitation of existing approach and developed novel solution (direct public engagement) with specific action (international TV appearances) and outcome (increased vaccine confidence)"
+        },
+        {
+          "quote": "I proposed a framework for leveraging public-private partnerships as a strategic asset in wartime planning and implementation. Drawing on my knowledge of global supply chains and the international flow of capital and goods, I articulated how such partnerships could enhance agility, resilience, and logistical strength in conflict scenarios.",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Shows creative cross-sector thinking - applied business/healthcare expertise to national security context, developing novel framework for war game strategy"
+        },
+        {
+          "quote": "Founded APACMed, the first MedTech Trade Association based out of APAC with the Chairman of J&J and CEO of Covidien",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Demonstrates institutional creativity - identified gap and created new organization to address it, showing innovative solution development"
+        }
+      ],
+      "notes": "Application contains fluff like 'reimagine biomedical problem solving through the lens of lived experience' which is generic and not counted as evidence. The concrete examples provided show genuine creative thinking with specific approaches and outcomes, but do not reach the transformative/groundbreaking level of Tier 5."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "Evidence maps to Tier 3 (5-6). The candidate shows proactive problem identification in familiar contexts with clear examples: (1) COVID-19 strategic pivot shows engagement with complex public health challenge; (2) National security fellowship participation shows seeking challenges outside core expertise; (3) Career trajectory shows engagement with drug development problems. However, evidence is primarily reactive to encountered problems rather than demonstrating extraordinary commitment through major life decisions driven by problem-solving. The stated motivation ('I want to be a Catalyst fellow to reimagine...') is fluff. Concrete actions taken are within professional contexts rather than showing exceptional sacrifices or barrier-breaking that would warrant Tier 4-5.",
+      "evidence": [
+        {
+          "quote": "At the onset of the COVID-19 pandemic, I recognized that engaging solely with decision-makers through Operation Warp Speed was not enough to drive public health outcomes. As the situation quickly became politicized, I understood the need to shift strategies.",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Shows proactive problem identification and engagement, though within existing professional role rather than seeking out new challenges"
+        },
+        {
+          "quote": "Outside of my core expertise in science and healthcare, I was one of 16 leaders - and the only woman - selected as a national security fellow. In this role, I worked alongside mid-career generals and diplomats from the U.S. and allied nations to develop grand strategy.",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Demonstrates seeking challenges outside comfort zone, though selection-based rather than self-initiated problem pursuit"
+        },
+        {
+          "quote": "With 20 years in biomedical research - from pathology bench science to Biopharma drug development - and as a patient with a chronic illness lack a cure, I've experienced both sides of innovation.",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Mentions personal connection to problem domain, but lacks specific actions taken to address this beyond career choice"
+        }
+      ],
+      "notes": "The 'I want to be a Catalyst fellow to reimagine biomedical problem solving' statement is generic fluff. Evidence shows competent engagement with problems encountered professionally, but lacks examples of extraordinary persistence, major sacrifices, or founding initiatives specifically to solve problems that would warrant higher scores."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence strongly maps to Tier 4 (7-8). The CV and application consistently provide high levels of detail with specific quantitative metrics, precise timeframes, and comprehensive context: (1) Multiple quantitative outcomes ('24%/yr growth', '28X EBITDA exit', '150% achievement of sales target', '13% improvement on earnings', 'Narrowed discount vs NAV by 5.3%'); (2) Specific organizational details ('2030 to 4200 FTEs', '$2.4 Billion portfolio', '75 countries', '4200 employees'); (3) Precise technical details (PER.C6 cell line description, specific drug mechanisms); (4) Exact company valuations and market caps. The materials demonstrate systematic attention to detail across all sections. Does not quite reach Tier 5 (9-10) as some sections could include more methodological detail, but overall shows exceptional thoroughness.",
+      "evidence": [
+        {
+          "quote": "Grew $350 mil P&L by 24%/yr., headcount growth from 2030 to 4200 FTEs, market share growth to 4th in sector",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Demonstrates precise quantitative metrics with specific percentages, headcount numbers, and market position"
+        },
+        {
+          "quote": "International expansion into 5 countries, 150% achievement of sales target, 13% improvement on earnings; successful exit at 28X EBITDA",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Shows comprehensive detail with exact number of countries, percentage achievements, and specific exit multiple"
+        },
+        {
+          "quote": "Clinical validation of PER.C6 - a human cell line (embryonic retinal cells) and manufacturing system used in vaccines, gene therapy products, antibodies and other therapeutic proteins (no amplification of inserted genes to deliver stable clones with high levels of protein expression)",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Provides technical precision with specific cell type, applications, and mechanism details"
+        },
+        {
+          "quote": "Narrowed discount vs NAV by 5.3% through strategic initiatives",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Includes precise quantitative outcome metric"
+        },
+        {
+          "quote": "As of April 2022, it had a market capitalisation of £845m",
+          "source": "Gunn_Mary_app_redacted.pdf",
+          "context": "Provides exact timeframe and specific financial figure"
+        }
+      ],
+      "notes": "The materials consistently demonstrate strong detail orientation throughout. Nearly every position includes specific metrics, timeframes, and outcomes. This is not fluff - these are concrete, verifiable details that demonstrate systematic attention to specificity."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 63.055296897888184,
+    "materials_character_count": 23571,
+    "timestamp": "2026-01-16T13:34:50.000622"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "candidate": {
+    "candidate_id": "Shvedova_Maria_app_redacted",
+    "name": null,
+    "materials": [
+      "Shvedova_Maria_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:29:11.232072"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with demonstrated creativity in translational research, exceptional problem-solving motivation evidenced by major career decisions, and thorough attention to detail. Stands out for concrete achievements (2 patents, 30+ publications, novel therapeutic approaches) rather than generic claims. Made significant sacrifice leaving surgery residency to pursue translational research, demonstrating genuine commitment to solving scientific problems. Proactively exploring commercialization pathway with tech transfer discussions and IP evaluation. Materials are exceptionally detailed with specific examples, quantitative outcomes, and comprehensive documentation.",
+  "recommendation": "Strong fit for Catalyst program. Candidate demonstrates genuine entrepreneurial motivation (actively evaluating startup, engaging with tech transfer) backed by concrete scientific achievements and creative problem-solving. Career sacrifice (leaving surgery residency) and proactive commercialization exploration indicate serious commitment beyond casual interest. Has identified specific knowledge gaps (business training) that Catalyst addresses. Strong technical foundation with translational mindset makes her well-positioned to benefit from and contribute to the program.",
+  "strengths": [
+    "Concrete creative innovations with documented impact: 2 Russian patents for novel surgical approach, published novel experimental methodologies, developed senolytic wound healing approach with peer-reviewed publications",
+    "Exceptional problem-solving motivation demonstrated through major career pivot (left Yale surgery residency to pursue research), proactive IP/commercialization exploration, and sustained 8+ year focus on translational challenges",
+    "Outstanding detail orientation with comprehensive CV, 30+ peer-reviewed publications with complete citations, specific technical skills documentation, and precise experimental descriptions",
+    "Strong translational focus: consistently frames research in terms of clinical relevance and therapeutic potential, actively engaging with tech transfer and startup feasibility"
+  ],
+  "areas_for_development": [
+    "Limited evidence of business/entrepreneurship experience - explicitly states 'lack formal training in venture creation' (though this is precisely why seeking Catalyst)",
+    "Some application responses could include more quantitative metrics directly in text (e.g., specific percentage improvements), though these appear in publications",
+    "No evidence yet of inspiring innovation in others at scale or founding organizations (though career stage may explain this)"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative approaches. Evidence maps to Tier 4 (7-8) based on: (1) Novel therapeutic approach combining senolytics with wound healing - designed preclinical studies showing topical senolytic treatment improves aged skin healing; (2) Creative clinical innovation - developed new surgical method using NiTi implants for sterno-mediastinitis, resulting in two Russian patents; (3) Novel experimental methodology - modified MCAO stroke model to improve cerebral blood flow registration; (4) Interdisciplinary bridging - combined aging biology with wound repair, and earlier combined cardiovascular research with neuroprotection. These are not just competent execution of existing methods but novel approaches with documented outcomes. However, falls short of Tier 5 (9-10) as innovations are within established fields rather than field-redefining.",
+      "evidence": [
+        {
+          "quote": "At Boston University, I lead a project on senescence in chronic wounds, where I designed and executed preclinical studies showing that senolytics improve healing in aged skin.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Demonstrates creative therapeutic approach - applying senolytic drugs (typically used for aging) to wound healing problem"
+        },
+        {
+          "quote": "Patent for invention of the Russian Federation (#2539394 from January 15, 2014) describes the composition, preparation, and approach to an introduction of new medicated mixture for the treatment of sterno-mediastinitis... The invention allows to reduce the dose and the frequency of administered antibiotics",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Novel clinical innovation with documented IP - created new treatment approach that improved antibiotic efficacy"
+        },
+        {
+          "quote": "Modified middle cerebral artery occlusion model provides detailed intraoperative cerebral blood flow registration and improves neurobehavioral evaluation.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Innovative methodology development - improved existing experimental model with published paper documenting the advancement"
+        },
+        {
+          "quote": "Topical ABT-263 treatment reduces aged skin senescence and improves subsequent wound healing. Aging (Albany NY). 2024",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Novel therapeutic application - topical delivery of senolytic for wound healing represents creative solution to delivery challenge"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving across multiple domains (clinical surgery, translational research, experimental methods). Two patents demonstrate innovation recognized as novel IP. Publications show creative approaches were validated and disseminated. Not scored 9-10 because innovations are incremental advances rather than transformative breakthroughs."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence strongly maps to Tier 4 (7-8). Demonstrates exceptional problem-solving drive through: (1) Major career pivot - left surgery residency (PGY-2 at Yale) to pursue translational research, indicating willingness to make significant sacrifices to address scientific problems; (2) Proactive IP exploration - 'initiated discussions with tech transfer office to evaluate IP potential' shows seeking solutions beyond assigned research; (3) Self-directed skill acquisition - 'actively evaluating IP and freedom-to-operate for potential startup' despite 'lack formal training in venture creation'; (4) Sustained engagement with complex problems across 8+ years spanning multiple institutions and research areas; (5) Explicit statement of problem-focused motivation: 'I'm not casually exploring innovation but actively evaluating IP and feasibility for a potential startup.' The career change from clinical medicine to research specifically to solve translational problems represents major commitment. Falls slightly short of Tier 5 (9-10) as no evidence of founding organizations or inspiring problem-solving in others at scale.",
+      "evidence": [
+        {
+          "quote": "07/2022 – 06/2024 Surgery Residency Mayo Clinic, AZ (PGY-1, 2022-2023); Yale School of Medicine, CT (PGY-2, 2023-2024)... 08/2024 - present Research Instructor Department of Surgery, Division of Plastic and Reconstructive Surgery Boston University",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Left surgery residency (significant career investment) to pursue translational research - demonstrates major commitment to solving scientific problems over clinical practice"
+        },
+        {
+          "quote": "Beyond benchwork, I initiated discussions with our tech transfer office to evaluate IP potential and therapeutic strategy.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Proactive problem-solving beyond assigned duties - sought out commercialization pathway without being asked"
+        },
+        {
+          "quote": "I'm not casually exploring innovation but actively evaluating IP and feasibility for a potential startup and seeking programs like Catalyst to fill key gaps in business expertise.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Explicit statement of serious commitment to solving translational problems, actively seeking training to address knowledge gaps"
+        },
+        {
+          "quote": "Outside my core expertise in science and medicine, I've been actively exploring the path from research to company formation. I evaluated the IP landscape and freedom-to-operate for a potential senolytic-based wound healing startup",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Self-directed learning in unfamiliar domain (business/IP) to solve problem of translating research to impact"
+        },
+        {
+          "quote": "I identified key experimental questions, developed protocols, and coordinated across collaborators... this taught me to navigate complex biology while staying focused on translatability.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Demonstrates sustained focus on solving translational challenges, not just conducting research"
+        }
+      ],
+      "notes": "Very strong evidence of problem-solving motivation. The career pivot from surgery residency is particularly compelling as it represents a major sacrifice/investment to pursue research problems. Consistent pattern across 8+ years and multiple institutions. Proactive actions (tech transfer discussions, IP evaluation, seeking Catalyst) demonstrate genuine drive rather than stated intentions."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence strongly maps to Tier 4 (7-8). Materials demonstrate exceptional thoroughness and precision: (1) Comprehensive CV with exact dates, institutions, supervisors, and specific techniques for all positions; (2) Detailed publication record with 30 peer-reviewed papers, each with full citations, PMIDs, and DOIs; (3) Specific quantitative outcomes where relevant (e.g., patent numbers with dates, specific conference presentations with session titles and abstract numbers); (4) Precise technical details - 'Laboratory skills' section lists specific techniques (CRISPR, i-GONAD, MCAO, Western blot, etc.); (5) Detailed experimental descriptions with specific models and outcomes. Application responses include specific examples with context rather than vague claims. Reference letters provide specific project details and outcomes. Falls slightly short of Tier 5 (9-10) as some application responses could include more quantitative metrics (e.g., 'improved healing' without percentage improvement stated in application text, though this appears in publications).",
+      "evidence": [
+        {
+          "quote": "At Boston University, I lead a project on senescence in chronic wounds, where I designed and executed preclinical studies showing that senolytics improve healing in aged skin. I identified key experimental questions, developed protocols, and coordinated across collaborators.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Specific description of role with concrete actions (designed, executed, identified, developed, coordinated) rather than vague responsibilities"
+        },
+        {
+          "quote": "DNA and RNA extraction, PCR, qPCR, CRISPR in mice, Western blot, histological preparation (paraffine and cryosections), immunohistochemistry, immunofluorescence, fluorescent microscopy, cell culture, flow cytometry, IVIS bioluminescence assessment, cell-based chemical screening, imaging analysis with ImageJ software",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Comprehensive list of specific technical skills with precise terminology, not generic 'molecular biology techniques'"
+        },
+        {
+          "quote": "Patent for invention of the Russian Federation (#2539394 from January 15, 2014. Dambaev, Vusik A.N., Skidanenko V.V., Soloviev M.M.)",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Precise documentation with exact patent number, date, and all co-inventors listed"
+        },
+        {
+          "quote": "Topical ABT-263 treatment reduces aged skin senescence and improves subsequent wound healing. Aging (Albany NY). 2024; 17:16-32. PMID: 39630941. DOI:",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Complete citation with journal, year, volume, pages, PMID, and DOI - demonstrates systematic attention to detail"
+        },
+        {
+          "quote": "She independently designed and executed a preclinical study demonstrating that topical senolytic therapy can reduce senescent cell burden and accelerate tissue repair in aged mice.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Reference letter provides specific details about experimental approach and outcomes, not generic praise"
+        },
+        {
+          "quote": "Modified middle cerebral artery occlusion model provides detailed intraoperative cerebral blood flow registration and improves neurobehavioral evaluation. Journal of Neuroscience Methods. 2021; 1;358:109179. PMID: 33819558.",
+          "source": "Shvedova_Maria_app_redacted.pdf",
+          "context": "Publication title describes specific methodological improvement with precise technical details"
+        }
+      ],
+      "notes": "Exceptionally detailed materials throughout. CV is comprehensive with exact dates, institutions, and technical specifications. Publication list is thorough with complete citations. Application responses provide specific examples with context. Only minor gap is that some application responses could include more quantitative metrics directly in text (though these appear in publications). Overall demonstrates strong systematic attention to detail and precision in communication."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 74.23452091217041,
+    "materials_character_count": 66090,
+    "timestamp": "2026-01-16T14:29:11.232167"
+  }
+}

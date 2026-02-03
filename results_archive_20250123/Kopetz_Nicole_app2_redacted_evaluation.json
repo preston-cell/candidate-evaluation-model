@@ -1,0 +1,129 @@
+{
+  "candidate": {
+    "candidate_id": "Kopetz_Nicole_app2_redacted",
+    "name": null,
+    "materials": [
+      "Kopetz_Nicole_app2_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:45:34.843111"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated creative problem-solving abilities, sustained motivation to tackle challenging problems, and exceptional attention to detail. The candidate shows a consistent pattern of proactive engagement with complex challenges across research, teaching, and administrative domains, with concrete, measurable outcomes. Key strengths include innovative methodological development (500-fold protein yield improvement), self-directed technical skill acquisition (DynaFit, advanced kinetics), and ability to scale systems while maintaining quality (20 to 100+ student program). The evidence is concrete and specific throughout, with minimal fluff.",
+  "recommendation": "Strong fit - Candidate demonstrates well-documented creative problem-solving, sustained motivation, and exceptional detail orientation with concrete evidence across multiple domains. The combination of research innovation, teaching experience (250+ students), administrative capability (program scaling), and advocacy work (graduate representation) suggests strong potential for interdisciplinary collaboration and healthcare problem-solving. Minimal application fluff with substantial concrete achievements.",
+  "strengths": [
+    "Creative breakthrough in protein purification where others failed (500-fold yield increase enabling first crystal structure)",
+    "Self-directed learning of advanced technical skills (DynaFit, enzyme kinetics mathematics) to solve research obstacles",
+    "Exceptional detail orientation with comprehensive quantitative metrics throughout all materials",
+    "Proactive problem-solving across multiple domains (research, teaching 250+ students, graduate representation)",
+    "Demonstrated ability to secure competitive funding ($10,000 Sprout grant) and deliver results",
+    "Strong evidence of sustained persistence through challenging technical problems (submicromolar Km kinetics)"
+  ],
+  "areas_for_development": [
+    "While creative problem-solving is strong, innovations are within existing frameworks rather than field-transforming breakthroughs",
+    "Limited evidence of founding initiatives or making major career pivots specifically driven by problem-solving motivation",
+    "Could benefit from more interdisciplinary collaboration evidence beyond single-lab research context"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative approaches that led to measurable outcomes. This maps to Tier 4 (7-8) based on: (1) Novel methodology development with documented impact - increased protein yield 500-fold through creative optimization where others failed; (2) Self-taught advanced analytical approach (DynaFit) to solve unconventional kinetic problems; (3) Creative adaptation during COVID - scaled program from 20 to 100+ students while maintaining quality; (4) Innovative assay development for submicromolar Km challenges using entire progress curves rather than standard methods. The evidence shows consistent pattern of innovative thinking across multiple contexts (research, teaching, administration) with specific, measurable outcomes. Not scored 8+ because while innovations are strong, they represent creative problem-solving within existing frameworks rather than groundbreaking/transformative contributions that would redefine approaches in the field.",
+      "evidence": [
+        {
+          "quote": "She succeeded far beyond all hope, increasing yield by almost 500-fold, with a concomitant increase in purity. This breakthrough enabled our collaborators to solve the x-ray crystal structure of this protein, the first PanG structure.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Concrete creative achievement - optimized protein expression/purification where previous students failed, with specific quantitative outcome (500-fold increase) and downstream impact (enabled first crystal structure)"
+        },
+        {
+          "quote": "I expected the kinetic experiments to be straightforward, but the cofactor Km turned out to be submicromolar, making it very difficult to obtain initial rates by the usual methods. [Candidate] persevered and worked out a method to use to the entire progress curve with the help of Petr Kuzmic.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Creative methodological innovation - developed novel approach to kinetic analysis when standard methods failed, showing ability to think beyond conventional approaches"
+        },
+        {
+          "quote": "I turned frustration into drive and adapted previously-used protocols and delved into the principals and mathematics of enzyme kinetics to move the project forward.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Self-directed creative learning - taught herself advanced mathematical approaches to solve research problems, demonstrating innovative adaptation"
+        },
+        {
+          "quote": "I worked alongside the company's president to shift the program from a small in-person intensive (~20 local students) to a virtual program that accommodated 100+ students globally... I successfully scaled the previous systems to allow for expansion while maintaining the quality of the student's experience",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Creative systems redesign with measurable impact - 5x scale increase while maintaining quality, showing innovative problem-solving outside research domain"
+        }
+      ],
+      "notes": "Strong evidence across multiple domains. The 500-fold yield improvement is particularly impressive as it represents creative breakthrough where others failed. Teaching herself DynaFit and developing novel kinetic analysis methods shows self-directed innovation. COVID program scaling demonstrates transferable creative problem-solving skills."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, mapping to Tier 4 (7-8). Evidence includes: (1) Sustained engagement with challenging research problem despite initial failures - 'struggled getting the project off the ground as traditional methods...failed' but persevered; (2) Proactive skill acquisition - self-taught DynaFit and enzyme kinetics mathematics to overcome obstacles; (3) Sought competitive funding ($10,000 Sprout grant) to advance research; (4) Took on leadership role as Graduate Representative to address systemic issues, resulting in concrete improvements (stipend increases, program adjustments); (5) Pattern of seeking challenges across contexts (research, teaching 250+ students, administration). The evidence shows consistent pattern of identifying and addressing challenging problems with concrete actions taken. Not scored 8+ because while motivation is strong and sustained, there's no evidence of extraordinary life/career decisions driven specifically by problem-solving desire or founding initiatives specifically to address challenges.",
+      "evidence": [
+        {
+          "quote": "Early on, I struggled getting the project off the ground as traditional methods of experimentation and data analysis failed to work with the enzyme under investigation. I turned frustration into drive and adapted previously-used protocols and delved into the principals and mathematics of enzyme kinetics to move the project forward.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Demonstrates persistence through obstacles and proactive learning to solve problems - turned frustration into action rather than giving up"
+        },
+        {
+          "quote": "Secured $10,000 in funding from the Brandeis University Sprout Innovation program to perform a DNA-encoded library screen in search of an MtbPanG inhibitor... Prepared all application material and successfully pitched my project to a panel of entrepreneurs, investors, and industry experts",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Proactive pursuit of resources to solve research problem - sought competitive funding and successfully competed for it"
+        },
+        {
+          "quote": "Collected feedback from peer graduate students to communicate concerns and suggestions to program administration, resulting in adjustments to departmental requirements and improved student support... Collaborated with fellow graduate representatives to organize a successful campaign advocating for increased PhD stipends, resulting in a university-wide raise",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Proactive identification and addressing of systemic problems with concrete outcomes - not just complaining but taking action that resulted in measurable improvements"
+        },
+        {
+          "quote": "[Candidate] persevered and worked out a method to use to the entire progress curve with the help of Petr Kuzmic. At this date, she has almost completed the kinetic mechanism, teaching herself Dynafit along the way.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Sustained engagement with complex technical challenge, proactively learning new skills (Dynafit) to solve the problem"
+        }
+      ],
+      "notes": "Strong pattern of proactive problem-solving across multiple domains. The combination of research persistence, seeking funding, and taking on representative role to address systemic issues shows genuine motivation beyond just completing assigned tasks. Teaching herself advanced technical skills demonstrates investment in problem-solving capability."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional detail orientation, mapping to Tier 4 (7-8). Evidence includes: (1) Comprehensive quantitative metrics throughout materials - '500-fold yield increase', '250 students', '100+ students globally', '45% acceptance rate', '$10,000 funding', 'submicromolar Km'; (2) Specific technical methodologies detailed - DynaFit coding, SPR principles, DNA-encoded library screens, site-directed mutagenesis; (3) Precise descriptions of experimental challenges and solutions - 'cofactor Km turned out to be submicromolar, making it very difficult to obtain initial rates by the usual methods'; (4) Detailed timeline information - 'fifth-year', 'two-year term', 'four years'; (5) Specific outcomes and contexts provided consistently. The materials demonstrate systematic attention to detail with comprehensive context, methodologies, metrics, and outcomes. Scored 8 rather than 7 because the level of precision and thoroughness is exceptional throughout all materials - CV, application responses, and letters all contain specific, quantifiable information rather than vague descriptions.",
+      "evidence": [
+        {
+          "quote": "She succeeded far beyond all hope, increasing yield by almost 500-fold, with a concomitant increase in purity.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Precise quantitative metric (500-fold) rather than vague 'significant improvement'"
+        },
+        {
+          "quote": "I expected the kinetic experiments to be straightforward, but the cofactor Km turned out to be submicromolar, making it very difficult to obtain initial rates by the usual methods.",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Specific technical detail about experimental challenge - provides exact parameter (submicromolar Km) and explains why it created difficulty"
+        },
+        {
+          "quote": "Independently led 4-hour laboratory sessions, delivering pre-lab lectures, supervising experiments, and ensuring lab safety to 2 sections of 18 undergraduate students per semester... Taught 8 semesters of honors and regular general chemistry lab, serving as the sole instructor in each section",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Multiple specific details - session length (4 hours), class size (18 students), number of sections (2), duration (8 semesters), role specificity (sole instructor)"
+        },
+        {
+          "quote": "I worked alongside the company's president to shift the program from a small in-person intensive (~20 local students) to a virtual program that accommodated 100+ students globally... I evaluated the applications of over 200 high school students for acceptance or denial into a research program and made final admittance decisions on all applicants, with a 45% acceptance rate",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Precise metrics throughout - specific numbers for scale (20 to 100+), application volume (200), acceptance rate (45%)"
+        },
+        {
+          "quote": "Secured $10,000 in funding from the Brandeis University Sprout Innovation program to perform a DNA-encoded library screen in search of an MtbPanG inhibitor",
+          "source": "Kopetz_Nicole_app2_redacted.pdf",
+          "context": "Exact funding amount, specific program name, and precise technical methodology (DNA-encoded library screen)"
+        }
+      ],
+      "notes": "Exceptionally thorough and precise throughout all materials. Every major claim is backed by specific metrics, timeframes, or technical details. The level of specificity extends across research (technical details, quantitative outcomes), teaching (student numbers, session details), and administration (application numbers, acceptance rates). This is well above average detail orientation."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 73.42648005485535,
+    "materials_character_count": 26998,
+    "timestamp": "2026-01-16T13:45:34.843745"
+  }
+}

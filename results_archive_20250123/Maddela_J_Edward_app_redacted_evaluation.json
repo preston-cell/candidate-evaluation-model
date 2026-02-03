@@ -1,0 +1,122 @@
+{
+  "candidate": {
+    "candidate_id": "Maddela_J_Edward_app_redacted",
+    "name": null,
+    "materials": [
+      "Maddela_J_Edward_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:52:26.955288"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong candidate with demonstrated track record of innovative problem-solving in healthcare informatics leadership. Shows consistent pattern of proactively identifying and addressing complex organizational challenges with measurable outcomes. Key strengths include creative solution development (workshop with NPS 87/100, SAIL Coalition with 62% improvement) and sustained problem-solving motivation (6-year board service, multiple acting leadership roles). Detail orientation is adequate with good use of metrics, though could be stronger in technical/methodological specificity. Candidate demonstrates ability to bridge clinical practice, informatics, and organizational leadership effectively.",
+  "recommendation": "Strong fit. Candidate demonstrates solid creative problem-solving abilities and strong motivation to tackle complex challenges in healthcare, with concrete evidence of measurable impact. The combination of clinical background, informatics expertise, and proven leadership in organizational transformation aligns well with innovation-focused programs. While not at the exceptional/transformative level (9-10 range), the candidate shows consistent above-average performance with clear potential for continued growth and impact.",
+  "strengths": [
+    "Creative problem-solving with measurable impact: developed unique workshop (NPS 87/100) and led coalition achieving 62% improvement in quality measures",
+    "Strong proactive problem-seeking behavior: spearheaded SAIL Coalition, 6-year sustained commitment to JobPath board (90% persistence rate, 3x national average)",
+    "Consistent use of quantitative metrics to track outcomes, demonstrating results-oriented approach",
+    "Multiple leadership roles and willingness to take on challenging acting positions, suggesting organizational trust in problem-solving abilities"
+  ],
+  "areas_for_development": [
+    "Limited depth in technical/methodological detail - outcomes are clear but implementation approaches could be more specific",
+    "No evidence of field-transforming innovations or widely-adopted methodologies beyond local/regional impact",
+    "Application could provide more granular detail about specific approaches, technologies, and processes used to achieve outcomes"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative approaches. Tier 4 (7-8) is appropriate based on: (1) Development of a unique experiential workshop 'Rediscover Compassion Under the Weight of Metrics' with documented high impact (NPS 87/100), showing creative approach to addressing burnout in metrics-driven healthcare; (2) Spearheading a SAIL Coalition that achieved 62% improvement across quality measures, indicating innovative leadership approach; (3) Multiple presentations on novel applications of AI in healthcare (patient history summarization, AI governance frameworks); (4) Creative cross-sector work bridging healthcare with workforce development through JobPath board service. The evidence shows consistent pattern of innovative thinking with measurable outcomes, but falls short of Tier 5 (9-10) as there's no evidence of groundbreaking innovations that transformed the field or were widely adopted beyond his organizations.",
+      "evidence": [
+        {
+          "quote": "my most notable and unique contribution has been the experiential workshop I developed for VHA's National Organization for Leadership and Analytics University (NOLA U) titled, 'Rediscover Compassion Under the Weight of Metrics.' Empathy and compassion are central to how I approach serving customers, both internal and external to VA. To date, my workshop garners a Net Promoter Score of 87/100.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Demonstrates creative solution to healthcare burnout problem with measurable impact (NPS 87/100). This is a novel approach to addressing metrics-driven culture."
+        },
+        {
+          "quote": "Shortly after being hired as the CHIO for our VA in Tucson, Arizona, I spearheaded our first SAIL Coalition whose main objective was to improve care quality, boost employee experience and patient satisfaction to help turnaround our struggling VA medical. Our coalition achieved an overall 62% improvement across various national quality measures, enhanced employee engagement and patient satisfaction scores.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Shows innovative leadership approach with concrete, measurable outcomes (62% improvement). Demonstrates ability to create novel organizational structures to solve complex problems."
+        },
+        {
+          "quote": "Stoneburner, R., F., Kendle, K., J. Innovative Solutions for Safer Veteran Care: Generative AI's Impact on Patient History Summarization. Panel Presentation at: VA National Patient Safety Symposium 2025",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Evidence of creative application of emerging technology (generative AI) to healthcare safety problems. Title explicitly mentions 'innovative solutions.'"
+        },
+        {
+          "quote": "Le, M., Sakumoto, M., Grigg, A., J., M. CHIO, CMIO, CNIO, C3P0: Artificial Intelligence (AI) Governance for the Health Informatics C-Suite. Panel Presentation at: AMIA Clinical Informatics Conference (CIC)",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Shows creative thinking in developing governance frameworks for emerging AI technology in healthcare leadership context."
+        }
+      ],
+      "notes": "Strong evidence of creativity with multiple concrete examples and measurable outcomes. The workshop development with NPS 87/100 is particularly strong evidence. However, no evidence of field-transforming innovations or widely-adopted methodologies that would warrant 9-10 scores."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional problem-solving motivation consistent with Tier 4 (7-8). Evidence includes: (1) Proactively spearheading SAIL Coalition to turnaround struggling VA facility, showing initiative beyond job requirements; (2) Sustained engagement with complex organizational problems over 6 years on JobPath board, helping achieve 90% persistence rate (3x national average); (3) Taking on multiple acting leadership roles (Acting Chief of Staff, Acting Deputy CMO, Acting Assistant Director) suggesting willingness to tackle challenging situations; (4) Pursuing additional credentials (MBA, Clinical Informatics Fellowship, Graduate Certificate) specifically to enhance problem-solving capabilities; (5) Developing workshop to address systemic compassion/burnout problem in metrics-driven environment. The pattern shows consistent proactive identification and sustained engagement with challenging problems across multiple contexts. Falls short of Tier 5 (9-10) as there's no evidence of founding organizations or making major life-changing commitments specifically driven by problem-solving motivation.",
+      "evidence": [
+        {
+          "quote": "Shortly after being hired as the CHIO for our VA in Tucson, Arizona, I spearheaded our first SAIL Coalition whose main objective was to improve care quality, boost employee experience and patient satisfaction to help turnaround our struggling VA medical.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Demonstrates proactive problem-seeking behavior - took initiative to create coalition to address struggling facility, not just responding to assigned tasks."
+        },
+        {
+          "quote": "While serving on the board of directors, I was an active member of its governance committee and helped to steward the organization's leadership transition from the former executive director to its first Chief Executive Officer who is still in place. Throughout my 6-year tenure, I partnered with a diverse group of board directors to grow our workforce development programs helping JobPath boast a 90% Persistence Rate which is 3x higher than the national average for community colleges in the U.S.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Shows sustained 6-year commitment to solving complex organizational and social problems outside primary job. The 90% persistence rate (3x national average) demonstrates significant impact from problem-solving efforts."
+        },
+        {
+          "quote": "2019-2023 Acting Chief of Staff, Southern Arizona VA Health Care System, Tucson, AZ December 2019 intermittently through February 2023",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Multiple acting leadership roles suggest willingness to step into challenging situations and tackle difficult problems when needed."
+        },
+        {
+          "quote": "My personal and professional mission statement is the same: Inspire All to Give our BEST. The Catalyst Fellowship offers a unique opportunity to not only collaborate with like-minded professionals, but more importantly to develop innovative solutions for our veterans' unmet needs.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "While this contains some generic language, the specific focus on 'veterans' unmet needs' and seeking fellowship specifically to develop solutions shows problem-solving orientation. However, this is weaker evidence as it's stated rather than demonstrated."
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking and sustained engagement. The SAIL Coalition and JobPath board work provide concrete examples of going beyond assigned duties to address challenging problems. Multiple acting roles suggest organizational trust in problem-solving abilities. The pursuit of additional credentials (MBA, fellowship) also suggests investment in problem-solving capability."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates adequate to good detail orientation, consistent with Tier 3 (5-6). Evidence includes: (1) Specific quantitative metrics provided in key examples (62% improvement, NPS 87/100, 90% persistence rate vs 3x national average); (2) Comprehensive CV with precise dates, titles, and institutional affiliations; (3) Detailed publication list with full citations including dates and venues; (4) Specific technologies and methodologies mentioned (generative AI, SAIL Coalition structure). However, the application lacks depth in several areas: (1) The 150-word experience description provides outcomes but limited detail on specific methodologies or approaches used; (2) Core competencies list is broad but lacks specificity about depth or concrete applications; (3) Many accomplishments lack granular detail about implementation (e.g., how the 62% improvement was achieved, what specific changes were made); (4) Reference letters not available for review to verify detail level. Scores 6 rather than 7-8 because while metrics are provided, the depth of technical/methodological detail is limited. Not Tier 4 (7-8) because materials lack the 'consistently high level of detail with specific examples, contexts, and outcomes' and 'precise descriptions of technical approaches' required for that tier.",
+      "evidence": [
+        {
+          "quote": "Our coalition achieved an overall 62% improvement across various national quality measures, enhanced employee engagement and patient satisfaction scores.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Provides specific quantitative metric (62% improvement) showing attention to measurement and detail."
+        },
+        {
+          "quote": "To date, my workshop garners a Net Promoter Score of 87/100.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Specific metric with precise measurement methodology (NPS), demonstrating detail orientation in tracking outcomes."
+        },
+        {
+          "quote": "Throughout my 6-year tenure, I partnered with a diverse group of board directors to grow our workforce development programs helping JobPath boast a 90% Persistence Rate which is 3x higher than the national average for community colleges in the U.S.",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "Provides specific timeframe (6 years), precise metric (90%), and comparative benchmark (3x national average), showing strong attention to detail in measurement."
+        },
+        {
+          "quote": "2015-2017 Clinical Informatics Fellowship Banner/University of Arizona College of Medicine, Phoenix, AZ",
+          "source": "Maddela_J_Edward_app_redacted.pdf",
+          "context": "CV shows consistent precision with dates, institutions, and locations throughout, demonstrating systematic attention to detail in documentation."
+        }
+      ],
+      "notes": "Good level of specificity with quantitative metrics where provided, and comprehensive CV documentation. However, lacks the depth of technical/methodological detail that would warrant 7-8 scores. The application provides outcomes but limited detail on processes, specific approaches, or implementation details. The 75-150 word limits may have constrained ability to provide more detail, but even within those constraints, more specificity could have been provided about methodologies and technical approaches."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 69.41766905784607,
+    "materials_character_count": 20847,
+    "timestamp": "2026-01-16T13:52:26.955373"
+  }
+}

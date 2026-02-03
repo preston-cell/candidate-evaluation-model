@@ -1,0 +1,143 @@
+{
+  "candidate": {
+    "candidate_id": "Tomberg_Spencer_app_redacted",
+    "name": null,
+    "materials": [
+      "Tomberg_Spencer_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:38:36.772420"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with demonstrated track record of creative problem-solving and innovation in clinical settings. The Fracture App represents significant creative achievement with measurable widespread impact (8M+ page views, 13K+ active users). Shows consistent pattern of proactively identifying clinical gaps and developing solutions, with strong evidence of persistence and follow-through over multi-year timeframes. Detail orientation is strong with good use of quantitative metrics. Reference letters provide specific corroboration rather than generic praise. The candidate's background combining clinical medicine with engineering training and entrepreneurial experience suggests genuine interdisciplinary thinking capacity.",
+  "recommendation": "Strong fit - Candidate demonstrates genuine innovation capacity with concrete evidence of creating solutions that achieve widespread adoption. The combination of clinical expertise, technical skills, and demonstrated ability to identify and solve real-world problems aligns well with innovation fellowship goals. The Fracture App alone represents the kind of practical, scalable innovation that suggests strong potential for future impact. Recommend for advancement.",
+  "strengths": [
+    "Concrete innovation with documented impact: The Fracture App shows creative solution development from concept through widespread adoption with measurable outcomes",
+    "Sustained problem-solving motivation: 4+ years developing The Fracture App, multiple ongoing process improvement initiatives, pattern of proactively seeking challenges",
+    "Strong detail orientation with quantitative metrics: Consistently provides specific numbers, timeframes, and outcomes rather than vague claims",
+    "Cross-disciplinary experience: Engineering background (MS in Water Resource Engineering), clinical medicine (dual board certified), entrepreneurship (golf shoe venture), and technology development",
+    "Reference letters provide specific examples of impact: 'materially improved clinical quality and operational efficiency', 'collaborative ecosystem', concrete achievements rather than generic praise"
+  ],
+  "areas_for_development": [
+    "Some technical projects lack methodological detail: Mathematical model for consultant burden mentioned but no specifics about model structure or findings provided",
+    "Limited evidence of formal research output: Few peer-reviewed publications relative to career stage, mostly review articles and educational content rather than original research",
+    "Some initiatives described without outcome metrics: Nerve block protocols, CT protocols, and several other projects mentioned without specific impact measurements"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistent creative innovation across multiple contexts with documented impact. The Fracture App represents a novel solution to a clinical gap - creating an interactive database with treatment guidelines, follow-up recommendations, and splinting tips for 130+ orthopedic injuries. The impact is measurable: 8+ million page views, 13,000+ active monthly users. This wasn't just applying existing solutions but creating a new tool from scratch. The candidate also shows creative problem-solving in developing nerve block protocols, creating mathematical models for consultant burden, and adapting sports psychology techniques to emergency medicine. The golf shoe venture in his 20s, while unsuccessful, demonstrates early creative entrepreneurship with concrete actions (researching manufacturing, finding Korean manufacturers, creating samples). The pattern of innovation spans clinical care, education, and technology development. This maps to Tier 4 (7-8) as it shows multiple concrete examples of innovative solutions with measurable improvements and creative leadership.",
+      "evidence": [
+        {
+          "quote": "I am one of the lead developers of The Fracture App, an interactive database that incorporates fracture treatment guidelines, follow-up recommendations, and splinting tips for over 130 orthopedic injuries... The result is a robust clinical resource that medical providers use on shift to help guide care for orthopedic injuries. I am proud of what we built, and it has been well utilized. We have had over eight-million page views and have over 13-thousand active monthly users.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Demonstrates creative solution development with specific, measurable impact - not just stating 'I am creative' but showing concrete innovation with quantified outcomes"
+        },
+        {
+          "quote": "I started to build the database for The Fracture App during my sports medicine fellowship in 2017, and the project took off in 2021 when I was introduced to Tom Fadial, an emergency physician with the technical skills to do the programming. While Tom worked on the backbone of the graphical interface, I put together a team of emergency medicine and orthopedic residents to help complete and verify the information in the database.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Shows creative leadership in assembling cross-functional team and driving innovation from concept to implementation over multiple years"
+        },
+        {
+          "quote": "I built a mathematical model to explore the impact of the number of active consults that a consulting service has in the ED on the time it takes for that service to complete an additional consult.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Demonstrates creative analytical approach to understanding system dynamics - building a mathematical model is a novel approach to an operational problem"
+        },
+        {
+          "quote": "I worked with the mental skills coach for the Colorado Rockies to develop a training program that translates sports mental performance optimization into medical venues.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Shows creative bridging of disparate fields (sports psychology to emergency medicine) - not just applying existing approaches but adapting them to new context"
+        },
+        {
+          "quote": "In my 20's I attempted to start a golf shoe company that focused on innovative design... I found manufacturers in South Korea and had a number of samples created.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Early evidence of creative entrepreneurship with concrete actions taken, though ultimately unsuccessful"
+        }
+      ],
+      "notes": "The Fracture App is the strongest evidence of creativity - it's a novel solution with documented widespread adoption. The candidate shows a pattern of creative problem-solving across multiple domains (clinical tools, process improvement, education). The reference letters support this with specific examples rather than generic praise."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional proactive problem-solving motivation with sustained engagement across multiple challenging problems. The Fracture App originated from identifying a clinical gap during fellowship (2017) and pursuing it for 4+ years until widespread adoption. The candidate didn't just identify the problem - he learned new skills (database development), recruited technical partners, assembled teams, and persisted through implementation. The orthopedic process improvement work shows proactive identification of system inefficiencies and taking leadership to address them. The reference letters provide strong corroboration: 'he has helped to build a collaborative ecosystem that unites the emergency department, orthopedic surgery, and the Winter Park Ski Clinic' and 'His ability to relationship-build, listen and think before acting and to push projects through and collaborate are equal parts remarkable and unique.' The golf shoe venture, while unsuccessful, shows early willingness to take risks and invest effort in solving problems. The candidate's statement 'There are missing pieces that impact our ability to optimize patient care, and my instinct is to create solutions to fill these gaps' is backed by concrete actions, not just words. This maps to Tier 4 (7-8) showing consistent pattern of proactively identifying and addressing challenging problems with persistence and significant investment of time/effort.",
+      "evidence": [
+        {
+          "quote": "There are missing pieces that impact our ability to optimize patient care, and my instinct is to create solutions to fill these gaps.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "While this is a stated motivation, it's backed by concrete examples throughout the materials showing actual problem-solving actions"
+        },
+        {
+          "quote": "I started to build the database for The Fracture App during my sports medicine fellowship in 2017, and the project took off in 2021 when I was introduced to Tom Fadial... I put together a team of emergency medicine and orthopedic residents to help complete and verify the information in the database.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Demonstrates sustained engagement (4+ years) with a self-identified problem, taking concrete actions including learning new skills and recruiting help"
+        },
+        {
+          "quote": "I am leading a process improvement project that is focused on optimizing the time to complete orthopedic consults in the ED. We are working to reduce overall consult time by standardizing orthopedic treatment algorithms, reducing the consult burden for orthopedic residents, streamlining the process for referral to the orthopedic clinic and exploring strategies to increase the efficiency of care in the emergency department.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Shows proactive identification and leadership in addressing system-level problems, not just responding to assigned tasks"
+        },
+        {
+          "quote": "he has helped to build a collaborative ecosystem that unites the emergency department, orthopedic surgery, and the Winter Park Ski Clinic, streamlining care for orthopedic injuries across the system. His development of institutional orthopedic consultation guidelines and leadership in nerve block protocol development have materially improved clinical quality and operational efficiency",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Reference letter providing specific examples of proactive problem-solving with measurable impact on systems"
+        },
+        {
+          "quote": "His ability to relationship-build, listen and think before acting and to push projects through and collaborate are equal parts remarkable and unique... I cannot think of anyone in our institution more connected, involved, and ultimately successful.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Reference letter highlighting persistence and follow-through in problem-solving, not just identifying problems"
+        },
+        {
+          "quote": "In my 20's I attempted to start a golf shoe company that focused on innovative design... I obtained mentorship through the Service Corps of Retired Executives, researched shoe manufacturing techniques and the distribution of foot sizes, and I went door-to-door to golf shops to explore distribution options. I found manufacturers in South Korea and had a number of samples created.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Early evidence of proactive problem-solving with significant investment of effort, though ultimately unsuccessful"
+        }
+      ],
+      "notes": "Strong evidence of sustained problem-solving motivation across multiple contexts. The 4-year development of The Fracture App is particularly compelling evidence of persistence. Reference letters corroborate with specific examples rather than generic praise. The candidate shows pattern of seeking out problems rather than just responding to assigned tasks."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation with consistent specificity throughout materials. The CV provides precise quantitative metrics: '8+ million page views, 13,000+ active monthly users' for The Fracture App, 'over 130 orthopedic injuries' covered in the database. The application includes specific technologies, timeframes, and outcomes. The Fracture App description specifies it includes 'fracture treatment guidelines, follow-up recommendations, and splinting tips' - three distinct components. Process improvement work includes specific elements: 'standardizing orthopedic treatment algorithms, reducing the consult burden for orthopedic residents, streamlining the process for referral to the orthopedic clinic.' The CV lists specific publications with full citations, specific dates for positions, and detailed descriptions of responsibilities. However, some areas lack depth - the mathematical model for consultant burden is mentioned but no specifics about the model structure or findings are provided. The nerve block protocol development mentions collaboration with 'ED nursing, orthopedics and ED physician groups' but doesn't specify what the protocols entail. The golf shoe venture provides good detail about the process but lacks specifics about the 'innovative design' itself. Overall, this maps to Tier 4 (7-8) showing consistently high level of detail with specific examples, contexts, and outcomes, including quantitative metrics where relevant, though some areas could be more comprehensive.",
+      "evidence": [
+        {
+          "quote": "We have had over eight-million page views and have over 13-thousand active monthly users.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Provides precise quantitative metrics for impact, not vague claims of 'widely used'"
+        },
+        {
+          "quote": "an interactive database that incorporates fracture treatment guidelines, follow-up recommendations, and splinting tips for over 130 orthopedic injuries",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Specifies three distinct components of the tool and exact number of injuries covered"
+        },
+        {
+          "quote": "I am leading a process improvement project that is focused on optimizing the time to complete orthopedic consults in the ED. We are working to reduce overall consult time by standardizing orthopedic treatment algorithms, reducing the consult burden for orthopedic residents, streamlining the process for referral to the orthopedic clinic and exploring strategies to increase the efficiency of care in the emergency department.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Breaks down the improvement project into four specific components rather than vague 'improving processes'"
+        },
+        {
+          "quote": "I obtained mentorship through the Service Corps of Retired Executives, researched shoe manufacturing techniques and the distribution of foot sizes, and I went door-to-door to golf shops to explore distribution options. I found manufacturers in South Korea and had a number of samples created.",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Provides specific steps taken and concrete actions rather than 'I tried to start a company'"
+        },
+        {
+          "quote": "the minute I walked into a board room at the shoe plants, the price of the shoes increased 20-40%",
+          "source": "Tomberg_Spencer_app_redacted.pdf",
+          "context": "Includes specific quantitative detail about the business challenge faced"
+        }
+      ],
+      "notes": "Strong detail orientation overall with good use of quantitative metrics. Some areas (mathematical model, nerve block protocols) could benefit from more specificity about methodologies and outcomes. The CV is well-organized with specific dates, positions, and achievements. Publications include full citations. The candidate consistently provides concrete examples rather than abstract descriptions."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 75.45983409881592,
+    "materials_character_count": 32628,
+    "timestamp": "2026-01-16T14:38:36.772521"
+  }
+}

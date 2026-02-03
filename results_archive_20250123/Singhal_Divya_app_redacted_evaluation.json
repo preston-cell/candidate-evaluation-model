@@ -1,0 +1,138 @@
+{
+  "candidate": {
+    "candidate_id": "Singhal_Divya_app_redacted",
+    "name": null,
+    "materials": [
+      "Singhal_Divya_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:31:57.375286"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated excellence in innovation, problem-solving, and attention to detail. The candidate shows a consistent pattern of pioneering work in healthcare innovation, particularly in implementing novel technologies (VR, thermal imaging) in the VA system. Her leadership in creating and transforming the SCI/D service line demonstrates both strategic thinking and execution capability. The evidence is concrete with measurable outcomes throughout, avoiding the typical application fluff. Notable strengths include first-in-nation innovations, sustained engagement with complex problems, and systematic documentation of outcomes. The candidate would bring valuable experience in healthcare innovation, interdisciplinary collaboration, and translating novel technologies into clinical practice.",
+  "recommendation": "Strong fit - This candidate demonstrates the innovation mindset, problem-solving drive, and systematic approach that would benefit from and contribute to the MIT Catalyst Fellowship. Her track record of implementing novel technologies in complex healthcare settings, combined with her ability to work across organizational boundaries and document outcomes, suggests she would be an active contributor to the cohort. The concrete evidence of innovation with measurable impact (not just stated qualities) makes her a standout candidate.",
+  "strengths": [
+    "Pioneering innovation with documented national impact - first VA to implement VR in SCI/D rehabilitation and thermal imaging technology, with innovations adopted system-wide",
+    "Strong proactive problem-solving with measurable outcomes - created entire service line, improved performance metrics dramatically (e.g., #19 to #3 ranking, 35% reduction in length of stay)",
+    "Consistent attention to detail with quantitative metrics throughout - provides specific numbers, timeframes, and contexts rather than vague claims",
+    "Demonstrated ability to work across organizational boundaries - collaborated with National OIT, VISN, local departments, DoD, and academic institutions to achieve goals",
+    "Track record of sustained engagement - multiple multi-year initiatives with documented follow-through and outcomes"
+  ],
+  "areas_for_development": [
+    "While innovation is strong, could benefit from more evidence of fundamental research or development of entirely new methodologies (vs. novel application of existing technologies)",
+    "Problem-solving motivation is strong but doesn't show evidence of transformative career pivots driven specifically by desire to solve particular problems",
+    "Detail orientation is good but some areas could benefit from more methodological specificity about how innovations were implemented"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates a consistent pattern of innovative thinking across multiple contexts with documented impact, placing her solidly in Tier 4 (7-8). Multiple concrete examples show novel approaches that led to measurable improvements:\n\n1. **First-in-VA Virtual Reality Implementation**: The candidate led the first VA SCI/D center to implement VR into rehabilitation therapy, which gained national recognition and was included in the inaugural National SCI/D report to VHA Undersecretary. This represents genuine innovation, not just adoption of existing practices.\n\n2. **Wound Vision Thermal Technology**: Collaborated with National OIT, VISN, and local Biomed to become the first VA nationally to implement this technology. The National SCI/D Program Director highlighted this accomplishment.\n\n3. **Novel Mentoring Program**: Developed 'WoMEN' (Women mentoring for excellence in Neurology) - a structured mentoring program that matched 126 mentor-mentee pairs in its inaugural class with pre/post surveys for metrics.\n\n4. **Innovative Rehabilitation Graduation Ceremony**: Created the first-ever rehabilitation graduation ceremony in the VHA SCI/D system of care to celebrate paralyzed patients' journey.\n\n5. **Creative Crisis Response**: During the 2021 Texas Freeze, applied 'kanban style' approach for patient outreach, achieving 95% successful outreach and creating new national EMR templates used in subsequent disasters.\n\nThe evidence shows not just creative problem-solving but also creative leadership - teaching and sharing innovative approaches with others. The candidate has published on novel methodologies and her innovations have been adopted system-wide. This is not fluff; these are specific, documented innovations with measurable outcomes.",
+      "evidence": [
+        {
+          "quote": "SCI/D center STVHCS was the first VA in the nation to implement Virtual Reality into Rehab i.e. into Occupational, Physical, and Recreation therapy sessions. National SCI/D Program office's Innovation report 2024 submitted to VHA USH",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Demonstrates pioneering innovation with national recognition - first in nation to implement VR in SCI/D rehabilitation"
+        },
+        {
+          "quote": "Innovative Wound Vision Thermal technology camera in collaboration with National OIT, VISN and local Biomed – first VA to be able to do so in the nation: San Antonio VA highlighted for this accomplishment by VACO SCI/D National Program Director",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Shows creative collaboration across multiple departments to implement novel technology, with national recognition"
+        },
+        {
+          "quote": "Development of Novel Mentoring program 'WoMEN' – Women mentoring for excellence in Neurology as Vice Chair of Women's issues in Neurology section in collaboration with Social media group Women Neurologists' Group – 126 mentor-mentee pairs matched in Inaugural class 2019, mentoring webinars organized and metrics being assessed through pre-mentoring and post-ring surveys",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Created entirely new structured mentoring program with measurable outcomes and systematic evaluation"
+        },
+        {
+          "quote": "Applied previous learnings to accomplish:- ** Cohesive teamwork- kanban style personally and with team to get patients to safety **Townhall outreach through calls for triaging Outcomes -=-=-=-=-=-=-=-=-=-= --> 95% successful outreach --> lessons learned (a)sustainment Generators supply (b)new national outreach EMR templates – used in recent Kerrville floods",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Creative application of kanban methodology to crisis management with documented 95% success rate and creation of templates adopted nationally"
+        },
+        {
+          "quote": "Innovative 1st time in VA - rehab graduation ceremony with certificates - to celebrate the journey of paralyzed patients after Acute SCI Rehab Program",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "First-in-system innovation to address patient recognition and celebration"
+        }
+      ],
+      "notes": "The candidate shows exceptional creativity not just in clinical innovation but also in program development, crisis response, and educational initiatives. The innovations have documented impact and have been adopted by others, which is a key marker for Tier 4. The score of 8 reflects consistent pattern of innovation with documented impact across multiple domains."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, placing her in Tier 4 (7-8). Evidence shows multiple instances of proactively seeking out challenging problems and sustained engagement:\n\n1. **Proactive Service Line Creation**: Successfully proposed, gained approval, and executed creation of entire SCI/D service care line in FY22-23, including realignment and hiring across 8 disciplines. This represents major initiative-taking, not just responding to assigned tasks.\n\n2. **Crisis Leadership During Texas Freeze**: Faced with unprecedented challenges (limited connectivity, vulnerable paralyzed patients, overwhelmed systems), took immediate action with townhall outreach achieving 95% success rate. This shows both reactive excellence and proactive solution development.\n\n3. **Persistent Innovation Implementation**: Pursued VR and thermal imaging technology implementation despite being first-in-nation (higher risk/complexity), working across multiple departments (National OIT, VISN, local Biomed) to achieve goals.\n\n4. **Continuous Improvement Focus**: Led multiple process improvement projects with measurable outcomes: reduced average length of stay from 53.19 to 34.53 days, improved annual exams ranking from #19 to #3 of 25 centers.\n\n5. **Seeking Additional Training**: Completed multiple leadership programs (VA HCLDP, Harvard Kennedy School, Transforming Leaders Program) specifically to enhance problem-solving capabilities.\n\nThe evidence shows sustained engagement with complex issues and persistence through obstacles. However, while strong, the evidence doesn't quite reach the transformative level of Tier 5 (founding organizations, major life pivots driven by problem-solving). Score of 7 reflects strong drive with multiple concrete examples of proactive problem-seeking and follow-through.",
+      "evidence": [
+        {
+          "quote": "Service Chief, SCI/D Service Care line, South Texas VA – 2021 onwards - SCI service care line creation and execution : Successful proposal, approval and completion in FY 22 & FY23 - successful realignment & new FTE Approval as well as hires: including 8 disciplines {Administrative - Program Management Officer (PMO), Program & Management Analyst, HAS clerks; Clinical - Psychologists, Recreational Therapists, Occupational Therapist, Kinesiotherapist, Physical Therapists, Additional physicians, Clinical Pharmacist Specialist PharmD, three new Outpatient nursing support staff}",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Demonstrates proactive identification of need and sustained effort to create entire service line - major initiative requiring persistence"
+        },
+        {
+          "quote": "Challenges included - limited connectivity, lack of awareness of policies and resources as a brand new chief/department chair, personal hardship for team/staff (power outages, limited water supply), -vulnerable paralyzed and sick patients stuck at home in the cold, -overwhelmed medical systems, lack of transportation to hospitals Applied previous learnings to accomplish:- ** Cohesive teamwork- kanban style personally and with team to get patients to safety **Townhall outreach through calls for triaging Outcomes -=-=-=-=-=-=-=-=-=-= --> 95% successful outreach",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Shows engagement with complex, urgent problems and persistence through multiple obstacles to achieve 95% success"
+        },
+        {
+          "quote": "Initiative for Safety – decrease in average length of stay for inpatient SCI/D unit from 53.19 days in FY22 steadily over 2 years to 34.53 in FY24",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Sustained engagement with complex operational problem over 2 years with measurable 35% improvement"
+        },
+        {
+          "quote": "Annual exams improved throughout VA SCI/D System of care from #19 of 25 to #3 of 25 – FY2022",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Proactively addressed performance gap with dramatic improvement in ranking"
+        },
+        {
+          "quote": "Department of Veteran Affairs' Health Care Leadership & Development Program (VA HCLDP) – 2023 - 1 of 120 individuals selected through a rigorous selection process to attend this one year long leadership program",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Proactively sought additional training to enhance problem-solving capabilities"
+        }
+      ],
+      "notes": "The candidate shows consistent pattern of seeking challenging problems and following through with solutions. The evidence is concrete with measurable outcomes. Score of 7 rather than 8 because while the drive is strong, there's no evidence of truly transformative career decisions driven specifically by desire to solve particular problems (e.g., changing fields entirely, founding organizations)."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistently high level of detail with specific examples, contexts, and outcomes throughout materials, placing her in Tier 4 (7-8). The CV and application provide:\n\n1. **Quantitative Metrics Throughout**: Specific percentages and numbers are provided consistently: '95% successful outreach', 'reduced length of stay from 53.19 to 34.53 days', 'improved from #19 to #3 of 25', '126 mentor-mentee pairs', '4500+ trainees in social media group'.\n\n2. **Precise Timeframes**: Specific dates and durations provided: 'FY22 & FY23', 'January 2021 onwards', '2023-2024', 'six-month longitudinal preparation'.\n\n3. **Specific Technologies and Methodologies**: Names specific tools and approaches: 'Wound Vision Thermal technology camera', 'kanban style', 'CARF standards', 'Virtual/augmented reality', 'Cognitive Behavioral Therapy for Chronic Pain'.\n\n4. **Comprehensive Context**: Provides detailed context for achievements including specific departments involved, accrediting bodies, and stakeholders: 'collaboration with National OIT, VISN and local Biomed', 'Commission on Accreditation of Rehabilitation Facilities (CARF)', 'Zero findings amongst a total of 2500 CARF standards'.\n\n5. **Detailed Process Descriptions**: Describes specific steps taken: 'Successful proposal, approval and completion', 'realignment & new FTE Approval as well as hires: including 8 disciplines {lists all 8}'.\n\nThe materials are thorough and precise throughout. However, score of 7 rather than 8 because some sections could benefit from additional methodological detail (e.g., specific VR protocols used, exact process improvement methodologies). The level of detail is strong but not quite at the 'exceptional thoroughness' level of Tier 4 high end.",
+      "evidence": [
+        {
+          "quote": "Initiative for Safety – decrease in average length of stay for inpatient SCI/D unit from 53.19 days in FY22 steadily over 2 years to 34.53 in FY24",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Provides precise quantitative metrics with specific timeframes and baseline/outcome data"
+        },
+        {
+          "quote": "Served as SCI/D CARF Program Director as well as Medical Director for successful 3 year CARF reaccreditation. Zero findings amongst a total of 2500 CARF standards",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Specific accreditation body, duration, and exact number of standards evaluated"
+        },
+        {
+          "quote": "Development of Novel Mentoring program 'WoMEN' – Women mentoring for excellence in Neurology as Vice Chair of Women's issues in Neurology section in collaboration with Social media group Women Neurologists' Group – 126 mentor-mentee pairs matched in Inaugural class 2019, mentoring webinars organized and metrics being assessed through pre-mentoring and post-ring surveys",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Provides specific program name, exact number of participants, year, and evaluation methodology"
+        },
+        {
+          "quote": "successful realignment & new FTE Approval as well as hires: including 8 disciplines {Administrative - Program Management Officer (PMO), Program & Management Analyst, HAS clerks; Clinical - Psychologists, Recreational Therapists, Occupational Therapist, Kinesiotherapist, Physical Therapists, Additional physicians, Clinical Pharmacist Specialist PharmD, three new Outpatient nursing support staff}",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Comprehensive detail listing all 8 disciplines and specific roles within each category"
+        },
+        {
+          "quote": "Annual exams improved throughout VA SCI/D System of care from #19 of 25 to #3 of 25 – FY2022",
+          "source": "Singhal_Divya_app_redacted.pdf",
+          "context": "Specific ranking metrics with baseline, outcome, and timeframe"
+        }
+      ],
+      "notes": "The candidate consistently provides specific, quantitative details throughout materials. The CV is particularly thorough with dates, metrics, and contexts. Some areas could benefit from additional methodological detail to reach the highest tier, but overall demonstrates strong attention to specificity and precision."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 90.91282892227173,
+    "materials_character_count": 84244,
+    "timestamp": "2026-01-16T14:31:57.375371"
+  }
+}

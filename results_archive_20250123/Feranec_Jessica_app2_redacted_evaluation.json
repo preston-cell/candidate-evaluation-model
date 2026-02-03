@@ -1,0 +1,134 @@
+{
+  "candidate": {
+    "candidate_id": "Feranec_Jessica_app2_redacted",
+    "name": null,
+    "materials": [
+      "Feranec_Jessica_app2_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:29:44.930089"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated track record of innovative program building and sustained problem-solving motivation. Over 10 years, built a surgical program from ground up, scaling volume 67% through creative program design. Proactively seeks challenging problems (joined new VA to build program, exploring AI applications, cross-disciplinary engineering work). Provides concrete evidence with specific metrics rather than generic claims. Materials show consistent detail orientation with quantitative outcomes. Main limitation: innovations are institutional-level rather than field-transforming; lacks publications of novel methodologies or evidence of approaches adopted beyond her organization.",
+  "recommendation": "Strong fit - Candidate demonstrates solid creative problem-solving, strong motivation, and attention to detail with concrete evidence. Well-suited for collaborative innovation program. Would benefit from exposure to broader innovation ecosystem and methodologies for scaling solutions beyond single institution. The 20% time commitment appears feasible given supervisor support and candidate's track record of managing complex programs.",
+  "strengths": [
+    "Concrete evidence of creative problem-solving with measurable outcomes (scaled surgical volume from 4,500 to 7,500 cases annually)",
+    "Strong, sustained problem-solving motivation demonstrated through proactive career decisions and continuous 'build mode' over decade",
+    "Consistent detail orientation with specific quantitative metrics throughout materials (team size, case volumes, timeframes)",
+    "Cross-disciplinary innovation (clinical-engineering collaboration, AI exploration) with concrete examples rather than stated qualities",
+    "Evidence-based materials with minimal fluff - most claims backed by specific actions and outcomes"
+  ],
+  "areas_for_development": [
+    "Limited evidence of innovations adopted beyond institutional level or transformative field-wide impact",
+    "Some areas lack methodological depth (AI consultancy and robotics collaboration could provide more technical specifics)",
+    "No publications of novel methodologies or evidence of thought leadership through peer-reviewed innovation papers",
+    "While strong at institutional program building, less evidence of contributions to broader healthcare innovation ecosystem"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative approaches that led to measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Building an entirely new surgical program from scratch, requiring creative solutions for systems that didn't exist; (2) Innovative program design that scaled case volume from 4,500 to 7,500 annually; (3) Cross-disciplinary collaboration with robotics company on medical device design despite no formal engineering background; (4) Proactive exploration of AI applications in OR efficiency - a novel area. However, while these show consistent innovation, they don't reach the transformative/groundbreaking level (Tier 5) of developing approaches adopted widely beyond her institution or redefining field practices. The evidence is concrete with specific outcomes, not just stated creativity.",
+      "evidence": [
+        {
+          "quote": "Starting as an outpatient clinic, we built inpatient order systems, equipped the OR, developed patient admission processes, created care protocols, and educated teams across the system. This involved breaking down each scenario to define every item needed for comprehensive care.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Demonstrates creative problem-solving in building systems from ground up, requiring innovative thinking to design comprehensive care pathways where none existed"
+        },
+        {
+          "quote": "Scaled case volume from 4,500 to 7,500 annually through innovative program design, including an ambulatory surgery program build and the introduction of advanced surgical programs (bariatrics, thoracic, head and neck, robotics).",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Specific measurable outcome (67% volume increase) achieved through innovative program design - concrete evidence of creative solution development with quantified impact"
+        },
+        {
+          "quote": "Recently, I began collaborating with a robotics company to help design an engineering solution to attach an arm to a vaginal manipulator. My contributions involved bridging clinical needs with technical design, providing insights from a surgical perspective, and ensuring that the solution would be practical and effective in a clinical setting.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Creative cross-disciplinary work outside expertise area - bridging clinical and engineering domains to develop novel medical device solution"
+        },
+        {
+          "quote": "Consultant on AI applications to enhance operative efficiency, patient, and operative flow across the healthcare system.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Proactive exploration of emerging technology (AI) for clinical applications - demonstrates forward-thinking innovation in novel area"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with concrete outcomes. Not just stated creativity but demonstrated through building programs, cross-disciplinary collaboration, and exploring emerging technologies. However, lacks evidence of innovations adopted beyond her institution or publications of novel methodologies that would push score to 9-10 range."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence strongly maps to Tier 4 (7-8) based on: (1) Proactive career decision to join new VA specifically to build program from scratch - seeking out challenge rather than established role; (2) Sustained engagement over decade in 'continuous build mode'; (3) Pursuing additional training/skills outside expertise (AI, engineering collaboration); (4) Attending GTC conference and actively seeking to contribute to AI in healthcare. The quote 'I eagerly joined to help build a new program from the ground up' and 'I've been in a continuous build mode since joining, always focused on tackling problems at their most basic level' demonstrates proactive problem-seeking, not reactive. The statement about wanting to 'take a different approach' and work collaboratively shows continued motivation to tackle new challenges. Score of 8 rather than 9 because while motivation is strong and sustained, there's no evidence of founding organizations or making transformative life changes specifically driven by problem-solving (which would be Tier 5).",
+      "evidence": [
+        {
+          "quote": "When the Orlando VA opened, I eagerly joined to help build a new program from the ground up.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Proactive career decision to seek out challenging problem (building new program) rather than taking established position - demonstrates problem-seeking motivation"
+        },
+        {
+          "quote": "I've been in a continuous build mode since joining, always focused on tackling problems at their most basic level until fully functioning.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Sustained engagement with complex problems over extended period - demonstrates persistence and consistent problem-solving drive"
+        },
+        {
+          "quote": "Lately, I've begun to focus on AI and how we can implement it to improve operative efficiency... Attending GTC, the world's largest tech conference, I was amazed by the rapid advancements on the horizon. I want to contribute, hopefully guiding a safe adoption of AI in healthcare.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Proactively pursuing new challenging area (AI in healthcare) and investing time/effort to learn (attending major tech conference) - demonstrates continued problem-seeking motivation"
+        },
+        {
+          "quote": "Although I have a background in chemistry and math, I have no formal engineering experience. Recently, I began collaborating with a robotics company to help design an engineering solution",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Pursuing problems outside comfort zone/expertise area - demonstrates willingness to tackle challenges requiring new skill development"
+        },
+        {
+          "quote": "While I have many years of experience as a leader and surgeon, accustomed to being 'in charge' in the OR, I am eager to take a different approach. I want to work alongside a collaborative team with varied backgrounds to find innovative solutions.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Actively seeking new challenging contexts (collaborative vs. hierarchical) - demonstrates continued motivation to engage with problems in new ways"
+        }
+      ],
+      "notes": "Strong, consistent evidence of proactive problem-seeking across career. Multiple concrete actions taken (career move, continuous program building, learning AI, engineering collaboration). Not just stated motivation but demonstrated through sustained actions and investments of time/effort."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8). The materials consistently provide specific details including: (1) Quantitative metrics throughout (team size: 210 personnel, case volume: 7,500 annually, 60,000 outpatient encounters, scaled from 4,500 to 7,500); (2) Specific timeframes (2016-2020, 2020-Present, etc.); (3) Precise program descriptions (ambulatory OR, thoracic, bariatrics, robotics); (4) Detailed process descriptions ('breaking down each scenario to define every item needed'). CV includes specific publication titles, dates, and venues. However, some areas lack depth - the AI consultancy and robotics collaboration descriptions are somewhat vague about specific methodologies or technical approaches used. Score of 7 rather than 8 because while there's good specificity throughout, not every section reaches the 'exceptional thoroughness' level with comprehensive quantitative/qualitative details that would warrant an 8.",
+      "evidence": [
+        {
+          "quote": "Lead a surgical team of 210 personnel across multiple sites of care with an annual volume of 7,500 cases and 60,000 outpatient encounters.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Specific quantitative metrics provided - exact team size, case volume, and encounter numbers demonstrate detail orientation"
+        },
+        {
+          "quote": "Scaled case volume from 4,500 to 7,500 annually through innovative program design, including an ambulatory surgery program build and the introduction of advanced surgical programs (bariatrics, thoracic, head and neck, robotics).",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Precise before/after metrics (4,500 to 7,500) and specific program types listed - demonstrates attention to quantitative detail and specificity"
+        },
+        {
+          "quote": "This involved breaking down each scenario to define every item needed for comprehensive care.",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Describes systematic, detailed approach to problem-solving - working at granular level to ensure completeness"
+        },
+        {
+          "quote": "Deputy Chief of Surgery, Chief of Gynecology (2016-2020)... Associate Chief of Staff, Surgical Service, Orlando VA Healthcare System 2020 - Present",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Precise timeframes and role progressions provided throughout CV"
+        },
+        {
+          "quote": "1st place Orlando VA and VISN 8 Process Improvement Forum – green belt on inpatient admission revenue capture, 2022",
+          "source": "Feranec_Jessica_app2_redacted.pdf",
+          "context": "Specific award details including year, level (green belt), and specific focus area"
+        }
+      ],
+      "notes": "Strong detail orientation with consistent quantitative metrics and specific examples throughout materials. Some areas (AI consultancy description, robotics collaboration specifics) could be more detailed about methodologies. Overall demonstrates good attention to precision and thoroughness but not at the exceptional/exemplar level."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 65.35540413856506,
+    "materials_character_count": 28183,
+    "timestamp": "2026-01-16T13:29:44.930125"
+  }
+}

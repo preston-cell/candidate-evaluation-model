@@ -1,0 +1,142 @@
+{
+  "candidate": {
+    "candidate_id": "Janis_Abram_app_redacted",
+    "name": null,
+    "materials": [
+      "Janis_Abram_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:40:08.041519"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong mid-senior scientist with demonstrated creative innovation and problem-solving drive, particularly in building industry-academia partnerships and intrapreneurial programs. Shows concrete achievements in program creation (IDEA Incubator, Futurism program), technical innovation (11 granted patents), and proactive problem engagement (RapidRona startup). Detail orientation is adequate but inconsistent - strong in some areas (funding metrics, patent specifics) but lacking quantitative outcomes in key program descriptions. Not fluff - evidence is concrete with specific programs, patents, and funded research, though some application responses could be more metrics-driven.",
+  "recommendation": "Strong fit. Candidate demonstrates concrete creative and problem-solving capabilities with real evidence (patents, funded programs, institutional partnerships) rather than fluff. The 7.0 overall score reflects solid Tier 4 performance with room to reach exceptional tier through more comprehensive outcome documentation. Well-suited for programs requiring innovation, cross-institutional collaboration, and translational science expertise.",
+  "strengths": [
+    "Concrete creative innovation: Founded multiple novel programs (IDEA Incubator, Futurism Strategic Foresight) with documented structure and scale (>35 participants)",
+    "Sustained technical creativity: 11 granted patents and 17 published applications demonstrate consistent innovative output with IP value",
+    "Proactive problem-solving: Joined COVID startup outside expertise area, extensive volunteer mentoring (15+ startups over 10 years), built cross-institutional partnerships",
+    "Real industry-academia bridge building: Specific funded collaborations (€56K and €208K awards) with measurable outcomes, not just stated intentions"
+  ],
+  "areas_for_development": [
+    "Inconsistent quantitative metrics: Program descriptions (IDEA Incubator, Futurism) lack specific outcome data (number of students, products developed, funding generated)",
+    "Limited evidence of transformative impact: While innovations are substantial, no evidence of field-redefining contributions or external recognition as thought leader",
+    "Application responses could be more specific: RapidRona and teaching descriptions lack concrete metrics (timeline to EUA, scale of operations, student outcomes)"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistent creative innovation across multiple domains with concrete, measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Novel program creation - founded multiple intrapreneurial programs from scratch (IDEA Incubator, Futurism Strategic Foresight Program), (2) Creative problem-solving during COVID-19 - built a logistical platform rather than inventing new diagnostics, showing lateral thinking, (3) Innovation in teaching - adapted Stanford Biodesign processes to single semester format, (4) Technical innovation - 11 granted patents and 17 published patent applications showing sustained creative output with IP value. The evidence shows not just competent execution but original approaches: 'built a logistical platform that connected existing PCR lab capacity to overwhelmed healthcare systems' demonstrates creative reframing of problems. The Futurism program shows creative leadership: 'cross-functional team of >35 opt-in associate futurists' indicates ability to inspire creative thinking in others. Multiple concrete innovations with documented impact (patents, publications, funded programs) place this solidly in the 7-8 range.",
+      "evidence": [
+        {
+          "quote": "Founder & Program Manager, Industry Discovering & Exploring with Academia (IDEA) Incubator 2019-present. Leading collaborations, undergraduate research & capstone mentorship",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Created novel industry-academia partnership program from scratch, demonstrating creative institutional innovation"
+        },
+        {
+          "quote": "Co-Founder & Program Manager, Futurism Strategic Foresight Program 2019-2024. Founded & managed Hollister's intrapreneurial futurism program with cross-functional team of >35 opt-in associate futurists in support of strategic foresight initiative. Provided annual technology trend reports and opportunity scouting to senior leadership and Board of Directors",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Demonstrates creative organizational innovation - building an internal futurism capability is non-standard for medical device companies"
+        },
+        {
+          "quote": "During the early days of the COVID-19 pandemic, I joined the founding team at RapidRona, a start-up launched to bridge a critical testing gap. We weren't trying to invent a new diagnostic; instead, we built a logistical platform that connected existing PCR lab capacity to overwhelmed healthcare systems and individuals via at-home collection kits.",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "Shows creative reframing - solving the problem through logistics rather than new technology, demonstrating lateral thinking"
+        },
+        {
+          "quote": "Biomedical Entrepreneurship. Adapted Stanford Biodesign Identify & Invent processes to a single semester and the Chicago start-up community.",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Creative adaptation of established methodology to new constraints, showing innovative teaching approach"
+        },
+        {
+          "quote": "11 granted patents including: Methods of manufacturing bioactive gels from extracellular matrix material, Graft materials and methods for staged delivery of bioactive components, Growth factor modified extracellular matrix material",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Concrete evidence of technical innovation with IP protection, demonstrating sustained creative output"
+        }
+      ],
+      "notes": "Score of 8 reflects strong creative performance with multiple innovations across different domains (organizational, technical, educational). Does not reach 9-10 tier because while innovations are substantial, there's no evidence of transformative, field-redefining contributions or external recognition as thought leader in innovation."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on proactive problem-seeking behavior and sustained engagement with complex challenges. Key indicators: (1) Career pivot during COVID - 'joined the founding team at RapidRona' shows proactive response to urgent problem, (2) Building programs from scratch - IDEA Incubator and Futurism program demonstrate seeking out organizational challenges beyond assigned role, (3) Cross-institutional mentoring - extensive volunteer mentoring at MATTER and multiple universities shows investment of personal time to solve problems, (4) Teaching outside expertise - 'well outside my usual R&D role' for RapidRona shows willingness to tackle unfamiliar challenges. The statement 'I'm applying to Catalyst because I see it as a chance to step outside the day-to-day and push forward how we frame and solve clinical problems' demonstrates active seeking of new challenges. However, evidence doesn't reach 9-10 tier because there's no indication of major life/career transformations driven purely by problem-solving motivation (e.g., complete career changes, founding organizations from scratch as primary driver).",
+      "evidence": [
+        {
+          "quote": "During the early days of the COVID-19 pandemic, I joined the founding team at RapidRona, a start-up launched to bridge a critical testing gap... It was well outside my usual R&D role, but the urgency and clarity of the need made the work deeply meaningful.",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "Proactively joined startup to address urgent problem outside normal responsibilities, demonstrating strong problem-solving drive"
+        },
+        {
+          "quote": "I'm applying to Catalyst because I see it as a chance to step outside the day-to-day and push forward how we frame and solve clinical problems. I've spent the last few years helping build an industry-academia ecosystem in Chicago around exactly that kind of thinking",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "Actively seeking additional challenges and frameworks for problem-solving beyond current role"
+        },
+        {
+          "quote": "Founder & Program Manager, Industry Discovering & Exploring with Academia (IDEA) Incubator 2019-present... Co-Founder & Program Manager, Futurism Strategic Foresight Program 2019-2024",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Created two major programs from scratch, showing proactive identification and addressing of organizational gaps"
+        },
+        {
+          "quote": "Start-up Mentor, MATTER, Chicago, IL (Nov 2015 – ) Myomar Molecular (2025), Neuraura (2024), HealthEMe (2023), ViewsML (2022), Luxsonics (2021), CareBand (2020), Cohesys (2020), Optisolve (2019), Cytostrata Biosciences (2018), Salvepeds (2018), MY01 (2018), Nexpil Inc. (2017), IntuiTap Medical (2017), Surgical Innovation Associates (2016), PraxiCut (2015)",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Sustained volunteer mentoring of 15+ startups over 10 years demonstrates consistent investment of time to help solve others' problems"
+        },
+        {
+          "quote": "I focused on strategy, science, and funding, translating regulatory and clinical requirements into operational plans, helping secure our EUA, and supporting pitch efforts as we scaled.",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "Took concrete actions across multiple domains to solve RapidRona's challenges, showing persistence and follow-through"
+        }
+      ],
+      "notes": "Score of 7 reflects strong, above-average problem-solving motivation with multiple examples of proactively seeking challenges. Does not reach 8+ because while engagement is consistent, there's no evidence of extraordinary sacrifices or transformative commitments (e.g., leaving stable career to found problem-solving organization, major geographic relocations to address problems)."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 3 (5-6) based on adequate but inconsistent specificity. Positive indicators: (1) CV includes specific technologies, timeframes, and institutional affiliations, (2) Patent applications list specific technical details (e.g., 'pH sensing hydrogel', 'mesoporous particles'), (3) Publications include specific journals and dates, (4) Mentoring lists specific companies and years. However, critical details are often missing: (1) Application responses lack quantitative metrics - no specific outcomes for IDEA Incubator or Futurism program (how many students? what products resulted? funding amounts?), (2) RapidRona description lacks specifics: 'helped secure our EUA' but no details on timeline, scale, or specific contributions, (3) Teaching descriptions are generic: 'developed curriculum & co-taught' but no specifics on student numbers, outcomes, or assessment results, (4) The statement 'I've spent over 20 years working across regenerative medicine' provides timeframe but lacks specific achievements or metrics from those 20 years. The materials show adequate detail orientation (Tier 3: 5-6) but not the exceptional thoroughness required for Tier 4 (7-8) which would include comprehensive quantitative metrics and precise outcomes throughout.",
+      "evidence": [
+        {
+          "quote": "Irish Research Council, 2023 Enterprise Partnership Scheme (Postgraduate) Award; €56,000, 2 years Julie Gawenda BSBME The contribution of intestinal bacteria to the pathophysiology of peristomal skin complications (PSC) in models of ileostomy",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Provides specific funding amount, duration, researcher name, and project title - demonstrates good detail orientation"
+        },
+        {
+          "quote": "Enterprise Ireland, 2023 Enterprise Ireland Innovation Partnership Programme Award; €208,033, 2 years Mirella Ejiugwo PhD, Post-doc. In vitro and in vivo analysis of the pathophysiology of peristomal skin complications (PSC)",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Specific funding metrics and project details"
+        },
+        {
+          "quote": "I focused on strategy, science, and funding, translating regulatory and clinical requirements into operational plans, helping secure our EUA, and supporting pitch efforts as we scaled.",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "LACKS specificity - no details on timeline for EUA, scale of operations, specific funding amounts secured, or quantitative outcomes"
+        },
+        {
+          "quote": "Founded & managed Hollister's intrapreneurial futurism program with cross-functional team of >35 opt-in associate futurists in support of strategic foresight initiative. Provided annual technology trend reports and opportunity scouting to senior leadership and Board of Directors",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Provides team size (>35) but lacks other metrics: how many reports? what specific opportunities identified? what outcomes resulted?"
+        },
+        {
+          "quote": "I've spent over 20 years working across regenerative medicine, medical devices, and translational science, most recently focused on ostomy care, skin biology, and building industry-academia partnerships.",
+          "source": "Janis_Abram_app_redacted.pdf",
+          "context": "VAGUE - provides timeframe but no specific achievements, metrics, or outcomes from those 20 years"
+        },
+        {
+          "quote": "Start-up Mentor, MATTER, Chicago, IL (Nov 2015 – ) Myomar Molecular (2025), Neuraura (2024), HealthEMe (2023), ViewsML (2022), Luxsonics (2021), CareBand (2020), Cohesys (2020), Optisolve (2019)",
+          "source": "CV_ADJanis_04Aug2025_.pdf",
+          "context": "Lists specific companies and years, showing systematic tracking, but lacks details on mentoring outcomes or impact"
+        }
+      ],
+      "notes": "Score of 6 reflects good specificity in some areas (funding amounts, company names, dates) but inconsistent detail throughout. Application responses particularly lack quantitative outcomes and precise metrics. To reach 7-8 tier would need comprehensive metrics across all activities (e.g., 'IDEA Incubator: mentored 47 students across 12 projects, resulting in 3 patent applications and $450K in follow-on funding')."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 82.37087106704712,
+    "materials_character_count": 30568,
+    "timestamp": "2026-01-16T13:40:08.041595"
+  }
+}

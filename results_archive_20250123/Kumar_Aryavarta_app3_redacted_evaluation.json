@@ -1,0 +1,135 @@
+{
+  "candidate": {
+    "candidate_id": "Kumar_Aryavarta_app3_redacted",
+    "name": null,
+    "materials": [
+      "Kumar_Aryavarta_app3_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:46:49.208045"
+  },
+  "overall_score": 6.666666666666667,
+  "overall_assessment": "Strong clinician-innovator with demonstrated track record of developing practical solutions to healthcare delivery problems. Shows consistent pattern of creative problem-solving with measurable impact, particularly in clinical workflow optimization and quality improvement. Engineering background (MD/PhD in Biomedical Engineering) provides unique technical foundation for innovation. Key strengths are concrete innovations with documented outcomes (prostate tracker, Gamma Knife pathway) and sustained commitment to problem-solving across clinical, administrative, and research domains. Primary limitation is lack of transformative/field-redefining innovations or external recognition as thought leader that would elevate to exceptional tier.",
+  "recommendation": "Strong fit - Recommended for advancement. Candidate demonstrates solid creative problem-solving abilities with concrete track record of implementing innovations that improve patient care and system efficiency. The combination of clinical expertise, engineering background, and proven ability to develop and scale solutions makes this a strong candidate for innovation fellowship. While not at the exceptional/transformative tier, shows clear potential for meaningful contributions to healthcare innovation with appropriate mentorship and resources.",
+  "strengths": [
+    "Multiple concrete innovations with measurable outcomes (>12,000 miles saved, expanded VA services, novel cross-institutional pathway)",
+    "Consistent pattern of proactive problem identification and sustained engagement across clinical, administrative, and research contexts",
+    "Strong technical foundation (MD/PhD, computational modeling, emerging technologies like blockchain) applied to practical healthcare problems",
+    "Documented leadership impact (Cancer Committee chair, quality improvement initiatives, clinical trial expansion)",
+    "Good specificity in documenting outcomes and technical approaches where provided"
+  ],
+  "areas_for_development": [
+    "Limited evidence of transformative or field-redefining innovations that would elevate to exceptional tier (9-10 range)",
+    "Could provide more quantitative metrics and technical depth for innovations beyond the tracker program",
+    "Some application responses contain generic statements that don't add concrete evidence",
+    "No evidence of external recognition as innovation thought leader (invited keynotes at major conferences, innovation awards beyond local level)",
+    "Limited detail on specific methodologies and technical approaches in several projects"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete innovations that show novel approaches with measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Development of novel Prostate Cancer Follow-Up Tracker with documented impact (>12,000 miles saved, recaptured lost patients, reduced lab draws), (2) Design of unique cross-institutional Gamma Knife SRS pathway - described as 'a model rarely seen elsewhere', (3) Graduate research involving nano-scale self-assembling peptide design for prosthetic coatings - a novel approach to reduce inflammation without device redesign, (4) Blockchain-based solution for patient data verification. The innovations show creative bridging of technical/engineering thinking with clinical problems. However, falls short of Tier 5 (9-10) as there's no evidence of transformative field-redefining innovations or external recognition as thought leader.",
+      "evidence": [
+        {
+          "quote": "He developed a Prostate Cancer Follow-Up Tracker, a highly effective system for streamlining patient monitoring post radiation treatment, which has shown significant success at our Cleveland site and is now being evaluated for expansion to other VA centers.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Concrete innovation with documented success and potential for scaling - demonstrates creative solution development"
+        },
+        {
+          "quote": "The program has reduced veteran drive time significantly (>12,000 miles saved), recaptured veterans lost to follow-up, reduced number of laboratory draws, and recaptured veterans lost to outsourcing.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Specific measurable outcomes from the innovative tracker system - shows impact of creative solution"
+        },
+        {
+          "quote": "He also spearheaded the design of a unique Gamma Knife SRS pathway, improving patient access to advanced stereotactic technology located across institutions - a model rarely seen elsewhere.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Novel cross-institutional model explicitly described as unique - demonstrates creative approach to access problem"
+        },
+        {
+          "quote": "my project involved nano-scale design of self-assembling peptide units to coat prosthetic devices. This coating would reduce the inflammatory coagulation response without a complete redesign of the medical device itself.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Creative approach to solve inflammation problem through novel coating rather than device redesign"
+        },
+        {
+          "quote": "is exploring emerging technologies, including a blockchain-based solution for secure verification of patient data, with potential applications in both research and medical billing.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Shows forward-thinking application of emerging technology to healthcare problems"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving across multiple domains (clinical workflow, technology integration, research). The innovations show practical impact rather than just theoretical creativity. However, no evidence of publications on novel methodologies or external recognition as innovation leader that would push to Tier 5."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on consistent pattern of proactively identifying and addressing problems across multiple contexts. Specific evidence: (1) Proactively developed tracker system to address follow-up gaps (not assigned), (2) Led Cancer Committee through accreditation renewal AND expanded services/national role, (3) Initiated multiple quality improvement projects (pathology reporting, lymph node counting, medication discontinuation pathways), (4) Pursued graduate work in 'new and less established projects' despite challenges, (5) Took on cross-departmental leadership role requiring learning outside expertise area. The candidate shows sustained engagement with complex problems and willingness to invest time/effort. However, falls short of Tier 5 (9-10) as there's no evidence of major career pivots driven by problem-solving desire or founding organizations specifically to address challenges.",
+      "evidence": [
+        {
+          "quote": "One of 's most notable contributions has been his leadership in developing a novel prostate cancer tracker program to monitor veteran's prostate cancer after radiation. The workflow uses a combination of data analysis and sorting techniques with a dedicated team to triage patients.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Proactively identified and addressed a gap in patient monitoring - shows initiative in problem-solving"
+        },
+        {
+          "quote": "Under my leadership, the cancer committee accomplished renewed accreditation for the next 3 years, but also expanded services and gained a larger role in the national oncology program. We became involved in national committees, presented more research abstracts, and started new quality improve projects including reporting on pathology, counting mediastinal lymph nodes after thoracic surgery, but also developing pathways to discontinue specific medication for tumor lysis syndrome when it was not needed.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Multiple concrete quality improvement initiatives showing sustained problem-solving engagement"
+        },
+        {
+          "quote": "While I learned to like research in my undergraduate experience (in well established projects), the graduate work challenged me to think about new (and less established) projects - sometimes with experiments that have unanticipated results. This project taught me about persistence and sometimes finding solutions in unexpected places.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Demonstrates willingness to engage with challenging, uncertain problems and shows persistence"
+        },
+        {
+          "quote": "I was nominated for the chair of the Committee on Cancer at the Cleveland VA. While it does involve my expertise in radiation oncology, it challenged me to think about integration of the various oncology services including medical oncology, surgical oncology, and others. To be an effective leader, I needed to learn more about each department but also understand their clinical challenges in caring for cancer patients.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Took on challenging cross-departmental role requiring learning outside comfort zone"
+        },
+        {
+          "quote": "I frequently make the time to work on innovation projects in my busy clinic. As long as my responsibilities are met clinically, my supervisor has given me flexibility to work on my innovation projects.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Shows sustained commitment to problem-solving beyond required clinical duties"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem identification and sustained engagement. The candidate consistently seeks out challenges and follows through with concrete solutions. Multiple examples across clinical, administrative, and research contexts demonstrate this is a consistent pattern, not isolated incidents."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "Evidence maps to Tier 3 (5-6), specifically a score of 6. The materials show good specificity in several areas: (1) Quantitative metrics for tracker program (>12,000 miles saved, specific outcomes listed), (2) Specific quality improvement projects named (pathology reporting, lymph node counting, medication pathways), (3) Technical expertise section lists specific technologies and platforms, (4) Publications include specific journals and PMIDs, (5) Graduate research describes specific molecular modeling approach. However, falls short of Tier 4 (7-8) because: (1) Application responses are relatively brief and lack deep technical detail about methodologies, (2) No quantitative metrics provided for most innovations (e.g., Gamma Knife pathway impact not quantified), (3) Some responses are somewhat generic (e.g., 'I enjoy multi-disciplinary challenges'), (4) Limited detail on specific technical approaches in most projects. The CV shows good detail orientation in documentation, but application responses could be more comprehensive.",
+      "evidence": [
+        {
+          "quote": "The program has reduced veteran drive time significantly (>12,000 miles saved), recaptured veterans lost to follow-up, reduced number of laboratory draws, and recaptured veterans lost to outsourcing.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Provides specific quantitative metric and multiple concrete outcomes"
+        },
+        {
+          "quote": "started new quality improve projects including reporting on pathology, counting mediastinal lymph nodes after thoracic surgery, but also developing pathways to discontinue specific medication for tumor lysis syndrome when it was not needed.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Lists specific projects rather than vague 'quality improvement work'"
+        },
+        {
+          "quote": "I was the primary graduate student and helped understand the self-assembly process through computational molecular modeling. We were able to optimize the molecular design to ultimately create a surface that attracted fewer inflammatory cells.",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Provides specific methodology (computational molecular modeling) and outcome"
+        },
+        {
+          "quote": "Technical Expertise: Varian Ethos Adaptive Platform, Stereotactic Body Radiotherapy (SBRT/SRS) for lung, liver, CNS (Brain/spine), prostate, kidney, metastases, Intensity Modulated Radiation Therapy (IMRT), Proton Radiation Therapy (credentialed 2017), MRI guided adaptive radiation on MRIdian (ViewRay) using A3i system",
+          "source": "Kumar_Aryavarta_app3_redacted.pdf",
+          "context": "Lists specific technologies and platforms rather than generic 'radiation therapy expertise'"
+        }
+      ],
+      "notes": "The CV demonstrates good detail orientation with specific technologies, publications with PMIDs, and concrete service roles. However, the application narrative responses are relatively brief (constrained by word limits) and could provide more technical depth about methodologies and quantitative outcomes. Some responses contain generic statements ('I enjoy multi-disciplinary challenges') that don't add specificity. Overall shows adequate to good detail orientation but not exceptional thoroughness."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 74.34981083869934,
+    "materials_character_count": 36312,
+    "timestamp": "2026-01-16T13:46:49.208100"
+  }
+}

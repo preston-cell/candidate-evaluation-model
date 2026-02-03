@@ -1,0 +1,116 @@
+{
+  "candidate": {
+    "candidate_id": "Lingam_Shanyse_app_redacted",
+    "name": null,
+    "materials": [
+      "Lingam_Shanyse_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:50:14.278887"
+  },
+  "overall_score": 5.666666666666667,
+  "overall_assessment": "Candidate shows strong problem-solving motivation with concrete actions (co-founding startups, extensive education including MIT programs, 16 years military service) and some creative engagement with healthcare innovation. However, materials lack the specificity and polish expected for a competitive program. Multiple spelling/grammatical errors and vague descriptions undermine credibility. Strongest evidence is in proactive problem-seeking behavior (founding maternal health startup, pursuing multiple innovation programs), but creative contributions are more about participation than original innovation, and attention to detail is notably weak.",
+  "recommendation": "Borderline fit. Strong motivation and diverse experience are assets, but significant concerns about attention to detail and ability to articulate specific contributions. The numerous errors in a formal application raise questions about thoroughness. Would benefit from interview to assess whether verbal communication is stronger and to probe specific creative contributions to projects mentioned.",
+  "strengths": [
+    "Strong problem-solving motivation demonstrated through concrete actions: co-founding healthcare startups, completing multiple MIT innovation programs, 16 years of military service",
+    "Diverse experience bridging clinical practice (11 years nursing across multiple specialties), military service, and entrepreneurship",
+    "Proactive engagement with healthcare challenges, particularly maternal mental health, with measurable outcomes (3 hospital partnerships, $20k funding)"
+  ],
+  "areas_for_development": [
+    "Detail orientation and precision: multiple spelling/grammatical errors throughout materials ('confrence', 'experince', 'partnersnips', 'vehicals', 'Depite', 'equitments', 'rewareded') suggest lack of careful review",
+    "Specificity in describing innovations: materials often state involvement with innovative projects but lack detail about what made solutions novel or what the candidate specifically contributed creatively",
+    "Quantitative metrics and outcomes: many accomplishments mentioned without specific, measurable results (e.g., 'decrease falls and length of stay' without numbers)"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate provides several examples of creative problem-solving, but most lack the specificity needed for higher scores. The strongest evidence is the maternal mental health startup where they 'built a product to decrease postpartum depression cases' and achieved concrete outcomes (partnerships with 3 hospitals, $22k funding in 3 months). However, the description lacks detail about what made the solution innovative - we don't know what the product actually was or how it differed from existing approaches. The military dispatcher role shows adaptive problem-solving ('rapidly changing dynamic' with 135 people and limited vehicles), but this is more competent execution than creative innovation. The EnabledHealth role mentions 'computer vision and physical therapy to decrease falls' which suggests innovative technology application, but the candidate's specific creative contributions are unclear - they were 'recruited for nursing and business expertise' but we don't see evidence of novel methodologies they personally developed. The application states 'passionate about combining technology advancements' but this is a stated quality without demonstration. The pattern recognition and futuristic thinking mentioned as dyslexia-related strengths are stated qualities without concrete examples. Overall, this maps to Tier 3 (5-6): shows ability to think beyond standard approaches with some creative problem-solving, but lacks the detailed demonstration of novel methodologies or documented innovative impact needed for Tier 4.",
+      "evidence": [
+        {
+          "quote": "We all shared a core belief that maternal mental health needed to be improved. Together we built a product and to decrease postpartum depression cases. During this time we applied learnings from our MBA and MIT delta v to tailor our product, gain partnersnips with 3 leading hospitals, and raise $20,000 in non diluted funding all within 3 months.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Demonstrates creative problem-solving in building a maternal health product with measurable outcomes (3 hospital partnerships, $20k funding), though lacks detail on what made the solution innovative"
+        },
+        {
+          "quote": "Early-stage digital health company using AI/ML to early detect postpartum depression and provide automated interpersonal therapy to decrease postpartum depression symptoms by 50%",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Shows involvement with innovative AI/ML application, though the 50% claim appears to be a company goal rather than achieved result, and candidate's specific creative contributions are unclear"
+        },
+        {
+          "quote": "Startup company improving access to physical therapy at hospital by using computer vision and physical therapy to decrease falls and length of stay... The role bridges the gap between clinical practice and technological innovation",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Indicates involvement with innovative technology application, but candidate's role is described as bridging/implementing rather than creating the innovation"
+        }
+      ],
+      "notes": "The candidate shows creative engagement with healthcare problems through startups and technology, but the materials emphasize participation and implementation more than original innovation. The strongest creativity evidence is in the maternal health startup, but even there, the specific innovative elements of the solution are not detailed."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong, consistent problem-solving motivation across multiple contexts with concrete actions taken. Key evidence: (1) Proactively co-founded a startup after meeting people at a conference who shared concern about maternal mental health - this shows seeking out challenges and taking significant action. (2) Pursued multiple MIT programs (Delta V, DHIVE, Nuts and Bolts) specifically to develop problem-solving skills in healthcare innovation - this demonstrates investment in learning to solve problems. (3) Was specifically selected by hospital commander to solve accountability issues after 'multiple failed missions and accountability errors' - while this was assigned, the fact they were chosen and successfully solved it shows recognized problem-solving capability. (4) Career trajectory shows pattern of seeking challenging environments: military service (16 years), multiple clinical specialties (psychiatry, critical care, emergency, ICU), and entrepreneurship. (5) Currently pursuing Psychiatric Mental Health Nurse Practitioner degree while working, showing continued investment in expanding problem-solving capabilities. (6) The application states 'passionate about combining technology advancements to address current health care needs' - while this is a stated quality, it's backed by concrete actions (founding startups, taking MIT courses, changing roles). This maps to Tier 4 (7-8): multiple examples of proactively seeking challenging problems, sustained engagement with complex issues, evidence of pursuing additional training to solve problems, and taking significant actions (career changes, founding companies, extensive education).",
+      "evidence": [
+        {
+          "quote": "I attended a confrence where I ended up meeting my 2 co-founders. We all shared a core belief that maternal mental health needed to be improved. Together we built a product and to decrease postpartum depression cases.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Demonstrates proactive problem-seeking: identified a problem at a conference and took action to co-found a company to address it"
+        },
+        {
+          "quote": "After multiple failed missions and accountability errors the hospital commander recognized there was a need to appoint a soldier a to address the concerns. The hospital commander within the military asked me to be a dispatcher for their multiple military vehicles while on a 2 week mission. We had 135 people and limited vehicals moving soldiers to multiple different training sites. Depite the rapidly changing dynamic I successfully maintained accountability of all the soldiers and miliions of dollars of equitments which was rewareded with an Army Medal.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Shows being selected to solve complex problems and successfully executing despite challenging conditions, with recognition (Army Medal)"
+        },
+        {
+          "quote": "Massachusetts Institute of Technology (MIT) - Delta V Program... Massachusetts Institute of Technology (MIT) – Sandbox Innovation Fund Program: Dive into Healthcare Innovation and Venture Exploration (DHIVE)... MIT Nuts and Bolts of New Ventures",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Demonstrates sustained investment in developing problem-solving skills through multiple specialized programs"
+        },
+        {
+          "quote": "Psychiatric Mental Health Nurse Practitioner – Massachusetts General Hospital Institute of Health Professions | Boston, MA (May 2026)",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Pursuing advanced degree to expand problem-solving capabilities in mental health, showing continued commitment to addressing healthcare challenges"
+        }
+      ],
+      "notes": "Strong evidence of problem-solving motivation through concrete actions: founding companies, extensive education, military service, and diverse clinical experience. The pattern is consistent and backed by significant time/resource investments."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 4,
+      "confidence": "high",
+      "reasoning": "The materials show inconsistent and generally poor attention to detail. Multiple spelling and grammatical errors throughout: 'confrence' (conference), 'experince' (experience), 'partnersnips' (partnerships), 'vehicals' (vehicles), 'Depite' (Despite), 'equitments' (equipment), 'rewareded' (rewarded). The application responses are often vague and lack specific details. For example, the maternal health startup description mentions '$20,000 in non diluted funding' and '3 leading hospitals' but provides no details about the product itself, what made it effective, or how the partnerships were structured. The military dispatcher story mentions 'millions of dollars of equitments' but doesn't specify what equipment or provide exact figures. The nursing experience lists multiple positions but provides minimal detail about specific responsibilities, technologies used, or quantifiable outcomes. The EnabledHealth description says the product 'decrease falls and length of stay' but provides no metrics. The CV lists presentations but doesn't include publication venues or citation counts for most items. The competencies section is extremely brief (75 words) and generic ('I have been a nurse for 11 years'). While some specific elements are included (timeframes, degree names, organization names), the overall level of detail is well below what would be expected for a strong candidate. This maps to Tier 2 (3-4): includes some specific information like technologies and timeframes, but lacks depth, has many important details omitted, and contains multiple errors that suggest lack of careful review.",
+      "evidence": [
+        {
+          "quote": "I attended a confrence where I ended up meeting my 2 co-founders... gain partnersnips with 3 leading hospitals",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Multiple spelling errors ('confrence', 'partnersnips') indicate lack of careful proofreading and attention to detail"
+        },
+        {
+          "quote": "We had 135 people and limited vehicals moving soldiers to multiple different training sites. Depite the rapidly changing dynamic I successfully maintained accountability of all the soldiers and miliions of dollars of equitments which was rewareded with an Army Medal.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Multiple errors ('vehicals', 'Depite', 'miliions', 'equitments', 'rewareded') and vague quantification ('millions of dollars' without specifics)"
+        },
+        {
+          "quote": "Nursing - I have been a nurse for 11 years with experince in psychiatry, critical care, army, primary care. I have a bachelors and masters in nursing.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Spelling error ('experince') and very generic description lacking specific details about roles, technologies, or outcomes"
+        },
+        {
+          "quote": "Together we built a product and to decrease postpartum depression cases... raise $20,000 in non diluted funding all within 3 months.",
+          "source": "Lingam_Shanyse_app_redacted.pdf",
+          "context": "Grammatical error ('and to decrease') and lacks detail about what the product actually was or how it worked"
+        }
+      ],
+      "notes": "The numerous spelling and grammatical errors are particularly concerning for someone with an MBA and Master's degree. While some specific information is provided (dates, organizations, funding amounts), the overall lack of precision and the errors suggest this is not a strength area for the candidate."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 68.67005014419556,
+    "materials_character_count": 12907,
+    "timestamp": "2026-01-16T13:50:14.278921"
+  }
+}

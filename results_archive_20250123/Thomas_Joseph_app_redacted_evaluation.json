@@ -1,0 +1,118 @@
+{
+  "candidate": {
+    "candidate_id": "Thomas_Joseph_app_redacted",
+    "name": null,
+    "materials": [
+      "Thomas_Joseph_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:37:21.310937"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "Physician informaticist with solid clinical and technical credentials pursuing innovation in healthcare IT. Demonstrates adequate problem-solving motivation through pursuit of advanced degrees and multiple leadership roles. Shows competent application of informatics approaches to clinical challenges but lacks evidence of truly novel or transformative innovations. Materials contain appropriate level of detail in some areas (credentials, technical skills) but frequently lack quantitative outcomes and specific methodologies that would demonstrate exceptional work.",
+  "recommendation": "Potential fit with development. Candidate shows solid competency in clinical informatics with adequate problem-solving motivation and technical skills. However, lacks strong evidence of exceptional creativity or transformative impact needed for top-tier innovation programs. Would benefit from developing more specific, metrics-driven descriptions of work and demonstrating truly novel approaches versus competent application of existing methods.",
+  "strengths": [
+    "Strong problem-solving motivation evidenced by pursuing two advanced degrees (MBA, MMCi) and proactively taking on challenging projects",
+    "Concrete actions in multiple domains: developed HIV/HCV screening protocol with grant funding, led utilization management optimization, participated in AI governance",
+    "Solid technical foundation with specific Epic certifications and data science skills (SQL, Python, PowerBI, Tableau)",
+    "Cross-functional collaboration experience across clinical, IT, and operational stakeholders"
+  ],
+  "areas_for_development": [
+    "Creativity examples lack specificity about what made approaches novel versus standard practice - need clearer demonstration of innovative methodologies",
+    "Insufficient quantitative metrics for project outcomes (e.g., 'reduced turnaround times' without specific percentages or timeframes)",
+    "Many project descriptions are high-level without depth in methodologies or implementation details",
+    "No evidence of transformative innovations, published novel methodologies, or approaches adopted beyond own institution"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate provides several examples of creative problem-solving, but most lack the specificity and transformative impact needed for higher scores. The strongest evidence is the centralized dashboard metadata repository concept, which shows creative thinking in addressing inter-departmental collaboration challenges. The utilization management workflow optimization shows some innovation (dashboards and decision support tools), but the description is vague about what made the approach novel versus standard process improvement. The AI governance framework development shows interdisciplinary thinking but is more about applying existing frameworks than creating novel approaches. The hackathon participation is too vague to assess creativity. Most examples fall in the Tier 3 (5-6) range: multiple instances of problem-solving with some creative elements, but lacking clear demonstration of novel methodologies or transformative impact.",
+      "evidence": [
+        {
+          "quote": "Proposed and garner stakeholder support for a centralized dashboard metadata repository intended to promote inter-departmental collaboration and knowledge sharing",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Shows creative solution to collaboration problem, though impact metrics not provided"
+        },
+        {
+          "quote": "I developed dashboards and decision support tools to surface key clinical information earlier in the workflow. These interventions reduced authorization turnaround times and improved provider satisfaction.",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Demonstrates solution development but lacks specifics about what made the approach innovative versus standard informatics practice"
+        },
+        {
+          "quote": "I co-developed a governance framework for evaluating AI tools in clinical care. I worked with data scientists, clinicians, and ethicists to assess models for bias, explainability, and workflow integration.",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Shows interdisciplinary approach but framework development is more application than innovation"
+        }
+      ],
+      "notes": "The candidate shows competent problem-solving and some creative thinking, but examples lack the specificity needed to demonstrate truly novel approaches. No evidence of groundbreaking innovation, published novel methodologies, or approaches adopted by others beyond their institution."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation through multiple concrete actions. Key evidence includes: (1) Pursuing additional advanced degrees (MBA, MMCi) specifically to enhance problem-solving capabilities in healthcare IT; (2) Leading initiatives to identify and address clinical pain points (utilization management, HIV/HCV screening); (3) Taking on multiple leadership roles focused on process improvement (Unit Medical Director, committee memberships); (4) Participating in hackathons outside core expertise. The statement 'I'm passionate about transforming unmet clinical needs into real-world solutions' is fluff, but it's backed by concrete actions. The candidate shows sustained engagement across multiple contexts (clinical, informatics, quality improvement). This maps to Tier 4 (7-8): multiple examples of proactively seeking challenging problems with evidence of pursuing additional training/skills. However, lacks evidence of extraordinary commitment like founding organizations or making major career pivots specifically to solve problems (which would warrant 9-10).",
+      "evidence": [
+        {
+          "quote": "Developed a screening and testing protocol for HIV and Hepatitis C patients through the ED with grant funding from Gilead Sciences as part of their FOCUS initiative which was presented at AMIA ACIF Virtual Case Conference",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Proactively identified clinical need, secured funding, developed protocol, and disseminated findings - demonstrates sustained problem-solving engagement"
+        },
+        {
+          "quote": "I led an initiative to streamline utilization management workflows at a large health system. I collaborated with clinical, operational, and IT stakeholders to identify pain points in prior authorization processes, uncovering significant delays tied to fragmented data and lack of transparency.",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Shows proactive identification and pursuit of complex problem with cross-functional engagement"
+        },
+        {
+          "quote": "Master of Management in Clinical Informatics, August 2024... Physician Executive Master of Business Administration, December 2020",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Pursued two advanced degrees beyond MD, demonstrating investment in developing problem-solving capabilities"
+        },
+        {
+          "quote": "Voting member and Subject Matter Expert of UNC Responsible AI governance group aimed at ensuring AI solutions presented to the health system follow our framework around responsible AI adoption",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Sought out role in addressing emerging challenges in AI governance"
+        }
+      ],
+      "notes": "Strong evidence of sustained problem-solving motivation across multiple domains. The pursuit of two advanced degrees specifically to enhance capabilities is particularly notable. However, no evidence of extraordinary sacrifices or transformative commitments that would warrant scores of 9-10."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate provides adequate but inconsistent specificity. Strong areas include: listing specific technical skills (Epic certifications, SQL, Python, PowerBI, Tableau), educational credentials with dates, and some quantitative outcomes. However, many key descriptions lack critical details. The utilization management project mentions 'reduced authorization turnaround times' but provides no metrics. The dashboard repository project lacks implementation details or outcomes. The AI governance framework description is vague about specific criteria or processes developed. The hackathon participation is entirely generic ('helped teams prioritize high-impact use cases'). Publications are listed but without impact metrics. The CV shows good structure and includes specific certifications and dates, but project descriptions often lack depth. This maps to Tier 3 (5-6): adequate specificity in most areas with concrete examples, but many sections lack quantitative metrics or precise details. Not enough consistent precision for Tier 4 (7-8).",
+      "evidence": [
+        {
+          "quote": "Advanced Epic Physician Builder with Certifications in Epic Analytics, Population Health and Cosmos Administration. Currently pursuing Clarity, Caboodle and Clinical Data Model Certifications",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Specific technical certifications listed - demonstrates detail orientation in credentials"
+        },
+        {
+          "quote": "These interventions reduced authorization turnaround times and improved provider satisfaction.",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Mentions outcomes but lacks specific metrics (how much reduction? what satisfaction scores?)"
+        },
+        {
+          "quote": "I helped teams prioritize high-impact use cases, such as reducing medication errors and improving handoff communication.",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Generic description without specific details about methods or outcomes"
+        },
+        {
+          "quote": "Conducted qualitative (stakeholder surveys) and quantitative research (Analyze financial, quality and departmental data) to assess institutional readiness for system-wide conversion from Tableau to Power BI",
+          "source": "Thomas_Joseph_app_redacted.pdf",
+          "context": "Shows some methodological detail but lacks specifics about sample sizes, findings, or decision criteria"
+        }
+      ],
+      "notes": "The candidate demonstrates adequate attention to detail in some areas (credentials, dates, technologies) but frequently omits quantitative metrics and specific outcomes that would demonstrate strong detail orientation. Many project descriptions are at a high level without the depth needed for scores of 7+."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 53.269314765930176,
+    "materials_character_count": 17480,
+    "timestamp": "2026-01-16T14:37:21.310977"
+  }
+}

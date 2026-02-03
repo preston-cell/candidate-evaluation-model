@@ -1,0 +1,314 @@
+{
+  "candidate": {
+    "candidate_id": "TEST001",
+    "name": null,
+    "materials": [
+      "sample_resume.txt",
+      "sample_cover_letter.txt"
+    ],
+    "evaluation_date": "2026-01-05T16:02:34.940823"
+  },
+  "overall_score": 8.11111111111111,
+  "overall_assessment": "",
+  "recommendation": "",
+  "strengths": [],
+  "areas_for_development": [],
+  "scores": [
+    {
+      "criterion": "critical_thinking",
+      "criterion_name": "Critical Thinking / Logical Analysis",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong critical thinking through systematic problem-solving approaches and root cause analysis. The latency investigation example shows ability to move beyond surface-level fixes to identify underlying issues. The candidate also shows pattern recognition in identifying system interactions and drawing logical conclusions about architectural improvements.",
+      "evidence": [
+        {
+          "quote": "When we experienced intermittent latency issues in production, I didn't stop at implementing a quick fix. Instead, I investigated the root cause through detailed performance profiling, ultimately discovering an unexpected interaction between our caching layer and database queries.",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates systematic analysis, moving from symptoms to root causes, and identifying non-obvious system interactions"
+        },
+        {
+          "quote": "Resolved critical production issues through systematic debugging and root cause analysis",
+          "source": "sample_resume.txt",
+          "context": "Shows consistent application of analytical methodology to problem-solving"
+        },
+        {
+          "quote": "Championed evidence-based decision making by introducing A/B testing and metric tracking for new features",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates logical approach to validating hypotheses and drawing conclusions from data"
+        }
+      ],
+      "notes": "Strong evidence of analytical thinking in technical contexts. Would benefit from seeing examples of critical thinking applied to non-technical or strategic decisions to assess full breadth of this skill."
+    },
+    {
+      "criterion": "coachability",
+      "criterion_name": "Coachability – Receptive to Feedback",
+      "score": 9,
+      "confidence": "high",
+      "reasoning": "Exceptional evidence of coachability throughout career progression. The candidate provides a specific, detailed example of receiving critical feedback, responding non-defensively, and implementing lasting improvements. Shows consistent pattern of seeking feedback and learning from others across multiple roles.",
+      "evidence": [
+        {
+          "quote": "Early in my career, I received feedback that my code documentation needed improvement. Rather than being defensive, I asked for specific examples and worked with a senior engineer to develop better practices. I now maintain comprehensive documentation and have helped establish documentation standards for our entire engineering team.",
+          "source": "sample_cover_letter.txt",
+          "context": "Exemplary demonstration of receiving feedback, taking action, and turning a weakness into a strength that benefits others"
+        },
+        {
+          "quote": "I view feedback as a gift and an opportunity to grow.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit statement of growth mindset and positive attitude toward feedback"
+        },
+        {
+          "quote": "Actively sought feedback from senior developers to improve coding skills",
+          "source": "sample_resume.txt",
+          "context": "Proactive approach to seeking feedback rather than waiting to receive it"
+        },
+        {
+          "quote": "Participated in agile sprint planning and retrospectives, incorporating team feedback to improve processes",
+          "source": "sample_resume.txt",
+          "context": "Shows willingness to incorporate feedback at process level, not just individual level"
+        }
+      ],
+      "notes": "One of the strongest areas demonstrated in the materials. The documentation example is particularly compelling as it shows complete cycle: receiving feedback → accepting it → implementing change → mastering it → teaching others."
+    },
+    {
+      "criterion": "curiosity",
+      "criterion_name": "Curiosity",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence of intellectual curiosity through multiple channels: deep technical investigation, continuous learning activities, and proactive questioning. The candidate demonstrates drive to understand systems deeply rather than superficially, and maintains ongoing learning through side projects and community engagement.",
+      "evidence": [
+        {
+          "quote": "My curiosity drives me to dig deeper into problems rather than accepting surface-level solutions.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit statement of curiosity as a driving force, backed by concrete example"
+        },
+        {
+          "quote": "Asked thoughtful questions during design reviews to better understand system architecture",
+          "source": "sample_resume.txt",
+          "context": "Shows active questioning behavior to deepen understanding"
+        },
+        {
+          "quote": "When faced with the challenge of supporting real-time collaboration features with our existing infrastructure, I researched novel approaches and prototyped several solutions.",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates exploratory research behavior when facing new challenges"
+        },
+        {
+          "quote": "Tech Blog: Maintain technical blog sharing learnings and solutions to complex problems",
+          "source": "sample_resume.txt",
+          "context": "Ongoing learning and knowledge-sharing activity outside work requirements"
+        },
+        {
+          "quote": "Open Source Contributor: Active contributor to several open-source projects, collaborating with global teams",
+          "source": "sample_resume.txt",
+          "context": "Voluntary engagement with diverse technical challenges and learning opportunities"
+        }
+      ],
+      "notes": "Strong evidence across multiple dimensions of curiosity. The combination of deep technical investigation, continuous learning activities, and knowledge sharing suggests genuine intellectual curiosity rather than just professional development."
+    },
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "Good evidence of creative problem-solving, particularly in developing unconventional technical solutions. The operational transformation algorithm example shows ability to think beyond standard approaches. However, most creativity examples are within established technical domains rather than truly novel conceptual territory.",
+      "evidence": [
+        {
+          "quote": "The solution I developed using operational transformation algorithms was unconventional but proved highly effective, and it's now a core part of our product offering.",
+          "source": "sample_cover_letter.txt",
+          "context": "Shows ability to apply non-standard approaches to solve problems creatively"
+        },
+        {
+          "quote": "I am particularly drawn to complex, ambiguous problems where creative solutions are needed.",
+          "source": "sample_cover_letter.txt",
+          "context": "Self-identifies as someone who seeks opportunities for creative problem-solving"
+        },
+        {
+          "quote": "Created innovative solutions for data visualization that increased user engagement by 25%",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates innovation with measurable impact, though details are limited"
+        },
+        {
+          "quote": "Hackathon Winner: 1st place at TechCon 2019 for developing innovative ML-powered tool",
+          "source": "sample_resume.txt",
+          "context": "External validation of creative/innovative work"
+        }
+      ],
+      "notes": "Evidence shows creativity in technical solution design and problem-solving. Would benefit from more examples of creative thinking in non-technical contexts (process design, team dynamics, business strategy) to assess full breadth of creative capability."
+    },
+    {
+      "criterion": "collaboration",
+      "criterion_name": "Collaborates with Others Effectively; Incorporates Inputs from Others",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence of collaborative behavior across multiple dimensions: cross-functional teamwork, mentoring, facilitation, and actively incorporating diverse perspectives. The candidate demonstrates both willingness and ability to work effectively with various stakeholders and explicitly values collective intelligence.",
+      "evidence": [
+        {
+          "quote": "I actively seek out different perspectives and incorporate feedback from teammates, recognizing that the best solutions often emerge from collective intelligence rather than individual brilliance.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit philosophy of valuing collaborative input over individual contribution"
+        },
+        {
+          "quote": "When designing our microservices architecture, I facilitated cross-team workshops that surfaced critical insights about scaling challenges we hadn't initially considered.",
+          "source": "sample_cover_letter.txt",
+          "context": "Concrete example of facilitating collaboration and incorporating diverse inputs into technical decisions"
+        },
+        {
+          "quote": "Collaborated with product, design, and QA teams to deliver 15+ features based on user feedback and analytics",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates sustained cross-functional collaboration with multiple stakeholder groups"
+        },
+        {
+          "quote": "Mentored 5 junior engineers through code reviews, pair programming, and technical discussions",
+          "source": "sample_resume.txt",
+          "context": "Shows collaborative teaching and knowledge-sharing behavior"
+        },
+        {
+          "quote": "Open Source Contributor: Active contributor to several open-source projects, collaborating with global teams",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates ability to collaborate in distributed, asynchronous environments with diverse teams"
+        }
+      ],
+      "notes": "Strong evidence across multiple forms of collaboration. The workshop facilitation example is particularly strong as it shows ability to lead collaborative processes, not just participate in them."
+    },
+    {
+      "criterion": "follow_through",
+      "criterion_name": "Demonstrated Follow Through",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence of consistent follow-through and completion orientation. The candidate explicitly describes comprehensive project completion criteria and demonstrates attention to all phases of project lifecycle, from conception through post-deployment support.",
+      "evidence": [
+        {
+          "quote": "I don't consider a project complete until it's thoroughly tested, documented, properly monitored, and the team is trained on its operation. I maintain detailed checklists and ensure nothing falls through the cracks, from initial design through post-deployment monitoring.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit description of comprehensive follow-through process with specific completion criteria"
+        },
+        {
+          "quote": "Followed projects from conception through deployment and ongoing maintenance",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates ownership of complete project lifecycle"
+        },
+        {
+          "quote": "Documented technical specifications and created detailed runbooks for operational procedures",
+          "source": "sample_resume.txt",
+          "context": "Shows follow-through on documentation, often neglected in software development"
+        },
+        {
+          "quote": "I am known for my follow-through and attention to detail.",
+          "source": "sample_cover_letter.txt",
+          "context": "Self-identifies this as a key strength, supported by specific examples"
+        }
+      ],
+      "notes": "Strong evidence of systematic follow-through. The checklist methodology and comprehensive completion criteria suggest reliable execution. Would be valuable to verify this through reference checks to confirm consistency over time."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence of intrinsic motivation to solve problems. The candidate demonstrates proactive problem-solving behavior, seeks out complex challenges, and shows persistence in investigating issues thoroughly. Multiple examples show going beyond minimum requirements to find better solutions.",
+      "evidence": [
+        {
+          "quote": "I am particularly drawn to complex, ambiguous problems where creative solutions are needed.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit statement of attraction to challenging problems"
+        },
+        {
+          "quote": "My curiosity drives me to dig deeper into problems rather than accepting surface-level solutions.",
+          "source": "sample_cover_letter.txt",
+          "context": "Shows intrinsic drive to solve problems thoroughly, not just adequately"
+        },
+        {
+          "quote": "When we experienced intermittent latency issues in production, I didn't stop at implementing a quick fix. Instead, I investigated the root cause through detailed performance profiling",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates going beyond minimum requirements to find better solutions"
+        },
+        {
+          "quote": "Passionate about continuous learning and leveraging data-driven approaches to solve problems",
+          "source": "sample_resume.txt",
+          "context": "Self-identifies passion for problem-solving as core characteristic"
+        },
+        {
+          "quote": "Hackathon Winner: 1st place at TechCon 2019 for developing innovative ML-powered tool",
+          "source": "sample_resume.txt",
+          "context": "Voluntary participation in problem-solving competitions outside work requirements"
+        }
+      ],
+      "notes": "Strong evidence of intrinsic problem-solving motivation. The pattern of going beyond quick fixes and seeking out complex challenges suggests genuine drive rather than just professional competence."
+    },
+    {
+      "criterion": "evidence_based",
+      "criterion_name": "Understands the Value of Evidence to Challenge Assumptions",
+      "score": 9,
+      "confidence": "high",
+      "reasoning": "Exceptional evidence of commitment to evidence-based decision making. The candidate not only uses evidence personally but champions its adoption across teams. Multiple examples show systematic use of data, metrics, and testing to validate assumptions and guide decisions.",
+      "evidence": [
+        {
+          "quote": "Throughout my career, I have developed a deep appreciation for evidence-based decision making. In my current role at TechCorp, I championed the introduction of A/B testing and comprehensive metric tracking, which allowed our team to validate assumptions and make data-driven product decisions.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit commitment to evidence-based approach with concrete implementation example"
+        },
+        {
+          "quote": "I believe strongly that challenging our assumptions with concrete evidence leads to better outcomes.",
+          "source": "sample_cover_letter.txt",
+          "context": "Clear articulation of philosophy around evidence and assumptions"
+        },
+        {
+          "quote": "This approach led to a 30% improvement in user retention across our key features.",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates measuring outcomes to validate approach"
+        },
+        {
+          "quote": "Championed evidence-based decision making by introducing A/B testing and metric tracking for new features",
+          "source": "sample_resume.txt",
+          "context": "Shows leadership in promoting evidence-based practices"
+        },
+        {
+          "quote": "Collaborated with product, design, and QA teams to deliver 15+ features based on user feedback and analytics",
+          "source": "sample_resume.txt",
+          "context": "Demonstrates using evidence (feedback and analytics) to guide feature development"
+        }
+      ],
+      "notes": "One of the strongest areas demonstrated. The candidate not only practices evidence-based decision making but actively promotes it within their organization. The specific metrics and outcomes provided strengthen the evidence."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence of attention to detail and commitment to thoroughness. Multiple examples show systematic attention to specifics, from pixel-perfect UI implementation to comprehensive project completion checklists. The candidate demonstrates detail orientation across different aspects of work.",
+      "evidence": [
+        {
+          "quote": "I maintain detailed checklists and ensure nothing falls through the cracks, from initial design through post-deployment monitoring.",
+          "source": "sample_cover_letter.txt",
+          "context": "Explicit methodology for ensuring thoroughness and attention to detail"
+        },
+        {
+          "quote": "I don't consider a project complete until it's thoroughly tested, documented, properly monitored, and the team is trained on its operation.",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates comprehensive attention to all aspects of project completion"
+        },
+        {
+          "quote": "Demonstrated strong attention to detail in implementing pixel-perfect UI components",
+          "source": "sample_resume.txt",
+          "context": "Specific example of precision and attention to visual details"
+        },
+        {
+          "quote": "Documented technical specifications and created detailed runbooks for operational procedures",
+          "source": "sample_resume.txt",
+          "context": "Shows commitment to detailed documentation"
+        },
+        {
+          "quote": "I investigated the root cause through detailed performance profiling, ultimately discovering an unexpected interaction between our caching layer and database queries.",
+          "source": "sample_cover_letter.txt",
+          "context": "Demonstrates detailed technical investigation to identify specific issues"
+        }
+      ],
+      "notes": "Strong evidence across multiple dimensions of detail orientation: visual precision, documentation thoroughness, systematic investigation, and comprehensive project completion. The checklist methodology suggests systematic approach to maintaining detail orientation."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 62.03984999656677,
+    "materials_character_count": 6992,
+    "timestamp": "2026-01-05T16:02:34.940851"
+  }
+}

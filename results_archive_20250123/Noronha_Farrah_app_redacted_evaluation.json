@@ -1,0 +1,119 @@
+{
+  "candidate": {
+    "candidate_id": "Noronha_Farrah_app_redacted",
+    "name": null,
+    "materials": [
+      "Noronha_Farrah_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:04:05.956665"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "Farrah Noronha is a competent healthcare systems improvement professional with 11 years of VA experience and solid Lean Six Sigma credentials. She demonstrates adequate creative problem-solving and strong motivation to tackle healthcare challenges, with evidence of proactive engagement across multiple facilities and roles. However, the application materials contain significant fluff and lack the quantitative specificity and documented innovative impact needed for higher scores. Her strongest evidence is sustained engagement with complex healthcare problems and some concrete project examples, but these lack detailed outcome metrics and clear demonstration of innovative approaches.",
+  "recommendation": "Moderate fit. Candidate demonstrates solid healthcare improvement experience and genuine problem-solving motivation, but application lacks the exceptional innovation, quantitative rigor, and transformative impact evidence that would make her a strong candidate. The materials are approximately 60-70% generic process improvement language and stated qualities, with only 30-40% concrete evidence. Would benefit from more specific examples with measurable outcomes and clearer demonstration of innovative thinking beyond standard LSS application.",
+  "strengths": [
+    "11-year track record across 3 VA facilities and 6 roles demonstrates sustained commitment to healthcare improvement",
+    "Concrete example of multi-stakeholder problem-solving in surgical readiness project with clear process facilitation",
+    "Formal credentials (LSS Black Belt, Master Team Trainer, HRO Baseline Trainer) provide foundation for systematic improvement work",
+    "Proactive problem identification through data monitoring and stakeholder engagement"
+  ],
+  "areas_for_development": [
+    "Application materials lack quantitative metrics for project outcomes - need specific percentages, timeframes, and measurable impacts",
+    "Limited evidence of truly innovative approaches versus competent application of existing methodologies (LSS, HRO)",
+    "Reference letters contain only generic praise without specific examples or incidents",
+    "Many achievements described qualitatively without concrete measurements of success",
+    "No evidence of publications, external recognition, or approaches adopted beyond local facility"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate creative problem-solving with some specific examples, placing her in Tier 3 (5-6). The strongest evidence is the dental implant readiness project where she 'streamlined the process of implant stock refurbishment' and achieved 'structured transition to compliance with VHA Directive 1081.02.' However, the materials don't explain WHAT made the solution innovative or HOW it differed from standard approaches - just that streamlining occurred. The DMS enhancement initiative shows creative adaptation ('enhancement of local daily management system to include an operational component (MESS)') but lacks detail on what made this innovative versus standard practice. The team building activity example shows some creative thinking ('selected 5 activities to facilitate...leaders had fun and left with insights') but this is relatively basic creative application, not groundbreaking innovation. Much of the CV contains generic process improvement language ('identifies opportunities for improvement,' 'continuous process improvement efforts') which is fluff without specific innovative approaches described. The reference letters contain pure fluff ('strategic vision,' 'natural systems thinker') without concrete examples of creative solutions. Score of 6 reflects multiple instances of problem-solving with some creative elements, but impact and innovative nature not clearly demonstrated.",
+      "evidence": [
+        {
+          "quote": "Supply Chain Management Dental Implant Readiness Black Belt project which streamlined the process of implant stock refurbishment for the Dental providers to have the right implant at the right time for Veterans undergoing procedures. An additional positive outcome of this project was structured transition to compliance with VHA Directive 1081.02.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Specific project with concrete outcome, though the innovative approach itself is not detailed"
+        },
+        {
+          "quote": "Collaborating with facility Acting Deputy Director on the enhancement of local daily management system (DMS) to include an operational component (MESS). The initiative includes meeting with Service Chiefs and Administrative Officers for demos and Q&A sessions toward piloting the new component during the daily enterprise huddle.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Shows creative adaptation of existing system, though specifics of innovation unclear"
+        },
+        {
+          "quote": "Reviewing videos and articles about team building and also keeping in mind what activities might have been done before, I selected 5 activities to facilitate over the course of two 30-minute sessions. The activities were successful; leaders had fun and left with insights on communication and highlights of how all roles at the VA our interdependent on each other to make things work.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Demonstrates creative problem-solving in unfamiliar domain with positive outcome, but relatively basic application"
+        }
+      ],
+      "notes": "The materials contain significant fluff about 'innovation' and 'systems thinking' without concrete examples. The dental implant project is the strongest evidence but lacks detail on what made the solution innovative. No evidence of novel methodologies, published innovations, or approaches adopted by others that would warrant scores of 7+."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, placing her in Tier 4 (7-8). Key evidence: 11 years across 3 VA facilities and 6 different roles shows sustained engagement with healthcare challenges. The surgical readiness project shows proactive identification: 'I worked with key stakeholders...to review the process leading up to surgeries occurring' and 'Bringing the groups together for blocked periods of time, I facilitated discussions to help identify gaps.' This demonstrates seeking out complex problems. The application states 'I've gained insights of our healthcare organization's gaps and an understanding of customer...needs and wants' and 'want to dive into learning a different approach to problem solving' - while partially fluff, it's backed by the 11-year track record. The CV shows consistent pattern: 'Identifies opportunities for improvement...by engaging in discussions with frontline staff and leadership' and 'Monitors metrics within systems such as Pyramid Analytics.' The COVID-19 and hurricane response ('Supported the Orlando Incident Command System Logistics Branch') shows willingness to engage with urgent problems. However, no evidence of extraordinary commitment like career changes driven by specific problems, founding programs, or major sacrifices that would warrant 8+. The reference letters contain only fluff ('commitment to transforming healthcare,' 'dedication to service') without specific examples of problem-seeking behavior.",
+      "evidence": [
+        {
+          "quote": "As a someone that has been working for the VA for 11 years across three different VA facilities and 6 different roles, I've gained insights of our healthcare organization's gaps and an understanding of customer, both internal and external, needs and wants.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Demonstrates sustained engagement with organizational challenges over significant time period"
+        },
+        {
+          "quote": "Relative to ensuring surgical procedures are not delayed or cancelled, I worked with key stakeholders from supply chain management, sterile processing, biomedical engineering, surgery and nursing to review the process leading up to surgeries occurring. Bringing the groups together for blocked periods of time, I facilitated discussions to help identify gaps in the readiness process.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Shows proactive identification and engagement with complex, multi-stakeholder problem"
+        },
+        {
+          "quote": "Identifies opportunities for improvement in line with the healthcare system's strategic priorities by engaging in discussions with frontline staff and leadership. Monitors metrics within systems such as Pyramid Analytics and locally produced PowerBI dashboards as well as metrics that might be falling below specific benchmarked standards in controlled models such as SAIL.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Demonstrates systematic approach to seeking out problems through data monitoring and stakeholder engagement"
+        },
+        {
+          "quote": "Supported the Orlando Incident Command System Logistics Branch during the COVID-19 pandemic and hurricane seasons.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Shows willingness to engage with urgent, high-stakes problems"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking and sustained engagement. The 11-year VA career with multiple role changes suggests genuine commitment to healthcare improvement. However, no evidence of extraordinary actions like major career pivots, founding initiatives, or significant sacrifices that would warrant scores of 8+."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate but inconsistent specificity, placing her in Tier 3 (5-6). Some sections provide concrete details: 'Lean Six Sigma (LSS) Black Belt and Trainer, Master Team Trainer and HRO Baseline Trainer' (specific certifications), 'Served as the Planning Workgroup Lead for the 2022-2024 VISN 8 Improvement, Innovation & Safety Forums...200+ participants' (specific timeframe and scale), and 'Registered Emergency service patients in a fast-paced environment, creating patient accounts within (90) seconds of patient arrival' (specific metric). However, many critical details are missing. The dental implant project lacks quantitative outcomes (how much did it improve? by what percentage?). The DMS enhancement mentions 'demos and Q&A sessions' but no specifics on outcomes or metrics. The team building example states 'selected 5 activities' but doesn't specify which activities or provide measurable outcomes beyond 'leaders had fun.' The surgical readiness project identifies 'Two challenges...communication and non-standardized processes' but doesn't quantify improvements achieved. Much of the CV uses vague language: 'several organization-wide quality, safety and continuous process improvement efforts' (how many? which ones?), 'measurable improvements' (what measurements?). The reference letters are entirely vague fluff with zero specific examples. Overall, adequate detail in some areas but lacks the consistent quantitative metrics and comprehensive specificity needed for scores of 6+.",
+      "evidence": [
+        {
+          "quote": "Lean Six Sigma (LSS) Black Belt and Trainer, Master Team Trainer and HRO Baseline Trainer.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Provides specific certifications and credentials"
+        },
+        {
+          "quote": "Served as the Planning Workgroup Lead for the 2022-2024 VISN 8 Improvement, Innovation & Safety Forums in addition to team members for the Keynote Speaker and Workshop workgroups supporting the annual event that shared best practices amongst the 200+ participants.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Includes specific timeframe and quantitative scale"
+        },
+        {
+          "quote": "Registered Emergency service patients in a fast-paced environment, creating patient accounts within (90) seconds of patient arrival.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Provides specific performance metric"
+        },
+        {
+          "quote": "Supply Chain Management Dental Implant Readiness Black Belt project which streamlined the process of implant stock refurbishment for the Dental providers to have the right implant at the right time for Veterans undergoing procedures.",
+          "source": "Noronha_Farrah_app_redacted.pdf",
+          "context": "Describes project but lacks quantitative outcomes (by how much? what metrics improved?)"
+        }
+      ],
+      "notes": "The materials show adequate specificity in credentials and some timeframes, but lack consistent quantitative metrics for outcomes. Many achievements are described qualitatively without measurements. The reference letters provide zero specific examples, only generic praise. Missing details like: percentage improvements, exact team sizes, specific technologies used, precise outcome metrics."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 67.3252501487732,
+    "materials_character_count": 29525,
+    "timestamp": "2026-01-16T14:04:05.956706"
+  }
+}

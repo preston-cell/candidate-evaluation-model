@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "candidate_id": "Oliva_Fernando_app_redacted",
+    "name": null,
+    "materials": [
+      "Oliva_Fernando_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:07:30.785866"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "Candidate demonstrates adequate to strong competency across evaluated criteria, with particular strength in detail orientation and technical specificity. Shows concrete evidence of creative problem-solving through technical implementations (SharePoint system, Power BI automation) and adequate problem-solving motivation within professional roles. Materials contain some application fluff but are balanced with specific technical examples and concrete project descriptions. Strongest evidence comes from hands-on technical work bridging administrative and IT domains. Weakest area is demonstrating extraordinary problem-solving drive beyond assigned responsibilities.",
+  "recommendation": "Potential fit - Candidate shows solid technical competency and adequate creative problem-solving with concrete implementations. Best suited for roles requiring technical process improvement and systems optimization. Would benefit from demonstrating more transformative impact through quantitative outcomes and evidence of seeking challenges beyond assigned responsibilities. The 6.0 overall score reflects adequate to strong performance with room for demonstrating exceptional drive and impact.",
+  "strengths": [
+    "Strong technical detail orientation with specific tools, methodologies, and contexts consistently provided throughout materials",
+    "Concrete evidence of creative technical problem-solving, particularly in developing SharePoint tracking system without formal IT training",
+    "Multiple specific project examples with clear technical approaches (Power BI, Power Automate, Lean Six Sigma)",
+    "Consistent pattern of learning new technical skills to address operational problems"
+  ],
+  "areas_for_development": [
+    "Limited quantitative metrics for project outcomes - many impacts described qualitatively without specific percentages or measurements",
+    "Evidence of problem-solving motivation primarily within assigned roles rather than proactively seeking extraordinary challenges",
+    "Some generic motivational statements without supporting evidence of exceptional commitment or sacrifices made",
+    "Reference letter provides general praise without specific behavioral incidents demonstrating exceptional capabilities"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate creative problem-solving with some concrete examples, placing them in Tier 3 (5-6). The strongest evidence is the SharePoint tracking system, where the candidate bridged administrative and technical domains without formal IT training. Specific quote: 'While not a trained IT specialist, I developed a SharePoint integrated tracking system for Quality and Patient Safety policy reviews at NAVAHCS. I created automated workflows, built change history logs using Power Automate Desktop, and visualized compliance data in Power BI.' This shows creative adaptation and learning new technical skills to solve a problem. However, the impact metrics are vague ('streamlined communication, reduced redundant data entry') without specific percentages or quantitative outcomes. The HFMEA participation and assessment tool development at Miami VA shows creative contribution, but the description lacks detail about what made the approach innovative versus standard practice. The Lean Six Sigma ambulance project mentions 'automated categorization tools' but doesn't explain the novel methodology. Multiple instances of creative problem-solving exist, but most lack the specific outcome metrics and documented impact needed for Tier 4 (7-8). The materials contain some fluff ('passion for using system level thinking, innovation') but also concrete technical implementations.",
+      "evidence": [
+        {
+          "quote": "While not a trained IT specialist, I developed a SharePoint integrated tracking system for Quality and Patient Safety policy reviews at NAVAHCS. I created automated workflows, built change history logs using Power Automate Desktop, and visualized compliance data in Power BI.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Demonstrates creative bridging of technical and administrative domains; shows initiative to learn new skills outside expertise area"
+        },
+        {
+          "quote": "This streamlined communication, reduced redundant data entry, and empowered frontline users to identify policy gaps in real time. My initiative helped leadership improve SOP turnaround times and reduced manual errors.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Shows impact of creative solution, though lacks specific quantitative metrics"
+        },
+        {
+          "quote": "participated in a Health Failure Mode and Effects Analysis (HFMEA) and developed a comprehensive patient assessment tool still in use today",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Evidence of creating lasting solution, though details about innovative approach are limited"
+        }
+      ],
+      "notes": "Score of 6 reflects multiple instances of creative problem-solving with some specifics, but lacks the detailed outcome metrics and evidence of novel methodologies needed for higher scores. The SharePoint system is the strongest example of creative adaptation. Some generic language present ('passion for innovation') but balanced with concrete technical implementations."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation, placing them in Tier 3 (5-6). Evidence shows engagement with problems when encountered and some proactive identification, but limited evidence of seeking out particularly challenging problems or making significant sacrifices to solve them. Concrete actions include: pursuing Lean Six Sigma Green Belt certification, leading multiple improvement projects, and learning new technical skills (Power BI, Power Automate) to address operational gaps. The statement 'I'm driven to design sustainable, veteran centered healthcare solutions that address real operational gaps' is fluff without supporting evidence of extraordinary commitment. The reference letter contains generic praise: 'consistently demonstrated a high level of initiative' without specific incidents. The Marine Corps background shows discipline but doesn't directly demonstrate problem-solving motivation in the healthcare context. The candidate shows competent problem-solving within assigned roles (GHATP Fellow, intern positions) but limited evidence of going significantly beyond role requirements or making major career pivots specifically to address challenging problems. The planned pursuit of 'Lean Black Belt and FACHE credentials' shows future intention but not demonstrated action. Scores 5 rather than 6 because most examples are within assigned job responsibilities rather than proactively sought challenges.",
+      "evidence": [
+        {
+          "quote": "I'm driven to design sustainable, veteran centered healthcare solutions that address real operational gaps. The Catalyst Fellowship aligns with my passion for using system level thinking, innovation, and data to improve outcomes across underserved populations.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "FLUFF - stated motivation without concrete evidence of actions taken to pursue this drive"
+        },
+        {
+          "quote": "This experience pushed me to bridge administrative knowledge with technical execution  a skill I now apply to many high impact projects.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Shows willingness to learn new skills to solve problems, though 'many high impact projects' is vague"
+        },
+        {
+          "quote": "Led Lean Six Sigma initiative to streamline Emergency Ambulance Services (EAS) data across VAMCs. Created automated categorization tools to analyze service delays, response types, and impact on Veteran harm levels.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Demonstrates engagement with assigned problem-solving project with concrete actions"
+        }
+      ],
+      "notes": "Score of 5 reflects adequate problem-solving engagement within professional roles but lacks evidence of extraordinary drive or seeking out particularly challenging problems. Most examples are within assigned job responsibilities. The reference letter provides generic praise without specific incidents demonstrating exceptional motivation."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation, placing them in Tier 4 (7-8). The materials consistently provide specific technologies, methodologies, and contexts throughout. Strong evidence includes: precise technical specifications ('SharePoint integrated tracking system', 'Power Automate Desktop', 'Power BI'), specific project contexts (HFMEA, Lean Six Sigma, EAS data analysis), and concrete role descriptions with technical details. The CV provides comprehensive information including specific tools ('Power BI | Power Automate (Desktop & Cloud) | Microsoft Excel | SharePoint | SQL (Basic)'), timeframes for all positions, and specific organizational contexts. The application responses include specific examples rather than vague descriptions: 'developed a comprehensive patient assessment tool still in use today' (though could be more specific about the tool itself), 'created automated workflows, built change history logs using Power Automate Desktop, and visualized compliance data in Power BI' (very specific technical approach). However, quantitative metrics are inconsistently provided - some outcomes lack specific percentages or numbers ('improved SOP turnaround times' without stating by how much, 'reduced manual errors' without quantification). The materials avoid most generic fluff in favor of concrete descriptions. Scores 7 rather than 8 because while technical specificity is strong, outcome metrics could be more precise and comprehensive.",
+      "evidence": [
+        {
+          "quote": "I developed a SharePoint integrated tracking system for Quality and Patient Safety policy reviews at NAVAHCS. I created automated workflows, built change history logs using Power Automate Desktop, and visualized compliance data in Power BI.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Highly specific technical details about approach and tools used"
+        },
+        {
+          "quote": "Led Lean Six Sigma initiative to streamline Emergency Ambulance Services (EAS) data across VAMCs. Created automated categorization tools to analyze service delays, response types, and impact on Veteran harm levels.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Specific project scope and analytical dimensions, though lacks quantitative outcomes"
+        },
+        {
+          "quote": "Healthcare systems optimization, Lean Six Sigma (Green Belt), project management, VA policy analysis, strategic planning, patient experience, and cross-functional collaboration. Experienced in Power BI, Power Automate, and Excel automation for process improvement.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Specific competencies and tools listed rather than vague claims"
+        },
+        {
+          "quote": "Served four years with 1st Battalion, 2nd Marines including deployment with MARSOC support.",
+          "source": "Oliva_Fernando_app_redacted.pdf",
+          "context": "Precise unit designation and deployment details"
+        }
+      ],
+      "notes": "Score of 7 reflects consistently strong technical and contextual specificity throughout materials, with good attention to detail in describing approaches and tools. Quantitative outcome metrics are the main area where additional specificity would strengthen the materials to reach score 8."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 56.05009937286377,
+    "materials_character_count": 13855,
+    "timestamp": "2026-01-16T14:07:30.785927"
+  }
+}

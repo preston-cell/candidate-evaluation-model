@@ -1,0 +1,128 @@
+{
+  "candidate": {
+    "candidate_id": "Olcum_Selim_app_redacted",
+    "name": null,
+    "materials": [
+      "Olcum_Selim_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:06:34.732716"
+  },
+  "overall_score": 8.333333333333334,
+  "overall_assessment": "",
+  "recommendation": "",
+  "strengths": [],
+  "areas_for_development": [],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 9,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional creativity with multiple groundbreaking innovations that transformed both research capabilities and commercial viability. The evidence maps to Tier 5 (9-10) based on: (1) Novel methodological development that enabled transformative improvements - the shift from tracking individual cell growth to comparative measurement represents fundamental reconceptualization, not incremental improvement; (2) Multiple patented innovations (8 issued, 8 pending patents) indicating recognized novel contributions; (3) Published novel methodologies in top-tier journals (Nature Biotechnology cover feature); (4) Creative solutions with documented massive impact (90% reduction in assay time, 100x throughput improvement). This goes beyond competent problem-solving to demonstrate thought leadership and field-redefining innovation.",
+      "evidence": [
+        {
+          "quote": "Rather than tracking individual cell growth, I developed a comparative measurement of treated versus control cells to detect drug response signals. This shift demanded a novel statistical framework and extensive redesign of our fluidics and data-processing pipelines, innovations that spawned multiple issued patents. We slashed assay time by 90% (from over 100 minutes to just 10 minutes) without compromising function.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Demonstrates fundamental reconceptualization of measurement approach with specific quantitative outcomes - 90% time reduction is transformative, not incremental"
+        },
+        {
+          "quote": "While the original design at MIT delivered sub-picogram/hour sensitivity measuring cell growth, its throughput (<1 drug/hour) was untenable for a scaled commercial operation. To overcome this, I re-imagined our testing architecture.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Shows creative problem identification and willingness to abandon elegant academic solution for practical commercial innovation"
+        },
+        {
+          "quote": "His innovative control–test–control assay method overcame sample drift and earned patent protection, an achievement that exemplifies his blend of scientific creativity and practical engineering in service of clinical impact.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "External validation from CEO confirming novel methodology with patent protection"
+        },
+        {
+          "quote": "led the development of serial suspended microchannel resonator arrays. His innovations in device design, fluidic interfacing, and control-theory implementation culminated in our landmark Nature Biotechnology paper",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Academic advisor confirms multiple innovative contributions resulting in high-impact publication"
+        },
+        {
+          "quote": "Invented microfluidic techniques enabling rapid measurements of single-cell mass change in response to therapy... Invented devices for attogram-level assessment of nanoparticles in solution – highest precision achieved to date.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Multiple instances of creating novel techniques achieving unprecedented performance levels"
+        }
+      ],
+      "notes": "The candidate shows consistent pattern of creative innovation across multiple contexts (academic research, commercial translation). The 90% time reduction while maintaining function, combined with 8 issued patents and Nature Biotechnology cover feature, provides strong evidence of exceptional creativity. The willingness to abandon an 'elegant' academic solution for practical commercial impact demonstrates sophisticated creative thinking."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The evidence maps to Tier 4 (7-8) based on: (1) Major career pivot from academia (with tenure-track offers) to entrepreneurship specifically to solve clinical problems - this represents significant sacrifice/investment; (2) Proactive problem-seeking demonstrated by taking on challenges outside expertise (CLIA certification during COVID); (3) Sustained engagement with complex technical and regulatory challenges over 7+ years; (4) Evidence of persistence through obstacles (COVID shutdown, scaling challenges). The candidate demonstrates strong drive but falls short of Tier 5 because while the motivation is clear and sustained, there's limited evidence of inspiring problem-solving in others or founding initiatives beyond the single company.",
+      "evidence": [
+        {
+          "quote": "Although secured multiple tenure-track faculty offers at leading institutions, he ultimately recognized that his true passion lay in translating his discoveries into direct benefits for human health. Motivated by this vision, he shifted his career trajectory from academia to entrepreneurship.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Major career decision driven by problem-solving motivation - rejected prestigious academic positions to pursue clinical impact"
+        },
+        {
+          "quote": "Among these, none was more challenging than when I led our CLIA-certification effort during the COVID-19 shutdown. With hospitals pausing clinical studies and having limited access to the lab, I seized the opportunity to build our Quality Management System from scratch.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Proactively identified opportunity during crisis; took on challenge far outside core expertise"
+        },
+        {
+          "quote": "My postdoc research formed the basis of Travera's technology, yet as I experienced, a real-world problem must guide its unique innovation. Catalyst's structured approach of identifying unmet need before developing solutions resonates with me.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Demonstrates learning from experience and explicit motivation to improve problem identification approach"
+        },
+        {
+          "quote": "When asked what I do, I say that I am a technologist with a curios mind and passion to create impact around me. But when I ask myself what I do, my response to myself is 'I am a professional student'. Learning new skills, applying my expertise on different areas, creating something new from scratch feed my soul more than anything.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "While somewhat generic, this is supported by concrete actions (career pivot, learning CLIA regulations, etc.) making it credible evidence of intrinsic motivation"
+        }
+      ],
+      "notes": "The career pivot from academia to entrepreneurship, combined with proactive engagement during COVID and sustained 7+ year commitment to commercialization, provides strong evidence. The statement about being a 'professional student' would normally be rejected as fluff, but it's substantiated by concrete actions (learning CLIA, regulatory work, etc.)."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The evidence maps to Tier 4 (7-8) based on: (1) Consistently high level of quantitative detail throughout materials (90% time reduction, <1 drug/hour to hundreds/day, $8M raised, 16 instruments, 8 patents, etc.); (2) Precise technical specifications provided (sub-picogram/hour sensitivity, 10 minutes vs 100 minutes); (3) Comprehensive documentation of outcomes with specific metrics; (4) Detailed methodological descriptions. The materials demonstrate exceptional thoroughness with nearly every claim substantiated by specific numbers, timeframes, or technical details. Falls slightly short of Tier 5 (9-10) as some sections could have additional depth (e.g., specific CLIA validation protocols, exact statistical frameworks developed).",
+      "evidence": [
+        {
+          "quote": "We slashed assay time by 90% (from over 100 minutes to just 10 minutes) without compromising function. Today, we can process hundreds of drug conditions per day",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Precise quantitative metrics for both time reduction and throughput improvement"
+        },
+        {
+          "quote": "Raised $8M VC funding together with the founding team... Participated in $15M Seed and Series-A financing effort... Secured $2M SBIR grants as Principal Investigator",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Specific funding amounts across multiple rounds"
+        },
+        {
+          "quote": "While the original design at MIT delivered sub-picogram/hour sensitivity measuring cell growth, its throughput (<1 drug/hour) was untenable",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Precise technical specifications with exact performance metrics"
+        },
+        {
+          "quote": "Responsible for validation and maintenance of testing instruments for compliance with the CLIA regulations. Currently overseeing 16 testing instruments. Plans to expand to 24 in 2026.",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Specific numbers for current state and future plans"
+        },
+        {
+          "quote": "8 issued patents and 8 pending in the US... Published >50 peer-reviewed articles and conference proceedings... (h-index 24)",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Comprehensive quantitative documentation of IP and publication record"
+        },
+        {
+          "quote": "Project targeting to reduce testing cost >60% before scale-up",
+          "source": "Olcum_Selim_app_redacted.pdf",
+          "context": "Specific quantitative target for ongoing project"
+        }
+      ],
+      "notes": "The candidate demonstrates exceptional attention to detail with quantitative metrics throughout. Nearly every claim is substantiated with specific numbers, timeframes, or technical specifications. The CV includes precise publication counts, patent numbers, funding amounts, and performance metrics. This level of specificity is rare and indicates strong detail orientation."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 69.91290593147278,
+    "materials_character_count": 26521,
+    "timestamp": "2026-01-16T14:06:34.732753"
+  }
+}

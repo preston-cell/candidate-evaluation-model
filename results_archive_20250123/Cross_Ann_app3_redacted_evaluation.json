@@ -1,0 +1,134 @@
+{
+  "candidate": {
+    "candidate_id": "Cross_Ann_app3_redacted",
+    "name": null,
+    "materials": [
+      "Cross_Ann_app3_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:22:06.148413"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with 16+ years of concrete healthcare product leadership experience. Demonstrates consistent pattern of innovative problem-solving with measurable outcomes across multiple domains (medical devices, digital health, AI). Notable strengths in detail orientation with extensive quantitative evidence and creative solution development backed by patents and dramatic efficiency improvements. Shows strong problem-solving motivation through founding Meera Health and sustained engagement with complex healthcare challenges. Evidence is predominantly concrete with specific metrics, outcomes, and technical details rather than generic claims.",
+  "recommendation": "Strong fit - Candidate demonstrates well-documented track record of innovative healthcare product development with concrete outcomes. Evidence is predominantly specific and measurable rather than generic claims. The combination of technical expertise, creative problem-solving, and entrepreneurial action (founding Meera Health) suggests strong potential for Catalyst program. Scores reflect genuine achievements with quantitative validation rather than stated qualities.",
+  "strengths": [
+    "Exceptional detail orientation with consistent quantitative metrics across all projects (83% reduction in angiograms, 32% improvement in outcomes, 5 days to 4 hours processing time)",
+    "Strong creative innovation backed by patents (US 11,311,327) and novel platform development with documented market impact (20,000+ procedures)",
+    "Demonstrated problem-solving motivation through concrete actions: founded company, conducted 70+ user interviews, sustained 16+ year focus on healthcare challenges",
+    "Multiple leadership roles with specific team sizes (25+ members, 6+ PMs) and portfolio management ($600M+)",
+    "Cross-functional expertise spanning AI, medical devices, digital health, robotics with specific technical implementations"
+  ],
+  "areas_for_development": [
+    "Limited evidence of thought leadership or external recognition beyond company-specific achievements (no indication of field-redefining innovations or speaking/teaching at scale)",
+    "Reference letters, while positive, contain some generic praise elements ('excellent', 'outstanding') though backed by specific project examples",
+    "No evidence of inspiring problem-solving in others at scale or founding programs/initiatives beyond Meera Health",
+    "Application contains some standard motivational language ('passionate about', 'excited to apply') though backed by concrete actions"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative solutions that produced measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Novel platform development at Myoscience with patented technology, (2) AI-driven clinical insights integration at J&J that expanded market reach, (3) Creative approach to RPM at Nevro combining unfamiliar domains. The candidate shows consistent pattern of innovative thinking across contexts with documented impact. However, evidence does not reach Tier 5 (9-10) as there's no indication of transformative innovations that redefined field approaches or external recognition as innovation thought leader.",
+      "evidence": [
+        {
+          "quote": "Developed a compelling business case and secured buy-in for the next generation iovera® cryotherapy platform, leading the successful development of a groundbreaking technology that received US and EU patents. The platform introduced the ability to triangulate sensory nerves for targeted therapy, revolutionizing the field.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Demonstrates novel methodology development with patented innovation - concrete creative contribution beyond standard problem-solving"
+        },
+        {
+          "quote": "I worked cross-functionally with engineering, clinical, and regulatory teams to identify unmet workflow needs and integrate AI-driven insights, ultimately supporting over 20,000 lung cancer procedures and enabling platform adoption in new markets.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Shows creative integration of AI insights into robotic surgery platform with measurable scale (20,000+ procedures) and market expansion impact"
+        },
+        {
+          "quote": "Directed AI-driven cardiac imaging product development, reducing diagnostic processing time from 5 days to 4 hours and improving clinician confidence in non-invasive diagnostics.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Demonstrates creative solution with dramatic quantitative improvement (5 days to 4 hours = ~96% reduction) in diagnostic workflow"
+        },
+        {
+          "quote": "She helped the team come up with innovative ideas on how to meet customers' needs.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Reference letter confirms creative contribution, though somewhat generic - provides supporting evidence but less specific than candidate's own examples"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with specific innovations and measurable outcomes. Patents and dramatic efficiency improvements provide concrete validation. Reference letter supports but is less specific. No evidence of field-redefining innovations or external thought leadership recognition that would warrant 9-10 scores."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on: (1) Major career pivot to found Meera Health specifically to address unmet clinical need, (2) Sustained engagement across multiple complex healthcare domains over 16+ years, (3) Proactive identification of care gaps with extensive user research (70+ interviews), (4) Consistent pattern of taking on challenging problems in regulated environments. The candidate demonstrates strong drive through concrete actions including founding a company, extensive user research, and career-long focus on healthcare challenges. However, evidence does not reach Tier 5 (9-10) as there's no indication of inspiring problem-solving in others at scale or founding programs/organizations beyond Meera Health.",
+      "evidence": [
+        {
+          "quote": "More recently, as founder of Meera Health, I identified a major care gap in women's hormonal mood disorders and led 70+ user interviews to validate clinical and behavioral needs. I translated these into a prototype for an AI-driven care platform I've validated with 40+ prospective users. I'm currently building a beta version. I've done all of this as a solo founder.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Demonstrates proactive problem identification and sustained engagement - founding company and conducting 70+ interviews shows significant investment in solving identified problem"
+        },
+        {
+          "quote": "I'm particularly passionate about advancing solutions in women's health and underserved communities—areas often overlooked by traditional innovation cycles.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "While this contains some stated passion language, it's backed by concrete action (founding Meera Health) focused on these specific underserved areas"
+        },
+        {
+          "quote": "While I had deep experience in medtech and digital health, this project required me to navigate unfamiliar terrain—chronic pain management protocols, connected hardware, and shifting reimbursement models. I immersed myself in clinician interviews, shadowed pain specialists, and collaborated closely with regulatory and reimbursement teams to understand the full care and economic landscape.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Shows proactive learning and persistence in unfamiliar domain - took concrete actions (shadowing, interviews) to solve problems outside expertise"
+        },
+        {
+          "quote": "I am conﬁdent that [candidate] will bring the same level of excellence, collaboration, and visionary thinking to the Catalyst program as she has throughout her career. I am certain [candidate] will not only excel in the Catalyst program but will also elevate those around her, just as she did at Nevro.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Reference confirms sustained problem-solving approach and impact on others, though somewhat generic in phrasing"
+        }
+      ],
+      "notes": "Strong evidence of problem-solving motivation through concrete actions (founding company, extensive user research, career focus on healthcare challenges). The 70+ user interviews and solo founder status demonstrate significant personal investment. Career trajectory shows consistent engagement with complex problems across multiple domains."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on consistently high level of detail throughout materials. The candidate provides: (1) Specific quantitative metrics across multiple projects (83% reduction, 26% cost savings, 32% improvement, 20% engagement increase, 30% retention increase, 35% efficiency improvement), (2) Precise team sizes and budget figures ($600M+ portfolio, 25+ member teams, 6+ PMs), (3) Specific technologies and platforms (FFRCT, MONARCH Gateway, iovera, PACS/EHR integration), (4) Exact timeframes and progression (16+ years, multiple promotions with dates). The materials demonstrate exceptional thoroughness with comprehensive quantitative and qualitative information. Does not reach Tier 5 (9-10) as materials, while detailed, don't exceed normal expectations for comprehensive professional documentation.",
+      "evidence": [
+        {
+          "quote": "Launched first two generations of Heartflow FFRCT imaging workstation, leading teams to reduce unnecessary angiograms by 83% and care costs by 26% while directing IEEE publication of a novel segmentation algorithm.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Demonstrates precise quantitative metrics (83%, 26%) with specific technical detail (IEEE publication, segmentation algorithm)"
+        },
+        {
+          "quote": "Led product strategy and 25+ member cross-functional teams to launch J&J's MONARCH™ Gateway, first-of-its-kind robotic surgery portal with AI-driven clinical insights—supporting 20,000+ lung cancer procedures and enabling increased platform adoption and service revenue.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Provides specific team size (25+ members), scale metrics (20,000+ procedures), and precise platform name and capabilities"
+        },
+        {
+          "quote": "Managed $600M+ global product portfolio for Varian's Oncology EHR, collaborating with distributed teams across 3 regions to deliver enhancements that secured multiple Best in KLAS awards and strengthened market position.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Includes exact portfolio value ($600M+), geographic scope (3 regions), and specific recognition (Best in KLAS awards)"
+        },
+        {
+          "quote": "Built RPM product organization from concept to market, leading 20+ cross-functional teams to integrate connected devices and EHRs, achieving 32% improvement in chronic pain patient outcomes.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Provides team size (20+), specific integration details (connected devices, EHRs), and precise outcome metric (32% improvement)"
+        },
+        {
+          "quote": "Directed AI-driven cardiac imaging product development, reducing diagnostic processing time from 5 days to 4 hours and improving clinician confidence in non-invasive diagnostics.",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Demonstrates exceptional precision with exact before/after timeframes (5 days to 4 hours) showing dramatic improvement"
+        },
+        {
+          "quote": "U.S. Patent 11,311,327 | Methods and systems for locating and treating nerves with cold therapy (2022). W0/2019/099677 | Integrated cold therapy and electrical stimulation systems for locating and targeting nerves (2019).",
+          "source": "Cross_Ann_app3_redacted.pdf",
+          "context": "Provides exact patent numbers and years - demonstrates thoroughness in documentation"
+        }
+      ],
+      "notes": "Exceptionally detailed materials with consistent quantitative metrics, specific technologies, precise team sizes, and exact outcomes throughout. Every major claim is substantiated with specific numbers or technical details. The level of precision is consistently high across resume, application responses, and accomplishments."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 66.6601619720459,
+    "materials_character_count": 21419,
+    "timestamp": "2026-01-16T13:22:06.148434"
+  }
+}

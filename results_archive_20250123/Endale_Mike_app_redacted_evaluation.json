@@ -1,0 +1,133 @@
+{
+  "candidate": {
+    "candidate_id": "Endale_Mike_app_redacted",
+    "name": null,
+    "materials": [
+      "Endale_Mike_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:27:28.799501"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong technical professional with 20+ years of federal software development experience. Demonstrates solid creative problem-solving with measurable outcomes (VA Match: 92% efficiency gain, USDA: weeks to minutes processing). Detail-oriented with consistent quantitative metrics and technical specificity. However, problem-solving motivation appears primarily within professional scope rather than extraordinary drive. Limited evidence of healthcare domain experience despite stated passion.",
+  "recommendation": "Potential fit with caveats. Strong technical execution and applied innovation skills with proven federal systems expertise. However, stated healthcare passion is unsupported by prior work in the domain - this is application fluff. Best suited if program values deep technical implementation skills over healthcare domain expertise or extraordinary problem-seeking drive. Would benefit from demonstrating concrete healthcare engagement beyond this application.",
+  "strengths": [
+    "Strong applied innovation with concrete outcomes: VA Match (6 hours → 30 minutes), USDA platform (weeks → minutes processing)",
+    "Exceptional detail orientation with consistent quantitative metrics and technical specifications throughout materials",
+    "Extensive federal systems experience (VA, USDA, USPTO, CDC, DOE) with proven ability to deliver at scale (35,000+ users)",
+    "Entrepreneurial experience: founded companies, achieved acquisition"
+  ],
+  "areas_for_development": [
+    "Healthcare domain experience: States passion for healthcare impact but CV shows no prior healthcare work - this is a stated quality without demonstrated action",
+    "Problem-solving motivation appears reactive to professional opportunities rather than proactive seeking of challenges beyond job scope",
+    "Limited evidence of transformative innovations or thought leadership (publications, patents, industry recognition)",
+    "Generic business development claims lack the specificity shown in technical work"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples of innovative technical solutions that produced measurable outcomes. This maps to Tier 4 (7-8) based on 'multiple concrete examples of innovative solutions with specific outcomes' and 'demonstrates creative approaches that led to measurable improvements.'\n\nKey evidence:\n1. VA Match innovation: Applied Retrieval-Augmented Generation (RAG) to hiring - a novel application of AI that reduced review time from 6 hours to 30 minutes (92% efficiency gain). This shows creative application of emerging technology to a non-traditional domain.\n2. USDA mobile platform: Designed offline-capable features with real-time synchronization for remote field sites, accelerating data processing from weeks to minutes. This demonstrates creative problem-solving for technical constraints.\n3. Custom newsletter builder UI for USPTO shows creative interface design beyond standard implementations.\n\nHowever, the candidate does not reach Tier 5 (9-10) as there's no evidence of groundbreaking innovations adopted widely by others, published novel methodologies, or recognition as a thought leader. The innovations are strong and impactful but within the scope of applied engineering rather than transformative contributions to the field.",
+      "evidence": [
+        {
+          "quote": "At VA, I led development of VA Match, an AI-powered hiring solution reducing application review time from 6 hours to 30 minutes through Retrieval-Augmented Generation and secure language models.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Demonstrates creative application of RAG technology to hiring domain with 92% efficiency improvement - specific innovative approach with measurable outcome"
+        },
+        {
+          "quote": "For USDA's GHG research initiative, I architected a mobile platform replacing paper workflows with digital collection across thousands of remote sites. By engaging researchers to understand field constraints, I designed offline-capable features and real-time synchronization, accelerating data processing from weeks to minutes.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Shows creative technical solution to field constraints (offline capability) with dramatic outcome improvement (weeks to minutes)"
+        },
+        {
+          "quote": "Developed a custom newsletter module with a customized newsletter builder UI.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Evidence of custom UI innovation beyond standard implementations at USPTO"
+        },
+        {
+          "quote": "Created an Angular directive called 'stickylist' to make search results 'stick' when expanded during scrolling.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Demonstrates creative UX solution for Maryland Capital Park project"
+        }
+      ],
+      "notes": "Strong evidence of applied innovation with measurable outcomes. The VA Match example is particularly compelling as it shows creative application of emerging AI technology (RAG) to a non-traditional domain. However, no evidence of publications, patents, or industry-wide adoption that would warrant scores of 9-10."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation, mapping to Tier 3 (5-6) based on 'demonstrates proactive problem identification in familiar contexts' and 'one or two strong examples of pursuing challenging problems with clear action steps.'\n\nEvidence of proactive engagement:\n1. VA Match: Identified hiring bottlenecks through stakeholder interviews and designed solution - shows proactive problem identification\n2. USDA: Engaged researchers to understand field constraints before designing solution - demonstrates seeking to understand problems deeply\n3. Founded companies and grew startup to acquisition - indicates entrepreneurial problem-solving drive\n\nHowever, the candidate does NOT reach Tier 4 (7-8) because:\n- No evidence of 'changing fields' or 'learning new skills specifically to solve problems'\n- No evidence of 'overcoming significant barriers' or 'major life/career decisions driven by desire to address challenges'\n- Most examples are within professional responsibilities rather than going beyond assigned work\n- The statement 'I'm passionate about translating innovative technology into healthcare impact' is FLUFF - a stated quality without demonstrated action in healthcare prior to this application\n\nThe materials show competent professional problem-solving but limited evidence of extraordinary drive or seeking challenges beyond job requirements.",
+      "evidence": [
+        {
+          "quote": "This involved understanding VA's hiring bottlenecks through stakeholder interviews, applying ML expertise to design citation-backed recommendations, and influencing adoption across 35,000 hiring officials.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Shows proactive problem identification through stakeholder engagement and follow-through to adoption"
+        },
+        {
+          "quote": "By engaging researchers to understand field constraints, I designed offline-capable features and real-time synchronization",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Demonstrates proactive problem understanding before solution design"
+        },
+        {
+          "quote": "I am a seasoned startup founder and technology leader who started companies and grew it to a multimillion dollars acquisition",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Entrepreneurship suggests problem-solving drive, though lacks specific details about what problems motivated the startup"
+        },
+        {
+          "quote": "I'm passionate about translating innovative technology into healthcare impact.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "FLUFF - stated passion without demonstrated action in healthcare domain prior to application"
+        }
+      ],
+      "notes": "The candidate shows solid professional problem-solving within their engineering role but limited evidence of extraordinary drive or seeking challenges beyond job scope. The healthcare passion statement is unsupported by prior healthcare work. Most problem-solving appears reactive to professional opportunities rather than proactive seeking of challenges."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional detail orientation, mapping to Tier 4 (7-8) based on 'consistently high level of detail with specific examples, contexts, and outcomes' and 'includes quantitative metrics where relevant.'\n\nStrong evidence throughout materials:\n1. Specific quantitative metrics: '6 hours to 30 minutes' (92% efficiency), '35,000 hiring officials', 'weeks to minutes', '20+ years', '23 years'\n2. Precise technical specifications: Lists specific technologies (React Native, AWS/Azure/GCP, Drupal, RAG, DevSecOps)\n3. Detailed project descriptions with context, approach, and outcomes across multiple positions\n4. Comprehensive CV with specific dates, technologies, and deliverables for each role\n5. Specific architectural details: 'offline-capable features and real-time synchronization', 'citation-backed recommendations'\n\nThe candidate approaches but does not fully reach Tier 5 (9-10) because:\n- While detail is strong, some sections could be more comprehensive (e.g., specific team sizes, budget figures)\n- Some achievements lack complete quantitative backing (e.g., 'multimillion dollars acquisition' - no specific figure)\n- Not every claim has supporting metrics\n\nHowever, the overall level of specificity is well above average and demonstrates systematic attention to detail.",
+      "evidence": [
+        {
+          "quote": "reducing application review time from 6 hours to 30 minutes through Retrieval-Augmented Generation and secure language models",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Precise quantitative metrics (6 hours → 30 minutes) with specific technical approach (RAG)"
+        },
+        {
+          "quote": "influencing adoption across 35,000 hiring officials",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Specific scale metric showing detail orientation"
+        },
+        {
+          "quote": "accelerating data processing from weeks to minutes",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Specific before/after timeframe comparison"
+        },
+        {
+          "quote": "AI/ML implementation, full-stack development, federal systems integration, cloud architecture (AWS/Azure/GCP), DevSecOps, mobile development (React Native), enterprise software design",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Comprehensive technical specification with specific platforms and tools"
+        },
+        {
+          "quote": "I have over 23 years of experience building solutions with various enterprise software, System Development Life Cycle Frameworks, Database development tools.",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Precise timeframe (23 years) though could be more specific about which frameworks/tools"
+        },
+        {
+          "quote": "Wonderschool, Inc., Remote August 2021 – October 2022",
+          "source": "Endale_Mike_app_redacted.pdf",
+          "context": "Precise dates throughout CV showing systematic detail orientation"
+        }
+      ],
+      "notes": "Consistently strong detail orientation throughout all materials. The candidate provides specific metrics, technologies, timeframes, and outcomes. Some areas could be even more detailed (e.g., specific dollar amounts for acquisition, team sizes), preventing a score of 9-10, but overall demonstrates well above average attention to specificity."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 61.97612690925598,
+    "materials_character_count": 27628,
+    "timestamp": "2026-01-16T13:27:28.799540"
+  }
+}

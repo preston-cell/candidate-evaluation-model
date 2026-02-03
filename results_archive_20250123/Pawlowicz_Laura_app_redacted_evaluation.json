@@ -1,0 +1,122 @@
+{
+  "candidate": {
+    "candidate_id": "Pawlowicz_Laura_app_redacted",
+    "name": null,
+    "materials": [
+      "Pawlowicz_Laura_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:15:26.664771"
+  },
+  "overall_score": 5.0,
+  "overall_assessment": "Candidate demonstrates competent technical execution in pharmacy research role with adequate attention to procedural detail and some evidence of problem-solving within work context. However, application lacks concrete evidence of creative innovation or proactive challenge-seeking. Most content describes standard job responsibilities competently performed rather than exceptional achievements or innovative approaches. Educational investments (Bachelor's degree, certifications) show commitment to development, but limited evidence of applying these to drive meaningful change or innovation.",
+  "recommendation": "Marginal fit. Candidate shows competent technical execution and procedural rigor appropriate for pharmacy technician role, but limited evidence of the creative innovation and proactive problem-solving drive typically sought in innovation/catalyst programs. Would benefit from demonstrating specific examples of novel approaches, measurable impacts, and evidence of seeking challenges beyond current role scope before being considered a strong candidate for innovation-focused programs.",
+  "strengths": [
+    "Strong technical detail orientation in procedural work - demonstrates knowledge of specific standards (USP 797, 800) and systematic approach",
+    "Consistent investment in skill development - completed degree while working, obtained multiple relevant certifications (Six Sigma, Data Analytics, CITI)",
+    "Competent problem identification and process improvement within assigned role - identified inventory inefficiencies and took action"
+  ],
+  "areas_for_development": [
+    "Lacks concrete evidence of creative or innovative solution development - process improvements mentioned but no details on what made approaches novel or innovative",
+    "Limited evidence of proactively seeking challenging problems beyond assigned responsibilities - most examples are reactive problem-solving within role",
+    "Missing quantitative metrics for achievements - claims of 'reducing errors' and 'enhancing accuracy' lack specific measurements or outcomes",
+    "Application contains significant fluff - generic statements about passion and innovation without supporting concrete examples"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 4,
+      "confidence": "medium",
+      "reasoning": "The candidate provides limited concrete evidence of creative solution development. Most statements are generic ('innovating healthcare solutions', 'eager to collaborate') which are fluff. The strongest evidence is: (1) 'identified operational inefficiencies in inventory management and developed streamlined processes, reducing errors and enhancing accuracy' - this shows problem identification and process improvement but lacks specifics about what made the solution creative or innovative (no description of the novel approach, just that processes were 'streamlined'); (2) 'troubleshoot issues with blinded dosage forms' - this is standard problem-solving in the role, not creative innovation. The application mentions 'problem-solving skills' but doesn't demonstrate what made solutions creative versus competent execution of standard procedures. According to the rubric, this maps to Tier 2 (3-4): mentions developing solutions but doesn't explain what made them innovative; basic problem-solving without novel approaches. Score of 4 reflects some evidence of process improvement but no demonstration of creative/innovative thinking.",
+      "evidence": [
+        {
+          "quote": "I identified operational inefficiencies in inventory management and developed streamlined processes, reducing errors and enhancing accuracy.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Shows process improvement but lacks specifics about the innovative approach taken - what made it creative vs. standard optimization?"
+        },
+        {
+          "quote": "My problem-solving skills enabled me to troubleshoot issues with blinded dosage forms, safeguarding participant safety and research integrity.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Demonstrates competent problem-solving but no evidence this required creative/innovative thinking - troubleshooting is standard technical work"
+        },
+        {
+          "quote": "I am passionate about innovating healthcare solutions and eager to collaborate with like-minded individuals.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "FLUFF - stated passion without any concrete examples of innovation"
+        }
+      ],
+      "notes": "The application contains mostly generic statements about innovation without concrete examples. The process improvement mentioned lacks detail about what made it creative. No evidence of novel methodologies, creative bridging of fields, or innovative approaches that distinguish this from competent technical work."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate shows adequate evidence of engaging with problems when encountered, but limited evidence of proactively seeking out challenges. Concrete evidence: (1) Identified inventory management inefficiencies and took action to address them - shows proactive problem identification in familiar work context; (2) Participated in Emerging Leader Program (completed/graduated) - demonstrates some investment in skill development; (3) Earned Bachelor's degree while working full-time (graduated June 2025) and obtained multiple certifications (Healthcare Data Analytics, CITI, Six Sigma Yellow Belt) - shows sustained effort to develop problem-solving capabilities. However, most examples are reactive (solving problems within assigned role) rather than seeking out new challenges. The statement 'I am passionate about innovating healthcare solutions' is fluff without supporting action. According to the rubric, this maps to Tier 3 (5-6): demonstrates proactive problem identification in familiar contexts with clear action steps. Score of 5 reflects competent engagement with problems encountered but limited evidence of seeking challenges beyond current role.",
+      "evidence": [
+        {
+          "quote": "I identified operational inefficiencies in inventory management and developed streamlined processes, reducing errors and enhancing accuracy.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Shows proactive problem identification and action within work context"
+        },
+        {
+          "quote": "Graduate, Emerging Leaders Program October 2021",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Demonstrates investment in developing leadership/problem-solving skills through additional training"
+        },
+        {
+          "quote": "Bachelor of Science in Health Care Administration Graduated June-2025",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Pursued degree while working full-time, showing sustained commitment to skill development"
+        },
+        {
+          "quote": "Yellow Belt Six Sigma August 2022; Intro to Health Care Data Analytics September 2022",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Multiple certifications show ongoing effort to build problem-solving capabilities"
+        }
+      ],
+      "notes": "Evidence shows competent engagement with problems and investment in skill development, but lacks examples of seeking out particularly challenging problems or making significant sacrifices/changes to address problems. Most problem-solving appears within the scope of assigned responsibilities."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates good specificity in technical work descriptions but inconsistent detail in outcomes. Strong evidence of detail orientation: (1) CV provides comprehensive technical details about pharmacy procedures - 'Compounds low and medium risk compounded sterile products in accordance with current pharmaceutical practice standards (e.g., USP 797, USP 800)'; (2) Lists specific systems/tools used (CPRS, VISTA, ScriptPro, Omnicell, etc.); (3) Provides specific certifications with dates (Yellow Belt Six Sigma August 2022, CITI October 2022); (4) Detailed job responsibilities showing systematic approach to work. However, lacks quantitative metrics for most achievements - 'reducing errors and enhancing accuracy' has no numbers; 'streamlined processes' lacks specifics about what was changed; no metrics on inventory improvements. The application shows attention to procedural detail but limited quantitative precision in outcomes. According to the rubric, this maps to Tier 3 (5-6): good specificity throughout most materials with technologies and contexts, but lacks quantitative metrics in some areas. Score of 6 reflects consistent technical detail but missing outcome metrics.",
+      "evidence": [
+        {
+          "quote": "Compounds low and medium risk compounded sterile products in accordance with current pharmaceutical practice standards (e.g., USP 797, USP 800). Demonstrates proper aseptic techniques and the safe handling of hazardous drugs.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Shows specific technical standards and procedures followed - demonstrates attention to regulatory detail"
+        },
+        {
+          "quote": "CPRS, VISTA, Script Pro, My Healthy Vet, Excel, Visio, Outlook, Teams, Omnicell, Microsoft Project",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Lists specific systems/tools with precision rather than vague 'pharmacy software'"
+        },
+        {
+          "quote": "Yellow Belt Six Sigma August 2022; Intro to Health Care Data Analytics September 2022; CITI Good Clinical USFDA focus October 2022",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Provides specific certification names and dates"
+        },
+        {
+          "quote": "I identified operational inefficiencies in inventory management and developed streamlined processes, reducing errors and enhancing accuracy.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "LACKS SPECIFICITY - no quantitative metrics (how much reduction? what specific processes?)"
+        },
+        {
+          "quote": "Prepare medications for research participants in accordance with the drug handling procedures outlined in each research protocol.",
+          "source": "Pawlowicz_Laura_app_redacted.pdf",
+          "context": "Shows systematic, detailed approach to work procedures"
+        }
+      ],
+      "notes": "Strong technical detail orientation evident in procedural descriptions and system knowledge. However, outcomes lack quantitative precision - no percentages, timeframes, or specific metrics for improvements claimed. This prevents a higher score despite good technical specificity."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 52.88731074333191,
+    "materials_character_count": 19552,
+    "timestamp": "2026-01-16T14:15:26.664856"
+  }
+}

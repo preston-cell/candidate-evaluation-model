@@ -1,0 +1,138 @@
+{
+  "candidate": {
+    "candidate_id": "Salunkhe_Vishwasrao_app_redacted",
+    "name": null,
+    "materials": [
+      "Salunkhe_Vishwasrao_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:23:32.639511"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with 15+ years of healthcare technology experience demonstrating concrete innovations with measurable impact. Exhibits consistent creative problem-solving (synthetic patient sandbox, integration engine improvements), strong proactive motivation (extensive mentoring, standards development leadership), and exceptional detail orientation (precise metrics and technical specifications throughout). Key strengths include leadership in developing CDS Hooks specification adopted in federal requirements, multiple innovations with documented outcomes (20x-30x performance improvements, 30-50% development acceleration), and sustained engagement beyond core role through hackathon mentoring and standards body participation. Evidence is concrete with specific metrics and outcomes rather than generic claims.",
+  "recommendation": "Strong fit - Candidate demonstrates consistent pattern of concrete achievements with measurable outcomes, creative problem-solving with external validation, and sustained engagement in healthcare innovation ecosystem. The combination of technical depth (15+ years), standards leadership (CDS Hooks, IEEE working groups), and community engagement (mentoring, hackathons) suggests strong potential for collaborative innovation. Evidence is substantially concrete rather than generic claims, with specific metrics and outcomes throughout.",
+  "strengths": [
+    "Concrete innovations with measurable impact: 20x-30x performance improvements, 30-50% development acceleration, weeks-to-hours implementation time reduction",
+    "Leadership in standards development: CDS Hooks Track Lead contributing to federal CMS requirements, multiple IEEE working group memberships",
+    "Exceptional detail orientation: Consistently provides precise metrics, technical specifications (FHIR versions, regulatory standards), and quantitative outcomes",
+    "Strong proactive problem-solving motivation: Extensive mentoring at 5+ hackathons, participation in multiple standards bodies and working groups beyond job requirements",
+    "External validation of work: Conference presentations (HL7 FHIR DevDays), patent filing, CEO award, Healthcare Innovation 40 Under 40 recognition"
+  ],
+  "areas_for_development": [
+    "While innovations show strong impact, evidence doesn't demonstrate field-transforming or widely-adopted breakthroughs that would warrant highest creativity scores (9-10)",
+    "Problem-solving motivation is strong but doesn't show major life/career pivots specifically driven by desire to solve particular challenges",
+    "Some application responses contain generic statements ('passionate about transforming healthcare', 'eager to apply my expertise') that add little value - could be more concise and evidence-focused"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete innovations that show novel approaches with measurable impact. This maps to Tier 4 (7-8) based on: (1) Multiple documented innovations with specific outcomes, (2) Novel methodologies that were adopted/recognized externally, (3) Creative solutions that led to measurable improvements. Key innovations include: Synthetic Patients Sandbox (1.3M records, 30-50% faster development, filed provisional patent, presented at HL7 FHIR DevDays 2024), Utility Application (reduced implementation time from weeks to hours), and Health Integration Engine (20x faster, 30x more scalable than legacy). The CDS Hooks Track Lead role shows creative leadership in co-developing a specification that became part of federal requirements (CMS 0057-F). However, evidence doesn't reach Tier 5 (9-10) as there's no indication of groundbreaking/transformative innovations that redefined the field or were widely adopted beyond specific contexts.",
+      "evidence": [
+        {
+          "quote": "Designed a 1.3M-record synthetic patient sandbox for testing clinical applications. Accelerated development cycles (by 30-50%), reduced clinical errors, and improved interoperability. Presented at HL7 FHIR DevDays 2024 and filed a provisional patent.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Concrete innovation with specific metrics (1.3M records, 30-50% improvement), external validation (conference presentation), and IP protection (patent filing)"
+        },
+        {
+          "quote": "Created a plug-and-play tool reducing healthcare IT implementation time from weeks to hours. Enabled cross-team collaboration and enhanced customization, scalability, and interoperability.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Novel approach with dramatic measurable impact (weeks to hours) showing creative solution to implementation challenges"
+        },
+        {
+          "quote": "Developed a real-time EHR integration system that is 20x faster and 30x more scalable than the legacy system. Improved clinical decision-making, advanced analytics, and hospital efficiency. Awarded 'Excellence in Action' by the CEO.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Significant performance improvement with specific metrics (20x, 30x) and executive recognition"
+        },
+        {
+          "quote": "As a CDS Hooks Track Lead, I played a pivotal role in co-developing and validating the CDS Hooks specification, a critical standard enabling real-time clinical decision support and forming the backbone of CMS 0057-F Prior Authorization requirements.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Creative leadership in developing a specification adopted at federal policy level, showing innovation that influenced national infrastructure"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with concrete outcomes. The innovations show novel approaches (synthetic sandbox, plug-and-play tool) rather than just competent execution. External validation through conference presentations, patent filing, and CEO award strengthens the evidence. Score of 7 reflects consistent pattern of innovation with documented impact, but not reaching the transformative/field-redefining level of 9-10."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation mapping to Tier 4 (7-8) based on: (1) Consistent pattern of seeking challenging problems across multiple contexts, (2) Evidence of sustained engagement beyond job requirements, (3) Concrete actions taken including learning new skills and investing substantial time. Key evidence: Active participation as mentor at multiple hackathons (MIT Hacking Medicine 2025, Veterans Health Make-a-thon 2024, HackMIT 2024, HackHarvard 2024), membership in multiple working groups (IEEE P3493.1, P2933, HL7 CDS Hooks Track Lead, AHRQ CDSiC), and pursuing additional training/certifications (AWS, Azure IoT). The CDS Hooks work shows persistence in addressing complex regulatory/technical challenges. However, doesn't reach Tier 5 (9-10) as there's no evidence of major life/career decisions driven specifically by problem-solving motivation or founding organizations to address challenges.",
+      "evidence": [
+        {
+          "quote": "Outside my core technical role, I actively mentor at healthcare hackathons such as MIT Hacking Medicine and the Veterans Health Make-a-thon. Collaborating with clinicians, patients, and entrepreneurs, I help early-stage teams shape their ideas, validate clinical relevance, and explore paths to implementation.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Proactive engagement beyond job requirements, seeking out problem-solving opportunities in multiple contexts"
+        },
+        {
+          "quote": "As a CDS Hooks Track Lead, I played a pivotal role in co-developing and validating the CDS Hooks specification, a critical standard enabling real-time clinical decision support and forming the backbone of CMS 0057-F Prior Authorization requirements. I collaborated with healthcare IT experts, EHR vendors, and policymakers to understand real-world integration challenges, ensuring the specification met regulatory, clinical, and technical needs.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Sustained engagement with complex, multi-stakeholder problem requiring persistence and deep involvement"
+        },
+        {
+          "quote": "Mentor/Judge at various Hackathons including Veterans' Health Hackathon, MIT Hacking Medicine 2025, HackMIT 2024, HackHarvard 2024, AI for Urban Health - Prompt-A-Thon. Mentoring next generations through: Hack Diversity Program, IEEE EMBS Student Mentoring Program 2024",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Consistent pattern of seeking problem-solving opportunities across multiple events and programs, showing sustained commitment"
+        },
+        {
+          "quote": "Membership: Senior Member - IEEE, IEEE Work group member (P3493.1 - Standard Framework for Secure, Compliant, Coordinated, and Inclusive Healthcare Data Recycling: Cancer Care, P2933 - Clinical IoT Data and Device Interoperability with TIPPSS), Advisory Committee and Judge: IEEE SA Telehealth Pitch Competition 2025, Member – AMIA (American Medical Informatics Association), Member – HL7, HL7 CDS (Clinical Decision Support) Hooks Track Lead -2024, Member - AHRQ CDSiC (Clinical Decision Support Innovation Collaborative)",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Extensive involvement in multiple working groups and standards bodies, demonstrating proactive pursuit of challenging technical and policy problems"
+        },
+        {
+          "quote": "Winning team SCCM Datathon 2023 on the topic of 'What Are the Key Factors Influencing Glucose Variability in Point-of-Care and Serum Measurements'",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Proactive participation in competitive problem-solving events with successful outcomes"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-solving motivation extending well beyond job requirements. The breadth of involvement (hackathons, standards bodies, mentoring, competitions) shows consistent pattern of seeking challenges. The CDS Hooks work demonstrates persistence through complex regulatory/technical challenges. Score of 8 reflects strong drive with sustained engagement, but not quite reaching the transformative level (founding organizations, major career shifts) of 9-10."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional detail orientation mapping to Tier 4 (7-8) based on: (1) Consistently high level of detail with specific examples, contexts, and outcomes throughout materials, (2) Extensive quantitative metrics provided (20x faster, 30x more scalable, 30-50% improvement, 1.3M records, 89% reduction, 15% reduction), (3) Precise technical specifications (HL7 FHIR DSTU21, FHIR R4, SMART 1.0, CDS Hooks 1.0, FDA Class II, 21 CFR 820, ISO 13485), (4) Comprehensive documentation of technologies, methodologies, and outcomes. The CV provides specific project details including dates, company names, tools, roles, and measurable outcomes. The application responses include precise technical terminology and specific examples. However, doesn't quite reach Tier 5 (9-10) as some sections could have more comprehensive context (e.g., team sizes, budget information, detailed methodologies).",
+      "evidence": [
+        {
+          "quote": "Developed a real-time EHR integration system that is 20x faster and 30x more scalable than the legacy system.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Precise quantitative metrics showing attention to measurement and detail"
+        },
+        {
+          "quote": "Designed a 1.3M-record synthetic patient sandbox for testing clinical applications. Accelerated development cycles (by 30-50%), reduced clinical errors, and improved interoperability.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Specific numbers (1.3M records, 30-50%) demonstrating precise tracking of outcomes"
+        },
+        {
+          "quote": "Developed an FDA Class II cloud-based IoMT platform for remote dialysis therapy management. Reduced patient attrition by 89%, dropout rates by 15%, and hospital stays",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Precise regulatory classification (FDA Class II) and specific outcome metrics (89%, 15%)"
+        },
+        {
+          "quote": "Platform supports SMART 1.0 specification and CDS Hooks 1.0 specification and HL7 FHIR DSTU21 and FHIR R4 version.",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Precise technical specifications with version numbers showing attention to detail"
+        },
+        {
+          "quote": "Software as a Medical Device (SaMD) regulatory and quality control requirements as per 21 CFR 820, ISO 13485",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Specific regulatory standards cited with exact reference numbers"
+        },
+        {
+          "quote": "Project #1. 3rd June 2019 till date... Project #2. 9th Feb 2015 – 30th May 2019... Project #3. 7th Dec 2009 – 14th April 2014... Project #4. 1st Jan 2009 - 7th Dec 2009",
+          "source": "Salunkhe_Vishwasrao_app_redacted.pdf",
+          "context": "Precise dates for all positions showing systematic attention to chronological detail"
+        }
+      ],
+      "notes": "Exceptional attention to detail throughout materials. Consistently provides specific metrics, technical specifications, dates, and outcomes. The level of precision in technical terminology (FHIR versions, regulatory standards) and quantitative outcomes (20x, 30x, 89%, 15%) demonstrates systematic detail orientation. Score of 8 reflects consistently high detail level but not quite reaching the exemplary comprehensiveness of 9-10 (which would include more context like team sizes, budgets, detailed methodologies)."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 74.84882092475891,
+    "materials_character_count": 21478,
+    "timestamp": "2026-01-16T14:23:32.639577"
+  }
+}

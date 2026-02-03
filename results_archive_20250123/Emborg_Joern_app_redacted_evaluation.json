@@ -1,0 +1,131 @@
+{
+  "candidate": {
+    "candidate_id": "Emborg_Joern_app_redacted",
+    "name": null,
+    "materials": [
+      "Emborg_Joern_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:26:26.822697"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong candidate with demonstrated creativity and problem-solving motivation backed by concrete achievements. Co-founded successful biotech startup outside his domain expertise, achieving measurable outcomes (COVID deployment, top-5 pharma customer, $1.1M funding). Shows pattern of reframing problems creatively and proactively seeking challenges. Detail orientation adequate but inconsistent - strong on quantifiable outcomes, weaker on process specifics. Top academic performer (Class I, top of year at Cambridge) who made significant career pivot to tackle healthcare problems.",
+  "recommendation": "Strong fit. Candidate demonstrates genuine problem-solving drive backed by concrete actions and measurable outcomes rather than generic claims. Creative approach to challenges is evidenced through specific examples with impact. While detail orientation could be stronger in process descriptions, the overall profile shows someone who actively seeks and solves challenging problems through innovative approaches. The career trajectory (manufacturing engineer → biotech startup founder → innovation diplomat → seeking Catalyst) shows consistent pattern of pursuing healthcare challenges. Academic excellence and startup success provide strong foundation.",
+  "strengths": [
+    "Concrete creative problem-solving with measurable impact: pivoted startup to find market niche, reframed factory project from layout to culture challenge, leveraged outsider perspective for insights",
+    "Strong problem-solving motivation demonstrated through actions: career pivot into unfamiliar domain, 4-year startup commitment through challenges, actively seeking problem exposure through Catalyst",
+    "Quantifiable achievements: top academic performer (99.5 percentile, Class I Cambridge), secured $1.1M funding, deployed in Danish COVID response, landed top-5 pharma customer"
+  ],
+  "areas_for_development": [
+    "Detail orientation inconsistent - strong on outcomes/metrics but vague on process details ('countless users', 'several pivots' without specifics)",
+    "Reference letters generic (written for different program in 2023), limiting validation of specific claims for Catalyst application",
+    "Some descriptions remain at high level ('full range of business activities') without breaking down specific responsibilities or methodologies"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creativity through multiple concrete examples with measurable outcomes, placing them in Tier 4 (7-8). Key evidence: (1) BioLib pivot - conducted extensive user research across life science/healthcare, identified specific niche through 'several pivots', resulting in deployment for Danish COVID response and securing top-5 pharma customer. This shows creative problem-solving with documented impact. (2) Vitsoe factory project - reframed the entire project from layout design to culture/employee retention challenge by working directly with line workers, demonstrating creative insight that changed leadership conversations. (3) 'Outsider advantage' - leveraged non-expert status to ask 'stupid questions' that led to 'surprising insights' about user workflows. These are not generic claims but specific instances of innovative thinking with concrete outcomes. The candidate doesn't just state creativity but demonstrates it through novel approaches (pivoting business model, reframing project scope, leveraging outsider perspective). However, falls short of Tier 5 (9-10) as there's no evidence of groundbreaking innovation that redefined the field or was adopted widely beyond their immediate context.",
+      "evidence": [
+        {
+          "quote": "By interviewing countless potential users across life-science/ healthcare I built an understanding of what the needs in this sector were and used these learnings to inform our product strategy, technology, and business model. Via several pivots we eventually arrived at our niche: providing tools for easy deployment and use of machine-learning models in pharma R&D.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Demonstrates creative problem-solving through iterative pivoting based on user research, resulting in finding a specific market niche"
+        },
+        {
+          "quote": "By working alongside and talking with workers on the line, I identified that the real challenge of relocation would not be the layout but rather managing a likely major loss of employees and the resulting changes in culture. I restructured the project and helped start important conversations with the company leadership.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Shows creative reframing of problem - moved from technical layout challenge to organizational/cultural challenge, demonstrating innovative insight"
+        },
+        {
+          "quote": "maybe exactly because I was an outsider to the field, I would and could ask the 'stupid' questions that often led us to surprising insights about how potential users were actually going about their work.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Demonstrates creative approach to problem-solving by leveraging outsider perspective to gain novel insights"
+        },
+        {
+          "quote": "Teams achievement included being deployed as part of the Danish COVID response, landing top 5 global pharma company as customer, and raising $1.1m in VC funding.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Concrete outcomes demonstrating that creative approaches led to measurable impact and market validation"
+        }
+      ],
+      "notes": "References are from 2023 for different program, so don't provide specific examples for Catalyst. Co-founder reference confirms AI deployment for Danish COVID response and securing pharma partnerships, validating the creative outcomes claimed."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Strong evidence placing candidate in Tier 4 (7-8), approaching Tier 5. Multiple concrete examples demonstrate proactive problem-seeking and sustained engagement: (1) Career pivot - left manufacturing engineering to co-found software startup in completely unfamiliar domain (life science/healthcare), showing willingness to take significant risk to solve problems. (2) Explicit motivation statement shows problem-focused approach: 'Get close to the problems...understanding challenges...on the ground' and 'Contribute to solutions, working on concrete challenge'. (3) Sustained 4-year commitment through 'ups and downs of building a start-up' per co-founder reference. (4) Proactive network building - 'building a strong network of partners, champions, and others in the sector' to gain calibrated insights. (5) Current role explicitly focused on problem-solving ('engineer in me misses getting down-and-dirty with developing solutions to concrete problems'). The candidate didn't just respond to assigned problems but actively sought challenging problems by changing careers, founding a startup, and now seeking the Catalyst program specifically for problem exposure. This demonstrates persistence and investment in problem-solving. Falls slightly short of Tier 5 (9-10) as there's no evidence of founding organizations specifically to address societal problems or making transformative commitments beyond career choices.",
+      "evidence": [
+        {
+          "quote": "As a Catalyst fellow I hope to: 1) Get close to the problems, sharpening my understanding of what the challenges in the VA and US healthcare look and feel like on the ground; 2)Learn with and from a cohort of top-notch peers with different perspectives on healthcare and innovation; 3) Contribute to the solutions, working on a concrete challenge that can potentially be the seed for a future start-up or other long-term collaborations.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Explicit statement of problem-focused motivation - seeking to understand and solve concrete challenges"
+        },
+        {
+          "quote": "Starting a software company developing tools for big pharma was by all means outside my area of expertise. As a trained manufacturing engineer I had no serious prior experience with life-science or healthcare.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Demonstrates willingness to take significant risk and enter unfamiliar domain to solve problems"
+        },
+        {
+          "quote": "We worked together for 4 years through the ups and downs of building a start-up, raising money, etc.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Co-founder reference confirms sustained commitment and persistence through challenges over 4-year period"
+        },
+        {
+          "quote": "the engineer in me misses getting down-and-dirty with developing solutions to concrete problems",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Shows intrinsic drive to engage directly with problem-solving, not just strategic/advisory work"
+        },
+        {
+          "quote": "one of my major contributions was building a strong network of partners, champions, and others in the sector that we could rely on to provide calibrated insights about the needs in the space and feedback on our platform",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Proactive action taken to better understand and solve problems - not waiting for problems to come to him"
+        }
+      ],
+      "notes": "The career trajectory shows consistent pattern of seeking challenging problems across different contexts (manufacturing → startup → innovation diplomacy → seeking Catalyst). The motivation appears genuine and action-backed rather than stated."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "Evidence places candidate in Tier 3 (5-6), specifically at the higher end. The materials show good specificity in several areas: (1) Quantitative outcomes provided: '$1.1m in VC funding', 'top 5 global pharma company', '4 years as co-founder/COO', '2.5 years at Innovation Centre Denmark'. (2) Specific educational achievements: 'Class I', 'top of the year', 'Morcom Lunt Prize for best results', 'GPA 11.6...99.5 percentile'. (3) Concrete technologies/domains mentioned: 'machine-learning models in pharma R&D', 'software platform', 'manufacturing engineering'. (4) Specific project examples with context (BioLib value proposition, Vitsoe factory). However, falls short of Tier 4 (7-8) because: (1) Many descriptions lack precise metrics - 'countless potential users' is vague, 'several pivots' doesn't specify how many. (2) Impact metrics missing for some claims - Vitsoe project outcome not quantified. (3) Some generic statements present: 'full range of business activities' without breaking down specifics. (4) Reference letters are generic for different program, lacking specific examples for Catalyst application. The candidate provides adequate detail throughout but inconsistently - some areas very specific (education, funding) while others remain somewhat vague (specific user research findings, exact nature of pivots).",
+      "evidence": [
+        {
+          "quote": "Teams achievement included being deployed as part of the Danish COVID response, landing top 5 global pharma company as customer, and raising $1.1m in VC funding.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Provides specific quantitative metrics for outcomes - exact funding amount and customer tier"
+        },
+        {
+          "quote": "As top of the year, in 2015 awarded the Morcom Lunt Prize for best results in the cohort.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Specific achievement with precise ranking and award name"
+        },
+        {
+          "quote": "GPA 11.6 (Best result of graduating students from Køge Gymnasium 2012, corresponding to the 99.5 percentile).",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Precise quantitative detail with percentile ranking"
+        },
+        {
+          "quote": "By interviewing countless potential users across life-science/ healthcare I built an understanding of what the needs in this sector were and used these learnings to inform our product strategy, technology, and business model. Via several pivots we eventually arrived at our niche",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Shows process detail but lacks precision - 'countless' is vague, 'several pivots' not quantified, specific learnings not detailed"
+        },
+        {
+          "quote": "2019-2022 BioLib, co-founder and COO. Danish tech-bio start-up building software platform for making state of the art computational methods accessible to life science researchers. Involved with full range of business activities including operations, business and product development, strategy, and fundraising.",
+          "source": "Emborg_Joern_app_redacted.pdf",
+          "context": "Provides timeframe and role but 'full range of business activities' is somewhat generic - could be more specific about actual responsibilities"
+        }
+      ],
+      "notes": "The candidate shows stronger detail orientation in quantifiable achievements (education, funding) than in process descriptions (how pivots occurred, specific user insights gained). References are generic as they were written for different application, limiting ability to assess detail orientation in recommendation context."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 75.21392107009888,
+    "materials_character_count": 19860,
+    "timestamp": "2026-01-16T13:26:26.822715"
+  }
+}

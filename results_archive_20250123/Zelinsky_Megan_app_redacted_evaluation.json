@@ -1,0 +1,129 @@
+{
+  "candidate": {
+    "candidate_id": "Zelinsky_Megan_app_redacted",
+    "name": null,
+    "materials": [
+      "Zelinsky_Megan_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:44:12.499245"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated creative problem-solving abilities, proactive motivation, and solid attention to detail. Stands out for developing novel methodologies (neuroethics database operationalizing abstract concepts) and bridging disparate domains (ethics, clinical practice, data science). Shows sustained engagement with complex problems across 15+ research projects while managing significant additional responsibilities. Materials are specific and evidence-based rather than generic fluff.",
+  "recommendation": "Strong fit. Candidate demonstrates genuine creativity, proactive problem-solving, and solid execution rather than application fluff. The neuroethics database project shows real innovation in operationalizing complex concepts. Multiple peer-reviewed publications and sustained management of complex research portfolio indicate strong capability. Workload management (research + PhD + nonprofit) suggests capacity for intensive program. Would benefit from program's focus on need-first innovation and interdisciplinary collaboration given existing strengths in these areas.",
+  "strengths": [
+    "Genuine innovation in methodology development - created novel database to operationalize abstract ethical concerns into analyzable data, addressing real gap between clinical metrics and patient experiences",
+    "Strong interdisciplinary work with concrete outputs - multiple peer-reviewed publications bridging neuroethics, clinical research, and data science",
+    "Proactive problem identification and sustained follow-through - identified misalignment in patient outcomes during interviews and built infrastructure to address it",
+    "Exceptional workload management - balancing full-time research, PhD training, and nonprofit leadership (175 volunteers) demonstrates capacity and commitment",
+    "Specific, evidence-based application - provides concrete examples with outcomes rather than generic self-promotion"
+  ],
+  "areas_for_development": [
+    "Limited evidence of transformative field-wide impact - innovations are strong but not yet widely adopted or recognized beyond immediate context",
+    "Some outcome metrics missing - while database and systems are described, specific quantitative results from analyses not yet documented (may be in progress)",
+    "No evidence of founding initiatives - took leadership roles in existing organizations rather than creating new solutions from scratch",
+    "Career trajectory shows depth in one domain rather than major pivots - strong progression in neuroethics but no evidence of dramatic shifts driven by problem-solving motivation"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong, consistent creative problem-solving across multiple contexts with documented impact. The evidence maps to Tier 4 (7-8) based on: (1) Development of novel methodologies with measurable outcomes, (2) Creative bridging of disparate fields (ethics + clinical practice + data science), and (3) Multiple concrete examples of innovative approaches that led to improvements. The neuroethics database represents genuine innovation - operationalizing abstract ethical concerns into analyzable data is a creative solution to a complex problem. The application of research principles to nonprofit management shows creative transfer of skills. The virtual shared medical appointments study demonstrates innovative care model development. These are not generic 'I am creative' statements but specific innovations with documented outcomes.",
+      "evidence": [
+        {
+          "quote": "One of my most meaningful projects is a database I co-designed to capture structured input from neuroethicists during multidisciplinary Patient Management Conferences for neurosurgical candidacy. While interviewing patients who underwent neurosurgery, I realized their experiences don't necessarily align with our clinical definitions of success. In collaboration with neurosurgeons, neurologists, and ethicists, I built a data collection form that operationalizes and tracks ethical considerations (e.g., concerns about decision-making capacity, misaligned expectations of benefit), enabling analysis of factors associated with approval for neurosurgery.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Demonstrates creative problem identification (misalignment between clinical success and patient experience) and innovative solution (operationalizing abstract ethical concerns into structured, analyzable data). This is novel methodology development, not just applying existing approaches."
+        },
+        {
+          "quote": "I've implemented data-driven intake protocols and developed educational materials to improve community engagement. I've also had the opportunity to analyze, present, and publish data on community cat outcomes, applying research principles to guide policy and improve care.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Shows creative transfer of research methodologies to a completely different domain (nonprofit animal rescue), developing data-driven approaches where they typically don't exist. Published outcomes demonstrate impact."
+        },
+        {
+          "quote": "Novel Care Model for Treatment of Functional Movement Disorders: A Mixed-Methods Study Investigating the Role of Virtual Shared Medical Appointments",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Co-investigator on study developing innovative care delivery model. Published in peer-reviewed journal (Tremor Other Hyperkinet Mov, 2024), indicating the novelty was recognized by field experts."
+        },
+        {
+          "quote": "Anis S, [Zelinsky] M, Shuaib U, et al. Introducing Virtual Shared Medical Appointments as a Novel Treatment Platform for Functional Movement Disorders. Tremor Other Hyperkinet Mov (N Y). 2024;14:36. Published 2024 Jul 4. doi:10.5334/tohm.921",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Published work on novel treatment platform - peer-reviewed validation of innovative approach."
+        }
+      ],
+      "notes": "Score of 8 reflects consistent pattern of innovation across multiple domains with documented impact. Not scored 9-10 because while innovative, the work hasn't yet shown transformative field-wide impact or been adopted broadly by others. The neuroethics database is particularly strong evidence of creative methodology development."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation mapping to Tier 4 (7-8). Evidence includes: (1) Proactive identification of misalignment between clinical metrics and patient experiences, leading to database development, (2) Sustained engagement with complex problems across multiple research projects (15+ active studies), (3) Taking on significant additional responsibility (nonprofit leadership with 175 volunteers) specifically to solve problems, (4) Pursuing PhD while working full-time to deepen problem-solving capabilities. The candidate doesn't just respond to assigned problems but identifies gaps and takes concrete action. However, evidence doesn't reach score 8-9 level because there's no indication of major life/career pivots driven by problem-solving motivation or founding organizations specifically to address challenges (the nonprofit role was taken on, not founded).",
+      "evidence": [
+        {
+          "quote": "While interviewing patients who underwent neurosurgery, I realized their experiences don't necessarily align with our clinical definitions of success. In collaboration with neurosurgeons, neurologists, and ethicists, I built a data collection form that operationalizes and tracks ethical considerations",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Demonstrates proactive problem identification during research (not assigned to find this problem) and taking concrete action to address it through database development."
+        },
+        {
+          "quote": "I'm now using these data to examine how ethical and clinical factors together predict selection decisions and surgery receipt, with the goal of improving patient selection and, consequently, outcomes.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Shows sustained engagement and follow-through on problem-solving, moving from identification to data collection to analysis with clear goal of improving outcomes."
+        },
+        {
+          "quote": "As Executive Director of a nonprofit cat rescue, I manage over 175 volunteers and oversee trap-neuter-return, medical care, and adoption for hundreds of animals annually. Though outside my professional training, this role has pushed me to build systems for volunteer coordination, inventory management, fundraising, and crisis response.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Taking on significant leadership role outside professional domain demonstrates willingness to engage with challenging problems. Managing 175 volunteers while working full-time shows commitment to problem-solving."
+        },
+        {
+          "quote": "Balancing leadership in a nonprofit, full-time research at Cleveland Clinic, and doctoral training has taught me how to manage complexity, adapt quickly, and stay focused on translational impact.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Pursuing PhD while maintaining full-time work and nonprofit leadership shows investment in developing problem-solving capabilities and sustained engagement with complex challenges."
+        }
+      ],
+      "notes": "Score of 7 reflects strong proactive problem-solving with concrete actions and sustained engagement. Not scored 8+ because while the candidate takes on challenges, there's no evidence of major career pivots driven by problem-solving motivation or founding initiatives specifically to address problems. The nonprofit was an existing organization where candidate took leadership role."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation mapping to Tier 4 (7-8). Evidence includes: (1) Comprehensive CV with specific dates, grant numbers, DOIs, and precise role descriptions, (2) Specific quantitative details in application (175 volunteers, 15+ research projects with funding mechanisms and grant numbers), (3) Precise description of database functionality including specific ethical considerations tracked, (4) Detailed bibliography with proper citations. The application provides concrete specifics rather than vague descriptions. However, not scored 8+ because some sections lack quantitative metrics (e.g., no specific outcomes from database analysis yet, no specific numbers on nonprofit impact like 'reduced costs by X%' or 'increased adoptions by Y%'). The detail is consistently good but not exceptionally comprehensive across all areas.",
+      "evidence": [
+        {
+          "quote": "I built a data collection form that operationalizes and tracks ethical considerations (e.g., concerns about decision-making capacity, misaligned expectations of benefit), enabling analysis of factors associated with approval for neurosurgery.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Provides specific examples of what the database tracks rather than vague 'ethical considerations.' Shows precision in describing technical approach."
+        },
+        {
+          "quote": "As Executive Director of a nonprofit cat rescue, I manage over 175 volunteers and oversee trap-neuter-return, medical care, and adoption for hundreds of animals annually.",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Includes specific quantitative details (175 volunteers, hundreds of animals) rather than 'many volunteers' or 'large organization.'"
+        },
+        {
+          "quote": "Clinical Research Project Manager, Center for Neurological Restoration, Neurological Institute, Cleveland Clinic, Cleveland, OH Mar 2020 – Present",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "CV provides precise dates, full institutional affiliations, and specific department names throughout."
+        },
+        {
+          "quote": "Funding: National Center for Complementary and Integrative Health (3R01AT011905-02S1), Mechanism PI: Lauren Sankary, JD",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Includes specific grant numbers and mechanisms rather than just 'NIH funding.' Shows attention to precise documentation."
+        },
+        {
+          "quote": "Sankary LR, Rico V, [Zelinsky] M, et al. Building expert consensus regarding sharing of individual research results in Alzheimer's disease research: a Delphi study protocol. BMJ Open. 2024;14(8):e089242. Published 2024 Aug 24. doi:10.1136/bmjopen-2024-089242",
+          "source": "Zelinsky_Megan_app_redacted.pdf",
+          "context": "Bibliography includes complete citations with volume numbers, page numbers, DOIs, and exact publication dates."
+        }
+      ],
+      "notes": "Score of 7 reflects consistently strong detail orientation with specific quantitative information and precise descriptions throughout materials. Not scored 8+ because some areas lack outcome metrics (e.g., specific results from database analysis, quantified impact of nonprofit work beyond 'hundreds of animals'). The detail is thorough but not exceptionally comprehensive in all domains."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 66.30832815170288,
+    "materials_character_count": 28886,
+    "timestamp": "2026-01-16T14:44:12.499259"
+  }
+}

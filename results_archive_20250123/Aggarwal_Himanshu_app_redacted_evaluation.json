@@ -1,0 +1,111 @@
+{
+  "candidate": {
+    "candidate_id": "Aggarwal_Himanshu_app_redacted",
+    "name": null,
+    "materials": [
+      "Aggarwal_Himanshu_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:10:10.465088"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "Mid-level business transformation consultant with 30 years of experience in sales operations, CRM implementation, and process optimization. Strongest in detail orientation with consistent use of metrics and specific outcomes. Shows competent creative problem-solving within business process contexts but lacks evidence of truly novel methodologies. Problem-solving motivation appears adequate but primarily reactive within assigned consulting roles rather than proactively seeking challenging problems. Recent engagement with VA healthcare innovation shows some expansion beyond traditional consulting, but specific creative contributions are unclear. Overall profile suggests a capable executor of business transformation projects with strong attention to metrics and outcomes, but limited evidence of exceptional innovation or extraordinary problem-solving drive.",
+  "recommendation": "Potential fit with development. Candidate brings strong execution capabilities, metrics-driven approach, and recent healthcare exposure through VA work. However, lacks clear evidence of exceptional creativity or extraordinary problem-solving drive that would distinguish them as a top-tier fellow. Would benefit from clearer articulation of specific innovative contributions (not just participation) in the VA project and evidence of proactively seeking challenges beyond assigned consulting work.",
+  "strengths": [
+    "Strong detail orientation with consistent quantitative metrics and specific outcomes across all work examples (50% reduction in calls, $200M revenue impact, 80% adoption rates)",
+    "Extensive cross-industry experience (healthcare, manufacturing, technology) with concrete deliverables in each domain",
+    "Demonstrated ability to bridge business and technical stakeholders with measurable business outcomes"
+  ],
+  "areas_for_development": [
+    "Limited evidence of developing truly novel methodologies or approaches - most work appears to be competent execution of standard consulting practices",
+    "Problem-solving motivation appears primarily reactive within assigned roles rather than proactive seeking of challenging problems outside job scope",
+    "VA Hackathon participation shows potential for healthcare innovation but specific creative contributions versus team contributions are unclear"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate provides several examples of creative problem-solving, but most descriptions are process-oriented rather than demonstrating truly novel approaches. The strongest evidence is the 'MyStuff' portal at McKesson, which shows creative thinking in identifying an inefficiency (sales reps tracking orders manually) and designing a self-service solution. The VA Hackathon AI solution shows participation in innovative work, but the candidate's specific creative contributions are unclear - they state 'AI development was outside my area of expertise' and focus on business case/presentation roles rather than solution innovation. The Multi-Color Corp example describes process standardization (unifying fragmented processes into a six-stage pipeline) which is competent execution but not particularly innovative. Most other examples describe standard consulting work (customer journey mapping, process optimization) without evidence of novel methodologies. This maps to Tier 3 (5-6): shows ability to think beyond standard approaches in some instances, but lacks evidence of developing truly novel methodologies or transformative innovations.",
+      "evidence": [
+        {
+          "quote": "I partnered with IT and operations to design 'MyStuff,' a self-service portal providing real-time order updates. Despite initial adoption challenges, we aligned functionality with user workflows, cutting customer service calls by 50% and reclaiming 3+ hours/week of selling time per rep—contributing to over $200M in incremental revenue.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Shows creative problem identification and solution design with measurable impact, though the self-service portal concept itself is not particularly novel"
+        },
+        {
+          "quote": "While AI development was outside my area of expertise, I played a critical role in shaping the problem definition, building the business case, and presenting the solution to stakeholders.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Indicates participation in innovative AI work but explicitly states technical innovation was not their contribution - primarily business/presentation role"
+        },
+        {
+          "quote": "I led global revenue enablement by unifying fragmented sales processes into a streamlined six-stage pipeline. This improved data quality, increased focus on high probability leads, and led to major wins with clients like Coke and P&G.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Demonstrates process improvement and standardization but not novel methodology - competent execution of standard consulting approaches"
+        }
+      ],
+      "notes": "The candidate shows competent creative problem-solving in business process contexts but lacks evidence of developing truly novel approaches or methodologies. Most examples are standard consulting work (process mapping, CRM implementation, business cases). The MyStuff portal is the strongest example of creative solution design with documented impact."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation through engagement with business challenges, but evidence is primarily reactive (addressing problems in assigned consulting roles) rather than proactive seeking of challenges. The VA Hackathon participation shows some initiative in engaging with healthcare problems outside their normal domain, stating 'It deepened my understanding of healthcare challenges, and the power of cross-functional innovation.' However, this appears to be a one-time event rather than a pattern of seeking challenging problems. The McKesson example shows problem identification ('I identified a major inefficiency: sales reps spent excessive time tracking orders') but within the scope of their assigned role. Most other examples describe standard consulting engagements without evidence of going beyond assigned responsibilities or seeking particularly challenging problems. There's no evidence of major career changes driven by problem-solving motivation, additional training pursued to tackle specific challenges, or founding initiatives to address problems. This maps to Tier 3 (5-6): demonstrates proactive problem identification in familiar contexts with clear action steps, but limited evidence of seeking out challenges beyond assigned work.",
+      "evidence": [
+        {
+          "quote": "Last year, I had the opportunity to work closely with VA clinicians, veterans and operation teams as part of VA Hackathon. We worked on improving access to care. It deepened my understanding of healthcare challenges, and the power of cross-functional innovation.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Shows engagement with healthcare problems outside normal consulting domain, but framed as an 'opportunity' rather than proactive seeking"
+        },
+        {
+          "quote": "At McKesson, I identified a major inefficiency: sales reps spent excessive time tracking orders. I partnered with IT and operations to design 'MyStuff,' a self-service portal",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Demonstrates problem identification and action within assigned role, but not evidence of seeking challenges beyond job scope"
+        },
+        {
+          "quote": "Despite initial adoption challenges, we aligned functionality with user workflows",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Shows persistence through obstacles in implementation, which is positive but within normal job expectations"
+        }
+      ],
+      "notes": "The candidate shows competent problem-solving within professional contexts but lacks evidence of extraordinary motivation such as career changes driven by specific problems, founding initiatives, or seeking particularly challenging problems outside assigned work. Most examples are within the scope of paid consulting roles."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation throughout the materials with consistent use of specific metrics, timeframes, and quantitative outcomes. Multiple examples include precise measurements: 'cutting customer service calls by 50% and reclaiming 3+ hours/week of selling time per rep—contributing to over $200M in incremental revenue' (McKesson), 'save up to $4 billion/yr' (VA project), '80% adoption after 8 weeks' (Multi-Color Corp). The CV provides specific company names, locations, timeframes for all positions, and concrete deliverables. The application responses include specific technologies (Salesforce, Siebel, Tableau), methodologies (Agile, PI Planning), and detailed process descriptions (six-stage pipeline, customer journey mapping). The candidate consistently provides context for their work including stakeholders involved, business outcomes, and implementation details. However, some sections could be more precise - for example, the VA Hackathon contribution description is somewhat vague about specific personal contributions versus team outcomes. This maps to Tier 4 (7-8): consistently high level of detail with specific examples, contexts, and outcomes; includes quantitative metrics throughout; precise descriptions of approaches and results.",
+      "evidence": [
+        {
+          "quote": "cutting customer service calls by 50% and reclaiming 3+ hours/week of selling time per rep—contributing to over $200M in incremental revenue",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Provides multiple specific quantitative metrics for a single initiative"
+        },
+        {
+          "quote": "It is projected to save up to $4 billion/yr and reclaim thousands of hours of dedicated healthcare provider's time",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Includes specific financial projections and impact metrics"
+        },
+        {
+          "quote": "Roll out Pre-call planning, Monetization planning, Time and territory management processes across sales teams in 7 market segments in North America. Led follow on sessions resulting in up to 80% adoption after 8 weeks.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Provides specific scope (7 segments), timeframe (8 weeks), and adoption metric (80%)"
+        },
+        {
+          "quote": "Led a Global CRM implementation in a challenging environment with a very limited downtime window & fault tolerance. Worked very closely with Business leaders, senior management, and stakeholders.",
+          "source": "Aggarwal_Himanshu_app_redacted.pdf",
+          "context": "Provides specific context and constraints, though could be more precise about exact downtime windows"
+        }
+      ],
+      "notes": "This is the candidate's strongest area. The materials consistently demonstrate attention to specifics with quantitative metrics, precise timeframes, and detailed descriptions of methodologies and outcomes. The CV is particularly well-detailed with specific companies, technologies, and deliverables for each role."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 60.6328010559082,
+    "materials_character_count": 19823,
+    "timestamp": "2026-01-16T13:10:10.465175"
+  }
+}

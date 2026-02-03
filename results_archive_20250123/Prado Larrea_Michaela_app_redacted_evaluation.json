@@ -1,0 +1,139 @@
+{
+  "candidate": {
+    "candidate_id": "Prado Larrea_Michaela_app_redacted",
+    "name": null,
+    "materials": [
+      "Prado Larrea_Michaela_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:18:55.102605"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated creative innovation in nanomedicine and immunotherapy, proactive problem-solving orientation, and solid attention to technical detail. Stands out for concrete achievements including novel therapeutic platforms, technology disclosure, Nature Nanotechnology publication, and transforming localized treatments to systemic approaches. Evidence is largely concrete with specific examples rather than generic claims, though some areas could benefit from more quantitative metrics.",
+  "recommendation": "Strong fit - Candidate demonstrates concrete achievements in creative innovation, problem-solving, and technical execution. Materials contain substantially more concrete evidence than generic claims, with specific examples of novel mechanisms, measurable outcomes, and documented impact. The MMP-triggered hydrogel innovation and in vivo immune engineering approach show genuine creative thinking. Scores reflect strong performance (7-8 range) with room for exceptional achievements as career progresses. Candidate would bring valuable technical expertise and innovative mindset to Catalyst cohort.",
+  "strengths": [
+    "Demonstrated creative innovation with concrete outcomes: MMP-triggered hydrogel system transformed localized to systemic treatment; novel in vivo immune cell engineering approach; technology disclosure for potential patent",
+    "Multiple high-impact publications including Nature Nanotechnology (accepted), Nature Reviews Bioengineering (accepted), ACS Nano - shows productivity and ability to drive scientific innovation",
+    "Proactive problem identification and solution development: identified clinical limitation in hydrogel therapy and led redesign strategy; currently co-leading three projects simultaneously",
+    "Strong technical detail orientation with specific methodologies, precise terminology, and comprehensive documentation throughout materials",
+    "Evidence of translational mindset: consistently links innovations to clinical needs and unmet medical challenges"
+  ],
+  "areas_for_development": [
+    "Some outcomes described qualitatively rather than quantitatively (e.g., 'enhanced efficacy' without specific percentage improvements)",
+    "Personal motivation about mother's experience in under-resourced hospitals is compelling but lacks specific actions taken as a result - remains somewhat general",
+    "While creative innovations are strong, no evidence yet of transformative field-redefining impact or widespread adoption by others that would indicate exceptional (9-10) level creativity",
+    "Limited evidence of overcoming major barriers or making significant sacrifices for problem-solving that would elevate motivation score to 8+"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates consistent creative innovation across multiple projects with specific, measurable outcomes. Evidence maps to Tier 4 (7-8) based on: (1) Multiple concrete examples of novel approaches, (2) Documented impact with specific metrics, (3) Creative leadership through mentoring and technology disclosure. Key innovations include: redesigning hydrogel therapy for systemic delivery via MMP-triggered assembly (transforming localized to systemic treatment), developing targeted LNP platforms for in vivo immune cell engineering (novel approach), and co-leading development of degradable cyclic amino alcohol lipids (accepted in Nature Nanotechnology). The MMP-triggered hydrogel example is particularly strong - it shows creative mechanism-driven design that solved a critical translational barrier. The candidate didn't just apply existing methods but designed fundamentally new mechanisms. Score of 8 reflects multiple innovations with documented outcomes and evidence of creative leadership (technology disclosure, mentoring others in innovative approaches).",
+      "evidence": [
+        {
+          "quote": "I led a strategy to redesign a promising hydrogel cancer therapy to treat metastatic disease—addressing a critical clinical limitation: its dependence on local injection. To enable systemic delivery with tumor-specific activation, I proposed a novel mechanism using tumor-overexpressed matrix metalloproteinases (MMPs) as biological triggers. I helped design a cleavable peptide linker that allowed two nanoparticles to assemble into a hydrogel only in the tumor microenvironment. This innovation transformed a localized treatment into a systemically viable platform.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Concrete example of creative problem-solving: identified limitation (local injection only), proposed novel mechanism (MMP-triggered assembly), achieved transformative outcome (localized → systemic treatment). This is mechanism-driven innovation, not just incremental improvement."
+        },
+        {
+          "quote": "Developing a targeted lipid nanoparticle (LNP)-based platform for a novel in vivo immune cell engineering strategy to enhance the therapeutic efficacy of mRNA cancer vaccines",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Novel approach to immune cell engineering - in vivo reprogramming rather than ex vivo manipulation. Shows creative thinking in therapeutic strategy."
+        },
+        {
+          "quote": "She is the co-lead inventor of a technology that has been formally disclosed and is currently under review by MIT's technology licensing office for potential patenting and commercialization.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Technology disclosure indicates novel, potentially patentable innovation - institutional validation of creative contribution."
+        },
+        {
+          "quote": "Rudra, A.*, Gupta, A.*, Reed, K.*, Deik, A., Min, J., Mansour, H., Danko, A., Hu, Y., Nguyen, E., Berger, A., [REDACTED], M., Beck, A., Clish, C., Klauda, J., [REDACTED], R., and [REDACTED], D.G. Degradable cyclic amino alcohol ionizable lipids as vectors for potent influenza mRNA vaccines. Nat. Nanotechnol. Accepted Manuscript for Publication.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Co-author on Nature Nanotechnology paper on novel degradable lipid design - demonstrates creative contribution to innovative lipid chemistry."
+        },
+        {
+          "quote": "Her thesis work focuses on engineering lipid nanoparticles (LNPs) to deliver mRNA vaccines that reprogram monocyte fate in vivo to enhance immune responses against cancer. This conceptually novel approach addresses major limitations in current immunotherapies and highlights her talent for linking cutting-edge technology to unmet clinical needs.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Advisor confirms conceptual novelty of approach - reprogramming monocyte fate in vivo is innovative strategy, not incremental work."
+        }
+      ],
+      "notes": "Strong evidence of creative innovation with specific outcomes. Not just stated creativity but demonstrated through novel mechanisms, technology disclosure, and high-impact publications. The MMP-triggered hydrogel example is particularly compelling as it shows creative problem identification and solution design. Score of 8 (not 9-10) because while innovations are strong, there's no evidence yet of transformative field-redefining impact or widespread adoption by others."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on: (1) Multiple examples of proactively identifying and addressing challenging problems, (2) Evidence of sustained engagement across different contexts, (3) Concrete actions taken including field shifts and skill development. Key evidence: Proactively identified clinical limitation in hydrogel therapy and led redesign strategy (not assigned, self-initiated). Personal motivation driven by mother's experience in under-resourced hospitals shows problem-seeking mindset. Currently co-leading three projects simultaneously demonstrates sustained engagement with complex challenges. However, score of 7 (not 8) because while there's clear proactive problem-solving, evidence of major sacrifices/investments or overcoming significant barriers is limited. The personal motivation statement about mother is compelling but remains somewhat general without specific actions taken as a result.",
+      "evidence": [
+        {
+          "quote": "I led a strategy to redesign a promising hydrogel cancer therapy to treat metastatic disease—addressing a critical clinical limitation: its dependence on local injection.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Proactive problem identification - candidate identified the limitation and led the strategy to address it, showing initiative rather than responding to assigned problems."
+        },
+        {
+          "quote": "Seeing my mother, a nurse in Ecuador's public hospitals, care for patients without adequate tools showed me how innovation often fails to reach those who need it most. This experience fueled my dedication to translational research that brings meaningful innovation into real-world clinical settings and addresses the urgent needs of strained health systems.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Personal motivation rooted in observed problem - shows problem-seeking mindset driven by real-world observations. However, this is stated motivation without specific actions described."
+        },
+        {
+          "quote": "In addition to her thesis research, she currently co-leads two other projects of great impact for vaccine research, demonstrating her ability to manage multiple complex projects simultaneously and her intellectual versatility in making meaningful contributions across diverse areas of research.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Taking on multiple challenging projects simultaneously shows sustained engagement with complex problems beyond minimum requirements."
+        },
+        {
+          "quote": "As a scientist, I often see promising research fall short of clinical translation. I want to understand what truly drives a solution to succeed beyond the lab—clinically, practically, and systemically.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Identifies translational gap as a problem to solve and seeks training (Catalyst) to address it - proactive problem-seeking behavior."
+        },
+        {
+          "quote": "This experience sharpened my understanding of translational barriers and reinforced my belief that creative, mechanism-driven design can transform research technologies into real-world clinical solutions. I continue to apply this mindset in my PhD thesis",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Evidence of learning from challenges and applying lessons to ongoing work - shows sustained problem-solving orientation."
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-solving motivation across multiple contexts. The candidate identifies problems (clinical limitations, translational gaps) and takes concrete actions (redesigning therapies, seeking additional training). However, lacks evidence of major life/career sacrifices or overcoming significant barriers that would warrant score of 8+. The mother's experience is motivating but doesn't show specific actions taken as a result."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "Evidence maps to Tier 4 (7-8) based on: (1) Consistently high level of technical detail throughout materials, (2) Specific methodologies and approaches described, (3) Quantitative outcomes where relevant, (4) Precise descriptions of technical work. CV provides specific technologies (hydrogels, LNPs, MMPs, mRNA), precise timeframes, and detailed project descriptions. Application responses include specific mechanisms (MMP-triggered assembly, peptide linker design). Publications list shows exact citations and DOIs. However, score of 7 (not 8) because some areas lack quantitative metrics - for example, the hydrogel redesign mentions 'enhanced tumor targeting and therapeutic efficacy' but doesn't provide specific percentage improvements. Some project descriptions could be more precise about outcomes.",
+      "evidence": [
+        {
+          "quote": "I proposed a novel mechanism using tumor-overexpressed matrix metalloproteinases (MMPs) as biological triggers. I helped design a cleavable peptide linker that allowed two nanoparticles to assemble into a hydrogel only in the tumor microenvironment.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Specific technical details: names exact mechanism (MMP triggers), specific component (cleavable peptide linker), precise location (tumor microenvironment). Not vague 'developed a system.'"
+        },
+        {
+          "quote": "Biomaterials (hydrogels), nanomedicine, and RNA therapeutics; design and characterization of nanoparticles for mRNA delivery; immunoengineering strategies for cancer therapy, vaccines and regenerative medicine; interdisciplinary collaboration across chemistry, immunology, and engineering; experimental design, in vitro/in vivo evaluation, and translational research",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Detailed enumeration of specific competencies with technical precision - not 'biomedical research' but specific subfields and methodologies."
+        },
+        {
+          "quote": "Selivanova, M., Coady, M., Pignanelli, J., Ocheje, M., Schlingman, K., Malik, A., [REDACTED], M., & Rondeau-Gagné, S. Crack propagation and electronic properties of semiconducting polymer and siloxane-urea copolymer blends. Flexible and Printed Electronics. 5, 035001. 10.1088/2058-8585/ab97be",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Complete citation with volume, page numbers, and DOI - demonstrates attention to bibliographic detail."
+        },
+        {
+          "quote": "I led the planning of the Environment and Sustainability panel, recruiting distinguished speakers including Jajean Rose (Director, Jocotoco Foundation) and Ana María Durán (Yale professor in environmental architecture), and moderated the panel discussion.",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "Specific names, titles, and affiliations provided - not 'recruited speakers' but exact details of who and their credentials."
+        },
+        {
+          "quote": "demonstrated enhanced tumor targeting and therapeutic efficacy",
+          "source": "Prado Larrea_Michaela_app_redacted.pdf",
+          "context": "NEGATIVE EXAMPLE: Lacks quantitative metrics - how much enhancement? This is where detail could be stronger."
+        }
+      ],
+      "notes": "Strong detail orientation with specific technical terminology, precise methodologies, and comprehensive documentation. Materials consistently provide concrete details rather than vague descriptions. Main limitation is occasional lack of quantitative metrics for outcomes (e.g., percentage improvements, exact sample sizes). Publications are meticulously cited. Technical descriptions are precise. Score of 7 reflects consistently high detail but not the exceptional thoroughness that would warrant 8+."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 86.43765878677368,
+    "materials_character_count": 27750,
+    "timestamp": "2026-01-16T14:18:55.102726"
+  }
+}

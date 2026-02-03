@@ -1,0 +1,123 @@
+{
+  "candidate": {
+    "candidate_id": "Brockman_Michael_app_redacted",
+    "name": null,
+    "materials": [
+      "Brockman_Michael_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:13:08.594787"
+  },
+  "overall_score": 7.0,
+  "overall_assessment": "Strong candidate with demonstrated technical creativity and exceptional detail orientation. Shows consistent ability to identify clinical gaps and develop tech-driven solutions with measurable outcomes. Publications record (20+ papers) and software development experience demonstrate productive output. Detail orientation is exceptional with comprehensive documentation. Problem-solving motivation is adequate but not extraordinary - shows competent engagement within professional contexts rather than transformative commitment. Best suited for projects requiring technical innovation and systematic implementation.",
+  "recommendation": "Strong fit for technical innovation projects. Candidate demonstrates consistent creative problem-solving with measurable outcomes and exceptional attention to detail. Best suited for roles requiring systematic development and implementation of healthcare technology solutions. Would benefit from opportunities to demonstrate extraordinary problem-solving commitment beyond professional contexts.",
+  "strengths": [
+    "Strong applied creativity: Multiple concrete innovations (iOS app, EMR workflow integration, data transformation tools) with documented outcomes",
+    "Exceptional detail orientation: Comprehensive documentation with precise citations, technical specifications, and systematic organization throughout materials",
+    "Productive research output: 20+ publications with specific citations and DOIs, demonstrating sustained technical productivity",
+    "Interdisciplinary technical skills: Combines clinical medicine with informatics and software development (Python, R, multiple frameworks)"
+  ],
+  "areas_for_development": [
+    "Problem-solving motivation evidence is primarily reactive within assigned roles rather than proactive seeking of extraordinary challenges",
+    "Limited evidence of major sacrifices or transformative decisions driven by problem-solving commitment",
+    "Application responses contain some generic statements ('passionate about merging medicine with technology') that could be more specific",
+    "Reference letters are supportive but based on limited observation period (2 months) and lack specific incidents of exceptional persistence"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creativity through multiple concrete innovations with measurable outcomes, mapping to Tier 4 (7-8). Key evidence includes: (1) Developing a novel iOS application for ICU ventilation management that enhanced clinical decision-making through iterative design, (2) Creating a streamlined workflow integrating AUDIT-C tool into EMR that increased detection rates, (3) Developing multiple software tools (PFTEX, Regex for echocardiogram data transformation) that solve specific technical problems. These are not generic 'I am creative' statements but specific technical solutions with documented outcomes. The candidate shows consistent pattern of identifying gaps and creating tech-driven solutions across different contexts (clinical workflow, mobile apps, data transformation tools). However, while innovative within their context, these solutions appear to be adaptations/applications of existing technologies rather than groundbreaking methodologies that would warrant a 9-10 score.",
+      "evidence": [
+        {
+          "quote": "I also created an iOS application focused on ICU ventilation management to support medical education. Through iterative feedback and usability testing, the app enhanced clinical decision-making and received positive evaluations.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Demonstrates creative solution development with specific outcome (enhanced decision-making) and iterative design process"
+        },
+        {
+          "quote": "I developed a streamlined workflow integrating the AUDIT-C tool into our EMR, which increased detection rates and enabled timely interventions.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Shows creative workflow redesign with measurable outcome (increased detection rates)"
+        },
+        {
+          "quote": "Novel Use of Regex for Echocardiogram Data Transformation. BMC Cardiovascular Ultrasound. May 2025. Accepted Pending Publication",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Novel technical approach to data transformation problem, accepted for publication"
+        },
+        {
+          "quote": "PFTEX: PFT File Transformation and EXporter. BMC Pulmonary Medicine. May 2025. Under Review.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Development of specialized software tool for medical data transformation"
+        }
+      ],
+      "notes": "Strong evidence of applied creativity in healthcare technology. Multiple concrete examples with outcomes. Not groundbreaking innovation but consistent creative problem-solving across contexts."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation, mapping to Tier 3 (5-6). Evidence shows engagement with problems when encountered in clinical/research contexts: led quality improvement initiatives, developed tools to address specific gaps, and engaged in multiple research projects. However, the evidence is primarily reactive problem-solving within assigned roles rather than extraordinary proactive seeking of challenges. The statement 'I'm passionate about merging medicine with technology to improve patient care' is generic fluff. The concrete evidence shows competent problem identification in familiar contexts (residency QI projects, fellowship work) but lacks examples of major life/career decisions driven by problem-solving motivation or overcoming significant barriers. The Be My Eyes volunteering (5 years) shows sustained engagement but is described generically without specific challenging problems tackled. The reference letters mention 'ability to assess systemic challenges' and 'enthusiasm and initiative in getting projects started' but lack specific incidents of extraordinary persistence or sacrifice.",
+      "evidence": [
+        {
+          "quote": "During residency, I led multiple quality-improvement initiatives, including improving alcohol use disorder screening in a predominantly Hispanic border-town clinic.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Shows proactive problem identification and leadership in addressing clinical gaps"
+        },
+        {
+          "quote": "As a long-time volunteer with 'Be My Eyes,' an app connecting visually impaired users with sighted volunteers, I've helped users with everyday tasks like medication identification, helping in clothing selection, and checking expiration dates on food. Over five years, my goal has been to provide peace of mind and promote independence for individuals with visual disabilities.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Demonstrates sustained engagement (5 years) with helping solve problems, though description lacks specific challenging incidents"
+        },
+        {
+          "quote": "His work has centered on identifying informatics-driven solutions to longstanding operational bottlenecks, particularly those affecting decision-making in urgent care settings.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Reference letter indicates proactive problem identification, but only 2 months of observation"
+        },
+        {
+          "quote": "I have been most impressed by his enthusiasm and initiative in getting projects started.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Reference indicates initiative but lacks specific examples of extraordinary persistence or sacrifice"
+        }
+      ],
+      "notes": "Evidence shows competent problem-solving within professional contexts but lacks examples of extraordinary commitment, major sacrifices, or transformative decisions driven by problem-solving motivation. Most evidence is from assigned roles rather than seeking out challenges."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional detail orientation, mapping to Tier 4 (7-8). The CV provides comprehensive quantitative and qualitative information throughout: (1) Publications list includes full citations with DOIs and PMID numbers, (2) Specific technologies listed (Apache, BSD, CSS, C++, Django, HTML, etc.), (3) Precise timeframes for all positions and activities, (4) Quantitative outcomes where relevant ('increased detection rates', 'enhanced clinical decision-making'), (5) Complete institutional affiliations and contexts. The application materials are systematically organized with exact dates, specific project descriptions, and comprehensive documentation. Every publication includes citation information. The CV demonstrates expert-level precision in technical communication. However, some application responses lack quantitative metrics (e.g., 'increased detection rates' without specific percentage, 'positive evaluations' without metrics), preventing a 9-10 score which would require comprehensive quantitative data throughout.",
+      "evidence": [
+        {
+          "quote": "Algheriani H, Cazares-Parson M, [REDACTED] M, Zakhireh B, Srinivas S, Mukherjee D, Dwivedi AK, Nickel NP. Complex Interactions of Social Determinants of Health on Survival Outcomes in Hispanic Patients With Pulmonary Arterial Hypertension in a US-Mexican Border City. Cardiology Research. 2025 Apr 23. doi:10.14740/cr1748 Cited in PubMed; PMID: 40370622",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Demonstrates precise citation format with DOI and PMID for all publications"
+        },
+        {
+          "quote": "Computer Science Skills - Proficient in Apache, BSD, CSS, C++, Django, HTML, iWork, Java, Linux, Microsoft Office, Nginx, Python, R, RStudio",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Specific enumeration of technical competencies rather than vague 'programming skills'"
+        },
+        {
+          "quote": "2022-Present Internal Medicine Residency and Internship El Paso, TX Department of Internal Medicine Texas Tech University Health Sciences El Paso",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Precise timeframes and complete institutional information for all positions"
+        },
+        {
+          "quote": "I developed a streamlined workflow integrating the AUDIT-C tool into our EMR, which increased detection rates and enabled timely interventions.",
+          "source": "Brockman_Michael_app_redacted.pdf",
+          "context": "Specific tool name (AUDIT-C), specific system (EMR), specific outcome (increased detection rates) - though percentage not provided"
+        }
+      ],
+      "notes": "Exceptionally thorough documentation throughout CV with precise citations, dates, and technical details. Application responses could include more quantitative metrics for outcomes. Overall demonstrates strong systematic attention to detail."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 55.29817318916321,
+    "materials_character_count": 36299,
+    "timestamp": "2026-01-16T13:13:08.594858"
+  }
+}

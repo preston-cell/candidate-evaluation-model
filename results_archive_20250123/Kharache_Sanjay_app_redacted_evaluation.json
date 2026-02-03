@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "candidate_id": "Kharache_Sanjay_app_redacted",
+    "name": null,
+    "materials": [
+      "Kharache_Sanjay_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:44:21.413978"
+  },
+  "overall_score": 6.0,
+  "overall_assessment": "Candidate is an experienced computational scientist (30-year career, PhD in Applied Mathematics) who has transitioned into entrepreneurship by founding a FemTech company. Demonstrates strong detail orientation with consistent quantitative metrics and specificity throughout materials. Shows adequate problem-solving capability with concrete outcomes (secured $300K+ in grants, founded company, hired employees). However, materials lack evidence of exceptional creativity or proactive problem-seeking motivation. Much of the application contains generic self-descriptions ('fast & flexible learner', 'open to challenges') without supporting evidence. The strongest concrete achievements are in technical execution and grant acquisition rather than innovative solution development.",
+  "recommendation": "Moderate fit. Candidate has solid technical credentials and execution capability but materials lack evidence of exceptional creativity or problem-solving drive that would distinguish them in a competitive innovation program. Would benefit from providing specific examples of innovative solutions and articulating compelling problems being addressed.",
+  "strengths": [
+    "Strong detail orientation with consistent quantitative metrics (grant amounts, supervision numbers, precise dates)",
+    "Concrete track record of securing significant funding ($300K+ Canarie grant, $40K Heart & Stroke, $45K/year MITACS)",
+    "Demonstrated follow-through: founded company, hired 2 employees, secured customers",
+    "Extensive supervision experience (34+ undergraduates, 2 master's students, 8 international interns)"
+  ],
+  "areas_for_development": [
+    "Limited evidence of creative innovation - claims to 'develop own methods' but provides no specific examples of novel approaches or their impact",
+    "Lacks evidence of proactive problem-seeking - field transition was for 'alignment' rather than to tackle compelling challenges",
+    "Application contains significant fluff ('I am a fast & flexible learner', 'open to challenges') without concrete supporting examples",
+    "No clear articulation of what specific problem the company is solving or what makes the approach innovative"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate provides some concrete examples of creative work, but much of the application contains generic claims. Tier 3 (5-6) evidence is present.\n\nCONCRETE EVIDENCE:\n1. Transition from computational cardiology to blood flow phenomena (2016) - demonstrates adaptability and learning new domain, though not inherently creative\n2. Development of PM3 platforms for multi-scale modeling - shows technical capability but lacks specifics about what made the approach innovative\n3. Self-developed methods mentioned ('I routinely develop my own methods') but no specifics provided\n4. Created open-source platforms and course materials - demonstrates some creative output\n\nFLUFF REJECTED:\n- 'I am a fast & flexible learner' - STATED QUALITY, not evidence\n- Generic claims about 'computer modelling & simulation science software' without specifics on innovation\n- No concrete examples of novel methodologies with documented impact\n- No evidence of creative solutions being adopted by others or published as innovative approaches\n\nThe transition between fields and development of platforms shows some creative adaptation (Tier 3, score 5-6), but there's insufficient evidence of truly innovative approaches with measurable creative impact that would justify Tier 4 (7-8). The materials lack specifics about what made solutions novel or their transformative impact.",
+      "evidence": [
+        {
+          "quote": "During 2016, I transitioned from working on computational cardiology to blood flow phenomena. This was to find alignment with colleagues and program directions in a new place of work. Over the matter of a few years, I acquired federal funding for my projects.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Shows ability to adapt and learn new domain, though motivation was alignment rather than creative problem-solving"
+        },
+        {
+          "quote": "I am the lead developer of PM3 (Precision Medicine using Mathematical Modelling) platforms that I use to mechanistically investigate a) multi-scale blood flow phenomena; b) cellular and molecular electrophysiology; and c) to undertake image processing.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Demonstrates technical development but lacks specifics about innovative approaches or novel methodologies"
+        },
+        {
+          "quote": "I routinely develop my own methods.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Claims method development but provides no specific examples or evidence of innovation"
+        }
+      ],
+      "notes": "The candidate has technical capability and has developed platforms, but the materials lack specific examples of creative innovations with documented impact. Most claims are too vague to assess true creativity level."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 5,
+      "confidence": "medium",
+      "reasoning": "The candidate shows adequate problem-solving engagement but evidence is primarily reactive rather than proactive. Maps to Tier 3 (5-6), specifically score 5.\n\nCONCRETE EVIDENCE:\n1. Founded company two years ago - demonstrates action taken, though motivation unclear\n2. Transitioned research areas to align with institutional direction - REACTIVE, not proactive problem-seeking\n3. Acquired federal funding ($300,000 Canarie grant) - shows follow-through on projects\n4. Secured first customers and hired 2 employees - demonstrates execution\n\nFLUFF REJECTED:\n- 'I am a fast & flexible learner who is open to challenges' - STATED QUALITY, not evidence of motivation\n- Generic interest in FemTech without specific problem identified\n- No evidence of seeking out challenging problems beyond assigned work\n- No examples of persistence through significant obstacles\n- No evidence of major sacrifices or investments to solve specific problems\n\nThe candidate shows competent problem-solving when encountered (founding company, securing funding), but lacks evidence of proactively seeking out challenging problems or demonstrating exceptional drive. The field transition was for 'alignment with colleagues' rather than to tackle a compelling problem. This is adequate motivation (Tier 3) but not strong drive (Tier 4).",
+      "evidence": [
+        {
+          "quote": "I founded this company two years ago, which is witness to my professional activity that is outside of my expertise as I am not trained in business development & management. In this project, I have single handedly advanced the company to secure a certain level of non-dilutive funding, secured first customers, formed networks. I now have 2 employees in the company.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Demonstrates action taken and follow-through, though specific problem being solved is not articulated"
+        },
+        {
+          "quote": "During 2016, I transitioned from working on computational cardiology to blood flow phenomena. This was to find alignment with colleagues and program directions in a new place of work.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Shows adaptability but motivation was institutional alignment, not problem-seeking"
+        },
+        {
+          "quote": "Funder: Canarie Inc. Value: $300,000. Title: 'Simulation of blood flow for risk assessment in human'. PI: CW McIntyre. Co-Is: D. Goldman and SR. I developed this grant application and secured the funding.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Demonstrates follow-through on securing resources for problem-solving, though as co-investigator not PI"
+        }
+      ],
+      "notes": "Evidence shows competent engagement with problems when encountered, but limited evidence of proactively seeking challenging problems or exceptional persistence. The company founding is the strongest evidence but lacks detail about what problem motivated its creation."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation with consistent specificity throughout materials. Maps to Tier 4 (7-8), specifically score 7.\n\nCONCRETE EVIDENCE:\n1. Specific grant amounts: '$300,000' (Canarie), '$40,000' (Heart and Stroke), '$45,000 per annum' (MITACS)\n2. Precise timeframes: '30/09/1997 – 30/09/2000', 'August 2016 to June 2027', 'January 2019 to January 2021'\n3. Quantitative metrics: 'supervised over 34 final year undergraduate thesis reports', 'supervised two master's post-graduates and 8 undergraduates', 'supervised eight international interns', 'reviewed over 50 manuscripts over the past 6 years'\n4. Specific technical details: 'PM3 (Precision Medicine using Mathematical Modelling) platforms', 'multi-scale blood flow phenomena', 'cellular and molecular electrophysiology'\n5. Exact course codes: 'AM1201B'\n6. Specific institutions and locations throughout CV\n7. Precise dates for invited talks and conferences\n\nThe CV section is particularly detailed with exact dates, institutions, grant values, and quantitative supervision metrics. The application responses are less detailed but still include specific information (e.g., '2 employees', 'two years ago'). This consistent pattern of providing specific, quantifiable information throughout materials demonstrates strong detail orientation, though not quite at the exceptional level (Tier 5) which would require comprehensive documentation of methodologies and outcomes.",
+      "evidence": [
+        {
+          "quote": "Funder: Canarie Inc. Value: $300,000. Title: 'Simulation of blood flow for risk assessment in human'. PI: CW McIntyre. Co-Is: D. Goldman and SR. I developed this grant application and secured the funding.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Provides specific funding amount, complete title, and role details"
+        },
+        {
+          "quote": "I have supervised two master's post-graduates and 8 undergraduates (4th year research projects). I have supervised one project manager employee. I have previously supervised over 34 final year undergraduate thesis reports between 2016 to 2020.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Precise quantitative metrics with timeframes"
+        },
+        {
+          "quote": "30/09/1997 – 30/09/2000. Ph.D. in Applied Mathematics. Institution: Department of Applied Mathematics, University of Hull, Hull, UK. Thesis title: 'Stefan Problems with Two Dimensional Linearised Perturbations in Their Boundary Geometry or Boundary Conditions.'",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Exact dates, complete institutional information, and full thesis title"
+        },
+        {
+          "quote": "I have single handedly advanced the company to secure a certain level of non-dilutive funding, secured first customers, formed networks. I now have 2 employees in the company.",
+          "source": "Kharache_Sanjay_app_redacted.pdf",
+          "context": "Specific number of employees, though 'certain level of funding' is vague"
+        }
+      ],
+      "notes": "Strong and consistent detail orientation throughout CV with specific dates, amounts, and metrics. Application responses are somewhat less detailed but still include concrete information. Some areas could be more specific (e.g., 'certain level of non-dilutive funding' is vague)."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 64.90950798988342,
+    "materials_character_count": 13932,
+    "timestamp": "2026-01-16T13:44:21.414044"
+  }
+}

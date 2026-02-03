@@ -1,0 +1,147 @@
+{
+  "candidate": {
+    "candidate_id": "Smith_Samuel_app_redacted",
+    "name": null,
+    "materials": [
+      "Smith_Samuel_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T14:34:11.215975"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with demonstrated innovation leadership, exceptional problem-solving motivation, and solid detail orientation. The SmartFlow project represents genuine creative innovation—not just competent execution but novel solution design combining clinical practice change, data analytics, and behavior change methodologies. Achieved concrete, measurable impact (35% cost reduction, 16+ VA sites, policy changes). Shows exceptional intrinsic motivation through multi-year sustained effort conducted in off-hours, proactive problem-seeking outside expertise area, and investment in additional training. Consistently provides specific metrics and concrete examples throughout materials. Well-suited for innovation fellowship focused on scaling healthcare solutions.",
+  "recommendation": "Strong fit - Candidate demonstrates genuine innovation with documented impact, exceptional intrinsic motivation, and solid execution capabilities. The SmartFlow project shows real creative problem-solving (not just stated qualities), and the multi-year sustained effort with concrete outcomes indicates strong potential for fellowship success. Recommend admission.",
+  "strengths": [
+    "Genuine innovation with measurable impact: Designed novel adoption model achieving 35% cost reduction, scaled to 16+ sites, influenced national policy (desflurane removal from formulary)",
+    "Exceptional problem-solving motivation: Multi-year sustained effort in off-hours, proactive problem identification, persistence through adoption barriers, sought additional certifications",
+    "Strong cross-domain capability: Successfully worked outside expertise area (environmental policy), translated clinical work into policy impact, integrated multiple methodologies (Lean, human-centered design, analytics)",
+    "Concrete evidence throughout: Specific quantitative metrics, precise organizational details, named methodologies, documented outcomes—minimal fluff"
+  ],
+  "areas_for_development": [
+    "Could provide more technical depth on analytics platform specifications and implementation details",
+    "Some presentation descriptions are generic rather than detailed with specific content/outcomes",
+    "Limited evidence of peer-reviewed publications or external recognition beyond VA system (no evidence of thought leadership in broader healthcare innovation community)"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong, consistent creative problem-solving with concrete innovations and measurable impact. The SmartFlow project represents genuine innovation—identifying an overlooked problem (anesthetic gas waste) and developing a novel solution combining clinical practice change with data analytics. Key creative elements: (1) Designed an 'educational, low-flow anesthesia adoption model' that merged clinical best practices with environmental goals—not just applying existing protocols but creating a new adoption framework. (2) Applied human-centered design and Lean methods to drive behavior change, showing creative methodology integration. (3) Built real-time analytics integration for monitoring—a technical innovation beyond standard clinical practice. (4) Achieved 35% cost reduction while lowering CO2 emissions—concrete outcome. (5) Successfully scaled to 16 VA medical centers, demonstrating the solution's robustness. (6) Created VA_AnesQIP platform—a separate data-driven innovation. The candidate also showed creativity in cross-domain work: translating clinical practices into measurable carbon reductions for policy work with HHS, contributing to removal of desflurane from national formulary. This maps to Tier 4 (7-8): Multiple concrete examples of innovative solutions with documented impact, creative leadership (teaching approach to others), and consistent pattern across contexts.",
+      "evidence": [
+        {
+          "quote": "Leading SmartFlow, I identified high anesthetic gas waste within VA OR's and designed an educational, low-flow anesthesia adoption model. I applied Lean and human-centered design methods to engage stakeholders, collect baseline data, and refine messaging to drive behavior change",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Demonstrates creative solution design—not just implementing existing protocols but designing a novel adoption model combining multiple methodologies"
+        },
+        {
+          "quote": "We achieved a 35% cost reduction on anesthetic gases while lowering CO2 emissions. I built partnerships with VA Central Office, the National Anesthesia Program, and multiple VISNs to expand SmartFlow, leveraging analytics integration for real-time monitoring",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Shows measurable impact of creative solution and technical innovation (analytics integration for real-time monitoring)"
+        },
+        {
+          "quote": "This work, conducted largely in off hours, has now expanded to 16 VA medical centers, with more in progress",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Demonstrates scalability and robustness of the innovative solution—scaled adoption indicates genuine innovation, not just local fix"
+        },
+        {
+          "quote": "My contributions included translating clinical practices into measurable carbon reductions, providing data to support policy changes like the removal of desflurane from the national formulary",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Shows creative cross-domain thinking—translating clinical work into policy impact through novel data approaches"
+        },
+        {
+          "quote": "SmartFlow has merged clinical best practices with environmental responsibility—reducing waste while improving safety and efficiency in operating rooms. Sam led this effort with a rare combination of technical curiosity and user-centered thinking",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Reference letter confirms innovative approach combining multiple domains in novel way"
+        }
+      ],
+      "notes": "Strong evidence of genuine innovation with documented outcomes. Not just competent execution but novel methodologies (educational adoption model, analytics integration). Falls short of Tier 5 (9-10) as there's no evidence of groundbreaking/transformative innovation that redefined the field or was published as novel methodology in peer-reviewed venues."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates exceptional proactive problem-solving motivation with sustained engagement and significant personal investment. Key evidence: (1) Identified an unaddressed problem (anesthetic gas waste) that wasn't assigned—proactive problem-seeking. (2) 'Conducted largely in off hours'—significant personal time investment beyond job requirements. (3) Overcame adoption barriers: 'Recognizing the challenges in adoption, we overcame these obstacles by learning from the frontline providers and pivoting as necessary'—shows persistence through obstacles. (4) Pursued work outside expertise area (environmental policy with HHS) specifically to address broader problem. (5) Sustained multi-year effort: FY23 Seed → FY24 Spread → FY25 scaling to 16+ sites—demonstrates long-term commitment. (6) Sought additional training to solve problems: obtained Prosci Change Practitioner certification, VA Change Practitioner certification, and Lean Yellow Belt—invested in skills specifically for problem-solving. (7) Built extensive partnerships across VA Central Office, National Anesthesia Program, multiple VISNs—significant effort to enable solution. This maps to Tier 4 (7-8): Consistent pattern of proactively seeking challenging problems, sustained engagement with complex issues, persistence through obstacles, and taking significant actions (additional training, off-hours work, multi-year commitment).",
+      "evidence": [
+        {
+          "quote": "Leading SmartFlow, I identified high anesthetic gas waste within VA OR's and designed an educational, low-flow anesthesia adoption model",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Proactive problem identification—candidate identified the problem, not assigned it"
+        },
+        {
+          "quote": "This work, conducted largely in off hours, has now expanded to 16 VA medical centers, with more in progress",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Significant personal investment—working off hours demonstrates intrinsic motivation beyond job requirements"
+        },
+        {
+          "quote": "Recognizing the challenges in adoption, we overcame these obstacles by learning from the frontline providers and pivoting as necessary",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Shows persistence through obstacles and adaptive problem-solving"
+        },
+        {
+          "quote": "Outside of anesthesia, I engaged with HHS Office for Climate Change and Health Equity to address healthcare's environmental impact. I collaborated with environmental policy leaders to align clinical workflows with sustainability initiatives",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Sought out problems outside primary expertise area—proactive problem-seeking behavior"
+        },
+        {
+          "quote": "Prosci Certified Change Practitioner, 2025; VA Certified Change Practitioner, 2024; VA Lean Yellow Belt Certification, 2023",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Pursued additional training/skills specifically to solve problems more effectively"
+        },
+        {
+          "quote": "Where others see the status quo, Sam sees opportunity for transformation. This entrepreneurial instinct led him to develop SmartFlow",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Reference letter confirms proactive problem-seeking mindset"
+        }
+      ],
+      "notes": "Very strong evidence of problem-solving motivation. Falls short of Tier 5 (9-10) as there's no evidence of founding organizations or making major career changes specifically to address problems. However, the multi-year sustained effort, off-hours work, and proactive seeking of challenges across domains is exceptional."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation with consistent specificity, quantitative metrics, and concrete examples throughout materials. Key evidence: (1) Provides specific quantitative outcomes: '35% cost reduction on anesthetic gases', 'expanded to 16 VA medical centers', '$250,000 BETS contract', '$500,000 contract award'. (2) Includes precise technical details: 'leveraging analytics integration for real-time monitoring', 'designed an educational, low-flow anesthesia adoption model', 'applied Lean and human-centered design methods'. (3) Specifies methodologies used: Lean, human-centered design, Prosci change management. (4) Provides specific organizational context: 'VA Central Office, National Anesthesia Program, multiple VISNs', 'HHS Office for Climate Change and Health Equity', 'Executive Order 14057'. (5) CV includes specific timeframes, locations, and responsibilities. (6) Lists specific certifications with years. (7) Details specific policy outcomes: 'removal of desflurane from the national formulary'. However, some areas lack depth: word count limits may have constrained detail in application responses; no specific technical specifications of analytics platform; limited detail on exact Lean methodologies applied; some presentation descriptions are generic ('Multiple lectures'). This maps to Tier 4 (7-8): Consistently high level of detail with specific examples, contexts, and outcomes; includes quantitative metrics where relevant; precise descriptions of approaches.",
+      "evidence": [
+        {
+          "quote": "We achieved a 35% cost reduction on anesthetic gases while lowering CO2 emissions",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Specific quantitative metric demonstrating detail orientation"
+        },
+        {
+          "quote": "This work, conducted largely in off hours, has now expanded to 16 VA medical centers, with more in progress",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Precise scale metrics—exact number of sites"
+        },
+        {
+          "quote": "I applied Lean and human-centered design methods to engage stakeholders, collect baseline data, and refine messaging to drive behavior change",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Specific methodologies named with concrete action steps"
+        },
+        {
+          "quote": "FY25 BETS contract support award for VA_AnesQIP &SmartFlow: $250,000; FY 25 Innovation Ecosystem Fellow with protected time MOU and contract award of $500,000 to scale SmartFlow nationally",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Precise financial metrics and specific program details"
+        },
+        {
+          "quote": "providing data to support policy changes like the removal of desflurane from the national formulary, and advocating for practice changes that aligned with Executive Order 14057",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Specific policy outcomes and executive order reference—precise institutional detail"
+        },
+        {
+          "quote": "I built partnerships with VA Central Office, the National Anesthesia Program, and multiple VISNs to expand SmartFlow, leveraging analytics integration for real-time monitoring",
+          "source": "Smith_Samuel_app_redacted.pdf",
+          "context": "Specific organizational entities and technical approach details"
+        }
+      ],
+      "notes": "Strong detail orientation throughout materials. Consistently provides specific metrics, methodologies, and organizational context. Falls short of Tier 5 (9-10) as some areas could be more comprehensive (e.g., exact technical specifications of analytics platform, detailed breakdown of Lean methods applied, more granular outcome metrics). Some presentation descriptions are generic rather than detailed."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 68.99657130241394,
+    "materials_character_count": 19410,
+    "timestamp": "2026-01-16T14:34:11.215993"
+  }
+}

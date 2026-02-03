@@ -1,0 +1,133 @@
+{
+  "candidate": {
+    "candidate_id": "Carter_Maya_app_redacted",
+    "name": null,
+    "materials": [
+      "Carter_Maya_app_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:16:52.847279"
+  },
+  "overall_score": 7.666666666666667,
+  "overall_assessment": "Strong candidate with concrete evidence of creative problem-solving, sustained motivation to tackle challenges, and systematic attention to detail. Demonstrates ability to bridge engineering and medical thinking with measurable outcomes. Multiple specific examples show proactive engagement with unfamiliar problems and investment in skill development. Supervisor provides behavioral observations rather than generic praise.",
+  "recommendation": "Strong fit - Candidate demonstrates concrete evidence across all criteria with minimal fluff. Multiple specific examples with measurable outcomes. Supervisor letter provides behavioral observations rather than generic praise. Scores consistently in 7-8 range based on solid evidence, though lacks the transformative achievements that would warrant 9+ scores.",
+  "strengths": [
+    "Creative diagnostic and analytical thinking with documented outcomes (seizure case with rare diagnosis, 401k analysis saving $13,000 annually)",
+    "Proactive problem-seeking across multiple domains with sustained investment (4+ years of AI/ML education, self-initiated 401k project)",
+    "Strong detail orientation with quantitative metrics and precise technical descriptions throughout materials",
+    "Systems-level thinking bridging engineering and clinical perspectives, corroborated by supervisor",
+    "Concrete evidence of interdisciplinary work (3M R&D, MIT engineering, clinical neurology, AI certifications)"
+  ],
+  "areas_for_development": [
+    "No evidence of published novel methodologies or innovations adopted by others in the field",
+    "Limited evidence of founding initiatives or making transformative career changes specifically to address problems",
+    "While detail level is high, materials don't demonstrate the exemplar-level comprehensiveness seen in top-tier candidates"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving with multiple concrete examples showing innovative approaches and measurable outcomes. Maps to Tier 4 (7-8) based on: (1) Novel diagnostic approach combining multiple data sources in the seizure case, (2) Creative application of engineering mindset to non-clinical problem (401k analysis), (3) Evidence of bridging disparate fields (engineering + medicine). The seizure case shows creative reframing of a problem - challenging the stroke diagnosis by systematically integrating EEG, imaging review, and AI-assisted literature search to arrive at a rare diagnosis (IgG4-related pachymeningitis). The 401k example demonstrates applying systematic engineering analysis to a completely unfamiliar domain, uncovering hidden problems others missed. However, lacks evidence of developing novel methodologies adopted by others or published innovations, preventing score of 8+.",
+      "evidence": [
+        {
+          "quote": "After retaking the history, reviewing the images myself, and correlating EEG with exam findings, I concluded she had a focal seizure with Todd's paralysis, not a stroke. Closer inspection showed right-sided pachymeningitis. Using AI assisted literature searches, I compared rare causes such as IgG4 related hypertrophic pachymeningitis and neurosarcoidosis, with IgG4 disease the most likely. Her management changed completely",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Demonstrates creative diagnostic approach by challenging initial diagnosis, integrating multiple data sources (history, imaging, EEG), and using novel tools (AI-assisted search) to identify rare condition. Shows innovative thinking that changed patient outcome."
+        },
+        {
+          "quote": "I spent evenings and weekends learning how retirement plans work, comparing vendor options, and reviewing our plan documents. Approaching the problem systematically, I uncovered more than $16,000 per year in hidden fund fees draining staff accounts... saving the team over $13,000 annually",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Creative application of systematic engineering approach to completely unfamiliar domain (finance/retirement planning). Identified hidden problem others missed through structured analysis, with quantified impact."
+        },
+        {
+          "quote": "What distinguishes [Carter] is her particular spark of intellectual curiosity — always asking the most insightful questions — and, moreover, her ability to approach medical problems with a unique, systems-level perspective. Her background in chemical engineering from MIT informs her thinking in a meaningful way... I recall her frequently raising insights and solutions that others overlooked, thinking beyond the immediate clinical question to address root causes, systems inefficiencies, and unmet needs.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Supervisor provides specific behavioral evidence of creative thinking - raising insights others overlooked, systems-level thinking, addressing root causes. Not generic praise but specific pattern of behavior."
+        },
+        {
+          "quote": "During three years in 3M's Biosciences Laboratory I learned how disciplined R and D moves an idea from bench prototype to a production-ready product. Working with chemists, engineers, and marketers showed me how design, regulatory planning, and user feedback must align for launch.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Experience bridging R&D innovation with commercialization, showing exposure to creative product development process from concept to production."
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with concrete outcomes. Supervisor letter provides specific behavioral observations rather than generic praise. However, no evidence of published novel methodologies or innovations adopted by others, which would be required for scores 8+."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Maps to Tier 4 (7-8), specifically score 8 based on: (1) Consistent pattern of proactively seeking challenging problems across multiple contexts (clinical, financial, technical), (2) Evidence of significant investments to solve problems (evenings/weekends learning retirement planning, formal AI/ML coursework), (3) Sustained engagement demonstrated through career trajectory (3 years industry R&D, multiple fellowships, ongoing AI education). The 401k example is particularly strong - candidate 'stepped outside neurology' and invested personal time to solve a problem that wasn't her responsibility. Multiple AI certifications (2021-2025) show sustained investment in acquiring new skills to address clinical problems. Career path shows deliberate pursuit of complex problems (epilepsy subspecialization, multiple fellowships). However, lacks evidence of founding organizations or making transformative career changes specifically to address problems, preventing score of 9+.",
+      "evidence": [
+        {
+          "quote": "When our practice's 401k fees seemed too high, I stepped outside neurology and took on the challenge. I spent evenings and weekends learning how retirement plans work, comparing vendor options, and reviewing our plan documents.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Proactive problem-seeking behavior - voluntarily took on challenge outside expertise area. Invested significant personal time (evenings/weekends) to solve problem. Not assigned, self-initiated."
+        },
+        {
+          "quote": "I have studied machine learning to explore how technology could help address those gaps. Catalyst's structured, team based approach is exactly what I need to grow. I want to turn clinical insights into real world solutions that improve care.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Demonstrates proactive skill acquisition to address identified problems. Explicit statement of problem-solving motivation tied to concrete action (studying ML)."
+        },
+        {
+          "quote": "Advanced Certification in AI & Human Cognition for Healthcare — ABAIM (American Board of Artificial Intelligence in Medicine), 2025; Educational Certification in AI for Medicine — ABAIM, 2024; Python Programming Foundations (Code in Place) — Stanford University, 2024; No‑Code AI & Machine Learning — MIT Professional Education, 2023; Artificial Intelligence in Healthcare — MIT Sloan Executive Program, 2021",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Sustained investment in acquiring new technical skills (2021-2025) to address clinical problems. Multiple certifications show persistent engagement with learning tools to solve problems."
+        },
+        {
+          "quote": "The case reinforced the value of challenging assumptions, combining clinical and systems based reasoning, and broadening the diagnostic lens. It reminded me that skilled clinicians need a clear method to identify and test problems, which I hope to refine through Catalyst.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Reflective learning from problem-solving experience, explicitly connecting to desire for further skill development. Shows meta-cognitive engagement with improving problem-solving approach."
+        },
+        {
+          "quote": "During three years in 3M's Biosciences Laboratory I learned how disciplined R and D moves an idea from bench prototype to a production-ready product.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Three-year commitment to product development work shows sustained engagement with complex technical problems in industry setting."
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking across multiple domains with concrete investments (time, education). Pattern of sustained engagement over years. Lacks evidence of transformative career changes or founding initiatives specifically to solve problems, which would warrant 9+."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "Maps to Tier 4 (7-8), specifically score 8 based on: (1) Consistently high level of detail throughout materials with specific examples, contexts, and quantitative outcomes, (2) Precise technical descriptions (specific diagnoses, methodologies, technologies), (3) Comprehensive quantitative metrics provided ($16,000 hidden fees, $13,000 annual savings, specific timeframes, patient outcomes). The seizure case includes precise medical details (Todd's paralysis, pachymeningitis, IgG4-related disease, specific diagnostic tools). The 401k example provides exact dollar amounts and systematic process description. CV includes specific technologies, timeframes, and institutional affiliations. Supervisor letter notes candidate is 'meticulous in her assessments.' However, while detail level is high, materials don't reach the 'exemplar' level of comprehensiveness that would warrant score 9+.",
+      "evidence": [
+        {
+          "quote": "I evaluated a 72-year-old woman who crashed her car and developed arm weakness and confusion. Her MRI appeared normal to the admitting team, and she was labeled a stroke. After retaking the history, reviewing the images myself, and correlating EEG with exam findings, I concluded she had a focal seizure with Todd's paralysis, not a stroke. Closer inspection showed right-sided pachymeningitis. Using AI assisted literature searches, I compared rare causes such as IgG4 related hypertrophic pachymeningitis and neurosarcoidosis",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Highly specific medical details: patient age, specific symptoms, precise diagnoses (Todd's paralysis, pachymeningitis, IgG4-related disease), specific diagnostic methods (EEG, MRI review, AI-assisted search), differential diagnoses. Demonstrates systematic attention to detail."
+        },
+        {
+          "quote": "I uncovered more than $16,000 per year in hidden fund fees draining staff accounts. I created a one-page summary for the physician partners, led discussions about alternatives, and helped the group decide to switch vendors. Under the new structure, the practice pays a flat recordkeeping fee and employees have significantly lower fund expenses, saving the team over $13,000 annually.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Precise quantitative metrics: $16,000 in hidden fees, $13,000 annual savings. Specific process steps: created one-page summary, led discussions, specific outcome (flat recordkeeping fee structure)."
+        },
+        {
+          "quote": "Board certified neurologist and epileptologist with expertise in diagnosing neurologic and seizure disorders, including EEG interpretation. Experienced in leading outpatient and inpatient care, coordinating with cardiology, rheumatology, internal medicine, and radiology colleagues.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Specific certifications, specific diagnostic expertise (EEG interpretation), specific care settings (inpatient/outpatient), specific collaborating specialties listed."
+        },
+        {
+          "quote": "And as a clinician, I know [Carter] to be deeply knowledgeable, meticulous in her assessments, and compassionate in her care.",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Supervisor specifically characterizes candidate as 'meticulous in her assessments' - direct observation of detail orientation in clinical work."
+        },
+        {
+          "quote": "Advanced Certification in AI & Human Cognition for Healthcare — ABAIM (American Board of Artificial Intelligence in Medicine), 2025; Educational Certification in AI for Medicine — ABAIM, 2024; Python Programming Foundations (Code in Place) — Stanford University, 2024; No‑Code AI & Machine Learning — MIT Professional Education, 2023; Artificial Intelligence in Healthcare — MIT Sloan Executive Program, 2021",
+          "source": "Carter_Maya_app_redacted.pdf",
+          "context": "Comprehensive listing with specific certification names, issuing institutions, and exact years. Demonstrates systematic documentation."
+        }
+      ],
+      "notes": "Consistently high level of detail with quantitative metrics and precise technical information throughout materials. Supervisor corroborates detail orientation. Materials are thorough but not at the 'exemplar' level of comprehensiveness that would warrant 9+."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 79.09326386451721,
+    "materials_character_count": 15459,
+    "timestamp": "2026-01-16T13:16:52.847308"
+  }
+}

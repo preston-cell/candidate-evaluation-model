@@ -1,0 +1,122 @@
+{
+  "candidate": {
+    "candidate_id": "deHoll_Melinda_app2_redacted",
+    "name": null,
+    "materials": [
+      "deHoll_Melinda_app2_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:25:11.607595"
+  },
+  "overall_score": 7.333333333333333,
+  "overall_assessment": "Strong candidate with demonstrated creative problem-solving, proactive motivation, and consistent detail orientation. Concrete evidence of leading innovative healthcare solutions with measurable impact ($4B projected savings, 20K+ hours returned to care, >80% validation scores). Successfully transfers skills across domains (healthcare to F&B/robotics). Avoids most application fluff by providing specific metrics and outcomes throughout materials.",
+  "recommendation": "Strong fit - Candidate demonstrates concrete creative problem-solving with measurable impact, proactive motivation to tackle challenging problems, and strong attention to detail. Materials provide substantial evidence beyond generic claims, with specific outcomes and metrics supporting capabilities. Recommended for advancement.",
+  "strengths": [
+    "Concrete innovation leadership with quantified outcomes - co-founded AI clinical decision support tool with documented validation metrics and national endorsement",
+    "Creative skill transfer across disparate domains - successfully applied healthcare workflow optimization to robotics/F&B sector",
+    "Consistent specificity and metrics throughout materials - provides quantitative data, precise timeframes, and specific technical details rather than vague claims",
+    "Proactive problem-seeking behavior - founded company, initiated projects outside expertise, pursued additional certifications"
+  ],
+  "areas_for_development": [
+    "Some technical methodologies lack complete specificity (e.g., exact AI algorithms, detailed validation instruments)",
+    "While innovative within VA system, external recognition as thought leader not clearly documented",
+    "Second reference letter missing at time of submission (noted as 'in progress')"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 8,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong creative problem-solving across multiple domains with concrete, measurable outcomes. This maps to Tier 4 (7-8) based on: (1) Novel AI solution design with documented impact - not just applying existing tools but co-designing a new clinical decision support system; (2) Creative transfer of skills across domains - applying healthcare workflow optimization to F&B/retail robotics; (3) Innovation in education delivery - avatar-based simulation platform described as 'industry-first'; (4) Measurable creative outcomes including $4B projected savings and 20K+ hours returned to care. The evidence shows consistent pattern of innovative thinking with documented impact across contexts, meeting the Tier 4 descriptor of 'developed novel methodologies or approaches with documented impact' and 'shows evidence of creative leadership.' Score of 8 rather than 7 because of multiple concrete innovations with measurable outcomes across different domains.",
+      "evidence": [
+        {
+          "quote": "I co-founded and led design and validation of an AI-enabled decision support tool endorsed by 9 national divisions...achieved >80% validation scores for trust, usability, and feasibility; projected $4B cost avoidance and 20K+ hours returned to care",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Concrete innovation with specific validation metrics and quantified impact - demonstrates creative solution development with measurable outcomes"
+        },
+        {
+          "quote": "Led deployment of an industry-first avatar-based VA–DoD Virtual Medical simulation platform",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Novel methodology in education delivery - described as 'industry-first' indicates creative leadership in developing new approaches"
+        },
+        {
+          "quote": "I recently led development of an AI-powered robotic café and hospitality concept—far outside my healthcare domain. With no prior F&B or retail experience, I initiated market research, led business model development, and evaluated robotic coffee hardware, facial recognition integration...my healthcare background in workflow optimization and behavior-informed design helped me structure efficient, customer-friendly systems",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Creative transfer of skills across disparate domains - demonstrates ability to apply innovative thinking in unfamiliar contexts"
+        },
+        {
+          "quote": "Resolved VHA's national access crisis by developing and implementing a standardized, agency-wide group practice management model—now used at all VA facilities",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "System-level creative solution with wide adoption - demonstrates innovative approach that became standard practice across entire organization"
+        }
+      ],
+      "notes": "Strong evidence of creative problem-solving with concrete outcomes. Not scored 9-10 because while innovative, the solutions don't appear to be groundbreaking at the level of 'redefining approaches in the field' or 'recognized externally as innovation leader' beyond the VA system."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong proactive problem-solving motivation, mapping to Tier 4 (7-8). Evidence includes: (1) Self-initiated innovation project - co-founded the AI solution rather than being assigned to it; (2) Seeking challenges outside expertise - voluntarily took on F&B/robotics project 'far outside healthcare domain'; (3) Sustained engagement with complex problems - led multi-year initiatives from conception through national implementation; (4) Additional training/skill development - PROSCI certification, human factors training, simulation expertise. The descriptor 'I'm on fire about fixing what's broken in healthcare' is fluff, but backed by concrete actions: founding a company, shifting career focus to national-level healthcare transformation, and pursuing additional certifications. Score of 7 rather than 8 because while there's clear proactive engagement, the evidence doesn't show the level of 'major life/career decisions driven by desire to address challenges' or 'overcoming significant barriers' that would warrant Tier 5.",
+      "evidence": [
+        {
+          "quote": "As founder and co-lead of a VHA Venture Studio team, I designed and validated an AI-enabled clinical decision support tool...We identified pain points through frontline interviews, modeled ideal workflows, and co-designed a solution",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Proactively founded and led innovation initiative - demonstrates seeking out challenging problems rather than waiting for assignment"
+        },
+        {
+          "quote": "I recently led development of an AI-powered robotic café and hospitality concept—far outside my healthcare domain. With no prior F&B or retail experience...This project stretched me: I had to quickly learn about commercial architecture, vendor contracts, and cost-per-cup economics",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Voluntarily pursued challenging problem in unfamiliar domain - demonstrates motivation to tackle new challenges and learn new skills"
+        },
+        {
+          "quote": "Built and scaled a multi-state healthcare staffing and education company",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Founded company to address healthcare staffing problems - demonstrates entrepreneurial problem-solving motivation"
+        },
+        {
+          "quote": "PROSCI, Certified Change Management Practitioner...ASTD, Certified Master Performance Consultant",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Pursued additional certifications to enhance problem-solving capabilities - demonstrates investment in skill development"
+        }
+      ],
+      "notes": "Strong evidence of proactive problem-seeking and sustained engagement. The opening statement 'I'm on fire about fixing what's broken in healthcare' would normally be rejected as fluff, but is supported by concrete actions including company founding, career progression focused on system-level problems, and voluntary pursuit of challenges outside expertise."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 7,
+      "confidence": "high",
+      "reasoning": "The candidate demonstrates strong detail orientation with consistent specificity throughout materials, mapping to Tier 4 (7-8). Evidence includes: (1) Quantitative metrics throughout - '>80% validation scores', '$4B cost avoidance', '20K+ hours', '1,000+ annual training modules', '380,000+ employees'; (2) Specific technical details - 'facial recognition integration', 'avatar-based simulation platform', 'business intelligence platform'; (3) Precise organizational context - '9 national divisions', '170+ hospitals', 'six pilot hospitals'; (4) Specific timeframes and progression details. The materials consistently provide concrete numbers, specific technologies, and measurable outcomes rather than vague descriptions. Score of 7 rather than 8 because while detail is strong, some areas lack complete methodological specifics (e.g., exact validation methodology, specific AI algorithms used).",
+      "evidence": [
+        {
+          "quote": "achieved >80% validation scores for trust, usability, and feasibility; projected $4B cost avoidance and 20K+ hours returned to care...endorsed by 9 national divisions...Led stakeholder engagement across 170+ hospitals and coordinated implementation readiness with six pilot hospitals",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Multiple specific quantitative metrics and precise organizational scope - demonstrates systematic attention to detail"
+        },
+        {
+          "quote": "Directed 1,000+ annual training module productions for 380,000+ VHA employees",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Precise quantification of scope and scale - specific numbers rather than 'many' or 'numerous'"
+        },
+        {
+          "quote": "I initiated market research, led business model development, and evaluated robotic coffee hardware, facial recognition integration, zoning/licensing hurdles, and franchise scalability. I also oversaw customer journey mapping, site selection feasibility, and early-stage pitch deck design",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Specific enumeration of activities and technical components - demonstrates detailed understanding of project scope"
+        },
+        {
+          "quote": "Veterans Health Administration | Remote | 2022–2025...VHA Institute for Learning, Education and Development | National | 2009–2022...Advanced Nursing Services | Utah | 1995–2000",
+          "source": "deHoll_Melinda_app2_redacted.pdf",
+          "context": "Precise timeframes and locations throughout CV - consistent attention to specific details"
+        }
+      ],
+      "notes": "Strong, consistent detail orientation throughout materials. Provides specific metrics, technologies, and contexts. Not scored 8+ because some technical methodologies lack complete specificity (e.g., specific AI architecture, exact validation instruments used)."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 59.94133996963501,
+    "materials_character_count": 20578,
+    "timestamp": "2026-01-16T13:25:11.607625"
+  }
+}

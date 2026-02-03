@@ -1,0 +1,132 @@
+{
+  "candidate": {
+    "candidate_id": "Martineau_Cecile_app2_redacted",
+    "name": null,
+    "materials": [
+      "Martineau_Cecile_app2_redacted.pdf"
+    ],
+    "evaluation_date": "2026-01-16T13:54:52.823273"
+  },
+  "overall_score": 4.333333333333333,
+  "overall_assessment": "Candidate shows basic clinical competence with dual training in psychiatry and emergency medicine across two countries. However, the application is predominantly composed of generic statements and vague descriptions without concrete evidence of innovation, exceptional problem-solving drive, or attention to detail. The strongest evidence is proactive pursuit of technical education (MIT courses in ML/statistics), but there's no demonstration of applying this learning to create innovative solutions. Clinical examples describe routine problem recognition rather than creative approaches. The application lacks specificity throughout - no quantitative metrics, no detailed methodologies, and minimal concrete outcomes.",
+  "recommendation": "Not recommended. While the candidate has interesting background elements (dual training, international experience, technical coursework), the application is 80%+ generic statements without concrete evidence of the innovation, problem-solving drive, or rigor expected for this program. The lack of specificity throughout suggests either limited substantive achievements or inability to communicate them effectively. The candidate would need to demonstrate actual application of technical skills to innovative problem-solving with measurable outcomes before being competitive for this fellowship.",
+  "strengths": [
+    "Proactive self-directed learning: Taking MIT continuing education courses in machine learning, statistics, and data science while working full-time",
+    "Diverse clinical experience: Dual expertise in psychiatry and emergency medicine across US and French healthcare systems",
+    "Willingness to engage beyond clinical duties: Served as union representative addressing organizational issues"
+  ],
+  "areas_for_development": [
+    "Demonstrating creativity: No concrete examples of innovative solutions developed; clinical examples show routine adaptation rather than creative problem-solving",
+    "Specificity and detail: Application lacks quantitative metrics, specific methodologies, and detailed outcomes throughout; uses vague placeholder language consistently",
+    "Evidence of impact: No measurable achievements or transformative outcomes documented; stated intentions without demonstrated results",
+    "Application of technical learning: Despite taking advanced courses, no evidence of applying ML/statistics knowledge to solve actual problems"
+  ],
+  "scores": [
+    {
+      "criterion": "creativity",
+      "criterion_name": "Demonstrated Creativity in Solution Development",
+      "score": 4,
+      "confidence": "medium",
+      "reasoning": "The materials contain mostly generic statements about 'thinking about improvements' and 'creative projects' without concrete examples of innovative solutions. The two clinical examples provided are basic problem recognition rather than creative innovation:\n\n1. Ativan shortage adaptation: Candidate states they 'developed awareness' and 'adapted treatment' but provides no specifics about what innovative approach was taken. This is routine clinical adaptation, not creative problem-solving.\n\n2. Fall case: Recognizing that a fall injury was the primary issue (not cardiovascular) is diagnostic competence, not creative innovation. Using a cervical collar is standard protocol, not a novel solution.\n\nThe union representative role shows some problem engagement but no evidence of creative approaches - just 'tried to do a fair job' with generic outcomes.\n\nThe application states 'I often think about improvements' and wants to work on 'creative projects' - these are STATED QUALITIES without demonstration. The reference letters use vague praise ('deep desire to improve patient outcomes', 'can improve outcomes') without specific innovative examples.\n\nThis maps to Tier 2 (3-4): mentions problem-solving but doesn't explain what made approaches innovative; basic problem-solving without novel approaches. Score of 4 because there are at least two clinical scenarios described, even if they lack innovation.",
+      "evidence": [
+        {
+          "quote": "I often think about improvements in safety and efficiency of care, as well as research ideas in general. I am curious by nature, independent, rational and I wish to work with a team on longer term creative projects, where I would get more traction.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "FLUFF - Stated qualities ('curious', 'think about improvements', 'creative projects') without concrete examples of actual creative work done"
+        },
+        {
+          "quote": "I can mention the recent shortage of the Ativan intramuscular formulation in some hospitals in NYC, with challenges to diagnose and treat patients with alcohol withdrawal or with catatonia, as they present in a different way (partially treated). We developed awareness to these changes, and adapted the treatment with the current constraints.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Vague example - 'adapted treatment' without specifics about what innovative approach was used. This is routine clinical adaptation, not creative innovation."
+        },
+        {
+          "quote": "I will mention the case of a hospitalized patient who had a syncope and fall, where it was assumed the patient suffered a cardio-vascular event, with the treatment focus as such. However, the injuries sustained during the fall ended up being the primary issue in his recovery. A fall inside the hospital was treated differently than if it had occurred outside. This needed to be acknowledged and addressed (use of cervical spine collar).",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "This describes diagnostic correction and standard protocol (cervical collar), not creative innovation"
+        },
+        {
+          "quote": "She is interested in collaborating with others to develop data-based systems that can improve outcomes in psychiatry and possibly in other clinical settings.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "FLUFF from reference letter - states interest but provides no examples of actual data-based systems developed"
+        }
+      ],
+      "notes": "The candidate has taken continuing education in machine learning and statistics, which shows learning initiative, but there's no evidence of applying this knowledge creatively to develop innovative solutions. All examples are either routine clinical work or stated intentions without demonstrated outcomes."
+    },
+    {
+      "criterion": "problem_solving_motivation",
+      "criterion_name": "Motivation to Solve Problems",
+      "score": 6,
+      "confidence": "medium",
+      "reasoning": "The candidate demonstrates adequate problem-solving motivation with some concrete actions, but evidence is mixed between genuine engagement and generic statements.\n\nCONCRETE EVIDENCE OF MOTIVATION:\n1. Proactive learning: Taking MIT online courses in machine learning, statistics, and data science while working full-time shows investment in skill development to address problems.\n2. Union representative role: Accepted nomination and engaged with complex issues (Covid payments, NP integration, pay negotiations) despite slow processes.\n3. Career trajectory: Maintains dual expertise in psychiatry and emergency medicine across two countries, suggesting sustained engagement with challenging clinical problems.\n\nLIMITATIONS:\n1. The clinical examples (Ativan shortage, fall case) show problem recognition but limited evidence of sustained pursuit or exceptional effort.\n2. Union experience ended with 'feeling of limitation' rather than breakthrough - shows engagement but not exceptional persistence.\n3. Much of the motivation is STATED ('I often think about improvements', 'wish to work on creative projects') rather than demonstrated through major actions.\n4. Reference letters use generic praise ('deep desire to improve', 'insane ability to thrive') without specific incidents of extraordinary problem-solving drive.\n\nThis maps to Tier 3 (5-6): 'one or two strong examples of pursuing challenging problems with clear action steps' (MIT courses, union role) but limited evidence of proactive problem-seeking beyond assigned responsibilities. Score of 6 because the continuing education represents concrete investment in problem-solving capability.",
+      "evidence": [
+        {
+          "quote": "Current: Online continuing education in data science, machine learning",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Concrete action - pursuing additional technical training while working full-time to develop problem-solving capabilities"
+        },
+        {
+          "quote": "I was a union representative for physicians in my hospital for one year, after a colleague decided I was a decent advocate and they collected signatures for my candidacy. It was an interesting experience as there were many issues to tackle, ranging from withheld Covid payments, adjusting to the arrival of NPs, pay negotiations…",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Demonstrates willingness to engage with complex organizational problems beyond clinical duties"
+        },
+        {
+          "quote": "In the end, the experience gave me a feeling of limitation and a strong motivation to develop an independent activity where I would have more agency.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Shows reflection on problem-solving constraints and desire for greater impact, though outcome was frustration rather than breakthrough"
+        },
+        {
+          "quote": "she has undergone intensive self-training to learn advanced statistical techniques, as well as computational techniques. I've worked with her on some of these classes, and she has routinely proven to be adept at learning quickly.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Reference confirms concrete action of self-directed learning, though 'deep desire to improve patient outcomes' is generic praise"
+        },
+        {
+          "quote": "I am taking continuing education classes with MIT and researched opportunities as I really like the courses",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Shows proactive seeking of learning opportunities to develop capabilities"
+        }
+      ],
+      "notes": "The continuing education in technical fields represents the strongest concrete evidence of problem-solving motivation. However, there's limited evidence of applying this learning to actual problem-solving or of exceptional persistence through obstacles. The union experience shows engagement but ended in frustration rather than breakthrough."
+    },
+    {
+      "criterion": "detail_orientation",
+      "criterion_name": "Works Toward Increasing Specificity / Detail Orientation",
+      "score": 3,
+      "confidence": "high",
+      "reasoning": "The materials consistently lack specificity and detail across all sections. This is a clear case where the candidate provides vague descriptions rather than concrete details.\n\nLACK OF SPECIFICITY:\n1. Clinical examples are extremely vague: 'adapted the treatment with the current constraints' - no details about what adaptations were made, what constraints existed, or what outcomes resulted.\n2. Union work: 'many issues to tackle' but only lists topics without any specific actions taken, processes followed, or measurable outcomes. 'Some physicians ended up receiving payments, others did not' - no numbers, no explanation of why.\n3. Core competencies list generic areas ('clinical expertise in psychiatry') without specific procedures, patient volumes, or specialized skills.\n4. CV lists positions and dates but provides minimal detail about specific responsibilities, achievements, or outcomes.\n5. No quantitative metrics anywhere: no patient volumes, no outcome measures, no specific improvements achieved.\n\nThe application uses placeholder language throughout:\n- 'various hospitals in France' (which ones?)\n- 'adapted the treatment' (how specifically?)\n- 'tried to do a fair job' (what actions?)\n- 'some hurdles were systems related, others had to do with individuals' (which ones?)\n\nReference letters are equally vague:\n- 'develop data-based systems' (no specific systems mentioned)\n- 'insane ability to thrive' (no specific examples)\n- 'performed extremely well' (no metrics or specific incidents)\n\nThis clearly maps to Tier 2 (3-4): 'Some specific details but inconsistent; provides general descriptions more often than specific examples.' Score of 3 because even basic details like specific technologies, methodologies, or quantitative outcomes are almost entirely absent.",
+      "evidence": [
+        {
+          "quote": "We developed awareness to these changes, and adapted the treatment with the current constraints.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Extremely vague - no specifics about what adaptations were made or what the constraints were"
+        },
+        {
+          "quote": "It was an interesting experience as there were many issues to tackle, ranging from withheld Covid payments, adjusting to the arrival of NPs, pay negotiations… The processes were not quick nor straightforward. Some hurdles were systems related, others had to do with individuals. Regarding issues with Covid pay, some physicians ended up receiving payments, others did not.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Lists topics but provides no specific actions, numbers, or concrete outcomes. 'Some...others' without any quantification"
+        },
+        {
+          "quote": "I tried to do a fair job in understanding how administration/management operate in our hospital, in advocating for my colleagues. I tried to give my colleagues explanations, feedback and as much clarity as possible.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Generic description of effort without any specific actions, methods, or measurable results"
+        },
+        {
+          "quote": "Clinical expertise in psychiatry (emergency, C/L, inpatient) and in emergency medicine. I work for OMH, H&H, NYP. I have worked in emergency medicine in various hospitals in France",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Lists general areas and organizations but no specific procedures, volumes, specializations, or achievements"
+        },
+        {
+          "quote": "She is interested in collaborating with others to develop data-based systems that can improve outcomes in psychiatry and possibly in other clinical settings.",
+          "source": "Martineau_Cecile_app2_redacted.pdf",
+          "context": "Reference letter is vague - no specific systems, methodologies, or outcomes mentioned"
+        }
+      ],
+      "notes": "This is one of the clearest cases of lack of detail orientation. The entire application could have been written by almost any psychiatrist with emergency medicine experience. There are no specific technologies mentioned, no quantitative outcomes, no detailed methodologies, and no concrete examples with sufficient detail to understand what was actually done."
+    }
+  ],
+  "metadata": {
+    "model": "claude-sonnet-4-5-20250929",
+    "processing_time_seconds": 77.41604113578796,
+    "materials_character_count": 14191,
+    "timestamp": "2026-01-16T13:54:52.823348"
+  }
+}
