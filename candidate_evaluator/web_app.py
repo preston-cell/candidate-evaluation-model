@@ -701,10 +701,13 @@ def render_job_card(job, job_manager, show_actions=True):
 
                         if retry_files:
                             # Submit new job for failed candidates
+                            # Preserve evaluation_mode from original job
+                            original_config = job.get("config", {})
                             config = st.session_state.config
                             job_config = {
                                 "api_key": config.api.anthropic_api_key,
-                                "max_tokens": config.api.max_tokens
+                                "max_tokens": original_config.get("max_tokens", config.api.max_tokens),
+                                "evaluation_mode": original_config.get("evaluation_mode", "criteria")
                             }
 
                             new_job_id = job_manager.submit_job(
@@ -751,10 +754,18 @@ def results_page():
 
     st.markdown("---")
 
+    # Build lookup dicts for combined view
+    criteria_by_id = {r.candidate.candidate_id: r for r in criteria_results}
+    holistic_by_id = {r.candidate.candidate_id: r for r in holistic_results}
+
+    # Find candidates with both evaluations
+    both_ids = sorted(set(criteria_by_id.keys()) & set(holistic_by_id.keys()))
+
     # Tab view for different evaluation types
-    tab1, tab2 = st.tabs([
+    tab1, tab2, tab3 = st.tabs([
         f"Criteria-Based ({len(criteria_results)})",
-        f"Holistic ({len(holistic_results)})"
+        f"Holistic ({len(holistic_results)})",
+        f"Combined View ({len(both_ids)})"
     ])
 
     with tab1:
@@ -843,6 +854,91 @@ def results_page():
             if selected_holistic:
                 result = holistic_options[selected_holistic]
                 display_holistic_evaluation_result(result)
+
+    with tab3:
+        if not both_ids:
+            st.info("No candidates have both evaluation types yet. Run both criteria-based and holistic evaluations on the same candidates to compare.")
+        else:
+            st.subheader(f"Candidates with Both Evaluations: {len(both_ids)}")
+
+            # Candidate selector
+            selected_id = st.selectbox(
+                "Select Candidate",
+                both_ids,
+                key="combined_view_selector"
+            )
+
+            if selected_id:
+                criteria_result = criteria_by_id[selected_id]
+                holistic_result = holistic_by_id[selected_id]
+
+                # Comparison summary
+                display_comparison_summary(criteria_result, holistic_result)
+
+                # Side-by-side display
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.markdown("### Criteria-Based Evaluation")
+                    display_evaluation_result(criteria_result)
+                with col2:
+                    st.markdown("### Holistic Evaluation")
+                    display_holistic_evaluation_result(holistic_result)
+
+
+def display_comparison_summary(criteria_result, holistic_result):
+    """Display a comparison summary between criteria-based and holistic evaluations."""
+    score_diff = criteria_result.overall_score - holistic_result.overall_score
+
+    st.markdown("### Comparison Summary")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.metric(
+            "Criteria Score",
+            f"{criteria_result.overall_score:.1f}",
+            delta=None
+        )
+
+    with col2:
+        st.metric(
+            "Holistic Score",
+            f"{holistic_result.overall_score:.1f}",
+            delta=None
+        )
+
+    with col3:
+        if score_diff > 0:
+            delta_label = "Criteria higher"
+        elif score_diff < 0:
+            delta_label = "Holistic higher"
+        else:
+            delta_label = "Equal"
+        st.metric(
+            "Score Difference",
+            f"{abs(score_diff):.1f}",
+            delta=delta_label
+        )
+
+    with col4:
+        interview = "Yes" if holistic_result.interview_decision else "No"
+        st.metric("Interview (Holistic)", interview)
+
+    # Recommendations comparison
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown(f"**Criteria Recommendation:** {criteria_result.recommendation}")
+    with col2:
+        st.markdown(f"**Holistic Recommendation:** {holistic_result.recommendation}")
+
+    # Agreement indicator
+    recs_match = criteria_result.recommendation.lower() == holistic_result.recommendation.lower()
+    if recs_match:
+        st.success("Recommendations align")
+    elif abs(score_diff) > 1.5:
+        st.warning(f"Significant score difference: {abs(score_diff):.1f} points")
+
+    st.markdown("---")
 
 
 def display_evaluation_result(result):

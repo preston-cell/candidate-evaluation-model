@@ -306,13 +306,46 @@ class CandidateEvaluator:
         # Generate holistic evaluation prompt
         prompt = get_holistic_evaluation_prompt(combined_materials, program_description)
 
-        # Call Claude API
-        logger.info("Calling Claude API for holistic evaluation...")
-        response = self._call_claude_api(prompt)
+        # Call Claude API with retry logic for JSON parsing failures
+        max_retries = 2
+        last_error = None
+        evaluation_data = None
 
-        # Parse response
-        logger.info("Parsing holistic evaluation response...")
-        evaluation_data = self._parse_holistic_response(response)
+        for attempt in range(max_retries + 1):
+            try:
+                if attempt == 0:
+                    logger.info("Calling Claude API for holistic evaluation...")
+                    response = self._call_claude_api(prompt)
+                else:
+                    # Retry with explicit JSON correction request
+                    logger.warning(f"Retry attempt {attempt} due to JSON parsing failure")
+                    retry_prompt = f"""Your previous response could not be parsed as valid JSON.
+Error: {last_error}
+
+Please regenerate your ENTIRE evaluation as valid JSON only.
+Start with ```json and end with ```.
+Make sure all quotes inside string values are escaped with backslash: \\"
+Do NOT include any text outside the JSON structure.
+
+Original request:
+{prompt}"""
+                    response = self._call_claude_api(retry_prompt)
+
+                # Parse response
+                logger.info("Parsing holistic evaluation response...")
+                evaluation_data = self._parse_holistic_response(response)
+                break  # Success, exit retry loop
+
+            except ValueError as e:
+                last_error = str(e)
+                if attempt < max_retries:
+                    logger.warning(f"JSON parsing failed (attempt {attempt + 1}): {e}")
+                else:
+                    logger.error(f"All {max_retries + 1} attempts failed to parse JSON")
+                    raise
+
+        if evaluation_data is None:
+            raise ValueError("Failed to get valid evaluation data after retries")
 
         # Create candidate profile
         candidate = CandidateProfile(
@@ -459,7 +492,7 @@ class CandidateEvaluator:
             logger.warning(f"Could not save debug file: {e}")
 
         try:
-            # Extract JSON from response - look for code block first
+            # Extract JSON from response - try multiple methods
             json_str = None
 
             # Method 1: Look for ```json code block
@@ -469,7 +502,7 @@ class CandidateEvaluator:
                 if end > start:
                     json_str = response[start:end].strip()
 
-            # Method 2: Look for any ``` code block
+            # Method 2: Look for any ``` code block containing JSON
             if not json_str and '```' in response:
                 start = response.find('```') + 3
                 # Skip language identifier if present
@@ -478,33 +511,71 @@ class CandidateEvaluator:
                     start = newline + 1
                 end = response.find('```', start)
                 if end > start:
-                    json_str = response[start:end].strip()
+                    potential_json = response[start:end].strip()
+                    # Only use if it looks like JSON
+                    if potential_json.startswith('{'):
+                        json_str = potential_json
 
-            # Method 3: Find JSON object directly
+            # Method 3: Find JSON object directly using brace matching
             if not json_str:
                 brace_start = response.find('{')
                 if brace_start >= 0:
-                    # Find matching closing brace
+                    # Find matching closing brace, handling strings properly
                     brace_count = 0
+                    in_string = False
+                    escape_next = False
                     for i, char in enumerate(response[brace_start:], brace_start):
-                        if char == '{':
-                            brace_count += 1
-                        elif char == '}':
-                            brace_count -= 1
-                            if brace_count == 0:
-                                json_str = response[brace_start:i+1]
-                                break
+                        if escape_next:
+                            escape_next = False
+                            continue
+                        if char == '\\' and in_string:
+                            escape_next = True
+                            continue
+                        if char == '"' and not escape_next:
+                            in_string = not in_string
+                        elif not in_string:
+                            if char == '{':
+                                brace_count += 1
+                            elif char == '}':
+                                brace_count -= 1
+                                if brace_count == 0:
+                                    json_str = response[brace_start:i+1]
+                                    break
 
             if not json_str:
+                # Log more context to help debug
+                logger.error(f"No JSON found. Response length: {len(response)}")
+                logger.error(f"Response starts with: {response[:500]}...")
+                logger.error(f"Response ends with: ...{response[-500:]}")
                 raise ValueError("No JSON found in holistic response")
 
-            # Parse JSON with repair fallback
+            # Always apply repair function first (proactively fix common issues)
+            repaired = self._repair_json_string(json_str)
+
+            # Try to parse
             try:
-                data = json.loads(json_str)
-            except json.JSONDecodeError:
-                # Try to repair unescaped quotes
-                repaired = self._repair_json_string(json_str)
                 data = json.loads(repaired)
+            except json.JSONDecodeError as e:
+                # Log the specific error location
+                logger.error(f"JSON parse error: {e}")
+                logger.error(f"Error at position {e.pos}, around: ...{repaired[max(0,e.pos-50):e.pos+50]}...")
+
+                # Try additional repair: remove trailing commas before } or ]
+                import re
+                repaired2 = re.sub(r',(\s*[}\]])', r'\1', repaired)
+                try:
+                    data = json.loads(repaired2)
+                except json.JSONDecodeError as e2:
+                    logger.warning(f"Second parse attempt failed: {e2}")
+
+                    # Third repair attempt: fix malformed string values with embedded quotes
+                    # Pattern: "key": "text A" bare_text "text B" bare_text, → "key": "text A bare_text text B bare_text",
+                    repaired3 = self._aggressive_json_repair(repaired2)
+                    try:
+                        data = json.loads(repaired3)
+                    except json.JSONDecodeError as e3:
+                        logger.error(f"Third parse attempt (aggressive repair) failed: {e3}")
+                        raise ValueError(f"Failed to parse JSON: {e3}")
 
             return data
 
@@ -558,6 +629,58 @@ class CandidateEvaluator:
 
             i += 1
         return ''.join(result)
+
+    def _aggressive_json_repair(self, text: str) -> str:
+        """
+        Aggressive JSON repair for badly malformed strings.
+
+        Handles patterns like: "key": "text A" bare words "text B" bare,
+        by trying to merge them into: "key": "text A bare words text B bare",
+        """
+        import re
+
+        # Pattern to find malformed string values:
+        # "key": "value1" some_text "value2" more_text, (or } or ])
+        # This is tricky because we need to be careful not to break valid JSON
+
+        # Strategy: Look for lines where a string value seems to continue after a closing quote
+        # with non-JSON text before the next quote
+
+        lines = text.split('\n')
+        repaired_lines = []
+
+        for line in lines:
+            # Check if this line has the problematic pattern:
+            # A string that ends with ", then non-quote text, then another "
+            # Pattern: "..." baretext "..." baretext,
+            # We need to be careful: "key": "value", is valid
+            # But "key": "val1" and "val2", is not
+
+            # Look for pattern: ": "..." non-json-chars "..." ... ,
+            # where non-json-chars doesn't include { } [ ]
+            match = re.search(r':\s*"[^"]*"\s+[^",{}\[\]:]+\s*"[^"]*"', line)
+            if match:
+                # This line has the problematic pattern
+                # Try to fix by removing the embedded quotes and joining the text
+                # Find the key-value pair
+                kv_match = re.match(r'^(\s*"[^"]+"\s*:\s*)"(.*)(",?\s*)$', line)
+                if kv_match:
+                    prefix = kv_match.group(1)  # "key":
+                    value_part = kv_match.group(2)  # everything between outer quotes
+                    suffix = kv_match.group(3)  # trailing comma or nothing
+
+                    # Remove unescaped internal quotes and normalize spacing
+                    # This is crude but may help
+                    fixed_value = re.sub(r'"\s*([^"]*)\s*"', r' \1 ', value_part)
+                    fixed_value = re.sub(r'\s+', ' ', fixed_value).strip()
+
+                    repaired_line = f'{prefix}"{fixed_value}"{suffix}'
+                    repaired_lines.append(repaired_line)
+                    continue
+
+            repaired_lines.append(line)
+
+        return '\n'.join(repaired_lines)
 
     def _call_claude_api(self, prompt: str) -> str:
         """

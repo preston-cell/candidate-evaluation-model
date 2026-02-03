@@ -809,7 +809,15 @@ def _format_list(items: List[str]) -> str:
 
 
 # Dr. Gray's Holistic Evaluation Mode - Enhanced Version
-HOLISTIC_EVALUATION_PROMPT = """# Comprehensive Holistic Candidate Evaluation
+HOLISTIC_EVALUATION_PROMPT = """**CRITICAL: YOUR ENTIRE RESPONSE MUST BE VALID JSON WRAPPED IN ```json``` CODE BLOCKS.**
+
+Do NOT write markdown narrative text. Do NOT write headers like "# Overall Assessment".
+Your response MUST start with ```json and end with ```.
+Any non-JSON output will cause a system failure.
+
+---
+
+# Comprehensive Holistic Candidate Evaluation
 
 You are evaluating a candidate for an innovation and research program. Rather than scoring on specific pre-defined criteria, you will provide an in-depth holistic assessment based on the program's goals and the candidate's demonstrated qualities.
 
@@ -1004,7 +1012,27 @@ For each piece of evidence, provide:
 
 ---
 
-Provide your comprehensive holistic evaluation now. Be thorough - this evaluation should take significant effort and provide deep insight into the candidate.
+**REMINDER: YOUR RESPONSE MUST BE VALID JSON ONLY.**
+
+Start your response with ```json and end with ```.
+Do NOT write narrative text or markdown headers outside the JSON structure.
+Put all narrative content INSIDE the JSON string fields.
+
+**CRITICAL JSON FORMATTING RULES:**
+
+1. When writing quotes inside JSON strings, you MUST escape internal quotation marks:
+   WRONG: "quote": "He said "hello" to me"
+   RIGHT: "quote": "He said \"hello\" to me"
+
+2. When combining multiple quotes from different sources, keep them in a SINGLE string with escaped quotes:
+   WRONG: "quote": "First quote" and "second quote" together
+   RIGHT: "quote": "\"First quote\" and \"second quote\" together"
+
+3. Never have bare text between quoted values. Everything in a string value must be ONE continuous quoted string:
+   WRONG: "field": "text A" some words "text B" more words,
+   RIGHT: "field": "text A, some words, text B, more words"
+
+Provide your comprehensive holistic evaluation now in JSON format. Be thorough - this evaluation should take significant effort and provide deep insight into the candidate.
 """
 
 
