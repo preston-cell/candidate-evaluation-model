@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-03
+
+### Added
+
+#### Admit Pattern Analysis Feature
+- **New "Admit Patterns" tab** in the web interface for analyzing what distinguishes admitted from rejected candidates
+- **Pattern discovery system** that:
+  - Accepts batch upload of candidate application PDFs
+  - Uses CSV mapping file to specify admit/reject labels for each candidate
+  - Evaluates all candidates (using holistic or criteria-based mode)
+  - Analyzes patterns distinguishing admitted from rejected candidates
+  - Identifies predictive factors, common strengths/weaknesses, and surprising cases
+
+#### New Components
+- `AdmitPatternAnalyzer` class in `pattern_analyzer.py` for running pattern analysis
+- `AdmitPatternAnalysisResult`, `AdmitPatternCategory`, `AdmitPatternEvidence` models
+- `ADMIT_PATTERN_ANALYSIS_PROMPT` template for Claude-powered pattern discovery
+- `get_admit_pattern_analysis_prompt()` function for generating analysis prompts
+- Sample admit mapping CSV template in `examples/sample_admit_mapping.csv`
+
+#### CSV Format for Admit Mapping
+```csv
+filename,admit_status
+candidate_001_application.pdf,yes
+candidate_002_application.pdf,no
+```
+
+### Technical Details
+- Supports both holistic and criteria-based evaluation modes for candidate processing
+- Calculates basic statistics without API calls for quick preview
+- Full Claude-powered analysis for detailed pattern discovery
+- Saves analysis results to JSON for later reference
+- Handles large batches by processing candidates sequentially
+
 ## [1.0.0] - 2024-01-05
 
 ### Added

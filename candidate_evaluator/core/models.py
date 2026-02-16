@@ -338,3 +338,82 @@ class DistributionAnalysis(BaseModel):
     # Common patterns
     common_strengths: List[str] = Field(default_factory=list)
     common_weaknesses: List[str] = Field(default_factory=list)
+
+
+class AdmitPatternEvidence(BaseModel):
+    """Evidence supporting a pattern finding"""
+    pattern: str = Field(description="Description of the pattern")
+    admitted_examples: List[str] = Field(
+        default_factory=list,
+        description="Examples from admitted candidates"
+    )
+    rejected_examples: List[str] = Field(
+        default_factory=list,
+        description="Counter-examples from rejected candidates"
+    )
+    confidence: str = Field(default="medium", description="high, medium, or low")
+
+
+class AdmitPatternCategory(BaseModel):
+    """A category of patterns distinguishing admitted from rejected candidates"""
+    category_name: str = Field(description="Name of the pattern category")
+    description: str = Field(description="Detailed description of patterns in this category")
+    patterns: List[AdmitPatternEvidence] = Field(default_factory=list)
+    importance: str = Field(default="medium", description="high, medium, or low importance")
+
+
+class AdmitPatternAnalysisResult(BaseModel):
+    """Complete result of admit pattern analysis"""
+    analysis_date: datetime = Field(default_factory=datetime.now)
+    total_candidates: int
+    admitted_count: int
+    rejected_count: int
+    
+    # Score comparison
+    admitted_mean_score: float
+    rejected_mean_score: float
+    score_difference: float
+    
+    # Key distinguishing patterns
+    key_patterns: List[AdmitPatternCategory] = Field(
+        default_factory=list,
+        description="Major pattern categories distinguishing groups"
+    )
+    
+    # Specific findings
+    admitted_strengths: List[str] = Field(
+        default_factory=list,
+        description="Common strengths in admitted candidates"
+    )
+    rejected_weaknesses: List[str] = Field(
+        default_factory=list,
+        description="Common weaknesses in rejected candidates"
+    )
+    
+    # Surprising findings
+    surprising_admits: List[Dict[str, Any]] = Field(
+        default_factory=list,
+        description="Admitted candidates with lower scores or unusual profiles"
+    )
+    surprising_rejects: List[Dict[str, Any]] = Field(
+        default_factory=list,
+        description="Rejected candidates with higher scores or strong profiles"
+    )
+    
+    # Summary
+    executive_summary: str = Field(description="High-level summary of findings")
+    methodology_notes: str = Field(
+        default="",
+        description="Notes about the analysis methodology and limitations"
+    )
+    
+    # Raw data for reference
+    candidate_summaries: List[Dict[str, Any]] = Field(
+        default_factory=list,
+        description="Summary data for each candidate with admit status"
+    )
+    
+    metadata: Dict[str, Any] = Field(
+        default_factory=dict,
+        description="Additional metadata"
+    )

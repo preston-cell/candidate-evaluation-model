@@ -1,11 +1,25 @@
 """Pattern analysis and linguistic marker extraction"""
 
 import re
-from typing import List, Dict, Set, Tuple
+import json
+import logging
+from typing import List, Dict, Set, Tuple, Any, Optional
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+from datetime import datetime
 
-from candidate_evaluator.core.models import EvaluationCriterion
+from anthropic import Anthropic
+
+from candidate_evaluator.core.models import (
+    EvaluationCriterion,
+    EvaluationResult,
+    HolisticEvaluationResult,
+    AdmitPatternAnalysisResult,
+    AdmitPatternCategory,
+    AdmitPatternEvidence
+)
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -451,3 +465,298 @@ class LinguisticPatternAnalyzer:
             ]),
             'innovation_potential_score': min(10, total_markers / 5)  # Rough score
         }
+
+
+class AdmitPatternAnalyzer:
+    """
+    Analyzes patterns distinguishing admitted from rejected candidates.
+    
+    This class takes evaluation results with admit status labels and
+    uses Claude to identify distinguishing patterns.
+    """
+    
+    def __init__(self, api_key: str, model: str = "claude-sonnet-4-20250514", max_tokens: int = 8192):
+        """
+        Initialize the admit pattern analyzer.
+        
+        Args:
+            api_key: Anthropic API key
+            model: Claude model to use
+            max_tokens: Maximum tokens for response
+        """
+        self.client = Anthropic(api_key=api_key)
+        self.model = model
+        self.max_tokens = max_tokens
+    
+    def prepare_candidate_summary(
+        self,
+        evaluation: Any,
+        admit_status: bool
+    ) -> Dict[str, Any]:
+        """
+        Prepare a summary dictionary for a single candidate.
+        
+        Args:
+            evaluation: EvaluationResult or HolisticEvaluationResult
+            admit_status: True if admitted, False if rejected
+            
+        Returns:
+            Summary dictionary for the candidate
+        """
+        summary = {
+            'candidate_id': evaluation.candidate.candidate_id,
+            'admit_status': admit_status,
+            'overall_score': evaluation.overall_score,
+            'recommendation': evaluation.recommendation,
+        }
+        
+        # Handle both EvaluationResult and HolisticEvaluationResult
+        if isinstance(evaluation, EvaluationResult):
+            summary['scores'] = {
+                score.criterion.value: score.score
+                for score in evaluation.scores
+            }
+            summary['strengths'] = evaluation.strengths
+            summary['weaknesses'] = evaluation.areas_for_development
+        elif isinstance(evaluation, HolisticEvaluationResult):
+            summary['innovation_potential'] = evaluation.innovation_potential.level
+            summary['program_fit'] = evaluation.program_fit.level
+            summary['interview_decision'] = evaluation.interview_decision
+            summary['strengths'] = evaluation.program_fit.strengths_for_program
+            summary['weaknesses'] = evaluation.program_fit.concerns
+            
+            # Extract red flags
+            red_flags = []
+            for rf in evaluation.red_flags:
+                if hasattr(rf, 'flag'):
+                    red_flags.append({'flag': rf.flag, 'severity': rf.severity})
+                else:
+                    red_flags.append(str(rf))
+            summary['red_flags'] = red_flags
+            
+            # Extract notable qualities
+            notable = []
+            for q in evaluation.notable_qualities:
+                notable.append(q.quality)
+            summary['notable_qualities'] = notable
+        
+        return summary
+    
+    def analyze_patterns(
+        self,
+        candidate_summaries: List[Dict[str, Any]]
+    ) -> AdmitPatternAnalysisResult:
+        """
+        Analyze patterns distinguishing admitted from rejected candidates.
+        
+        Args:
+            candidate_summaries: List of candidate summary dictionaries with admit_status
+            
+        Returns:
+            AdmitPatternAnalysisResult with findings
+        """
+        from candidate_evaluator.prompts.evaluation_prompts import get_admit_pattern_analysis_prompt
+        
+        logger.info(f"Analyzing patterns for {len(candidate_summaries)} candidates")
+        
+        # Calculate basic statistics
+        admitted = [c for c in candidate_summaries if c.get('admit_status')]
+        rejected = [c for c in candidate_summaries if not c.get('admit_status')]
+        
+        admitted_scores = [c.get('overall_score', 0) for c in admitted if c.get('overall_score')]
+        rejected_scores = [c.get('overall_score', 0) for c in rejected if c.get('overall_score')]
+        
+        admitted_mean = sum(admitted_scores) / len(admitted_scores) if admitted_scores else 0
+        rejected_mean = sum(rejected_scores) / len(rejected_scores) if rejected_scores else 0
+        
+        # Generate prompt
+        prompt = get_admit_pattern_analysis_prompt(candidate_summaries)
+        
+        # Call Claude API
+        logger.info("Calling Claude API for pattern analysis...")
+        response = self._call_claude_api(prompt)
+        
+        # Parse response
+        logger.info("Parsing pattern analysis response...")
+        analysis_data = self._parse_response(response)
+        
+        # Build result
+        result = AdmitPatternAnalysisResult(
+            total_candidates=len(candidate_summaries),
+            admitted_count=len(admitted),
+            rejected_count=len(rejected),
+            admitted_mean_score=admitted_mean,
+            rejected_mean_score=rejected_mean,
+            score_difference=admitted_mean - rejected_mean,
+            key_patterns=self._parse_key_patterns(analysis_data.get('key_patterns', [])),
+            admitted_strengths=analysis_data.get('admitted_strengths', []),
+            rejected_weaknesses=analysis_data.get('rejected_weaknesses', []),
+            surprising_admits=analysis_data.get('surprising_admits', []),
+            surprising_rejects=analysis_data.get('surprising_rejects', []),
+            executive_summary=analysis_data.get('executive_summary', ''),
+            methodology_notes=analysis_data.get('methodology_notes', ''),
+            candidate_summaries=candidate_summaries,
+            metadata={
+                'model': self.model,
+                'analysis_date': datetime.now().isoformat(),
+                'score_analysis': analysis_data.get('score_analysis', {}),
+                'predictive_factors': analysis_data.get('predictive_factors', [])
+            }
+        )
+        
+        logger.info("Pattern analysis complete")
+        return result
+    
+    def _call_claude_api(self, prompt: str) -> str:
+        """Call Claude API with the prompt."""
+        try:
+            message = self.client.messages.create(
+                model=self.model,
+                max_tokens=self.max_tokens,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ]
+            )
+            return message.content[0].text
+        except Exception as e:
+            logger.error(f"Claude API call failed: {e}")
+            raise
+    
+    def _parse_response(self, response: str) -> Dict[str, Any]:
+        """Parse Claude's JSON response."""
+        try:
+            # Try to extract JSON from code block
+            if '```json' in response:
+                start = response.find('```json') + 7
+                end = response.find('```', start)
+                if end > start:
+                    json_str = response[start:end].strip()
+                    return json.loads(json_str)
+            
+            # Try to find raw JSON object
+            brace_start = response.find('{')
+            if brace_start >= 0:
+                brace_count = 0
+                for i, char in enumerate(response[brace_start:], brace_start):
+                    if char == '{':
+                        brace_count += 1
+                    elif char == '}':
+                        brace_count -= 1
+                        if brace_count == 0:
+                            json_str = response[brace_start:i+1]
+                            return json.loads(json_str)
+            
+            raise ValueError("No JSON found in response")
+            
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse JSON response: {e}")
+            logger.error(f"Response preview: {response[:500]}...")
+            # Return empty result on parse failure
+            return {
+                'executive_summary': 'Failed to parse analysis response.',
+                'key_patterns': [],
+                'admitted_strengths': [],
+                'rejected_weaknesses': []
+            }
+    
+    def _parse_key_patterns(self, patterns_data: List[Dict]) -> List[AdmitPatternCategory]:
+        """Parse key patterns into model objects."""
+        categories = []
+        for pattern_data in patterns_data:
+            patterns = []
+            for p in pattern_data.get('patterns', []):
+                patterns.append(AdmitPatternEvidence(
+                    pattern=p.get('pattern', ''),
+                    admitted_examples=p.get('admitted_examples', []),
+                    rejected_examples=p.get('rejected_examples', []),
+                    confidence=p.get('confidence', 'medium')
+                ))
+            
+            categories.append(AdmitPatternCategory(
+                category_name=pattern_data.get('category_name', 'Unknown'),
+                description=pattern_data.get('description', ''),
+                patterns=patterns,
+                importance=pattern_data.get('importance', 'medium')
+            ))
+        
+        return categories
+    
+    def calculate_basic_statistics(
+        self,
+        candidate_summaries: List[Dict[str, Any]]
+    ) -> Dict[str, Any]:
+        """
+        Calculate basic statistics without calling Claude.
+        
+        Useful for quick analysis or when API is not available.
+        """
+        admitted = [c for c in candidate_summaries if c.get('admit_status')]
+        rejected = [c for c in candidate_summaries if not c.get('admit_status')]
+        
+        # Score statistics
+        admitted_scores = [c.get('overall_score', 0) for c in admitted if c.get('overall_score')]
+        rejected_scores = [c.get('overall_score', 0) for c in rejected if c.get('overall_score')]
+        
+        stats = {
+            'total_candidates': len(candidate_summaries),
+            'admitted_count': len(admitted),
+            'rejected_count': len(rejected),
+            'admission_rate': len(admitted) / len(candidate_summaries) if candidate_summaries else 0,
+        }
+        
+        if admitted_scores:
+            stats['admitted_mean_score'] = sum(admitted_scores) / len(admitted_scores)
+            stats['admitted_min_score'] = min(admitted_scores)
+            stats['admitted_max_score'] = max(admitted_scores)
+        
+        if rejected_scores:
+            stats['rejected_mean_score'] = sum(rejected_scores) / len(rejected_scores)
+            stats['rejected_min_score'] = min(rejected_scores)
+            stats['rejected_max_score'] = max(rejected_scores)
+        
+        if admitted_scores and rejected_scores:
+            stats['score_difference'] = stats['admitted_mean_score'] - stats['rejected_mean_score']
+            
+            # Find potential threshold
+            admitted_min = min(admitted_scores)
+            rejected_max = max(rejected_scores)
+            if admitted_min > rejected_max:
+                stats['apparent_threshold'] = (admitted_min + rejected_max) / 2
+            else:
+                # There's overlap - find gray zone
+                stats['gray_zone_min'] = max(min(admitted_scores), min(rejected_scores))
+                stats['gray_zone_max'] = min(max(admitted_scores), max(rejected_scores))
+        
+        # Per-criterion analysis (for EvaluationResult-based summaries)
+        criterion_stats = {}
+        for c in candidate_summaries:
+            scores = c.get('scores', {})
+            for criterion, score in scores.items():
+                if criterion not in criterion_stats:
+                    criterion_stats[criterion] = {'admitted': [], 'rejected': []}
+                
+                if c.get('admit_status'):
+                    criterion_stats[criterion]['admitted'].append(score)
+                else:
+                    criterion_stats[criterion]['rejected'].append(score)
+        
+        stats['criterion_differences'] = []
+        for criterion, data in criterion_stats.items():
+            if data['admitted'] and data['rejected']:
+                admitted_mean = sum(data['admitted']) / len(data['admitted'])
+                rejected_mean = sum(data['rejected']) / len(data['rejected'])
+                diff = admitted_mean - rejected_mean
+                stats['criterion_differences'].append({
+                    'criterion': criterion,
+                    'admitted_mean': admitted_mean,
+                    'rejected_mean': rejected_mean,
+                    'difference': diff
+                })
+        
+        # Sort by difference
+        stats['criterion_differences'].sort(key=lambda x: abs(x['difference']), reverse=True)
+        
+        return stats
