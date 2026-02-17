@@ -1065,3 +1065,229 @@ The program values candidates who show genuine evidence of these qualities throu
         )
 
     return prompt.format(materials=materials_text)
+
+
+# Admit Pattern Analysis Prompt
+ADMIT_PATTERN_ANALYSIS_PROMPT = """# Admit Pattern Analysis Task
+
+You are analyzing a set of candidate evaluations to identify patterns that distinguish ADMITTED candidates from REJECTED candidates.
+
+## Important Context
+
+These are REAL admission decisions. The candidates labeled "admitted" were actually admitted to the program, and those labeled "rejected" were not admitted. Your task is to discover what patterns in their applications and evaluations correlate with admission decisions.
+
+## Candidate Evaluation Summaries
+
+Below are summarized evaluations for each candidate, along with their actual admission status.
+
+{candidate_summaries}
+
+---
+
+## Analysis Instructions
+
+Analyze all the candidate data above and identify:
+
+1. **Score Patterns**: How do overall scores and criterion-specific scores differ between admitted and rejected candidates?
+
+2. **Qualitative Patterns**: What qualities, experiences, or characteristics appear more frequently in admitted candidates?
+
+3. **Evidence Patterns**: What types of evidence (specific achievements, metrics, experiences) are present in admitted candidates but missing in rejected ones?
+
+4. **Red Flag Patterns**: What red flags or weaknesses appear more often in rejected candidates?
+
+5. **Surprising Cases**: Are there any admitted candidates with lower scores or rejected candidates with higher scores? What might explain these cases?
+
+6. **Threshold Analysis**: Is there an apparent score threshold for admission? What score range represents the "gray zone" where admission becomes uncertain?
+
+---
+
+## Output Format
+
+Provide your analysis in the following JSON structure:
+
+```json
+{{
+  "executive_summary": "2-3 paragraph summary of the key findings. What most distinguishes admitted from rejected candidates?",
+  
+  "score_analysis": {{
+    "admitted_mean_score": 7.5,
+    "rejected_mean_score": 5.2,
+    "score_difference": 2.3,
+    "apparent_threshold": "Candidates scoring 6.5+ appear more likely to be admitted",
+    "gray_zone": "Scores between 5.5-6.5 seem to be the decision boundary",
+    "criterion_differences": [
+      {{
+        "criterion": "criterion_name",
+        "admitted_mean": 7.8,
+        "rejected_mean": 4.5,
+        "difference": 3.3,
+        "importance": "This criterion appears highly predictive of admission"
+      }}
+    ]
+  }},
+  
+  "key_patterns": [
+    {{
+      "category_name": "Pattern Category Name",
+      "description": "Detailed description of what distinguishes admitted from rejected in this category",
+      "importance": "high|medium|low",
+      "patterns": [
+        {{
+          "pattern": "Specific pattern description",
+          "admitted_examples": ["Example from admitted candidate 1", "Example from admitted candidate 2"],
+          "rejected_examples": ["Counter-example showing this was missing in rejected candidate"],
+          "confidence": "high|medium|low"
+        }}
+      ]
+    }}
+  ],
+  
+  "admitted_strengths": [
+    "Common strength 1 found in admitted candidates",
+    "Common strength 2 found in admitted candidates"
+  ],
+  
+  "rejected_weaknesses": [
+    "Common weakness 1 found in rejected candidates",
+    "Common weakness 2 found in rejected candidates"
+  ],
+  
+  "surprising_admits": [
+    {{
+      "candidate_id": "ID of surprisingly admitted candidate",
+      "score": 5.5,
+      "reason": "Why this admission is surprising based on the data",
+      "possible_explanation": "What might explain this decision"
+    }}
+  ],
+  
+  "surprising_rejects": [
+    {{
+      "candidate_id": "ID of surprisingly rejected candidate",
+      "score": 7.8,
+      "reason": "Why this rejection is surprising based on the data",
+      "possible_explanation": "What might explain this decision"
+    }}
+  ],
+  
+  "predictive_factors": [
+    {{
+      "factor": "Factor name",
+      "direction": "Presence increases/decreases admission likelihood",
+      "strength": "strong|moderate|weak",
+      "evidence": "How this was determined from the data"
+    }}
+  ],
+  
+  "methodology_notes": "Any limitations, caveats, or notes about this analysis"
+}}
+```
+
+---
+
+## Critical Requirements
+
+1. **USE ACTUAL DATA**: Only cite patterns that are actually present in the candidate summaries provided. Do not make up examples.
+
+2. **BE SPECIFIC**: When citing patterns, reference specific candidate IDs and their actual scores/qualities.
+
+3. **QUANTIFY WHERE POSSIBLE**: Calculate actual means, differences, and frequencies rather than using vague language.
+
+4. **ACKNOWLEDGE LIMITATIONS**: If the sample size is small or patterns are unclear, say so explicitly.
+
+5. **LOOK FOR NON-OBVIOUS PATTERNS**: Beyond just "higher scores = admitted", look for specific criteria or qualities that seem predictive.
+
+6. **CONSIDER EXCEPTIONS**: The most interesting insights often come from cases that don't fit the pattern.
+
+Provide your complete analysis now.
+"""
+
+
+def get_admit_pattern_analysis_prompt(candidate_summaries: List[Dict]) -> str:
+    """
+    Generate prompt for analyzing patterns between admitted and rejected candidates.
+    
+    Args:
+        candidate_summaries: List of dictionaries containing:
+            - candidate_id: str
+            - admit_status: bool (True = admitted)
+            - overall_score: float
+            - scores: Dict[str, int] (criterion -> score)
+            - strengths: List[str]
+            - weaknesses: List[str]
+            - recommendation: str
+            - key_evidence: List[str] (optional)
+            
+    Returns:
+        Formatted prompt string
+    """
+    # Format candidate summaries for the prompt
+    summaries_text = []
+    
+    # Separate admitted and rejected for clarity
+    admitted = [c for c in candidate_summaries if c.get('admit_status')]
+    rejected = [c for c in candidate_summaries if not c.get('admit_status')]
+    
+    summaries_text.append(f"## ADMITTED CANDIDATES ({len(admitted)} total)\n")
+    for candidate in admitted:
+        summaries_text.append(_format_candidate_summary(candidate, "ADMITTED"))
+    
+    summaries_text.append(f"\n## REJECTED CANDIDATES ({len(rejected)} total)\n")
+    for candidate in rejected:
+        summaries_text.append(_format_candidate_summary(candidate, "REJECTED"))
+    
+    return ADMIT_PATTERN_ANALYSIS_PROMPT.format(
+        candidate_summaries="\n".join(summaries_text)
+    )
+
+
+def _format_candidate_summary(candidate: Dict, status: str) -> str:
+    """Format a single candidate summary for the prompt."""
+    lines = [
+        f"### {candidate.get('candidate_id', 'Unknown')} [{status}]",
+        f"- **Overall Score**: {candidate.get('overall_score', 'N/A'):.1f}/10" if candidate.get('overall_score') else "- **Overall Score**: N/A",
+        f"- **Recommendation**: {candidate.get('recommendation', 'N/A')}",
+    ]
+    
+    # Add criterion scores if available
+    scores = candidate.get('scores', {})
+    if scores:
+        lines.append("- **Criterion Scores**:")
+        for criterion, score in sorted(scores.items()):
+            display_name = criterion.replace('_', ' ').title()
+            lines.append(f"  - {display_name}: {score}/10")
+    
+    # Add strengths
+    strengths = candidate.get('strengths', [])
+    if strengths:
+        lines.append("- **Strengths**:")
+        for s in strengths[:5]:  # Limit to top 5
+            lines.append(f"  - {s}")
+    
+    # Add weaknesses/areas for development
+    weaknesses = candidate.get('weaknesses', []) or candidate.get('areas_for_development', [])
+    if weaknesses:
+        lines.append("- **Weaknesses/Gaps**:")
+        for w in weaknesses[:5]:
+            lines.append(f"  - {w}")
+    
+    # Add key evidence if available
+    key_evidence = candidate.get('key_evidence', [])
+    if key_evidence:
+        lines.append("- **Key Evidence**:")
+        for ev in key_evidence[:3]:
+            lines.append(f"  - {ev}")
+    
+    # Add red flags if available (from holistic evaluations)
+    red_flags = candidate.get('red_flags', [])
+    if red_flags:
+        lines.append("- **Red Flags**:")
+        for rf in red_flags[:3]:
+            if isinstance(rf, dict):
+                lines.append(f"  - {rf.get('flag', str(rf))}")
+            else:
+                lines.append(f"  - {rf}")
+    
+    lines.append("")  # Empty line between candidates
+    return "\n".join(lines)

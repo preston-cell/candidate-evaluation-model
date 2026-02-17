@@ -16,8 +16,10 @@ from candidate_evaluator.core.models import (
     CriterionScore,
     EvaluationCriterion,
     Evidence,
-    HolisticEvaluationResult
+    HolisticEvaluationResult,
+    AdmitPatternAnalysisResult
 )
+from candidate_evaluator.core.pattern_analyzer import AdmitPatternAnalyzer
 from candidate_evaluator.utils.config import load_config, get_default_config
 from candidate_evaluator.exporters import (
     JSONExporter,
@@ -218,7 +220,7 @@ def main():
         st.markdown("## Candidate Evaluator")
         st.markdown("---")
 
-        page_options = ["Dashboard", "New Evaluation", "Batch Jobs", "Results", "Analysis", "Research", "Settings"]
+        page_options = ["Dashboard", "New Evaluation", "Batch Jobs", "Results", "Analysis", "Admit Patterns", "Research", "Settings"]
 
         page = st.radio(
             "Navigation",
@@ -255,6 +257,8 @@ def main():
         results_page()
     elif page == "Analysis":
         analysis_page()
+    elif page == "Admit Patterns":
+        admit_pattern_analysis_page()
     elif page == "Research":
         research_page()
     elif page == "Settings":
@@ -1654,6 +1658,865 @@ def recommendation_analysis(all_results):
                 # Show candidate list
                 for c in sorted(candidates, key=lambda x: -x.overall_score)[:5]:
                     st.text(f"- {c.candidate.candidate_id}: {c.overall_score:.1f}/10")
+
+
+def _get_progress_file_path() -> Path:
+    """Get the path to the progress file."""
+    output_dir = Path("./results")
+    output_dir.mkdir(exist_ok=True)
+    return output_dir / "admit_analysis_progress.json"
+
+
+def _load_progress_from_disk() -> dict:
+    """Load analysis progress from disk."""
+    progress_file = _get_progress_file_path()
+    if progress_file.exists():
+        try:
+            with open(progress_file, 'r') as f:
+                return json.load(f)
+        except Exception:
+            return None
+    return None
+
+
+def _save_progress_to_disk(progress: dict):
+    """Save analysis progress to disk."""
+    progress_file = _get_progress_file_path()
+    with open(progress_file, 'w') as f:
+        json.dump(progress, f, indent=2, default=str)
+
+
+def _clear_progress_from_disk():
+    """Clear progress file from disk."""
+    progress_file = _get_progress_file_path()
+    if progress_file.exists():
+        progress_file.unlink()
+
+
+def admit_pattern_analysis_page():
+    """Admit Pattern Analysis - discover what distinguishes admitted from rejected candidates."""
+    st.title("Admit Pattern Analysis")
+    st.markdown("Upload candidate applications with admit/reject labels to discover distinguishing patterns.")
+    
+    # Load progress from disk if not in session state
+    if 'admit_analysis_progress' not in st.session_state:
+        disk_progress = _load_progress_from_disk()
+        if disk_progress:
+            st.session_state['admit_analysis_progress'] = disk_progress
+            # Also restore file paths if they exist
+            if disk_progress.get('file_paths'):
+                st.session_state['admit_analysis_file_paths'] = disk_progress['file_paths']
+            if disk_progress.get('admit_map'):
+                # Reconstruct mapping dataframe (pd is imported globally at top of file)
+                mapping_df = pd.DataFrame(list(disk_progress['admit_map'].items()), 
+                                         columns=['filename', 'admit_status'])
+                st.session_state['admit_mapping'] = mapping_df
+    
+    # Reset button if analysis is in progress or completed
+    if 'admit_analysis_progress' in st.session_state:
+        progress = st.session_state['admit_analysis_progress']
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            if progress.get('completed'):
+                st.success(f"Previous analysis completed: {len(progress.get('candidate_summaries', []))} candidates evaluated")
+            else:
+                st.info(f"Analysis in progress: {progress.get('current_index', 0)} / {progress.get('total_candidates', '?')} candidates evaluated")
+        with col2:
+            if st.button("Reset / Start New", use_container_width=True):
+                keys_to_delete = [
+                    'admit_analysis_progress',
+                    'admit_analysis_temp_dir', 
+                    'admit_analysis_file_paths',
+                    'last_pattern_analysis',
+                    'admit_mapping',
+                    'admit_analysis_holistic'
+                ]
+                for key in keys_to_delete:
+                    if key in st.session_state:
+                        del st.session_state[key]
+                _clear_progress_from_disk()
+                st.rerun()
+        st.markdown("---")
+    
+    # Instructions
+    with st.expander("How to use", expanded=True):
+        st.markdown("""
+        **Step 1: Upload candidate application files**
+        - Upload PDF files containing candidate applications
+        - Each file should be one candidate's complete application
+        
+        **Step 2: Upload admit mapping CSV**
+        - Create a CSV file with two columns: `filename` and `admit_status`
+        - Example:
+        ```
+        filename,admit_status
+        candidate_001_application.pdf,yes
+        candidate_002_application.pdf,no
+        candidate_003_application.pdf,yes
+        ```
+        
+        **Step 3: Run analysis**
+        - The system will evaluate each candidate
+        - Then analyze patterns distinguishing admitted from rejected
+        
+        **Note**: This process may take significant time for large batches (expect ~1-2 minutes per candidate).
+        """)
+    
+    st.markdown("---")
+    
+    # File uploads
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("1. Upload Candidate Applications")
+        uploaded_files = st.file_uploader(
+            "Upload candidate PDF files",
+            type=['pdf'],
+            accept_multiple_files=True,
+            help="Upload all candidate application PDFs",
+            key="admit_pattern_files"
+        )
+        
+        if uploaded_files:
+            st.success(f"{len(uploaded_files)} files uploaded")
+            with st.expander("View files"):
+                for f in uploaded_files:
+                    st.text(f"- {f.name}")
+    
+    with col2:
+        st.subheader("2. Upload Admit Mapping CSV")
+        mapping_file = st.file_uploader(
+            "Upload admit mapping CSV",
+            type=['csv'],
+            help="CSV with filename and admit_status columns",
+            key="admit_mapping_file"
+        )
+        
+        if mapping_file:
+            try:
+                mapping_df = pd.read_csv(mapping_file)
+                mapping_df.columns = mapping_df.columns.str.lower().str.strip()
+                
+                if 'filename' not in mapping_df.columns:
+                    st.error("CSV must have a 'filename' column")
+                elif 'admit_status' not in mapping_df.columns:
+                    st.error("CSV must have an 'admit_status' column")
+                else:
+                    # Normalize admit_status
+                    def normalize_admit(val):
+                        if pd.isna(val):
+                            return None
+                        val_str = str(val).lower().strip()
+                        return val_str in ['yes', 'true', '1', 'y', 'admitted', 'admit']
+                    
+                    mapping_df['admit_status'] = mapping_df['admit_status'].apply(normalize_admit)
+                    
+                    admitted_count = mapping_df['admit_status'].sum()
+                    rejected_count = len(mapping_df) - admitted_count
+                    
+                    st.success(f"Loaded {len(mapping_df)} mappings")
+                    st.metric("Admitted", admitted_count)
+                    st.metric("Rejected", rejected_count)
+                    
+                    # Store in session state
+                    st.session_state['admit_mapping'] = mapping_df
+                    
+            except Exception as e:
+                st.error(f"Error reading CSV: {e}")
+    
+    st.markdown("---")
+    
+    # Analysis options
+    st.subheader("3. Analysis Options")
+    
+    eval_mode = st.radio(
+        "Evaluation mode for candidates",
+        ["Holistic (faster, recommended)", "Criteria-Based (detailed scores)"],
+        horizontal=True,
+        help="Holistic mode is faster and provides overall fit assessment. Criteria-based provides 11 detailed scores."
+    )
+    
+    use_holistic = eval_mode == "Holistic (faster, recommended)"
+    
+    # Check if we can proceed
+    can_proceed = (
+        uploaded_files and 
+        mapping_file and 
+        'admit_mapping' in st.session_state
+    )
+    
+    # Check if analysis is in progress (resume automatically)
+    analysis_in_progress = (
+        'admit_analysis_progress' in st.session_state and 
+        not st.session_state['admit_analysis_progress'].get('completed', False)
+    )
+    
+    if analysis_in_progress:
+        st.info("Continuing analysis...")
+        # Store evaluation mode in session state on first run
+        if 'admit_analysis_holistic' not in st.session_state:
+            st.session_state['admit_analysis_holistic'] = use_holistic
+        run_admit_pattern_analysis(uploaded_files, st.session_state['admit_analysis_holistic'])
+    elif st.button("Run Admit Pattern Analysis", disabled=not can_proceed, use_container_width=True):
+        # Store evaluation mode
+        st.session_state['admit_analysis_holistic'] = use_holistic
+        run_admit_pattern_analysis(uploaded_files, use_holistic)
+    
+    st.markdown("---")
+    
+    # Display previous results if available
+    st.subheader("Previous Analysis Results")
+    display_admit_pattern_results()
+
+
+def run_admit_pattern_analysis(uploaded_files, use_holistic: bool):
+    """Run the full admit pattern analysis pipeline."""
+    config = st.session_state.config
+    mapping_df = st.session_state.get('admit_mapping')
+    
+    if mapping_df is None:
+        st.error("No admit mapping found")
+        return
+    
+    # Create filename -> admit_status mapping
+    admit_map = dict(zip(mapping_df['filename'], mapping_df['admit_status']))
+    
+    # Save files to a persistent directory (not temp) so they survive reloads
+    output_dir = Path("./results")
+    output_dir.mkdir(exist_ok=True)
+    upload_dir = output_dir / "admit_analysis_uploads"
+    upload_dir.mkdir(exist_ok=True)
+    
+    # Save files if not already saved
+    if 'admit_analysis_file_paths' not in st.session_state:
+        file_paths = {}
+        
+        for uploaded_file in uploaded_files:
+            save_path = upload_dir / uploaded_file.name
+            with open(save_path, 'wb') as f:
+                f.write(uploaded_file.getbuffer())
+            file_paths[uploaded_file.name] = str(save_path)
+        
+        st.session_state['admit_analysis_file_paths'] = file_paths
+    else:
+        file_paths = st.session_state['admit_analysis_file_paths']
+    
+    # Match files with admit status
+    matched_candidates = []
+    unmatched_files = []
+    
+    for filename, filepath in file_paths.items():
+        if filename in admit_map:
+            matched_candidates.append({
+                'filename': filename,
+                'filepath': filepath,
+                'admit_status': admit_map[filename]
+            })
+        else:
+            unmatched_files.append(filename)
+    
+    if unmatched_files:
+        st.warning(f"{len(unmatched_files)} files not found in mapping: {', '.join(unmatched_files[:5])}...")
+    
+    if not matched_candidates:
+        st.error("No files matched the admit mapping. Check that filenames in CSV match uploaded files exactly.")
+        return
+    
+    # Initialize or get progress tracking from session state
+    if 'admit_analysis_progress' not in st.session_state:
+        st.session_state['admit_analysis_progress'] = {
+            'current_index': 0,
+            'total_candidates': len(matched_candidates),
+            'candidate_summaries': [],
+            'errors': [],
+            'completed': False,
+            'use_holistic': use_holistic,
+            'file_paths': file_paths,
+            'admit_map': {k: bool(v) for k, v in admit_map.items()}  # Ensure JSON serializable
+        }
+        # Save initial progress to disk
+        _save_progress_to_disk(st.session_state['admit_analysis_progress'])
+    
+    progress = st.session_state['admit_analysis_progress']
+    
+    # Check if already completed
+    if progress['completed']:
+        st.success("Analysis already completed! See results below.")
+        # Try to load the last pattern analysis from disk
+        if 'last_pattern_analysis' not in st.session_state:
+            # Find the most recent analysis file
+            analysis_files = list(output_dir.glob("admit_pattern_analysis_*.json"))
+            if analysis_files:
+                latest = max(analysis_files, key=lambda x: x.stat().st_mtime)
+                try:
+                    with open(latest, 'r') as f:
+                        data = json.load(f)
+                    st.session_state['last_pattern_analysis'] = data
+                except Exception:
+                    pass
+        
+        if 'last_pattern_analysis' in st.session_state:
+            # Display using dict directly since it may not be the model object
+            _display_pattern_analysis_from_dict(st.session_state['last_pattern_analysis'])
+        return
+    
+    st.info(f"Processing {len(matched_candidates)} matched candidates...")
+    
+    # Phase 1: Evaluate all candidates
+    evaluator = st.session_state.evaluator
+    
+    # Create a placeholder for status updates
+    progress_container = st.container()
+    
+    with progress_container:
+        progress_bar = st.progress(progress['current_index'] / len(matched_candidates))
+        status_text = st.empty()
+        error_container = st.empty()
+        skipped_container = st.empty()
+        
+        # Track skipped candidates
+        skipped_count = 0
+        
+        # Process candidates one at a time, saving progress
+        start_index = progress['current_index']
+        
+        for i in range(start_index, len(matched_candidates)):
+            candidate = matched_candidates[i]
+            candidate_id = Path(candidate['filename']).stem
+            
+            # Check if this candidate already has results in ./results/
+            output_dir = Path("./results")
+            suffix = "_holistic_evaluation.json" if use_holistic else "_evaluation.json"
+            existing_result_path = output_dir / f"{candidate_id}{suffix}"
+            
+            if existing_result_path.exists():
+                # Load existing result instead of re-evaluating
+                status_text.text(f"Loading existing {i+1}/{len(matched_candidates)}: {candidate_id}")
+                
+                try:
+                    with open(existing_result_path, 'r') as f:
+                        existing_data = json.load(f)
+                    
+                    # Build summary from existing data
+                    if use_holistic:
+                        # Get nested data safely
+                        innovation = existing_data.get('innovation_potential', {})
+                        program_fit = existing_data.get('program_fit', {})
+                        
+                        summary = {
+                            'candidate_id': candidate_id,
+                            'admit_status': candidate['admit_status'],
+                            'overall_score': existing_data.get('overall_score', 0),
+                            'recommendation': existing_data.get('recommendation', ''),
+                            'innovation_potential': innovation.get('level', 'medium') if isinstance(innovation, dict) else 'medium',
+                            'program_fit': program_fit.get('level', 'moderate') if isinstance(program_fit, dict) else 'moderate',
+                            'interview_decision': existing_data.get('interview_decision', False),
+                            'strengths': program_fit.get('strengths_for_program', []) if isinstance(program_fit, dict) else [],
+                            'weaknesses': program_fit.get('concerns', []) if isinstance(program_fit, dict) else [],
+                            'red_flags': [],
+                            'notable_qualities': []
+                        }
+                    else:
+                        summary = {
+                            'candidate_id': candidate_id,
+                            'admit_status': candidate['admit_status'],
+                            'overall_score': existing_data.get('overall_score', 0),
+                            'recommendation': existing_data.get('recommendation', ''),
+                            'scores': {},
+                            'strengths': existing_data.get('strengths', []),
+                            'weaknesses': existing_data.get('areas_for_development', [])
+                        }
+                        # Extract scores from existing data
+                        for score_data in existing_data.get('scores', []):
+                            criterion = score_data.get('criterion', '')
+                            score = score_data.get('score', 0)
+                            if criterion:
+                                summary['scores'][criterion] = score
+                    
+                    progress['candidate_summaries'].append(summary)
+                    skipped_count += 1
+                    skipped_container.info(f"Loaded {skipped_count} existing evaluations (skipping re-evaluation)")
+                    
+                except Exception as e:
+                    # If loading fails, we'll re-evaluate
+                    status_text.text(f"Re-evaluating {i+1}/{len(matched_candidates)}: {candidate_id} (load failed)")
+            else:
+                # No existing result - evaluate the candidate
+                status_text.text(f"Evaluating {i+1}/{len(matched_candidates)}: {candidate_id}")
+                
+                try:
+                    if use_holistic:
+                        result = evaluator.evaluate_candidate_holistic(
+                            candidate_id=candidate_id,
+                            material_paths=[candidate['filepath']]
+                        )
+                        
+                        # Build summary from holistic result
+                        summary = {
+                            'candidate_id': candidate_id,
+                            'admit_status': candidate['admit_status'],
+                            'overall_score': result.overall_score,
+                            'recommendation': result.recommendation,
+                            'innovation_potential': result.innovation_potential.level,
+                            'program_fit': result.program_fit.level,
+                            'interview_decision': result.interview_decision,
+                            'strengths': result.program_fit.strengths_for_program,
+                            'weaknesses': result.program_fit.concerns,
+                            'red_flags': [
+                                rf.flag if hasattr(rf, 'flag') else str(rf) 
+                                for rf in result.red_flags[:3]
+                            ],
+                            'notable_qualities': [q.quality for q in result.notable_qualities[:5]]
+                        }
+                    else:
+                        result = evaluator.evaluate_candidate(
+                            candidate_id=candidate_id,
+                            material_paths=[candidate['filepath']]
+                        )
+                        
+                        # Build summary from criteria-based result
+                        summary = {
+                            'candidate_id': candidate_id,
+                            'admit_status': candidate['admit_status'],
+                            'overall_score': result.overall_score,
+                            'recommendation': result.recommendation,
+                            'scores': {
+                                score.criterion.value: score.score
+                                for score in result.scores
+                            },
+                            'strengths': result.strengths,
+                            'weaknesses': result.areas_for_development
+                        }
+                    
+                    progress['candidate_summaries'].append(summary)
+                    
+                    # Save individual result
+                    output_dir.mkdir(exist_ok=True)
+                    json_path = output_dir / f"{candidate_id}{suffix}"
+                    with open(json_path, 'w', encoding='utf-8') as f:
+                        json.dump(result.model_dump(), f, indent=2, default=str)
+                        
+                except Exception as e:
+                    error_msg = f"Failed to evaluate {candidate_id}: {e}"
+                    progress['errors'].append(error_msg)
+                    error_container.warning(error_msg)
+            
+            # Update progress
+            progress['current_index'] = i + 1
+            progress_bar.progress((i + 1) / len(matched_candidates))
+            
+            # Save progress to session state AND disk
+            st.session_state['admit_analysis_progress'] = progress
+            _save_progress_to_disk(progress)
+            
+            # Rerun to update UI and continue processing (prevents timeouts)
+            # Only rerun if we actually did an API call (not for loaded results)
+            if i < len(matched_candidates) - 1:
+                if not existing_result_path.exists():
+                    time.sleep(0.5)  # Brief pause to let UI update
+                st.rerun()
+    
+    candidate_summaries = progress['candidate_summaries']
+    status_text.text(f"Evaluated {len(candidate_summaries)}/{len(matched_candidates)} candidates")
+    
+    if len(candidate_summaries) < 2:
+        st.error("Need at least 2 successfully evaluated candidates for pattern analysis")
+        return
+    
+    # Phase 2: Run pattern analysis
+    st.info("Running pattern analysis...")
+    
+    try:
+        analyzer = AdmitPatternAnalyzer(
+            api_key=config.api.anthropic_api_key,
+            model=config.api.model,
+            max_tokens=config.api.max_tokens
+        )
+        
+        # First show basic statistics (no API call needed)
+        basic_stats = analyzer.calculate_basic_statistics(candidate_summaries)
+        
+        st.subheader("Basic Statistics")
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Total Candidates", basic_stats['total_candidates'])
+        with col2:
+            st.metric("Admitted", basic_stats['admitted_count'])
+        with col3:
+            st.metric("Rejected", basic_stats['rejected_count'])
+        with col4:
+            rate = basic_stats.get('admission_rate', 0) * 100
+            st.metric("Admission Rate", f"{rate:.1f}%")
+        
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Admitted Mean Score", f"{basic_stats.get('admitted_mean_score', 0):.2f}")
+        with col2:
+            st.metric("Rejected Mean Score", f"{basic_stats.get('rejected_mean_score', 0):.2f}")
+        with col3:
+            st.metric("Score Difference", f"{basic_stats.get('score_difference', 0):.2f}")
+        
+        # Show criterion differences if available
+        if basic_stats.get('criterion_differences'):
+            st.markdown("### Most Discriminating Criteria")
+            for crit in basic_stats['criterion_differences'][:5]:
+                name = crit['criterion'].replace('_', ' ').title()
+                st.markdown(f"- **{name}**: {crit['difference']:.1f} point gap (Admitted: {crit['admitted_mean']:.1f}, Rejected: {crit['rejected_mean']:.1f})")
+        
+        # Run full Claude-powered analysis
+        st.info("Running detailed pattern analysis with Claude...")
+        pattern_result = analyzer.analyze_patterns(candidate_summaries)
+        
+        # Save result
+        output_dir = Path("./results")
+        result_path = output_dir / f"admit_pattern_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        with open(result_path, 'w', encoding='utf-8') as f:
+            json.dump(pattern_result.model_dump(), f, indent=2, default=str)
+        
+        st.success(f"Analysis complete! Saved to {result_path}")
+        
+        # Mark as completed
+        progress['completed'] = True
+        st.session_state['admit_analysis_progress'] = progress
+        _save_progress_to_disk(progress)
+        
+        # Store in session state for display
+        st.session_state['last_pattern_analysis'] = pattern_result
+        
+        # Display results
+        display_pattern_analysis_result(pattern_result)
+        
+    except Exception as e:
+        st.error(f"Pattern analysis failed: {e}")
+        import traceback
+        st.code(traceback.format_exc())
+
+
+def display_admit_pattern_results():
+    """Display previous admit pattern analysis results from disk."""
+    output_dir = Path("./results")
+    
+    pattern_files = list(output_dir.glob("admit_pattern_analysis_*.json"))
+    
+    if not pattern_files:
+        st.info("No previous pattern analyses found. Run an analysis to see results here.")
+        return
+    
+    # Sort by date (newest first)
+    pattern_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+    
+    selected_file = st.selectbox(
+        "Select previous analysis",
+        pattern_files,
+        format_func=lambda x: f"{x.stem} ({datetime.fromtimestamp(x.stat().st_mtime).strftime('%Y-%m-%d %H:%M')})"
+    )
+    
+    if selected_file:
+        try:
+            with open(selected_file, 'r') as f:
+                data = json.load(f)
+            
+            # Reconstruct result object
+            result = AdmitPatternAnalysisResult(
+                analysis_date=datetime.fromisoformat(data.get('analysis_date', datetime.now().isoformat())),
+                total_candidates=data.get('total_candidates', 0),
+                admitted_count=data.get('admitted_count', 0),
+                rejected_count=data.get('rejected_count', 0),
+                admitted_mean_score=data.get('admitted_mean_score', 0),
+                rejected_mean_score=data.get('rejected_mean_score', 0),
+                score_difference=data.get('score_difference', 0),
+                key_patterns=[],  # Simplified for display
+                admitted_strengths=data.get('admitted_strengths', []),
+                rejected_weaknesses=data.get('rejected_weaknesses', []),
+                surprising_admits=data.get('surprising_admits', []),
+                surprising_rejects=data.get('surprising_rejects', []),
+                executive_summary=data.get('executive_summary', ''),
+                methodology_notes=data.get('methodology_notes', ''),
+                candidate_summaries=data.get('candidate_summaries', []),
+                metadata=data.get('metadata', {})
+            )
+            
+            display_pattern_analysis_result(result)
+            
+        except Exception as e:
+            st.error(f"Error loading analysis: {e}")
+
+
+def display_pattern_analysis_result(result: AdmitPatternAnalysisResult):
+    """Display a pattern analysis result."""
+    st.markdown("---")
+    st.header("Pattern Analysis Results")
+    
+    # Executive Summary
+    st.subheader("Executive Summary")
+    st.markdown(result.executive_summary)
+    
+    # Score comparison
+    st.subheader("Score Comparison")
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.metric("Total Analyzed", result.total_candidates)
+    with col2:
+        st.metric("Admitted", result.admitted_count)
+    with col3:
+        st.metric("Rejected", result.rejected_count)
+    with col4:
+        st.metric("Score Gap", f"{result.score_difference:.2f}")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("Admitted Mean Score", f"{result.admitted_mean_score:.2f}/10")
+    with col2:
+        st.metric("Rejected Mean Score", f"{result.rejected_mean_score:.2f}/10")
+    
+    # Key Patterns
+    if result.key_patterns:
+        st.subheader("Key Distinguishing Patterns")
+        for category in result.key_patterns:
+            importance_color = {
+                'high': '🔴',
+                'medium': '🟡',
+                'low': '🟢'
+            }.get(category.importance, '⚪')
+            
+            with st.expander(f"{importance_color} {category.category_name} ({category.importance.upper()} importance)"):
+                st.markdown(category.description)
+                
+                if category.patterns:
+                    for pattern in category.patterns:
+                        st.markdown(f"**Pattern:** {pattern.pattern}")
+                        
+                        if pattern.admitted_examples:
+                            st.markdown("*Admitted examples:*")
+                            for ex in pattern.admitted_examples[:3]:
+                                st.markdown(f"  - {ex}")
+                        
+                        if pattern.rejected_examples:
+                            st.markdown("*Rejected counter-examples:*")
+                            for ex in pattern.rejected_examples[:3]:
+                                st.markdown(f"  - {ex}")
+                        
+                        st.markdown("---")
+    
+    # Strengths and Weaknesses
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Common Strengths (Admitted)")
+        if result.admitted_strengths:
+            for strength in result.admitted_strengths:
+                st.markdown(f"✓ {strength}")
+        else:
+            st.info("No common strengths identified")
+    
+    with col2:
+        st.subheader("Common Weaknesses (Rejected)")
+        if result.rejected_weaknesses:
+            for weakness in result.rejected_weaknesses:
+                st.markdown(f"✗ {weakness}")
+        else:
+            st.info("No common weaknesses identified")
+    
+    # Surprising cases
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Surprising Admits")
+        if result.surprising_admits:
+            for case in result.surprising_admits:
+                st.warning(f"**{case.get('candidate_id', 'Unknown')}** (Score: {case.get('score', 'N/A')})")
+                st.caption(case.get('reason', ''))
+                if case.get('possible_explanation'):
+                    st.caption(f"Possible explanation: {case.get('possible_explanation')}")
+        else:
+            st.info("No surprising admits identified")
+    
+    with col2:
+        st.subheader("Surprising Rejects")
+        if result.surprising_rejects:
+            for case in result.surprising_rejects:
+                st.warning(f"**{case.get('candidate_id', 'Unknown')}** (Score: {case.get('score', 'N/A')})")
+                st.caption(case.get('reason', ''))
+                if case.get('possible_explanation'):
+                    st.caption(f"Possible explanation: {case.get('possible_explanation')}")
+        else:
+            st.info("No surprising rejects identified")
+    
+    # Predictive factors from metadata
+    if result.metadata.get('predictive_factors'):
+        st.subheader("Predictive Factors")
+        for factor in result.metadata['predictive_factors']:
+            strength_icon = {'strong': '💪', 'moderate': '👍', 'weak': '👌'}.get(factor.get('strength', ''), '•')
+            direction = factor.get('direction', '')
+            st.markdown(f"{strength_icon} **{factor.get('factor', '')}**: {direction}")
+            st.caption(factor.get('evidence', ''))
+    
+    # Methodology notes
+    if result.methodology_notes:
+        with st.expander("Methodology Notes"):
+            st.markdown(result.methodology_notes)
+    
+    # Raw candidate data
+    with st.expander("View All Candidate Data"):
+        if result.candidate_summaries:
+            # Convert to dataframe for display
+            display_data = []
+            for c in result.candidate_summaries:
+                row = {
+                    'Candidate ID': c.get('candidate_id', ''),
+                    'Admit Status': 'Admitted' if c.get('admit_status') else 'Rejected',
+                    'Score': c.get('overall_score', 0),
+                    'Recommendation': c.get('recommendation', '')
+                }
+                display_data.append(row)
+            
+            df = pd.DataFrame(display_data)
+            df = df.sort_values('Score', ascending=False)
+            st.dataframe(df, hide_index=True, use_container_width=True)
+    
+    # Download results
+    st.download_button(
+        label="Download Analysis (JSON)",
+        data=json.dumps(result.model_dump(), indent=2, default=str),
+        file_name=f"admit_pattern_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+        mime="application/json"
+    )
+
+
+def _display_pattern_analysis_from_dict(data: dict):
+    """Display pattern analysis from a dictionary (loaded from disk)."""
+    st.markdown("---")
+    st.header("Pattern Analysis Results")
+    
+    # Executive Summary
+    st.subheader("Executive Summary")
+    st.markdown(data.get('executive_summary', 'No summary available'))
+    
+    # Score comparison
+    st.subheader("Score Comparison")
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.metric("Total Analyzed", data.get('total_candidates', 0))
+    with col2:
+        st.metric("Admitted", data.get('admitted_count', 0))
+    with col3:
+        st.metric("Rejected", data.get('rejected_count', 0))
+    with col4:
+        st.metric("Score Gap", f"{data.get('score_difference', 0):.2f}")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("Admitted Mean Score", f"{data.get('admitted_mean_score', 0):.2f}/10")
+    with col2:
+        st.metric("Rejected Mean Score", f"{data.get('rejected_mean_score', 0):.2f}/10")
+    
+    # Key Patterns
+    key_patterns = data.get('key_patterns', [])
+    if key_patterns:
+        st.subheader("Key Distinguishing Patterns")
+        for category in key_patterns:
+            importance = category.get('importance', 'medium')
+            importance_color = {'high': '🔴', 'medium': '🟡', 'low': '🟢'}.get(importance, '⚪')
+            
+            with st.expander(f"{importance_color} {category.get('category_name', 'Unknown')} ({importance.upper()} importance)"):
+                st.markdown(category.get('description', ''))
+                
+                for pattern in category.get('patterns', []):
+                    st.markdown(f"**Pattern:** {pattern.get('pattern', '')}")
+                    
+                    admitted_examples = pattern.get('admitted_examples', [])
+                    if admitted_examples:
+                        st.markdown("*Admitted examples:*")
+                        for ex in admitted_examples[:3]:
+                            st.markdown(f"  - {ex}")
+                    
+                    rejected_examples = pattern.get('rejected_examples', [])
+                    if rejected_examples:
+                        st.markdown("*Rejected counter-examples:*")
+                        for ex in rejected_examples[:3]:
+                            st.markdown(f"  - {ex}")
+                    
+                    st.markdown("---")
+    
+    # Strengths and Weaknesses
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Common Strengths (Admitted)")
+        admitted_strengths = data.get('admitted_strengths', [])
+        if admitted_strengths:
+            for strength in admitted_strengths:
+                st.markdown(f"✓ {strength}")
+        else:
+            st.info("No common strengths identified")
+    
+    with col2:
+        st.subheader("Common Weaknesses (Rejected)")
+        rejected_weaknesses = data.get('rejected_weaknesses', [])
+        if rejected_weaknesses:
+            for weakness in rejected_weaknesses:
+                st.markdown(f"✗ {weakness}")
+        else:
+            st.info("No common weaknesses identified")
+    
+    # Surprising cases
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Surprising Admits")
+        surprising_admits = data.get('surprising_admits', [])
+        if surprising_admits:
+            for case in surprising_admits:
+                st.warning(f"**{case.get('candidate_id', 'Unknown')}** (Score: {case.get('score', 'N/A')})")
+                st.caption(case.get('reason', ''))
+                if case.get('possible_explanation'):
+                    st.caption(f"Possible explanation: {case.get('possible_explanation')}")
+        else:
+            st.info("No surprising admits identified")
+    
+    with col2:
+        st.subheader("Surprising Rejects")
+        surprising_rejects = data.get('surprising_rejects', [])
+        if surprising_rejects:
+            for case in surprising_rejects:
+                st.warning(f"**{case.get('candidate_id', 'Unknown')}** (Score: {case.get('score', 'N/A')})")
+                st.caption(case.get('reason', ''))
+                if case.get('possible_explanation'):
+                    st.caption(f"Possible explanation: {case.get('possible_explanation')}")
+        else:
+            st.info("No surprising rejects identified")
+    
+    # Methodology notes
+    methodology_notes = data.get('methodology_notes', '')
+    if methodology_notes:
+        with st.expander("Methodology Notes"):
+            st.markdown(methodology_notes)
+    
+    # Raw candidate data
+    with st.expander("View All Candidate Data"):
+        candidate_summaries = data.get('candidate_summaries', [])
+        if candidate_summaries:
+            display_data = []
+            for c in candidate_summaries:
+                row = {
+                    'Candidate ID': c.get('candidate_id', ''),
+                    'Admit Status': 'Admitted' if c.get('admit_status') else 'Rejected',
+                    'Score': c.get('overall_score', 0),
+                    'Recommendation': c.get('recommendation', '')
+                }
+                display_data.append(row)
+            
+            df = pd.DataFrame(display_data)
+            df = df.sort_values('Score', ascending=False)
+            st.dataframe(df, hide_index=True, use_container_width=True)
+    
+    # Download results
+    st.download_button(
+        label="Download Analysis (JSON)",
+        data=json.dumps(data, indent=2, default=str),
+        file_name=f"admit_pattern_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+        mime="application/json"
+    )
 
 
 def research_page():
