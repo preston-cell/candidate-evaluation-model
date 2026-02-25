@@ -43,6 +43,9 @@ config.yaml
 config.json
 .env
 
+# Streamlit secrets
+.streamlit/secrets.toml
+
 # Output files
 output/
 results/
@@ -60,3 +63,5 @@ htmlcov/
 
 # Distribution
 *.whl
+
+.trigger
